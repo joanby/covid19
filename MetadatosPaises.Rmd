@@ -1,0 +1,53 @@
+---
+title: "Analisis COVID19: Metadatos paísis del mundo"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: "4/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+
+#  Metadatos de paises del mundo 
+
+
+La fuentes de los datos es [The world Bank](https://www.worldbank.org/).  En concreto extraemos los ficheros  de la página
+
+[World Developement Indicators](https://databank.worldbank.org/source/world-development-indicators)
+
+
+
+## Carga de los datos
+
+La [consulta que  hemos hecho es]( https://databank.worldbank.org/reports.aspx?source=2&series=SP.POP.TOTL&country=#
+)
+
+```{r}
+POP=read_csv("data/theworldatabank/Development_Indicators/14a30f6a-2215-4df8-8db6-54b187ac4627_Data.csv")
+glimpse(POP)
+```
+
+
+
+
+## Extraemos  datos  de 2018
+
+Extraemos 2018 que son   de los recientes lo más completos.
+
+
+
+```{r}
+data_POP_WB_2018=POP %>% select(`Series Name`,`Series Code`,`Country Name`,`Country Code`,`2018 [YR2018]`)
+save(data_POP_WB_2018,file="data_POP_WB_2018.Robj")
+```
+
+
+```{r}
+load("data_POP_WB_2018.Robj")
+knitr::kable(data_POP_WB_2018)
+```
+
