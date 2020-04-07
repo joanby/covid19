@@ -23,7 +23,7 @@ for (i in 1:length(paises)){
 
 
 
-fecha="3/11/20"
+fecha="4/5/20"
 confirmados.por.pais = aggregate(covid19.netejat$Confirmed[covid19.netejat$Date==fecha] ~ covid19.netejat$Country.Region[covid19.netejat$Date==fecha],
                                  FUN=sum)
 names(confirmados.por.pais)=c("Pais","Confirmados")
@@ -54,4 +54,19 @@ tabla.infectados.paises = data.frame(paises,tabla.infectados.paises)
 names(tabla.infectados.paises)=c("pais","infectados","infectados.estimados")
 tabla.infectados.paises$infectados.estimados=tabla.infectados.paises$infectados.estimados/
   sum(tabla.infectados.paises$infectados)
-chisq.test(tabla.infectados.paises$infectados,p=tabla.infectados.paises$infectados.estimados)
+
+paises.con.problemas = which(tabla.infectados.paises$infectados.estimados*sum(tabla.infectados.paises$infectados) < 5)
+
+tabla.infectados.paises2 = tabla.infectados.paises[-paises.con.problemas,]
+
+fila.añadir = data.frame("problemas",as.numeric(as.character(sum(tabla.infectados.paises[tabla.infectados.paises$pais 
+                        %in% paises[paises.con.problemas],]$infectados))),
+                        as.numeric(as.character(sum(tabla.infectados.paises[tabla.infectados.paises$pais %in% paises[paises.con.problemas],]
+                            $infectados.estimados))))
+
+names(fila.añadir)=names(tabla.infectados.paises2)
+
+tabla.infectados.paises2 = rbind(tabla.infectados.paises2,fila.añadir)
+
+chisq.test(as.numeric(as.character(tabla.infectados.paises2$infectados)),p=as.numeric(as.character(
+  tabla.infectados.paises2$infectados.estimados)))
