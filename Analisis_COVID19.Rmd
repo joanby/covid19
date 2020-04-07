@@ -1,0 +1,95 @@
+---
+title: "Analisis COVID19"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: "4/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+library(knitr)
+#library(kableExtra)
+library(tidyverse) # %>%
+library(magrittr)  # %<>%
+library(lubridate)
+use_python("/usr/bin/python")
+```
+
+# Carga y limpieza preliminar de los datos
+
+Los datos que se van a analizar en este documento, proceden de la compilación hecha por usuarios de [Kaggle](https://www.kaggle.com/imdevskp/corona-virus-report). La fecha del análisis empieza el 6 de Abril de 2020, utilizando la versión número 73 recopilada en la web anterior.
+
+```{python}
+import pandas as pd
+datos = pd.read_csv("covid_19_clean_complete.csv")
+datos.head(10)
+```
+
+```{r}
+pd <- import("pandas")
+datos <- pd$read_csv("covid_19_clean_complete.csv")
+kable(head(datos, 10))
+```
+
+```{r}
+datos <- read.csv("covid_19_clean_complete.csv", stringsAsFactors = FALSE)
+datos %>% head(10) %>% kable()
+```
+
+## Estructura de los datos
+
+```{r}
+str(datos)
+colnames(datos) = c("Provincia_Estado",
+                    "Pais_Region",
+                    "Latitud", # N+ o S-
+                    "Longitud", # E+ o W-
+                    "Fecha",
+                    "Casos_Confirmados",
+                    "Casos_Muertos",
+                    "Casos_Recuperados"
+                    )
+datos %>% head() %>% kable() # %>% kable_styling()
+```
+
+* Cualitativas se convierten con `factor` o bien `as.factor`.
+* Ordinales se convierten con `ordered`.
+* Cuantitativos se convierten con `as.numeric`.
+
+```{r}
+datos$Provincia_Estado %<>% factor()
+datos$Pais_Region %<>% factor()
+#datos$Fecha %<>% as.Date(format="%m/%d/%y")
+datos$Fecha %<>% mdy()
+str(datos)
+```
+
+
+$$Confirmados = Muertos + Recuperados + Enfermos$$
+
+```{r}
+datos %<>%
+  mutate(Casos_Enfermos = Casos_Confirmados - Casos_Muertos - Casos_Recuperados)
+
+datos %>%
+  filter(Casos_Confirmados > 10000) %>%
+  head(10) %>%
+  kable()
+
+datos %>% 
+  filter(Casos_Enfermos < 0) %>%
+  arrange(Provincia_Estado, Fecha) %>%
+  kable()
+
+datos %>%
+  filter(Provincia_Estado == "Hainan") %>%
+  kable()
+
+datos %>%
+  filter(Provincia_Estado == "Hainan", Casos_Enfermos < 0) %>%
+  mutate(Casos_Recuperados = Casos_Recuperados + Casos_Enfermos,
+         Casos_Enfermos = 0) %>%
+  kable()
+```
+
