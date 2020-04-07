@@ -43,6 +43,7 @@ Extraemos 2018 que son   de los recientes lo más completos.
 ```{r}
 data_POP_WB_2018=POP %>% select(`Series Name`,`Series Code`,`Country Name`,`Country Code`,`2018 [YR2018]`)
 save(data_POP_WB_2018,file="data_POP_WB_2018.Robj")
+
 ```
 
 
