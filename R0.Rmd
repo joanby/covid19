@@ -1,0 +1,23 @@
+---
+title: "Cálculo R0"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: "4/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+library(knitr)
+#library(kableExtra)
+library(tidyverse) # %>%
+library(magrittr)  # %<>%
+library(lubridate)
+use_python("/usr/bin/python")
+```
+
+# Referenrencias
+
+
+[Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R. High contagiousness and rapid spread of severe acute respiratory syndrome coronavirus 2. Emerg Infect Dis. 2020 Jul.](https://doi.org/10.3201/eid2607.200282)
+

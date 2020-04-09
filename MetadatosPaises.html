@@ -12,7 +12,7 @@
 <meta name="author" content="Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir" />
 
 
-<title>Analisis COVID19</title>
+<title>Analisis COVID19: Metadatos paísis del mundo</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -362,1769 +362,1960 @@ summary {
 
 
 
-<h1 class="title toc-ignore">Analisis COVID19</h1>
+<h1 class="title toc-ignore">Analisis COVID19: Metadatos paísis del mundo</h1>
 <h4 class="author">Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir</h4>
 <h4 class="date">4/6/2020</h4>
 
 </div>
 
 
-<div id="carga-y-limpieza-preliminar-de-los-datos" class="section level1">
-<h1>Carga y limpieza preliminar de los datos</h1>
-<p>Los datos que se van a analizar en este documento, proceden de la compilación hecha por usuarios de <a href="https://www.kaggle.com/imdevskp/corona-virus-report">Kaggle</a>. La fecha del análisis empieza el 6 de Abril de 2020, utilizando la versión número 73 recopilada en la web anterior.</p>
-<pre class="python"><code>import pandas as pd
-datos = pd.read_csv(&quot;covid_19_clean_complete.csv&quot;)
-datos.head(10)</code></pre>
-<pre><code>##                  Province/State       Country/Region  ...  Deaths  Recovered
-## 0                           NaN          Afghanistan  ...       0          0
-## 1                           NaN              Albania  ...       0          0
-## 2                           NaN              Algeria  ...       0          0
-## 3                           NaN              Andorra  ...       0          0
-## 4                           NaN               Angola  ...       0          0
-## 5                           NaN  Antigua and Barbuda  ...       0          0
-## 6                           NaN            Argentina  ...       0          0
-## 7                           NaN              Armenia  ...       0          0
-## 8  Australian Capital Territory            Australia  ...       0          0
-## 9               New South Wales            Australia  ...       0          0
-## 
-## [10 rows x 8 columns]</code></pre>
-<pre class="r"><code>pd &lt;- import(&quot;pandas&quot;)
-datos &lt;- pd$read_csv(&quot;covid_19_clean_complete.csv&quot;)
-kable(head(datos, 10))</code></pre>
+<div id="metadatos-de-paises-del-mundo" class="section level1">
+<h1>Metadatos de paises del mundo</h1>
+<p>La fuentes de los datos es <a href="https://www.worldbank.org/">The world Bank</a>. En concreto extraemos los ficheros de la página</p>
+<p><a href="https://databank.worldbank.org/source/world-development-indicators">World Developement Indicators</a></p>
+<div id="carga-de-los-datos" class="section level2">
+<h2>Carga de los datos</h2>
+<p>La <a href="https://databank.worldbank.org/reports.aspx?source=2&amp;series=SP.POP.TOTL&amp;country=#">consulta que hemos hecho es</a></p>
+<pre class="r"><code>POP=read_csv(&quot;data/theworldatabank/Development_Indicators/14a30f6a-2215-4df8-8db6-54b187ac4627_Data.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   `Series Name` = col_character(),
+##   `Series Code` = col_character(),
+##   `Country Name` = col_character(),
+##   `Country Code` = col_character(),
+##   `1990 [YR1990]` = col_character(),
+##   `2000 [YR2000]` = col_character(),
+##   `2010 [YR2010]` = col_character(),
+##   `2011 [YR2011]` = col_character(),
+##   `2012 [YR2012]` = col_character(),
+##   `2013 [YR2013]` = col_character(),
+##   `2014 [YR2014]` = col_character(),
+##   `2015 [YR2015]` = col_character(),
+##   `2016 [YR2016]` = col_character(),
+##   `2017 [YR2017]` = col_character(),
+##   `2018 [YR2018]` = col_character(),
+##   `2019 [YR2019]` = col_character()
+## )</code></pre>
+<pre class="r"><code>glimpse(POP)</code></pre>
+<pre><code>## Observations: 269
+## Variables: 16
+## $ `Series Name`   &lt;chr&gt; &quot;Population, total&quot;, &quot;Population, total&quot;, &quot;Populati...
+## $ `Series Code`   &lt;chr&gt; &quot;SP.POP.TOTL&quot;, &quot;SP.POP.TOTL&quot;, &quot;SP.POP.TOTL&quot;, &quot;SP.PO...
+## $ `Country Name`  &lt;chr&gt; &quot;Afghanistan&quot;, &quot;Albania&quot;, &quot;Algeria&quot;, &quot;American Samo...
+## $ `Country Code`  &lt;chr&gt; &quot;AFG&quot;, &quot;ALB&quot;, &quot;DZA&quot;, &quot;ASM&quot;, &quot;AND&quot;, &quot;AGO&quot;, &quot;ATG&quot;, &quot;A...
+## $ `1990 [YR1990]` &lt;chr&gt; &quot;12412308&quot;, &quot;3286542&quot;, &quot;25758869&quot;, &quot;47347&quot;, &quot;54509&quot;...
+## $ `2000 [YR2000]` &lt;chr&gt; &quot;20779953&quot;, &quot;3089027&quot;, &quot;31042235&quot;, &quot;57821&quot;, &quot;65390&quot;...
+## $ `2010 [YR2010]` &lt;chr&gt; &quot;29185507&quot;, &quot;2913021&quot;, &quot;35977455&quot;, &quot;56079&quot;, &quot;84449&quot;...
+## $ `2011 [YR2011]` &lt;chr&gt; &quot;30117413&quot;, &quot;2905195&quot;, &quot;36661444&quot;, &quot;55759&quot;, &quot;83747&quot;...
+## $ `2012 [YR2012]` &lt;chr&gt; &quot;31161376&quot;, &quot;2900401&quot;, &quot;37383887&quot;, &quot;55667&quot;, &quot;82427&quot;...
+## $ `2013 [YR2013]` &lt;chr&gt; &quot;32269589&quot;, &quot;2895092&quot;, &quot;38140132&quot;, &quot;55713&quot;, &quot;80774&quot;...
+## $ `2014 [YR2014]` &lt;chr&gt; &quot;33370794&quot;, &quot;2889104&quot;, &quot;38923687&quot;, &quot;55791&quot;, &quot;79213&quot;...
+## $ `2015 [YR2015]` &lt;chr&gt; &quot;34413603&quot;, &quot;2880703&quot;, &quot;39728025&quot;, &quot;55812&quot;, &quot;78011&quot;...
+## $ `2016 [YR2016]` &lt;chr&gt; &quot;35383128&quot;, &quot;2876101&quot;, &quot;40551404&quot;, &quot;55741&quot;, &quot;77297&quot;...
+## $ `2017 [YR2017]` &lt;chr&gt; &quot;36296400&quot;, &quot;2873457&quot;, &quot;41389198&quot;, &quot;55620&quot;, &quot;77001&quot;...
+## $ `2018 [YR2018]` &lt;chr&gt; &quot;37172386&quot;, &quot;2866376&quot;, &quot;42228429&quot;, &quot;55465&quot;, &quot;77006&quot;...
+## $ `2019 [YR2019]` &lt;chr&gt; &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;.....</code></pre>
+</div>
+<div id="extraemos-datos-de-2018" class="section level2">
+<h2>Extraemos datos de 2018</h2>
+<p>Extraemos 2018 que son de los recientes lo más completos.</p>
+<pre class="r"><code>data_POP_WB_2018=POP %&gt;% select(`Series Name`,`Series Code`,`Country Name`,`Country Code`,`2018 [YR2018]`)
+save(data_POP_WB_2018,file=&quot;data_POP_WB_2018.Robj&quot;)</code></pre>
+<pre class="r"><code>load(&quot;data_POP_WB_2018.Robj&quot;)
+knitr::kable(data_POP_WB_2018)</code></pre>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Province/State</th>
-<th align="left">Country/Region</th>
-<th align="right">Lat</th>
-<th align="right">Long</th>
-<th align="left">Date</th>
-<th align="right">Confirmed</th>
-<th align="right">Deaths</th>
-<th align="right">Recovered</th>
+<th align="left">Series Name</th>
+<th align="left">Series Code</th>
+<th align="left">Country Name</th>
+<th align="left">Country Code</th>
+<th align="left">2018 [YR2018]</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">NaN</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Afghanistan</td>
-<td align="right">33.0000</td>
-<td align="right">65.0000</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">AFG</td>
+<td align="left">37172386</td>
 </tr>
 <tr class="even">
-<td align="left">NaN</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Albania</td>
-<td align="right">41.1533</td>
-<td align="right">20.1683</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">ALB</td>
+<td align="left">2866376</td>
 </tr>
 <tr class="odd">
-<td align="left">NaN</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Algeria</td>
-<td align="right">28.0339</td>
-<td align="right">1.6596</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">DZA</td>
+<td align="left">42228429</td>
 </tr>
 <tr class="even">
-<td align="left">NaN</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">American Samoa</td>
+<td align="left">ASM</td>
+<td align="left">55465</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Andorra</td>
-<td align="right">42.5063</td>
-<td align="right">1.5218</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-</tr>
-<tr class="odd">
-<td align="left">NaN</td>
-<td align="left">Angola</td>
-<td align="right">-11.2027</td>
-<td align="right">17.8739</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">AND</td>
+<td align="left">77006</td>
 </tr>
 <tr class="even">
-<td align="left">NaN</td>
-<td align="left">Antigua and Barbuda</td>
-<td align="right">17.0608</td>
-<td align="right">-61.7964</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Angola</td>
+<td align="left">AGO</td>
+<td align="left">30809762</td>
 </tr>
 <tr class="odd">
-<td align="left">NaN</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Antigua and Barbuda</td>
+<td align="left">ATG</td>
+<td align="left">96286</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Argentina</td>
-<td align="right">-38.4161</td>
-<td align="right">-63.6167</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">ARG</td>
+<td align="left">44494502</td>
 </tr>
-<tr class="even">
-<td align="left">NaN</td>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Armenia</td>
-<td align="right">40.0691</td>
-<td align="right">45.0382</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">ARM</td>
+<td align="left">2951776</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Aruba</td>
+<td align="left">ABW</td>
+<td align="left">105845</td>
 </tr>
 <tr class="odd">
-<td align="left">Australian Capital Territory</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Australia</td>
-<td align="right">-35.4735</td>
-<td align="right">149.0124</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">AUS</td>
+<td align="left">24992369</td>
 </tr>
 <tr class="even">
-<td align="left">New South Wales</td>
-<td align="left">Australia</td>
-<td align="right">-33.8688</td>
-<td align="right">151.2093</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Austria</td>
+<td align="left">AUT</td>
+<td align="left">8847037</td>
 </tr>
-</tbody>
-</table>
-<pre class="r"><code>datos &lt;- read.csv(&quot;covid_19_clean_complete.csv&quot;, stringsAsFactors = FALSE)
-datos %&gt;% head(10) %&gt;% kable()</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Province.State</th>
-<th align="left">Country.Region</th>
-<th align="right">Lat</th>
-<th align="right">Long</th>
-<th align="left">Date</th>
-<th align="right">Confirmed</th>
-<th align="right">Deaths</th>
-<th align="right">Recovered</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Afghanistan</td>
-<td align="right">33.0000</td>
-<td align="right">65.0000</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Azerbaijan</td>
+<td align="left">AZE</td>
+<td align="left">9942334</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Albania</td>
-<td align="right">41.1533</td>
-<td align="right">20.1683</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bahamas, The</td>
+<td align="left">BHS</td>
+<td align="left">385640</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Algeria</td>
-<td align="right">28.0339</td>
-<td align="right">1.6596</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bahrain</td>
+<td align="left">BHR</td>
+<td align="left">1569439</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Andorra</td>
-<td align="right">42.5063</td>
-<td align="right">1.5218</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bangladesh</td>
+<td align="left">BGD</td>
+<td align="left">161356039</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Angola</td>
-<td align="right">-11.2027</td>
-<td align="right">17.8739</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Barbados</td>
+<td align="left">BRB</td>
+<td align="left">286641</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Antigua and Barbuda</td>
-<td align="right">17.0608</td>
-<td align="right">-61.7964</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Belarus</td>
+<td align="left">BLR</td>
+<td align="left">9485386</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Argentina</td>
-<td align="right">-38.4161</td>
-<td align="right">-63.6167</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Belgium</td>
+<td align="left">BEL</td>
+<td align="left">11422068</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Armenia</td>
-<td align="right">40.0691</td>
-<td align="right">45.0382</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Belize</td>
+<td align="left">BLZ</td>
+<td align="left">383071</td>
 </tr>
 <tr class="odd">
-<td align="left">Australian Capital Territory</td>
-<td align="left">Australia</td>
-<td align="right">-35.4735</td>
-<td align="right">149.0124</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Benin</td>
+<td align="left">BEN</td>
+<td align="left">11485048</td>
 </tr>
 <tr class="even">
-<td align="left">New South Wales</td>
-<td align="left">Australia</td>
-<td align="right">-33.8688</td>
-<td align="right">151.2093</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bermuda</td>
+<td align="left">BMU</td>
+<td align="left">63968</td>
 </tr>
-</tbody>
-</table>
-<div id="estructura-de-los-datos" class="section level2">
-<h2>Estructura de los datos</h2>
-<pre class="r"><code>str(datos)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    19500 obs. of  8 variables:
-##  $ Province.State: chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; ...
-##  $ Country.Region: chr  &quot;Afghanistan&quot; &quot;Albania&quot; &quot;Algeria&quot; &quot;Andorra&quot; ...
-##  $ Lat           : num  33 41.2 28 42.5 -11.2 ...
-##  $ Long          : num  65 20.17 1.66 1.52 17.87 ...
-##  $ Date          : chr  &quot;1/22/20&quot; &quot;1/22/20&quot; &quot;1/22/20&quot; &quot;1/22/20&quot; ...
-##  $ Confirmed     : int  0 0 0 0 0 0 0 0 0 0 ...
-##  $ Deaths        : int  0 0 0 0 0 0 0 0 0 0 ...
-##  $ Recovered     : int  0 0 0 0 0 0 0 0 0 0 ...</code></pre>
-<pre class="r"><code>colnames(datos) = c(&quot;Provincia_Estado&quot;,
-                    &quot;Pais_Region&quot;,
-                    &quot;Latitud&quot;, # N+ o S-
-                    &quot;Longitud&quot;, # E+ o W-
-                    &quot;Fecha&quot;,
-                    &quot;Casos_Confirmados&quot;,
-                    &quot;Casos_Muertos&quot;,
-                    &quot;Casos_Recuperados&quot;
-                    )
-datos %&gt;% head() %&gt;% kable() # %&gt;% kable_styling()</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Provincia_Estado</th>
-<th align="left">Pais_Region</th>
-<th align="right">Latitud</th>
-<th align="right">Longitud</th>
-<th align="left">Fecha</th>
-<th align="right">Casos_Confirmados</th>
-<th align="right">Casos_Muertos</th>
-<th align="right">Casos_Recuperados</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Afghanistan</td>
-<td align="right">33.0000</td>
-<td align="right">65.0000</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bhutan</td>
+<td align="left">BTN</td>
+<td align="left">754394</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Albania</td>
-<td align="right">41.1533</td>
-<td align="right">20.1683</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bolivia</td>
+<td align="left">BOL</td>
+<td align="left">11353142</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Algeria</td>
-<td align="right">28.0339</td>
-<td align="right">1.6596</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bosnia and Herzegovina</td>
+<td align="left">BIH</td>
+<td align="left">3323929</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Andorra</td>
-<td align="right">42.5063</td>
-<td align="right">1.5218</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Botswana</td>
+<td align="left">BWA</td>
+<td align="left">2254126</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Angola</td>
-<td align="right">-11.2027</td>
-<td align="right">17.8739</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Brazil</td>
+<td align="left">BRA</td>
+<td align="left">209469333</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">Antigua and Barbuda</td>
-<td align="right">17.0608</td>
-<td align="right">-61.7964</td>
-<td align="left">1/22/20</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">British Virgin Islands</td>
+<td align="left">VGB</td>
+<td align="left">29802</td>
 </tr>
-</tbody>
-</table>
-<ul>
-<li>Cualitativas se convierten con <code>factor</code> o bien <code>as.factor</code>.</li>
-<li>Ordinales se convierten con <code>ordered</code>.</li>
-<li>Cuantitativos se convierten con <code>as.numeric</code>.</li>
-</ul>
-<pre class="r"><code>datos$Provincia_Estado %&lt;&gt;% factor()
-datos$Pais_Region %&lt;&gt;% factor()
-#datos$Fecha %&lt;&gt;% as.Date(format=&quot;%m/%d/%y&quot;)
-datos$Fecha %&lt;&gt;% mdy()
-str(datos)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    19500 obs. of  8 variables:
-##  $ Provincia_Estado : Factor w/ 81 levels &quot;&quot;,&quot;Alberta&quot;,&quot;Anguilla&quot;,..: 1 1 1 1 1 1 1 1 6 49 ...
-##  $ Pais_Region      : Factor w/ 183 levels &quot;Afghanistan&quot;,..: 1 2 3 4 5 6 7 8 9 9 ...
-##  $ Latitud          : num  33 41.2 28 42.5 -11.2 ...
-##  $ Longitud         : num  65 20.17 1.66 1.52 17.87 ...
-##  $ Fecha            : Date, format: &quot;2020-01-22&quot; &quot;2020-01-22&quot; ...
-##  $ Casos_Confirmados: int  0 0 0 0 0 0 0 0 0 0 ...
-##  $ Casos_Muertos    : int  0 0 0 0 0 0 0 0 0 0 ...
-##  $ Casos_Recuperados: int  0 0 0 0 0 0 0 0 0 0 ...</code></pre>
-<p><span class="math display">\[Confirmados = Muertos + Recuperados + Enfermos\]</span></p>
-<pre class="r"><code>datos %&lt;&gt;%
-  mutate(Casos_Enfermos = Casos_Confirmados - Casos_Muertos - Casos_Recuperados)
-
-datos %&gt;%
-  filter(Casos_Confirmados &gt; 10000) %&gt;%
-  head(10) %&gt;%
-  kable()</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Provincia_Estado</th>
-<th align="left">Pais_Region</th>
-<th align="right">Latitud</th>
-<th align="right">Longitud</th>
-<th align="left">Fecha</th>
-<th align="right">Casos_Confirmados</th>
-<th align="right">Casos_Muertos</th>
-<th align="right">Casos_Recuperados</th>
-<th align="right">Casos_Enfermos</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-02</td>
-<td align="right">11177</td>
-<td align="right">350</td>
-<td align="right">295</td>
-<td align="right">10532</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Brunei Darussalam</td>
+<td align="left">BRN</td>
+<td align="left">428962</td>
 </tr>
 <tr class="even">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-03</td>
-<td align="right">13522</td>
-<td align="right">414</td>
-<td align="right">386</td>
-<td align="right">12722</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Bulgaria</td>
+<td align="left">BGR</td>
+<td align="left">7024216</td>
 </tr>
 <tr class="odd">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-04</td>
-<td align="right">16678</td>
-<td align="right">479</td>
-<td align="right">522</td>
-<td align="right">15677</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Burkina Faso</td>
+<td align="left">BFA</td>
+<td align="left">19751535</td>
 </tr>
 <tr class="even">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-05</td>
-<td align="right">19665</td>
-<td align="right">549</td>
-<td align="right">633</td>
-<td align="right">18483</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Burundi</td>
+<td align="left">BDI</td>
+<td align="left">11175378</td>
 </tr>
 <tr class="odd">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-06</td>
-<td align="right">22112</td>
-<td align="right">618</td>
-<td align="right">817</td>
-<td align="right">20677</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cabo Verde</td>
+<td align="left">CPV</td>
+<td align="left">543767</td>
 </tr>
 <tr class="even">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-07</td>
-<td align="right">24953</td>
-<td align="right">699</td>
-<td align="right">1115</td>
-<td align="right">23139</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cambodia</td>
+<td align="left">KHM</td>
+<td align="left">16249798</td>
 </tr>
 <tr class="odd">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-08</td>
-<td align="right">27100</td>
-<td align="right">780</td>
-<td align="right">1439</td>
-<td align="right">24881</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cameroon</td>
+<td align="left">CMR</td>
+<td align="left">25216237</td>
 </tr>
 <tr class="even">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-09</td>
-<td align="right">29631</td>
-<td align="right">871</td>
-<td align="right">1795</td>
-<td align="right">26965</td>
-</tr>
-<tr class="odd">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-10</td>
-<td align="right">31728</td>
-<td align="right">974</td>
-<td align="right">2222</td>
-<td align="right">28532</td>
-</tr>
-<tr class="even">
-<td align="left">Hubei</td>
-<td align="left">China</td>
-<td align="right">30.9756</td>
-<td align="right">112.2707</td>
-<td align="left">2020-02-11</td>
-<td align="right">33366</td>
-<td align="right">1068</td>
-<td align="right">2639</td>
-<td align="right">29659</td>
-</tr>
-</tbody>
-</table>
-<pre class="r"><code>datos %&gt;% 
-  filter(Casos_Enfermos &lt; 0) %&gt;%
-  arrange(Provincia_Estado, Fecha) %&gt;%
-  kable()</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Provincia_Estado</th>
-<th align="left">Pais_Region</th>
-<th align="right">Latitud</th>
-<th align="right">Longitud</th>
-<th align="left">Fecha</th>
-<th align="right">Casos_Confirmados</th>
-<th align="right">Casos_Muertos</th>
-<th align="right">Casos_Recuperados</th>
-<th align="right">Casos_Enfermos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Diamond Princess</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
 <td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-22</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">CAN</td>
+<td align="left">37058856</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cayman Islands</td>
+<td align="left">CYM</td>
+<td align="left">64174</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-23</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Central African Republic</td>
+<td align="left">CAF</td>
+<td align="left">4666377</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-24</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Chad</td>
+<td align="left">TCD</td>
+<td align="left">15477751</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-25</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Channel Islands</td>
+<td align="left">CHI</td>
+<td align="left">170499</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-26</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Chile</td>
+<td align="left">CHL</td>
+<td align="left">18729160</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-27</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">China</td>
+<td align="left">CHN</td>
+<td align="left">1392730000</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-28</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Colombia</td>
+<td align="left">COL</td>
+<td align="left">49648685</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-29</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Comoros</td>
+<td align="left">COM</td>
+<td align="left">832322</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-30</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Congo, Dem. Rep.</td>
+<td align="left">COD</td>
+<td align="left">84068091</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-03-31</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Congo, Rep.</td>
+<td align="left">COG</td>
+<td align="left">5244363</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-04-01</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Costa Rica</td>
+<td align="left">CRI</td>
+<td align="left">4999441</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-04-02</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cote d’Ivoire</td>
+<td align="left">CIV</td>
+<td align="left">25069229</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-04-03</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Croatia</td>
+<td align="left">HRV</td>
+<td align="left">4089400</td>
 </tr>
 <tr class="even">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-04-04</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cuba</td>
+<td align="left">CUB</td>
+<td align="left">11338138</td>
 </tr>
 <tr class="odd">
-<td align="left">Diamond Princess</td>
-<td align="left">Canada</td>
-<td align="right">0.0000</td>
-<td align="right">0.0000</td>
-<td align="left">2020-04-05</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">-1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Curacao</td>
+<td align="left">CUW</td>
+<td align="left">159849</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-24</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Cyprus</td>
+<td align="left">CYP</td>
+<td align="left">1189265</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-25</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Czech Republic</td>
+<td align="left">CZE</td>
+<td align="left">10625695</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-26</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Denmark</td>
+<td align="left">DNK</td>
+<td align="left">5797446</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-27</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Djibouti</td>
+<td align="left">DJI</td>
+<td align="left">958920</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-28</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Dominica</td>
+<td align="left">DMA</td>
+<td align="left">71625</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-29</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Dominican Republic</td>
+<td align="left">DOM</td>
+<td align="left">10627165</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-30</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Ecuador</td>
+<td align="left">ECU</td>
+<td align="left">17084357</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-31</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Egypt, Arab Rep.</td>
+<td align="left">EGY</td>
+<td align="left">98423595</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-01</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">El Salvador</td>
+<td align="left">SLV</td>
+<td align="left">6420744</td>
 </tr>
-</tbody>
-</table>
-<pre class="r"><code>datos %&gt;%
-  filter(Provincia_Estado == &quot;Hainan&quot;) %&gt;%
-  kable()</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Provincia_Estado</th>
-<th align="left">Pais_Region</th>
-<th align="right">Latitud</th>
-<th align="right">Longitud</th>
-<th align="left">Fecha</th>
-<th align="right">Casos_Confirmados</th>
-<th align="right">Casos_Muertos</th>
-<th align="right">Casos_Recuperados</th>
-<th align="right">Casos_Enfermos</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-22</td>
-<td align="right">4</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">4</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Equatorial Guinea</td>
+<td align="left">GNQ</td>
+<td align="left">1308974</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-23</td>
-<td align="right">5</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">5</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Eritrea</td>
+<td align="left">ERI</td>
+<td align="left">..</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-24</td>
-<td align="right">8</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">8</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Estonia</td>
+<td align="left">EST</td>
+<td align="left">1320884</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-25</td>
-<td align="right">19</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">19</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Eswatini</td>
+<td align="left">SWZ</td>
+<td align="left">1136191</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-26</td>
-<td align="right">22</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">22</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Ethiopia</td>
+<td align="left">ETH</td>
+<td align="left">109224559</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-27</td>
-<td align="right">33</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">32</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Faroe Islands</td>
+<td align="left">FRO</td>
+<td align="left">48497</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-28</td>
-<td align="right">40</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">39</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Fiji</td>
+<td align="left">FJI</td>
+<td align="left">883483</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-29</td>
-<td align="right">43</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">42</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Finland</td>
+<td align="left">FIN</td>
+<td align="left">5518050</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-30</td>
-<td align="right">46</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">44</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">France</td>
+<td align="left">FRA</td>
+<td align="left">66987244</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-01-31</td>
-<td align="right">52</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">50</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">French Polynesia</td>
+<td align="left">PYF</td>
+<td align="left">277679</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-01</td>
-<td align="right">62</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">60</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Gabon</td>
+<td align="left">GAB</td>
+<td align="left">2119275</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-02</td>
-<td align="right">64</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">59</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Gambia, The</td>
+<td align="left">GMB</td>
+<td align="left">2280102</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-03</td>
-<td align="right">72</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">67</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Georgia</td>
+<td align="left">GEO</td>
+<td align="left">3731000</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-04</td>
-<td align="right">80</td>
-<td align="right">1</td>
-<td align="right">5</td>
-<td align="right">74</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Germany</td>
+<td align="left">DEU</td>
+<td align="left">82927922</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-05</td>
-<td align="right">99</td>
-<td align="right">1</td>
-<td align="right">5</td>
-<td align="right">93</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Ghana</td>
+<td align="left">GHA</td>
+<td align="left">29767108</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-06</td>
-<td align="right">106</td>
-<td align="right">1</td>
-<td align="right">8</td>
-<td align="right">97</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Gibraltar</td>
+<td align="left">GIB</td>
+<td align="left">33718</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-07</td>
-<td align="right">117</td>
-<td align="right">2</td>
-<td align="right">10</td>
-<td align="right">105</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Greece</td>
+<td align="left">GRC</td>
+<td align="left">10727668</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-08</td>
-<td align="right">124</td>
-<td align="right">2</td>
-<td align="right">14</td>
-<td align="right">108</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Greenland</td>
+<td align="left">GRL</td>
+<td align="left">56025</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-09</td>
-<td align="right">131</td>
-<td align="right">3</td>
-<td align="right">19</td>
-<td align="right">109</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Grenada</td>
+<td align="left">GRD</td>
+<td align="left">111454</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-10</td>
-<td align="right">138</td>
-<td align="right">3</td>
-<td align="right">19</td>
-<td align="right">116</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Guam</td>
+<td align="left">GUM</td>
+<td align="left">165768</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-11</td>
-<td align="right">144</td>
-<td align="right">3</td>
-<td align="right">20</td>
-<td align="right">121</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Guatemala</td>
+<td align="left">GTM</td>
+<td align="left">17247807</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-12</td>
-<td align="right">157</td>
-<td align="right">4</td>
-<td align="right">27</td>
-<td align="right">126</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Guinea</td>
+<td align="left">GIN</td>
+<td align="left">12414318</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-13</td>
-<td align="right">157</td>
-<td align="right">4</td>
-<td align="right">30</td>
-<td align="right">123</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Guinea-Bissau</td>
+<td align="left">GNB</td>
+<td align="left">1874309</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-14</td>
-<td align="right">159</td>
-<td align="right">4</td>
-<td align="right">43</td>
-<td align="right">112</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Guyana</td>
+<td align="left">GUY</td>
+<td align="left">779004</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-15</td>
-<td align="right">162</td>
-<td align="right">4</td>
-<td align="right">39</td>
-<td align="right">119</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Haiti</td>
+<td align="left">HTI</td>
+<td align="left">11123176</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-16</td>
-<td align="right">162</td>
-<td align="right">4</td>
-<td align="right">52</td>
-<td align="right">106</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Honduras</td>
+<td align="left">HND</td>
+<td align="left">9587522</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-17</td>
-<td align="right">163</td>
-<td align="right">4</td>
-<td align="right">59</td>
-<td align="right">100</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Hong Kong SAR, China</td>
+<td align="left">HKG</td>
+<td align="left">7451000</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-18</td>
-<td align="right">163</td>
-<td align="right">4</td>
-<td align="right">79</td>
-<td align="right">80</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Hungary</td>
+<td align="left">HUN</td>
+<td align="left">9768785</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-19</td>
-<td align="right">168</td>
-<td align="right">4</td>
-<td align="right">84</td>
-<td align="right">80</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Iceland</td>
+<td align="left">ISL</td>
+<td align="left">353574</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-20</td>
-<td align="right">168</td>
-<td align="right">4</td>
-<td align="right">86</td>
-<td align="right">78</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">India</td>
+<td align="left">IND</td>
+<td align="left">1352617328</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-21</td>
-<td align="right">168</td>
-<td align="right">4</td>
-<td align="right">95</td>
-<td align="right">69</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Indonesia</td>
+<td align="left">IDN</td>
+<td align="left">267663435</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-22</td>
-<td align="right">168</td>
-<td align="right">4</td>
-<td align="right">104</td>
-<td align="right">60</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Iran, Islamic Rep.</td>
+<td align="left">IRN</td>
+<td align="left">81800269</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-23</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">106</td>
-<td align="right">57</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Iraq</td>
+<td align="left">IRQ</td>
+<td align="left">38433600</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-24</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">116</td>
-<td align="right">47</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Ireland</td>
+<td align="left">IRL</td>
+<td align="left">4853506</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-25</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">124</td>
-<td align="right">39</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Isle of Man</td>
+<td align="left">IMN</td>
+<td align="left">84077</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-26</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">129</td>
-<td align="right">34</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Israel</td>
+<td align="left">ISR</td>
+<td align="left">8883800</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-27</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">131</td>
-<td align="right">32</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Italy</td>
+<td align="left">ITA</td>
+<td align="left">60431283</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-28</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">133</td>
-<td align="right">30</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Jamaica</td>
+<td align="left">JAM</td>
+<td align="left">2934855</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-02-29</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">148</td>
-<td align="right">15</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Japan</td>
+<td align="left">JPN</td>
+<td align="left">126529100</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-01</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">149</td>
-<td align="right">14</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Jordan</td>
+<td align="left">JOR</td>
+<td align="left">9956011</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-02</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">151</td>
-<td align="right">12</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Kazakhstan</td>
+<td align="left">KAZ</td>
+<td align="left">18276499</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-03</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">155</td>
-<td align="right">8</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Kenya</td>
+<td align="left">KEN</td>
+<td align="left">51393010</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-04</td>
-<td align="right">168</td>
-<td align="right">5</td>
-<td align="right">158</td>
-<td align="right">5</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Kiribati</td>
+<td align="left">KIR</td>
+<td align="left">115847</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-05</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">158</td>
-<td align="right">4</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Korea, Dem. People’s Rep.</td>
+<td align="left">PRK</td>
+<td align="left">25549819</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-06</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">158</td>
-<td align="right">4</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Korea, Rep.</td>
+<td align="left">KOR</td>
+<td align="left">51635256</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-07</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">158</td>
-<td align="right">4</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Kosovo</td>
+<td align="left">XKX</td>
+<td align="left">1845300</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-08</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">159</td>
-<td align="right">3</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Kuwait</td>
+<td align="left">KWT</td>
+<td align="left">4137309</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-09</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">159</td>
-<td align="right">3</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Kyrgyz Republic</td>
+<td align="left">KGZ</td>
+<td align="left">6315800</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-10</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">159</td>
-<td align="right">3</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Lao PDR</td>
+<td align="left">LAO</td>
+<td align="left">7061507</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-11</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">159</td>
-<td align="right">3</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Latvia</td>
+<td align="left">LVA</td>
+<td align="left">1926542</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-12</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">160</td>
-<td align="right">2</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Lebanon</td>
+<td align="left">LBN</td>
+<td align="left">6848925</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-13</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">160</td>
-<td align="right">2</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Lesotho</td>
+<td align="left">LSO</td>
+<td align="left">2108132</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-14</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">160</td>
-<td align="right">2</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Liberia</td>
+<td align="left">LBR</td>
+<td align="left">4818977</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-15</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">160</td>
-<td align="right">2</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Libya</td>
+<td align="left">LBY</td>
+<td align="left">6678567</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-16</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Liechtenstein</td>
+<td align="left">LIE</td>
+<td align="left">37910</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-17</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Lithuania</td>
+<td align="left">LTU</td>
+<td align="left">2789533</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-18</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Luxembourg</td>
+<td align="left">LUX</td>
+<td align="left">607728</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-19</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Macao SAR, China</td>
+<td align="left">MAC</td>
+<td align="left">631636</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-20</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Madagascar</td>
+<td align="left">MDG</td>
+<td align="left">26262368</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-21</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Malawi</td>
+<td align="left">MWI</td>
+<td align="left">18143315</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-22</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Malaysia</td>
+<td align="left">MYS</td>
+<td align="left">31528585</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-23</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">161</td>
-<td align="right">1</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Maldives</td>
+<td align="left">MDV</td>
+<td align="left">515696</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-24</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Mali</td>
+<td align="left">MLI</td>
+<td align="left">19077690</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-25</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Malta</td>
+<td align="left">MLT</td>
+<td align="left">483530</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-26</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Marshall Islands</td>
+<td align="left">MHL</td>
+<td align="left">58413</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-27</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Mauritania</td>
+<td align="left">MRT</td>
+<td align="left">4403319</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-28</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Mauritius</td>
+<td align="left">MUS</td>
+<td align="left">1265303</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-29</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Mexico</td>
+<td align="left">MEX</td>
+<td align="left">126190788</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-30</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Micronesia, Fed. Sts.</td>
+<td align="left">FSM</td>
+<td align="left">112640</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-31</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Moldova</td>
+<td align="left">MDA</td>
+<td align="left">3545883</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-01</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">168</td>
-<td align="right">-6</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Monaco</td>
+<td align="left">MCO</td>
+<td align="left">38682</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-02</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Mongolia</td>
+<td align="left">MNG</td>
+<td align="left">3170208</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-03</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Montenegro</td>
+<td align="left">MNE</td>
+<td align="left">622345</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-04</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Morocco</td>
+<td align="left">MAR</td>
+<td align="left">36029138</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-05</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
-</tr>
-</tbody>
-</table>
-<pre class="r"><code>datos %&gt;%
-  filter(Provincia_Estado == &quot;Hainan&quot;, Casos_Enfermos &lt; 0) %&gt;%
-  mutate(Casos_Recuperados = Casos_Recuperados + Casos_Enfermos,
-         Casos_Enfermos = 0) %&gt;%
-  kable()</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Provincia_Estado</th>
-<th align="left">Pais_Region</th>
-<th align="right">Latitud</th>
-<th align="right">Longitud</th>
-<th align="left">Fecha</th>
-<th align="right">Casos_Confirmados</th>
-<th align="right">Casos_Muertos</th>
-<th align="right">Casos_Recuperados</th>
-<th align="right">Casos_Enfermos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-24</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Mozambique</td>
+<td align="left">MOZ</td>
+<td align="left">29495962</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-25</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Myanmar</td>
+<td align="left">MMR</td>
+<td align="left">53708395</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-26</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Namibia</td>
+<td align="left">NAM</td>
+<td align="left">2448255</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-27</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Nauru</td>
+<td align="left">NRU</td>
+<td align="left">12704</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-28</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Nepal</td>
+<td align="left">NPL</td>
+<td align="left">28087871</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-29</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Netherlands</td>
+<td align="left">NLD</td>
+<td align="left">17231017</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-30</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">New Caledonia</td>
+<td align="left">NCL</td>
+<td align="left">284060</td>
 </tr>
 <tr class="even">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-03-31</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">New Zealand</td>
+<td align="left">NZL</td>
+<td align="left">4885500</td>
 </tr>
 <tr class="odd">
-<td align="left">Hainan</td>
-<td align="left">China</td>
-<td align="right">19.1959</td>
-<td align="right">109.7453</td>
-<td align="left">2020-04-01</td>
-<td align="right">168</td>
-<td align="right">6</td>
-<td align="right">162</td>
-<td align="right">0</td>
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Nicaragua</td>
+<td align="left">NIC</td>
+<td align="left">6465513</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Niger</td>
+<td align="left">NER</td>
+<td align="left">22442948</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Nigeria</td>
+<td align="left">NGA</td>
+<td align="left">195874740</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">North Macedonia</td>
+<td align="left">MKD</td>
+<td align="left">2082958</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Northern Mariana Islands</td>
+<td align="left">MNP</td>
+<td align="left">56882</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Norway</td>
+<td align="left">NOR</td>
+<td align="left">5314336</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Oman</td>
+<td align="left">OMN</td>
+<td align="left">4829483</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Pakistan</td>
+<td align="left">PAK</td>
+<td align="left">212215030</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Palau</td>
+<td align="left">PLW</td>
+<td align="left">17907</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Panama</td>
+<td align="left">PAN</td>
+<td align="left">4176873</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Papua New Guinea</td>
+<td align="left">PNG</td>
+<td align="left">8606316</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Paraguay</td>
+<td align="left">PRY</td>
+<td align="left">6956071</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Peru</td>
+<td align="left">PER</td>
+<td align="left">31989256</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Philippines</td>
+<td align="left">PHL</td>
+<td align="left">106651922</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Poland</td>
+<td align="left">POL</td>
+<td align="left">37978548</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Portugal</td>
+<td align="left">PRT</td>
+<td align="left">10281762</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Puerto Rico</td>
+<td align="left">PRI</td>
+<td align="left">3195153</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Qatar</td>
+<td align="left">QAT</td>
+<td align="left">2781677</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Romania</td>
+<td align="left">ROU</td>
+<td align="left">19473936</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Russian Federation</td>
+<td align="left">RUS</td>
+<td align="left">144478050</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Rwanda</td>
+<td align="left">RWA</td>
+<td align="left">12301939</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Samoa</td>
+<td align="left">WSM</td>
+<td align="left">196130</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">San Marino</td>
+<td align="left">SMR</td>
+<td align="left">33785</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sao Tome and Principe</td>
+<td align="left">STP</td>
+<td align="left">211028</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Saudi Arabia</td>
+<td align="left">SAU</td>
+<td align="left">33699947</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Senegal</td>
+<td align="left">SEN</td>
+<td align="left">15854360</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Serbia</td>
+<td align="left">SRB</td>
+<td align="left">6982084</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Seychelles</td>
+<td align="left">SYC</td>
+<td align="left">96762</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sierra Leone</td>
+<td align="left">SLE</td>
+<td align="left">7650154</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Singapore</td>
+<td align="left">SGP</td>
+<td align="left">5638676</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sint Maarten (Dutch part)</td>
+<td align="left">SXM</td>
+<td align="left">40654</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Slovak Republic</td>
+<td align="left">SVK</td>
+<td align="left">5447011</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Slovenia</td>
+<td align="left">SVN</td>
+<td align="left">2067372</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Solomon Islands</td>
+<td align="left">SLB</td>
+<td align="left">652858</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Somalia</td>
+<td align="left">SOM</td>
+<td align="left">15008154</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">South Africa</td>
+<td align="left">ZAF</td>
+<td align="left">57779622</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">South Sudan</td>
+<td align="left">SSD</td>
+<td align="left">10975920</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Spain</td>
+<td align="left">ESP</td>
+<td align="left">46723749</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sri Lanka</td>
+<td align="left">LKA</td>
+<td align="left">21670000</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">St. Kitts and Nevis</td>
+<td align="left">KNA</td>
+<td align="left">52441</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">St. Lucia</td>
+<td align="left">LCA</td>
+<td align="left">181889</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">St. Martin (French part)</td>
+<td align="left">MAF</td>
+<td align="left">37264</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">St. Vincent and the Grenadines</td>
+<td align="left">VCT</td>
+<td align="left">110210</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sudan</td>
+<td align="left">SDN</td>
+<td align="left">41801533</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Suriname</td>
+<td align="left">SUR</td>
+<td align="left">575991</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sweden</td>
+<td align="left">SWE</td>
+<td align="left">10183175</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Switzerland</td>
+<td align="left">CHE</td>
+<td align="left">8516543</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Syrian Arab Republic</td>
+<td align="left">SYR</td>
+<td align="left">16906283</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Tajikistan</td>
+<td align="left">TJK</td>
+<td align="left">9100837</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Tanzania</td>
+<td align="left">TZA</td>
+<td align="left">56318348</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Thailand</td>
+<td align="left">THA</td>
+<td align="left">69428524</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Timor-Leste</td>
+<td align="left">TLS</td>
+<td align="left">1267972</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Togo</td>
+<td align="left">TGO</td>
+<td align="left">7889094</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Tonga</td>
+<td align="left">TON</td>
+<td align="left">103197</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Trinidad and Tobago</td>
+<td align="left">TTO</td>
+<td align="left">1389858</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Tunisia</td>
+<td align="left">TUN</td>
+<td align="left">11565204</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Turkey</td>
+<td align="left">TUR</td>
+<td align="left">82319724</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Turkmenistan</td>
+<td align="left">TKM</td>
+<td align="left">5850908</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Turks and Caicos Islands</td>
+<td align="left">TCA</td>
+<td align="left">37665</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Tuvalu</td>
+<td align="left">TUV</td>
+<td align="left">11508</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Uganda</td>
+<td align="left">UGA</td>
+<td align="left">42723139</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Ukraine</td>
+<td align="left">UKR</td>
+<td align="left">44622516</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">United Arab Emirates</td>
+<td align="left">ARE</td>
+<td align="left">9630959</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">United Kingdom</td>
+<td align="left">GBR</td>
+<td align="left">66488991</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">United States</td>
+<td align="left">USA</td>
+<td align="left">327167434</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Uruguay</td>
+<td align="left">URY</td>
+<td align="left">3449299</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Uzbekistan</td>
+<td align="left">UZB</td>
+<td align="left">32955400</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Vanuatu</td>
+<td align="left">VUT</td>
+<td align="left">292680</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Venezuela, RB</td>
+<td align="left">VEN</td>
+<td align="left">28870195</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Vietnam</td>
+<td align="left">VNM</td>
+<td align="left">95540395</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Virgin Islands (U.S.)</td>
+<td align="left">VIR</td>
+<td align="left">106977</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">West Bank and Gaza</td>
+<td align="left">PSE</td>
+<td align="left">4569087</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Yemen, Rep.</td>
+<td align="left">YEM</td>
+<td align="left">28498687</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Zambia</td>
+<td align="left">ZMB</td>
+<td align="left">17351822</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Zimbabwe</td>
+<td align="left">ZWE</td>
+<td align="left">14439018</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Arab World</td>
+<td align="left">ARB</td>
+<td align="left">419790588</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Caribbean small states</td>
+<td align="left">CSS</td>
+<td align="left">7358965</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Central Europe and the Baltics</td>
+<td align="left">CEB</td>
+<td align="left">102511922</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Early-demographic dividend</td>
+<td align="left">EAR</td>
+<td align="left">3249140605</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">East Asia &amp; Pacific</td>
+<td align="left">EAS</td>
+<td align="left">2328220870</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">East Asia &amp; Pacific (excluding high income)</td>
+<td align="left">EAP</td>
+<td align="left">2081651801</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">East Asia &amp; Pacific (IDA &amp; IBRD countries)</td>
+<td align="left">TEA</td>
+<td align="left">2056064424</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Euro area</td>
+<td align="left">EMU</td>
+<td align="left">341783171</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Europe &amp; Central Asia</td>
+<td align="left">ECS</td>
+<td align="left">918793590</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Europe &amp; Central Asia (excluding high income)</td>
+<td align="left">ECA</td>
+<td align="left">417797257</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Europe &amp; Central Asia (IDA &amp; IBRD countries)</td>
+<td align="left">TEC</td>
+<td align="left">459865205</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">European Union</td>
+<td align="left">EUU</td>
+<td align="left">513213363</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Fragile and conflict affected situations</td>
+<td align="left">FCS</td>
+<td align="left">515215936</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Heavily indebted poor countries (HIPC)</td>
+<td align="left">HPC</td>
+<td align="left">780234406</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">High income</td>
+<td align="left">HIC</td>
+<td align="left">1210312147</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">IBRD only</td>
+<td align="left">IBD</td>
+<td align="left">4772284113</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">IDA &amp; IBRD total</td>
+<td align="left">IBT</td>
+<td align="left">6412522234</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">IDA blend</td>
+<td align="left">IDB</td>
+<td align="left">555830605</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">IDA only</td>
+<td align="left">IDX</td>
+<td align="left">1084407516</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">IDA total</td>
+<td align="left">IDA</td>
+<td align="left">1640238121</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Late-demographic dividend</td>
+<td align="left">LTE</td>
+<td align="left">2288665963</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Latin America &amp; Caribbean</td>
+<td align="left">LCN</td>
+<td align="left">641357515</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Latin America &amp; Caribbean (excluding high income)</td>
+<td align="left">LAC</td>
+<td align="left">609013934</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Latin America &amp; the Caribbean (IDA &amp; IBRD countries)</td>
+<td align="left">TLA</td>
+<td align="left">625569713</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Least developed countries: UN classification</td>
+<td align="left">LDC</td>
+<td align="left">1009662578</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Low &amp; middle income</td>
+<td align="left">LMY</td>
+<td align="left">6383958209</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Low income</td>
+<td align="left">LIC</td>
+<td align="left">705417321</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Lower middle income</td>
+<td align="left">LMC</td>
+<td align="left">3022905169</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Middle East &amp; North Africa</td>
+<td align="left">MEA</td>
+<td align="left">448912859</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Middle East &amp; North Africa (excluding high income)</td>
+<td align="left">MNA</td>
+<td align="left">382896715</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Middle East &amp; North Africa (IDA &amp; IBRD countries)</td>
+<td align="left">TMN</td>
+<td align="left">378327628</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Middle income</td>
+<td align="left">MIC</td>
+<td align="left">5678540888</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">North America</td>
+<td align="left">NAC</td>
+<td align="left">364290258</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Not classified</td>
+<td align="left">INX</td>
+<td align="left">..</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">OECD members</td>
+<td align="left">OED</td>
+<td align="left">1303529456</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Other small states</td>
+<td align="left">OSS</td>
+<td align="left">30758989</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Pacific island small states</td>
+<td align="left">PSS</td>
+<td align="left">2457367</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Post-demographic dividend</td>
+<td align="left">PST</td>
+<td align="left">1109997273</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Pre-demographic dividend</td>
+<td align="left">PRE</td>
+<td align="left">919485393</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Small states</td>
+<td align="left">SST</td>
+<td align="left">40575321</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">South Asia</td>
+<td align="left">SAS</td>
+<td align="left">1814388744</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">South Asia (IDA &amp; IBRD)</td>
+<td align="left">TSA</td>
+<td align="left">1814388744</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sub-Saharan Africa</td>
+<td align="left">SSF</td>
+<td align="left">1078306520</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sub-Saharan Africa (excluding high income)</td>
+<td align="left">SSA</td>
+<td align="left">1078209758</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Sub-Saharan Africa (IDA &amp; IBRD countries)</td>
+<td align="left">TSS</td>
+<td align="left">1078306520</td>
+</tr>
+<tr class="odd">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">Upper middle income</td>
+<td align="left">UMC</td>
+<td align="left">2655635719</td>
+</tr>
+<tr class="even">
+<td align="left">Population, total</td>
+<td align="left">SP.POP.TOTL</td>
+<td align="left">World</td>
+<td align="left">WLD</td>
+<td align="left">7594270356</td>
+</tr>
+<tr class="odd">
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">Data from database: World Development Indicators</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">Last Updated: 03/18/2020</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
 </tr>
 </tbody>
 </table>
