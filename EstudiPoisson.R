@@ -33,7 +33,7 @@ names(confirmados.por.pais)=c("Pais","Confirmados")
 paises=unique(covid19.netejat$Country.Region)
 suma.total.habitantes=sum(pop_data[pop_data$country %in% paises,]$value)
 infectados.totales = sum(covid19.netejat[covid19.netejat$Date==fecha,]$Confirmed)
-estimación.lambda = 1000*infectados.totales/suma.total.habitantes 
+estimación.lambda = infectados.totales/suma.total.habitantes 
 # lambda es el número de infectados por cada 1000 habitantes
 
 # Sea X la variable aleatoria que nos da el número de infectados por cada 1000 habitantes.
@@ -46,7 +46,7 @@ tabla.infectados.paises =c()
 for (i in 1:length(paises)){
     habitantes=pop_data[pop_data$country==paises[i],]$value
     confirmados = confirmados.por.pais$Confirmados[confirmados.por.pais$Pais==paises[i]]
-    confirmados.estimados = estimación.lambda*habitantes/1000
+    confirmados.estimados = estimación.lambda*habitantes
     tabla.infectados.paises=rbind(tabla.infectados.paises,c(confirmados,confirmados.estimados))
 }
 tabla.infectados.paises=as.data.frame(tabla.infectados.paises)
@@ -55,7 +55,7 @@ names(tabla.infectados.paises)=c("pais","infectados","infectados.estimados")
 tabla.infectados.paises$infectados.estimados=tabla.infectados.paises$infectados.estimados/
   sum(tabla.infectados.paises$infectados)
 
-paises.con.problemas = which(tabla.infectados.paises$infectados.estimados*sum(tabla.infectados.paises$infectados) < 5)
+paises.con.problemas = which(tabla.infectados.paises$infectados.estimados < 5)
 
 tabla.infectados.paises2 = tabla.infectados.paises[-paises.con.problemas,]
 
@@ -68,5 +68,5 @@ names(fila.añadir)=names(tabla.infectados.paises2)
 
 tabla.infectados.paises2 = rbind(tabla.infectados.paises2,fila.añadir)
 
-chisq.test(as.numeric(as.character(tabla.infectados.paises2$infectados)),p=as.numeric(as.character(
-  tabla.infectados.paises2$infectados.estimados)))
+chisq.test(as.numeric(as.character(tabla.infectados.paises$infectados)),p=as.numeric(as.character(
+  tabla.infectados.paises$infectados.estimados)))
