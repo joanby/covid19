@@ -69,12 +69,12 @@ Tendremos por tanto una tabla como la detallada a continuación:
 |$\vdots$|$\vdots$ | $\vdots$|
 |$P_n$ | $n_n$ | $e_n$|
 </div>
-donde $I=n_1+\cdots +n_N=e_1+\cdots +e_n$. 
+donde $I=n_1+\cdots +n_n=e_1+\cdots +e_n$. 
 
 ## Test $\chi^2$
 El test $\chi^2$ consiste en hallar el siguiente **estadístico de contraste**
 $$
-\chi^2 = \sum_{i=1}^N \frac{(n_i-e_i)^2}{e_i},
+\chi^2 = \sum_{i=1}^n \frac{(n_i-e_i)^2}{e_i},
 $$
 que si la **hipótesis nula** es cierta donde recordemos que nuestra **hipótesis nula** era que el **coronavirus** se infectaba aleatoriamente por igual en todos los países, se distribuye según una variable $\chi^2_{n-1}$
 
@@ -150,7 +150,7 @@ for (i in 1:length(paises)){
 
 Como podemos observar en el vector `paises` hemos colocado todos los paises de la tabla de datos `cov19` y para cada país, comprobamos si sus datos están en la tabla de datos `pop_data` y si están, lo añadimos a la nueva tabla de datos `covid19.limpio`.
 
-En total, teníamos al principio en la tabla de datos original `covid19` `r dim(covid19)[1]` paises de los que han "sobrevivido" `r dim(covid19.limpio)[1]` países.
+En total, teníamos al principio en la tabla de datos original `covid19` `r dim(covid19)[1]` filas de los que han "sobrevivido" `r dim(covid19.limpio)[1]` filas.
 
 ## Gráfico de los infectados, fallecidos y recuperados totales
 Antes de realizar el **test de bondad de ajuste** o **test de la $\chi^2$** hagamos un gráfico del total de infectados, fallecidos y recuperados totales para todos los días especificados en nuestra tabla de datos.
@@ -188,7 +188,7 @@ ggplot(tabla.totales, aes(x)) +
   geom_line(aes(y=tabla.totales$Fallecidos, colour="Fallecidos")) + 
   geom_line(aes(y=tabla.totales$Recuperados, colour="Recuperados")) + 
   xlab("Fecha") + ylab("Frecuencias") +
-  scale_colour_discrete("")
+  scale_color_manual(values=c("red", "blue", "green"))
 ```
 ## Gráfico de los infectados, fallecidos y recuperados totales
 
@@ -200,15 +200,15 @@ ggplot(tabla.totales, aes(x)) +
   geom_line(aes(y=tabla.totales$Fallecidos, colour="Fallecidos")) + 
   geom_line(aes(y=tabla.totales$Infectados, colour="Infectados")) + 
   xlab("Fecha") + ylab("Frecuencias") +
-  scale_colour_discrete("")
+  scale_color_manual(values=c("red", "blue", "green"))
 ```
 
 ## Cálculo de las frecuencias empíricas $n_i$ para cada país
-A continuación, fijamos una fecha para realizar nuestro estudio:
+En primer lugar, fijamos una fecha para realizar nuestro estudio:
 ```{r}
 fecha="0020-03-15"
 ```
-Fijémonos que primero está el mes, luego el día y, para finalizar, el año. Por tanto, nuestro estudio es para el día 15 de marzo del año actual 2020.
+Fijémonos que primero está el año, luego el mes y, para finalizar, el día. Por tanto, nuestro estudio es para el día 15 de marzo del año actual 2020.
 
 El número de casos confirmados $n_i$ por país se calcula con la función `aggregate`:
 ```{r}
@@ -224,16 +224,16 @@ head(confirmados.por.pais,10)
 ```
 
 ## Cálculo del número total de infectados $I$
-El número total de infectados $I$ se calcula de la forma siguiente:
+El número total de expuestos $N$ y el número total de infectados $I$ se calcula de la forma siguiente:
 ```{r}
 paises=unique(covid19.limpio$Country.Region)
 suma.total.habitantes=sum(pop_data[pop_data$country %in% paises,]$value)
-número.total.infectados = sum(covid19.limpio[covid19.limpio$Date==fecha,]$Confirmed)
+número.total.infectados = sum(confirmados.por.pais$Confirmados)
 ```
 
 ## Cálculo del número total de infectados $I$
 
-Como podemos observar, volvemos a calcular los países con la tabla de datos limpia `covid19.limpio`, a continuación calculamos el número total de habitantes $H_i$ del estudio sumando la variable `value` de la tabla de datos `pop_data` para los paises en cuestión. Por último, calculamos el número total de infectados $I$ sumando los valores de la variable `Confirmed` de la tabla de datos `covid19.limpio`.
+Como podemos observar, volvemos a calcular los países con la tabla de datos limpia `covid19.limpio`, a continuación calculamos el número total de habitantes $N$ del estudio sumando la variable `value` de la tabla de datos `pop_data` para los paises en cuestión. Por último, calculamos el número total de infectados $I$ sumando los valores de la variable `Confirmed` de la tabla de datos `covid19.limpio`.
 
 ## Cálculo de las frecuencias esperadas $e_i$ para cada pais
 Recordemos que el **número de infectados esperado** para el pais $P_i$ era: $e_i =\frac{H_i}{N}\cdot I$, donde $H_i$, el número de habitantes de cada pais, ya lo tenemos en la tabla de datos `pop_data`, $N$, el número de habitantes total, ya lo hemos calculado antes en la variable `suma.total.habitantes` y $I$ ya está estimado en la variable `número.total.infectados`.
