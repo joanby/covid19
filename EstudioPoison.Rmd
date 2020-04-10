@@ -32,41 +32,30 @@ Seguidamente vamos a modelar el problema.
 
 En primer lugar, fijamos una fecha determinada donde el **coronavirus** ya se ha expandido.
 
-Para dicha fecha, sea $n$ el número de personas que han estado expuestas al **coronavirus** dicho día.
+Para dicha fecha, sea $N$ el número de personas que han estado expuestas al **coronavirus** dicho día y $I$ el número total de infectados en dicho día.
 
-Sea $p$ la probabilidad que una persona cualquiera se infecte. Si la infección no depende del lugar, podemos decir que el valor de $p$ será constante para todos los habitantes y lugares del mundo.
+Por último, sea $X$ la variable aleatoria que nos da el número de infectados este día determinado. La distribución de $X$, aunque es desconocida, es independiente del lugar y de la persona. 
 
-Por último, sea $X$ la variable aleatoria que nos da el número de infectados este día determinado. La distribución de $X$, suponiendo que la infección se realiza de forma aleatoria será **binomial** de parámetros $n$ y $p$: $X=B(n,p)$. 
-
-## Modelado del problema
-Como $n$ será muy grande, vamos a aproximar $X$ por una variable de Poisson de parámetro $\lambda = n\cdot p$.
-
-Por tanto, modelaremos el número de infectados por una variable de Poisson de un cierto parámetro $\lambda$.
-
-El valor de $\lambda$ es el valor medio de $X$, ($E(X)=\lambda$) o, dicho en otras palabras, es el número medio de infectados. Por dicho motivo, podemos estimar $\lambda$ usando la expresión siguiente:
-$$
-\begin{array}{rl}
-\hat{\lambda} & =n\cdot \hat{p} = n\cdot \frac{\mbox{Número total de infectados}}{\mbox{número total de personas a infectar}}\\ & =\mbox{Número total de infectados}.
-\end{array}
-$$
+Nuestro objetivo será, pues, usar el **test estadístico** más adecuado para contrastar la independencia de la distribución de $X$ del lugar y de la persona.
 
 ## Modelado del problema
 
-Sean ahora $P_1,\ldots,P_N$ los países involucrados en nuestro estudio, es decir, los países en los que el **coronavirus** se ha expandido en la fecha que hemos fijado.
+El **test estadístico** más adecuado para llevar a cabo dicho contraste es el **test $\chi^2$** o **test de bondad de ajuste**.
 
-Seguidamente, sea $X_i$ la variable aleatoria que nos da el número de infectados en el pais $P_i$ donde, si suponemos que todos los países se infectan de la misma manera, la distribución de $X_i$ será de Poisson de parámetro $\lambda_i$. 
+Para poder usar dicho test, necesitamos establecer unas **clases** que serán donde tendremos que calcular las **frecuencias empíricas** de infectados y las correspondientes **frecuencias teóricas**.
 
-El parámetro $\lambda_i$ será el número medio de infectados en el pais $P_i$. Por tanto, $\lambda_i =E(X_i)=n_i\cdot p$, donde $n_i$ es el número total de habitantes del pais $P_i$ y su estimación será $\hat{\lambda}_i =\mbox{número de infectados del país }P_i =k_i,$ a la que llamaremos $k_i$.
+Las **clases** a considerar serán los países en los que se ha expandido el **coronavirus** el día en cuestión: $P_1,\ldots,P_n$, donde $n$ es el número total de países a estudiar.
 
 ## Modelado del problema
-La relación entre los parámetros $\hat{\lambda}_i$, número medio de infectados del país $P_i$ y $\hat{\lambda}$, número medio de infectados global, suponiendo que la infección se expande igual en todos los paises, es la siguiente:
-$$
-\hat{\lambda}_i =k_i \approx \frac{n_i}{n}\cdot \hat{\lambda}.
-$$
 
-Nuestro objetivo será, pues, ver si los valores de $\hat{\lambda}_i =k_i$ y los valores de $\frac{n_i}{n}\cdot \hat{\lambda}$ están suficientemente próximos.
+Las **frecuencias empíricas** de cada país $P_i$, $n_i$, será el número de infectados del país $P_i$ el día en cuestión.
 
-Para ello, vamos a usar el test $\chi^2$ o el test de **bondad de ajuste**.
+Sea $H_i$ el número total de habitantes del país $P_i$ o la población del mismo. 
+
+Si la expansión del **coronavirus** no depende del país ni de la persona, el **número de infectados esperado** para el país $P_i$ o la **frecuencia esperada o teórica** de dicho país será:
+$$
+e_i=\frac{H_i}{N}\cdot I.
+$$
 
 ## Test $\chi^2$
 
@@ -75,24 +64,24 @@ Tendremos por tanto una tabla como la detallada a continuación:
 <div class="center">
 |Pais| Infectados reales | Infectados estimados |
 |:---|:---:|:---:|
-|$P_1$| $k_1$ | $\frac{n_1}{n}\cdot \hat{\lambda}$|
-|$P_2$| $k_2$ | $\frac{n_2}{n}\cdot \hat{\lambda}$|
+|$P_1$| $n_1$ | $e_1$|
+|$P_2$| $n_2$ | $e_2$|
 |$\vdots$|$\vdots$ | $\vdots$|
-|$P_N$ | $k_N$ | $\frac{n_N}{n}\cdot \hat{\lambda}$|
+|$P_n$ | $n_n$ | $e_n$|
 </div>
-donde $n=k_1+\cdots +k_N$. 
+donde $I=n_1+\cdots +n_N=e_1+\cdots +e_n$. 
 
 ## Test $\chi^2$
 El test $\chi^2$ consiste en hallar el siguiente **estadístico de contraste**
 $$
-\chi^2 = \sum_{i=1}^N \frac{(k_i-\frac{n_i}{n}\cdot \hat{\lambda})^2}{\frac{n_i}{n}\cdot \hat{\lambda}},
+\chi^2 = \sum_{i=1}^N \frac{(n_i-e_i)^2}{e_i},
 $$
-que si la **hipótesis nula** es cierta donde recordemos que nuestra **hipótesis nula** era que el **coronavirus** se infectaba aleatoriamente por igual en todos los países, se distribuye según una variable $\chi^2_{N-1}$
+que si la **hipótesis nula** es cierta donde recordemos que nuestra **hipótesis nula** era que el **coronavirus** se infectaba aleatoriamente por igual en todos los países, se distribuye según una variable $\chi^2_{n-1}$
 
 ## Test $\chi^2$
 El **p-valor** del contraste anterior será:
 $$
-p = p(\chi^2_{N-1}>\chi^2).
+p = p(\chi^2_{n-1}>\chi^2).
 $$
 Si el $p$ anterior es muy pequeño, concluiremos que tenemos evidencias suficientes para **rechazar** la hipótesis nula y decir que el virus no se **expande** de la misma manera por todos los países.
 
@@ -163,57 +152,108 @@ Como podemos observar en el vector `paises` hemos colocado todos los paises de l
 
 En total, teníamos al principio en la tabla de datos original `covid19` `r dim(covid19)[1]` paises de los que han "sobrevivido" `r dim(covid19.limpio)[1]` países.
 
-## Cálculo de las frecuencias reales $k_i$ para cada país
+## Gráfico de los infectados, fallecidos y recuperados totales
+Antes de realizar el **test de bondad de ajuste** o **test de la $\chi^2$** hagamos un gráfico del total de infectados, fallecidos y recuperados totales para todos los días especificados en nuestra tabla de datos.
+
+Primero calculamos los infectados, fallecidos y recuperados totales usando la función `aggregate`:
+
+## Gráfico de los infectados, fallecidos y recuperados totales
+
+```{r}
+covid19.limpio$Date=as.Date(as.character(covid19.limpio$Date),"%m/%d/%Y")
+infectados.totales.por.dia = aggregate(covid19.limpio$Confirmed ~ 
+                    covid19.limpio$Date,FUN=sum)
+fallecidos.totales.por.dia = aggregate(covid19.limpio$Deaths ~ 
+                    covid19.limpio$Date,FUN=sum)
+recuperados.totales.por.dia = aggregate(covid19.limpio$Recovered ~ 
+                    covid19.limpio$Date,FUN=sum)
+tabla.totales = data.frame(infectados.totales.por.dia[,1],infectados.totales.por.dia[,2],
+              fallecidos.totales.por.dia[,2],recuperados.totales.por.dia[,2])
+names(tabla.totales) = c("Fecha", "Infectados", "Fallecidos", "Recuperados")
+```
+
+## Gráfico de los infectados, fallecidos y recuperados totales
+Veamos la tabla anterior para los 10 primeros días:
+```{r}
+head(tabla.totales,10)
+```
+
+## Gráfico de los infectados, fallecidos y recuperados totales
+El gráfico será el siguiente:
+```{r,eval=FALSE}
+library(ggplot2)
+x=tabla.totales[,1]
+ggplot(tabla.totales, aes(x)) +      
+  geom_line(aes(y=tabla.totales$Infectados, colour="Infectados")) + 
+  geom_line(aes(y=tabla.totales$Fallecidos, colour="Fallecidos")) + 
+  geom_line(aes(y=tabla.totales$Recuperados, colour="Recuperados")) + 
+  xlab("Fecha") + ylab("Frecuencias") +
+  scale_colour_discrete("")
+```
+## Gráfico de los infectados, fallecidos y recuperados totales
+
+```{r,echo=FALSE}
+library(ggplot2)
+x=tabla.totales[,1]
+ggplot(tabla.totales, aes(x)) +      
+  geom_line(aes(y=tabla.totales$Recuperados, colour="Recuperados")) + 
+  geom_line(aes(y=tabla.totales$Fallecidos, colour="Fallecidos")) + 
+  geom_line(aes(y=tabla.totales$Infectados, colour="Infectados")) + 
+  xlab("Fecha") + ylab("Frecuencias") +
+  scale_colour_discrete("")
+```
+
+## Cálculo de las frecuencias empíricas $n_i$ para cada país
 A continuación, fijamos una fecha para realizar nuestro estudio:
 ```{r}
-fecha="3/15/20"
+fecha="0020-03-15"
 ```
 Fijémonos que primero está el mes, luego el día y, para finalizar, el año. Por tanto, nuestro estudio es para el día 15 de marzo del año actual 2020.
 
-El número de casos confirmados por país se calcula con la función `aggregate`:
+El número de casos confirmados $n_i$ por país se calcula con la función `aggregate`:
 ```{r}
 confirmados.por.pais = aggregate(covid19.limpio$Confirmed[covid19.limpio$Date==fecha] ~ 
                     covid19.limpio$Country.Region[covid19.limpio$Date==fecha],FUN=sum)
 names(confirmados.por.pais)=c("Pais","Confirmados")
 ```
 
-## Cálculo de las frecuencias reales $k_i$ para cada país
+## Cálculo de las frecuencias empíricas $n_i$ para cada país
 Los confirmados de los 10 primeros países serán:
 ```{r}
 head(confirmados.por.pais,10)
 ```
 
-## Estimación del valor de $\lambda$
-Recordemos que para estimar $\lambda$, hemos de usar la fórmula siguiente: $\hat{\lambda}=$Número total de infectados:
+## Cálculo del número total de infectados $I$
+El número total de infectados $I$ se calcula de la forma siguiente:
 ```{r}
 paises=unique(covid19.limpio$Country.Region)
 suma.total.habitantes=sum(pop_data[pop_data$country %in% paises,]$value)
-estimación.lambda = sum(covid19.limpio[covid19.limpio$Date==fecha,]$Confirmed)
+número.total.infectados = sum(covid19.limpio[covid19.limpio$Date==fecha,]$Confirmed)
 ```
 
-## Estimación del valor de $\lambda$
+## Cálculo del número total de infectados $I$
 
-Como podemos observar, volvemos a calcular los países con la tabla de datos limpia `covid19.limpio`, a continuación calculamos el número total de habitantes del estudio sumando la variable `value` de la tabla de datos `pop_data` para los paises en cuestión. Por último, calculamos la estimación de lambda sumando los valores de la variable `Confirmed` de la tabla de datos `covid19.limpio`.
+Como podemos observar, volvemos a calcular los países con la tabla de datos limpia `covid19.limpio`, a continuación calculamos el número total de habitantes $H_i$ del estudio sumando la variable `value` de la tabla de datos `pop_data` para los paises en cuestión. Por último, calculamos el número total de infectados $I$ sumando los valores de la variable `Confirmed` de la tabla de datos `covid19.limpio`.
 
-## Cálculo de las frecuencias esperadas $\frac{n_i}{n}\cdot \hat{\lambda}$ para cada pais
-Recordemos que el número de infectados esperado para el pais $P_i$ era: $\frac{n_i}{n}\cdot \hat{\lambda}$, donde $n_i$, el número de habitantes de cada pais, ya lo tenemos en la tabla de datos `pop_data`, $n$, el número de habitantes total, ya lo hemos calculado antes en la variable `suma.total.habitantes` y $\hat{\lambda}$ ya está estimado en la variable `estimación.lambda`.
+## Cálculo de las frecuencias esperadas $e_i$ para cada pais
+Recordemos que el **número de infectados esperado** para el pais $P_i$ era: $e_i =\frac{H_i}{N}\cdot I$, donde $H_i$, el número de habitantes de cada pais, ya lo tenemos en la tabla de datos `pop_data`, $N$, el número de habitantes total, ya lo hemos calculado antes en la variable `suma.total.habitantes` y $I$ ya está estimado en la variable `número.total.infectados`.
 
 
-## Cálculo de las frecuencias esperadas $\frac{n_i}{n}\cdot \hat{\lambda}$ para cada pais
-Para calcular las frecuencias esperadas $\frac{n_i}{n}\cdot \hat{\lambda}$ para cada pais, vamos a crear una tabla llamada `tabla.infectados.paises` que tendrá tres columnas:
+## Cálculo de las frecuencias esperadas $e_i$ para cada pais
+Para calcular las frecuencias esperadas $e_i$ para cada pais, vamos a crear una tabla llamada `tabla.infectados.paises` que tendrá tres columnas:
 
 * `pais`: donde habrá el nombre del país en cuestión.
-* `infectados`: donde habrá los infectados reales $k_i$ de cada país.
-* `estimados`: donde habrá los infectados estimados $\frac{n_i}{n}\cdot \hat{\lambda}$ de cada país.
+* `infectados`: donde habrá los infectados reales $n_i$ de cada país.
+* `estimados`: donde habrá los infectados estimados $e_i$ de cada país.
 
-## Cálculo de las frecuencias esperadas $\frac{n_i}{n}\cdot \hat{\lambda}$ para cada pais
+## Cálculo de las frecuencias esperadas $e_i$ para cada pais
 ```{r}
 tabla.infectados.paises =c()
 
 for (i in 1:length(paises)){
     habitantes=pop_data[pop_data$country==paises[i],]$value
     confirmados = confirmados.por.pais$Confirmados[confirmados.por.pais$Pais==paises[i]]
-    confirmados.estimados = estimación.lambda*habitantes/suma.total.habitantes
+    confirmados.estimados = número.total.infectados*habitantes/suma.total.habitantes
     tabla.infectados.paises=rbind(tabla.infectados.paises,
                                   c(confirmados,confirmados.estimados))
 }
@@ -231,7 +271,7 @@ chisq.test(tabla.infectados.paises$infectados,
 ```
 
 ## Test $\chi^2$
-¡Ups! Tenemos problemas, parece que hay países donde sus frecuencias esperadas de infectados no llegan a 5. Veamos qué paises son:
+¡Ups! Tenemos problemas, parece que hay países donde sus frecuencias esperadas de infectados $e_i$ no llegan a 5. Veamos qué paises son:
 ```{r}
 paises.con.problemas = which(tabla.infectados.paises$infectados.estimados < 5)
 paises[paises.con.problemas]
@@ -273,11 +313,11 @@ Vemos que el p-valor es muy pequeño por lo que concluimos que el virus no se ex
 ## Estudio el día 30 de marzo
 Realizemos todo el estudio anterior pero ahora cambiando de fecha. Veamos si el virus se expandió por igual en todos los países el día 30 de marzo:
 ```{r}
-fecha="3/30/20"
+fecha="0020-03-30"
 confirmados.por.pais = aggregate(covid19.limpio$Confirmed[covid19.limpio$Date==fecha] ~ 
                     covid19.limpio$Country.Region[covid19.limpio$Date==fecha],FUN=sum)
 names(confirmados.por.pais)=c("Pais","Confirmados")
-estimación.lambda = sum(covid19.limpio[covid19.limpio$Date==fecha,]$Confirmed)
+número.total.infectados = sum(covid19.limpio[covid19.limpio$Date==fecha,]$Confirmed)
 ```
 
 ## Estudio el día 30 de marzo
@@ -287,7 +327,7 @@ tabla.infectados.paises =c()
 for (i in 1:length(paises)){
     habitantes=pop_data[pop_data$country==paises[i],]$value
     confirmados = confirmados.por.pais$Confirmados[confirmados.por.pais$Pais==paises[i]]
-    confirmados.estimados = estimación.lambda*habitantes/suma.total.habitantes
+    confirmados.estimados = número.total.infectados*habitantes/suma.total.habitantes
     tabla.infectados.paises=rbind(tabla.infectados.paises,
                                   c(confirmados,confirmados.estimados))
 }
