@@ -1,0 +1,32 @@
+---
+title: "Datos oficiales  COVID19 otros países"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: "10/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+## México
+ 
+ 
+ https://mexicovid19.github.io/Mexico/proyecciones.html
+ 
+ 
+ https://github.com/mexicovid19/Mexico
+ 
+ https://github.com/mexicovid19/Mexico
+ 
+ https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+ 
+ 
+ 
+ 
+## Italia 
+
+

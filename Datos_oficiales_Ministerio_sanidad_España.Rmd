@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
 ```
 
 
@@ -38,23 +40,92 @@ Des este  página podemos acceder a:
  Podéis clonar todo  el repositorio (contiene muchos más datos)  o  solo los datos del COVID19 desde
  
  [Datadista github COVID19](https://github.com/datadista)
+ 
+ 
+ 
+## Carga de los datos 
 
- 
-## México
- 
- 
- https://mexicovid19.github.io/Mexico/proyecciones.html
- 
- 
- https://github.com/mexicovid19/Mexico
- 
- https://github.com/mexicovid19/Mexico
- 
- https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
- 
- 
- 
- 
-## Italia 
+
+### Camas por comunidad autónoma
+
+```{r}
+ccaa_camas=read_csv("data/COVID 19_Datadista/ccaa_camas_uci_2017.csv")
+glimpse(ccaa_camas)
+knitr::kable(ccaa_camas)
+```
+
+
+### Las funciones `spread`  y `gather`
+
+
+Probaremos estas funciones con el los ficherode datos de altas
+
+
+#### EL fichero  altas  por fecha y comunidad autónoma 
+
+
+Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas 
+
+* `fecha`  :  La fecha de la observación tomada  de la clase `date`
+* `cod_ine`: Es el código de comunidad autónoma del [Instituto  Nacional de Estadísitica](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
+* `CCAA`   :CCAA`  es el nombre de la comunidad autónoma.
+* `total`  :  lA obervación pata `fecha` del númnero  de altas de esa `CCAA`. 
+
+```{r}
+ccaa_altas_long=read_csv("data/COVID 19_Datadista/ccaa_covid19_altas_long.csv")
+glimpse(ccaa_altas_long)
+knitr::kable(ccaa_altas_long)
+```
+
+
+
+
+
+Estos datos los podemos transformar en una tabla con la función `spread`del la librería `tidyr`
+
+
+```{r}
+aux1=ccaa_altas_long %>% tidyr::spread(fecha,total)
+knitr::kable(aux1)
+```
+
+
+
+
+
+
+###  LA tabla de altas por día y por filas comunidad autónoma
+
+
+
+Fichero `ccaa_covid19_altas.csv`es un fichero procesado desde el fichero `ccaa_covid19_altas_long.csv`
+
+
+* La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadísitica](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
+* La variable  `CCAA`  es el nombre de la comunidad autónoma.
+* El resto de columnas de observación en el tiempo de  la altas de enfermos por coronavirus
+
+
+```{r}
+ccaa_altas=read_csv("data/COVID 19_Datadista/ccaa_covid19_altas.csv")
+glimpse(ccaa_altas)
+knitr::kable(ccaa_altas)
+```
+
+
+
+Podemos recuperar el fichero largo con un gather
+
+
+
+```{r}
+aux2=ccaa_altas %>% gather(Time,value=Total,-c(cod_ine,CCAA))
+```
+
+
+
+
+
+
 
 
