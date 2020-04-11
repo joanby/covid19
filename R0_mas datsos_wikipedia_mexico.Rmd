@@ -23,3 +23,6 @@ use_python("/usr/bin/python")
 
 
 https://es.wikipedia.org/wiki/Modelaje_matemático_de_epidemias
+
+
+https://ourworldindata.org/coronavirus

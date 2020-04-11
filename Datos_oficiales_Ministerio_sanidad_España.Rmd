@@ -40,4 +40,14 @@ Des este  página podemos acceder a:
  [Datadista github COVID19](https://github.com/datadista)
 
  
+ ## México
  
+ 
+ https://mexicovid19.github.io/Mexico/proyecciones.html
+ 
+ 
+ https://github.com/mexicovid19/Mexico
+ 
+ https://github.com/mexicovid19/Mexico
+ 
+ https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
