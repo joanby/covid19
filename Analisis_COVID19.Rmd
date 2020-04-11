@@ -13,6 +13,8 @@ library(knitr)
 library(tidyverse) # %>%
 library(magrittr)  # %<>%
 library(lubridate)
+library(rnaturalearth)
+
 use_python("/usr/bin/python")
 ```
 
@@ -92,4 +94,79 @@ datos %>%
          Casos_Enfermos = 0) %>%
   kable()
 ```
+
+# Análisis geográfico
+
+```{r}
+#datos_europa = datos[datos$Latitud > 38 & datos$Longitud > -25 & datos$Longitud < 30 , ]
+
+datos_europa = datos %>%
+  filter(Latitud > 38, between(Longitud, -25, 30))
+
+nrow(datos_europa)
+
+table(datos_europa$Pais_Region) %>%
+  as.data.frame() %>%
+  filter(Freq > 0) %>%
+  kable()
+
+
+datos_europa %>%
+  filter(Fecha == ymd("2020-03-15")) %>%
+  kable()
+```
+
+$$d(x, y) = \sqrt{(x_{Lat}-y_{Lat})^2 + (x_{Long}-y_{Long})^2}$$
+```{r}
+distancia_grados = function(x, y){
+  sqrt((x[1]-y[1])^2 + (x[2]-y[2])^2)
+}
+
+distancia_grados_potsdam = function(x){
+  potsdam = c(52.366956, 13.906734)
+  distancia_grados(x, potsdam)
+}
+
+dist_potsdam = apply(cbind(datos_europa$Latitud, datos_europa$Longitud),
+                     MARGIN = 1, 
+                     FUN = distancia_grados_potsdam)
+
+datos_europa %<>%
+  mutate(dist_potsdam = dist_potsdam)
+
+datos_europa %>%
+  filter(between(Fecha, dmy("2-3-2020"), dmy("7-3-2020")),
+         dist_potsdam < 4) %>%
+  kable()
+```
+
+
+```{r}
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+datos$Pais_Region = factor(datos$Pais_Region, levels = c(levels(datos$Pais_Region), "United States"))
+
+datos[datos$Pais_Region=="US",]$Pais_Region = "United States"
+
+world %>%
+  inner_join(datos, by = c("name" = "Pais_Region")) %>%
+  filter(Fecha == dmy("30-03-2020")) %>%
+  ggplot() +
+  geom_sf(color = "black", aes(fill = Casos_Confirmados)) +
+  coord_sf(crs="+proj=laea +lat_0=50 +lon_0=10 +units=m +ellps=GRS80") +
+  scale_fill_viridis_c(option="plasma", trans = "sqrt") +
+  xlab("Longitud") + ylab("Latitud") +
+  ggtitle("Mapa del mundo ", subtitle = "COVID 19")
+```
+
+```{r}
+datos %>%
+  filter(Fecha == dmy("30-03-2020")) %>%
+  ggplot(aes(Longitud, Latitud)) +
+  geom_point(aes(size = log(Casos_Confirmados+1), colour = log(Casos_Muertos+1))) +
+  coord_fixed() +
+  theme(legend.position = "bottom")
+```
+
+
 
