@@ -16,8 +16,13 @@ library(lubridate)
 use_python("/usr/bin/python")
 ```
 
-# Referenrencias
+# Referencias
 
 
 [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R. High contagiousness and rapid spread of severe acute respiratory syndrome coronavirus 2. Emerg Infect Dis. 2020 Jul.](https://doi.org/10.3201/eid2607.200282)
 
+
+https://es.wikipedia.org/wiki/Modelaje_matemático_de_epidemias
+
+
+https://ourworldindata.org/coronavirus

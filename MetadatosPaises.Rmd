@@ -1,5 +1,5 @@
 ---
-title: "Analisis COVID19: Metadatos paísis del mundo"
+title: "Analisis COVID19: Metadatos países del mundo"
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "4/6/2020"
 output: html_document
@@ -23,8 +23,7 @@ La fuentes de los datos es [The world Bank](https://www.worldbank.org/).  En con
 
 ## Carga de los datos
 
-La [consulta que  hemos hecho es]( https://databank.worldbank.org/reports.aspx?source=2&series=SP.POP.TOTL&country=#
-)
+La [consulta que  hemos hecho es](https://databank.worldbank.org/reports.aspx?source=2&series=SP.POP.TOTL&country=#)
 
 ```{r}
 POP=read_csv("data/theworldatabank/Development_Indicators/14a30f6a-2215-4df8-8db6-54b187ac4627_Data.csv")
