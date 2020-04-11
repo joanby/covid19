@@ -1,0 +1,152 @@
+---
+title: "Estudio sobre infectados de coronavirus"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: ''
+output: 
+  ioslides_presentation:
+    widescreen: true
+    css: Mery_style.css
+    fig_caption: yes
+---
+<script src="https://kit.fontawesome.com/a0edb659c7.js" crossorigin="anonymous"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+reticulate::use_python("/Users/juangabriel/anaconda3/bin/python")
+#reticulate::py_install("sympy")
+```
+
+
+# Planteamiento y modelado del problema
+
+## Introducción
+
+En estos días está como noticia estrella la pandemía por **coronavirus** que estamos sufriendo prácticamente todos los humanos que habitan nuestro planeta.
+
+Una de las cuestiones más planteadas es cómo irán evolucionando los infectados, es decir, si a partir de los datos que se tienen, podemos predecir si habrá un rebrote o no.
+
+La respuesta a esta última pregunta hace que los políticos tomen medidas de confinamiento para evitar el posible rebrote.
+
+En esta presentación, a partir de uno de los **modelos matemáticos** para predecir el comportamiento de **epidemias**, vamos a estudiar cómo habría **evolucionado** la epidemia en diferentes países.
+
+## El modelo SIR
+
+El modelo SIR (**S** de susceptibles de contraer la enfermedad, **I** de infectados y **R** de recuperados), define en un tiempo fijado $t$, las variables siguientes:
+
+* $S(t)$ número de susceptibles de contraer la enfermedad.
+* $I(t)$ número de infectados.
+* $R(t)$ número de recuperados.
+
+El modelo **SIR** de define los parámetros siguientes:
+
+* $\beta$: el número medio de contactos por unidad de tiempo.
+* $\gamma$: el número de recuperados por unidad de tiempo dividido por el total de infectados.
+
+## El modelo SIR
+De esta manera, la tasa de transición entre los infectados y los susceptibles 
+será: $\beta\cdot \frac{I(t)}{N(t)}$, es decir, el número medio de contactos por unidad de tiempo por la probabilidad de ser infectado.
+
+La tasa de transición entre los infectados y los recuperados será simplemente, $\gamma$.
+
+## El modelo SIR
+```{r,echo=FALSE,fig.height=7}
+plot(c(0, 30), c(0, 10), type = "n",xlab="",ylab="",axes = FALSE)
+recttext <- function(xl, yb, xr, yt, text, rectArgs = NULL, textArgs = NULL) {
+  center <- c(mean(c(xl, xr)), mean(c(yb, yt)))
+  do.call('rect', c(list(xleft = xl, ybottom = yb, xright = xr, ytop = yt), rectArgs))
+  do.call('text', c(list(x = center[1], y = center[2], labels = text), textArgs))
+}
+recttext(0, 5,8, 8, 'Susceptibles',
+         rectArgs = list(col = 'yellow'),
+         textArgs = list(col = 'black', cex = 1.5))
+
+recttext(11, 5,19, 8, 'Infecciosos',
+         rectArgs = list(col = 'red'),
+         textArgs = list(col = 'black', cex = 1.5))
+
+recttext(22, 5,30, 8, 'Recuperados',
+         rectArgs = list(col = 'green'),
+         textArgs = list(col = 'black', cex = 1.5))
+
+arrows(8,6.5,11,6.5,length=0.1)
+arrows(19,6.5,22,6.5,length=0.1)
+text(9.5,7,expression(beta*I/N))
+text(20.5,7,expression(gamma))
+```
+
+## El modelo SIR
+Las ecuaciones diferenciales del modelo son las siguientes:
+$$
+\begin{array}{rl}
+\frac{dS}{dt} & = -\frac{\beta I}{N}\cdot S,\\
+\frac{dI}{dt} & = \frac{\beta I}{N}\cdot S-\gamma I,\\
+\frac{dR}{dt} & = \gamma I
+\end{array}
+$$
+
+## El modelo SIR
+
+Es decir, 
+
+* la variación de susceptibles por unidad de tiempo sería la tasa de transición  desde susceptibles hacia infectados por el número total de susceptibles con un signo menos indicando que los susceptibles disminuirán si la tasa hacia infectados aumenta,
+
+* la variación de infectados por unidad de tiempo sería la tasa de transición desde susceptibles hacia infectados por el número total de susceptibles restándole la variación de recuperados que será la tasa de transición desde infectados a recuperados por el número total de infectados y,
+
+* la variación de recuperados por unidad de tiempo sería simplemente la tasa de transición desde infectados a recuperados por el número total de infectados.
+
+
+## El modelo SIR
+
+El sistema diferencial anterior es no lineal. Sin embargo, se puede verificar que $S(t)+I(t)+R(t)=N$, donde $N$ es la población total ya que $\frac{dS}{dt}+\frac{dI}{dt}+\frac{dR}{dt}=0$.
+
+Por tanto, la funció $R(t)$ de recuperados puede escribirse en función de las otras dos funciones $R(t)=N-S(t)-I(t)$ y el sistema diferencial anterior puede considerarse un sistema de 2 ecuaciones ya que la tercera función $R(t)$ puede escribirse en función de las otras dos.
+
+## El modelo SIR
+Además, la solución $S(t)$ puede obtenerse dividiendo las dos primeras ecuaciones y integrando separando las variable $S$ e $I$:
+$$
+S(t)=S(0)\cdot \mathrm{e}^{-\frac{\beta}{\gamma}(R(t)-R(0))/N}.
+$$
+Al valor $\frac{\beta}{\gamma}$ se le llama **número básico de reproducción** y se denota por $R_0$.
+
+## El modelo SIR
+Este número juega un papel clave para estudiar la evolución de los infectados ya que: 
+$$
+\frac{dI}{dt}  = \frac{\beta I}{N}\cdot S-\gamma I =\left(R_0\frac{S}{N}-1\right)\cdot\gamma I.
+$$
+Entonces:
+
+* si $R_0\frac{S}{N}-1 >0$ o si $R_0 >\frac{S}{N}$, significa que $\frac{dI}{dt}>0$ y la función $I(t)$ crecerá aumentando el número de infectados.
+
+## El modelo SIR
+Como conocemos la expresión de $S(t)$, la condición anterior será:
+$$
+R_0 > \frac{1}{N}\cdot S(t)=\frac{1}{N}\cdot S(0)\cdot \mathrm{e}^{-\frac{\beta}{\gamma}(R(t)-R(0))/N}.
+$$
+La condición anterior es la que nos dirá si los infectados van a aumentar o por el contrario disminuir. 
+
+Los valores de $S(0)$ y $R(0)$ son, respectivamente, $S(0)=N$ y $R(0)=0$ ya que en el momento inicial todos los individuos son susceptibles y no hay ningún individuo recuperado.
+
+## El modelo SIR
+Es decir, 
+
+* si $R_0 > \mathrm{e}^{-\frac{\beta}{\gamma}\cdot\frac{R(t)}{N}}$ en el momento $t$, la epidemia tenderá a aumentar y se tendrán que tomar medidas y
+* si $R_0 < \mathrm{e}^{-\frac{\beta}{\gamma}\cdot\frac{R(t)}{N}}$ en el momento $t$, la epidemia tenderá a disminuir.
+
+
+## Estimación de $R_0$
+Para estimar el valor de $R_0$, tenemos que pensar que dispondremos de una tabla de datos que para unos ciertos tiempos $t_1,\ldots, t_n$, nos darán $S(t_i),I(t_i)$ y $R(t_i)$.
+
+Para estimar el valor de $R_0$ veamos en primer lugar cómo aparece en la expresión de $S(t)$:
+$$
+\begin{array}{rl}
+S(t) & = N\cdot \mathrm{e}^{-R_0\cdot \frac{R(t)}{N}}, \\
+\ln\left(\frac{S(t)}{N}\right) & = -R_0 \cdot \frac{R(t)}{N},\\
+N\ln S(t) & = N\ln N-R_0 \cdot R(t).
+\end{array}
+$$
+
+## Estimación de $R_0$
+Vemos que hay una **relación lineal** entre las variables $Y=N\ln S(t)$ y $X=R(t)$.
+Si hacemos la recta de regresión de la variable $Y_i=N\ln S(t_i)$, $i=1,\ldots,n$ en función de la variable $X_i=R(t_i)$, el valor de $R_0$ será la pendiente cambiada de signo de dicha recta.
+
+Una vez hallado el valor de $R_0$ a partir de dicha recta de regresión y observando el valor del coeficiente de determinación $R^2$ para testear la calidad de la regresión, podemos comparar el valor de la estimación de $R_0$ con $\mathrm{e}^{-\frac{\beta}{\gamma}\cdot\frac{R(t)}{N}}$ para un $t$ determinado para ver si la infección se expandirá o disminuirá.
