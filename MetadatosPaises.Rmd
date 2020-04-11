@@ -1,5 +1,5 @@
 ---
-title: "Analisis COVID19: Metadatos paísis del mundo"
+title: "Analisis COVID19: Metadatos países del mundo"
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "4/6/2020"
 output: html_document
