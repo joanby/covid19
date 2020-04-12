@@ -44,7 +44,7 @@ El modelo **SIR** de define los parámetros siguientes:
 
 ## El modelo SIR
 De esta manera, la tasa de transición entre los infectados y los susceptibles 
-será: $\beta\cdot \frac{I(t)}{N(t)}$, es decir, el número medio de contactos por unidad de tiempo por la probabilidad de ser infectado.
+será: $\beta\cdot \frac{I(t)}{N}$, es decir, el número medio de contactos por unidad de tiempo por la probabilidad de ser infectado.
 
 La tasa de transición entre los infectados y los recuperados será simplemente, $\gamma$.
 
