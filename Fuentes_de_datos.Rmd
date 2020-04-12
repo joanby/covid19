@@ -53,7 +53,7 @@ Un ejemplo cargamos de Dadista  hemos descargado `ccaa_camas_uci_2017.csv` que c
 
 
 ```{r}
-ccaa_camas=read_csv("data/COVID 19_Datadista/ccaa_camas_uci_2017.csv")
+ccaa_camas=read_csv("data/COVI_19_Datadista/ccaa_camas_uci_2017.csv")
 ```
 
 ```{r}
@@ -104,7 +104,7 @@ Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas
 * `total`  :  lA obervación pata `fecha` del númnero  de altas de esa `CCAA`. 
 
 ```{r}
-ccaa_altas_long=read_csv("data/COVID 19_Datadista/ccaa_covid19_altas_long.csv")
+ccaa_altas_long=read_csv("data/COVI_19_Datadista/ccaa_covid19_altas_long.csv")
 glimpse(ccaa_altas_long)
 knitr::kable(ccaa_altas_long)
 ```
@@ -139,7 +139,7 @@ Fichero `ccaa_covid19_altas.csv`es un fichero procesado desde el fichero `ccaa_c
 
 
 ```{r}
-ccaa_altas=read_csv("data/COVID 19_Datadista/ccaa_covid19_altas.csv")
+ccaa_altas=read_csv("data/COVI_19_Datadista/ccaa_covid19_altas.csv")
 glimpse(ccaa_altas)
 knitr::kable(ccaa_altas[1:30,])
 ```
