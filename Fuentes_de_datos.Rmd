@@ -1,0 +1,169 @@
+---
+title: "Fuentes: Datos oficiales  COVID19 España"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: "10/4/2020"
+output: 
+  html_document: 
+    number_sections: yes
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+
+
+# Datos oficiales del Ministerio de Sanidad de España
+
+
+Ponemos aquí distintos enlaces a los dartos  y estadísticas  oficiales de Ministerio de Sanidad de España
+
+* [ALERTAS EN SALUD PÚBLICA DE ACTUALIDAD](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/alertActu.htm)
+
+* [Situación Actual](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/home.htm)
+
+Desde esta última  página podemos acceder a:
+
+* [Informe de situación actual](https://covid19.isciii.es/)
+
+* [Datos causas de muerte MoMo](https://www.isciii.es/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Paginas/Informes-MoMo-2020.aspx)
+
+
+
+
+
+##  Recopilación de los datos oficiales
+
+
+ La web [Datadista](https://datadista.com/) ha creado  un github con los datos oficiales recopilados y con muchos datos más.
+ 
+ Podéis clonar todo  el repositorio (contiene muchos más datos)  o  solo los datos del COVID19 desde
+ 
+ [Datadista github COVID19](https://github.com/datadista)
+ 
+ 
+ 
+## Un primer ejemplo: carga de datos de dos fuentes 
+
+
+Un ejemplo cargamos de Dadista  hemos descargado `ccaa_camas_uci_2017.csv` que contines datos de 2017 de las camas de UCI por COmunidad Autónoma, tanto 
+
+
+```{r}
+ccaa_camas=read_csv("data/COVI_19_Datadista/ccaa_camas_uci_2017.csv")
+```
+
+```{r}
+glimpse(ccaa_camas)
+
+
+```{r}
+knitr::kable(ccaa_camas)
+```
+
+
+Ahora que remos el porcentaje de camas UIC por población en España y que remos que este añadido sea de producción propia y con adatos oficilales EN este caso acuddiremos al [Intinututo Nacional de Estdística de España (INE)](ine.es). 
+
+Desde aquí buscaremos [Población por comunidades y ciudades autónomas y sexo](https://www.ine.es/jaxiT3/Tabla.htm?t=2853).  ynos bajaremos los datos que deseemos ( los  gruardamos en DatosINE)
+
+```{r}
+poblacion_CCAA=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv")
+glimpse(poblacion_CCAA)
+knitr::kable(poblacion_CCAA)
+poblacion_CCAA_2=poblacion_CCAA %>% tidyr::spread(Periodo, Total)
+glimpse(poblacion_CCAA_2)
+
+```
+
+
+```{r}
+poblacion_CCAA_2=poblacion_CCAA %>% tidyr::spread(Periodo, Total)
+glimpse(poblacion_CCAA_2)
+knitr::kable(poblacion_CCAA_2)
+
+```
+
+
+### Las funciones `spread`  y `gather`
+
+
+Probaremos estas funciones con el los fichero de datos de altas
+
+
+#### EL fichero  altas  por fecha y comunidad autónoma 
+
+
+Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas 
+
+* `fecha`  :  La fecha de la observación tomada  de la clase `date`
+* `cod_ine`: Es el código de comunidad autónoma del [Instituto  Nacional de Estadísitica](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
+* `CCAA`   :CCAA`  es el nombre de la comunidad autónoma.
+* `total`  :  lA obervación pata `fecha` del númnero  de altas de esa `CCAA`. 
+
+```{r}
+ccaa_altas_long=read_csv("data/COVI_19_Datadista/ccaa_covid19_altas_long.csv")
+glimpse(ccaa_altas_long)
+knitr::kable(ccaa_altas_long)
+```
+
+
+
+
+
+Estos datos los podemos transformar en una tabla con la función `spread`del la librería `tidyr`
+
+
+```{r}
+aux1=ccaa_altas_long %>% tidyr::spread(fecha,total)
+knitr::kable(aux1)
+```
+
+
+
+
+
+
+### Los datos de altas por día y por filas comunidad autónoma
+
+
+
+Fichero `ccaa_covid19_altas.csv`es un fichero procesado desde el fichero `ccaa_covid19_altas_long.csv`
+
+
+* La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm).
+* La variable  `CCAA`  es el nombre de la comunidad autónoma.
+* El resto de columnas de observación en el tiempo de  la altas de enfermos por coronavirus.
+
+
+```{r}
+ccaa_altas=read_csv("data/COVI_19_Datadista/ccaa_covid19_altas.csv")
+glimpse(ccaa_altas)
+knitr::kable(ccaa_altas[1:30,])
+```
+
+
+
+Podemos recuperar el fichero largo con un gather
+
+
+
+```{r}
+aux2=ccaa_altas %>% gather(Time,value=Total,-c(cod_ine,CCAA))
+glimpse(aux2)
+knitr::kable(aux2)
+```
+
+
+```{r}
+aux3=aux2 %>% spread(Time,value=Total)
+knitr::kable(aux3)
+```
+
+
+
+
+
+
