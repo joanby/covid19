@@ -1,5 +1,6 @@
 covid19=read.csv("covid_19_clean_complete.csv")
 covid19$Date=as.Date(as.character(covid19$Date),"%m/%d/%Y")
+covid19=covid19[covid19$Country.Region=="China",]
 infectados.totales.por.dia = aggregate(covid19$Confirmed ~ 
                                          covid19$Date,FUN=sum)
 fallecidos.totales.por.dia = aggregate(covid19$Deaths ~ 
@@ -20,7 +21,7 @@ ggplot(tabla.totales, aes(x)) +
   xlab("Fecha") + ylab("Frecuencias") +
   scale_color_manual(values=c("red", "blue", "green"))
 
-serie.temporal.infectados = ts(tabla.totales$Infectados,frequency = 1,start=c(1,22))
+serie.temporal.infectados = ts(tabla.totales$Infectados,frequency = 7,start=c(1,22))
 serie.temporal.infectados
 plot.ts(serie.temporal.infectados)
 ?ts
@@ -31,13 +32,20 @@ plot.ts(serie.temporal.infectados)
 # Suposing Non-Seasonal Data
 # Trend component suposing addicional model
 library(TTR)
-componente.trend = SMA(serie.temporal.infectados,n=4) # moving averages of n=4
+componente.trend = SMA(serie.temporal.infectados,n=7) # moving averages of n=7
 plot.ts(componente.trend)
 
+# Suposing Seasonal Data
+
+components = decompose(serie.temporal.infectados)
+components$seasonal
+plot(components)
+serie.temporal.infectados.adjusted = serie.temporal.infectados-components$seasonal
+plot.ts(serie.temporal.infectados.adjusted)
 
 # Forecasts
 # Simple Exponential Smoothing
-forecast.infectados = HoltWinters(serie.temporal.infectados,gamma=FALSE)
+forecast.infectados = HoltWinters(serie.temporal.infectados.adjusted,gamma=FALSE)
 forecast.infectados$fitted
 plot(forecast.infectados)
 forecast.infectados$SSE
@@ -52,6 +60,46 @@ Box.test(forecast.infectados2$residuals,lag=20,type="Ljung-Box") # no evidence o
 plot.ts(forecast.infectados2$residuals)
 shapiro.test(forecast.infectados2$residuals)
 
+
+#------------ESTUDIO FALLECIDOS---------------------
+serie.temporal.fallecidos = ts(tabla.totales$Fallecidos,frequency = 7,start=c(1,22))
+serie.temporal.fallecidos
+plot.ts(serie.temporal.fallecidos)
+?ts
+
+
+# Decomposing Time Series
+
+# Suposing Non-Seasonal Data
+# Trend component suposing addicional model
+library(TTR)
+componente.trend = SMA(serie.temporal.fallecidos,n=7) # moving averages of n=7
+plot.ts(componente.trend)
+
+# Suposing Seasonal Data
+
+components = decompose(serie.temporal.fallecidos)
+components$seasonal
+plot(components)
+serie.temporal.fallecidos.adjusted = serie.temporal.fallecidos-components$seasonal
+plot.ts(serie.temporal.infectados.adjusted)
+
+# Forecasts
+# Simple Exponential Smoothing
+(forecast.fallecidos = HoltWinters(serie.temporal.fallecidos.adjusted,gamma=FALSE))
+forecast.fallecidos$fitted
+plot(forecast.fallecidos)
+forecast.fallecidos$SSE
+
+# further time point
+library(forecast)
+forecast.fallecidos2 = forecast:::forecast.HoltWinters(forecast.fallecidos,h=10)
+forecast:::plot.forecast(forecast.fallecidos2)
+
+acf(forecast.fallecidos2$residuals[3:75],lag.max=20)
+Box.test(forecast.fallecidos2$residuals,lag=20,type="Ljung-Box") # no evidence of non-zero autocorrelation
+plot.ts(forecast.fallecidos2$residuals)
+shapiro.test(forecast.fallecidos2$residuals)
 
 #-------------Estudio modelo SIR-------------------------
 # Fijamos un pais: España
