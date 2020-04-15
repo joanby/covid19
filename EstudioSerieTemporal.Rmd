@@ -1,0 +1,343 @@
+---
+title: "Estudio sobre infectados de coronavirus"
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: ''
+output: 
+  ioslides_presentation:
+    widescreen: true
+    css: Mery_style.css
+    fig_caption: yes
+---
+<script src="https://kit.fontawesome.com/a0edb659c7.js" crossorigin="anonymous"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+reticulate::use_python("/Users/juangabriel/anaconda3/bin/python")
+#reticulate::py_install("sympy")
+```
+
+
+# Planteamiento y modelado del problema
+
+## Introducción
+
+En estos días está como noticia estrella la pandemía por **coronavirus** que estamos sufriendo prácticamente todos los humanos que habitan nuestro planeta.
+
+Una de las cuestiones más planteadas es cómo irán evolucionando los infectados, es decir, si a partir de los datos que se tienen, podemos predecir si habrá un rebrote o no.
+
+En esta presentación vamos a modelar los datos de los infectados, fallecidos y recuperados por una **serie temporal** e intentar sacar conclusiones de dicho estudio.
+
+Vamos a realizar todo nuestro estudio usando el paquete estadístico `R`.
+
+
+
+## Tabla de datos
+Para realizar el estudio anterior, usaremos la tabla de datos `covid19`.
+
+Vamos a cargarla:
+```{r}
+covid19=read.csv("covid_19_clean_complete.csv")
+covid19$Date=as.Date(as.character(covid19$Date),"%m/%d/%Y")
+```
+
+## Tabla de datos
+
+Hagamos un pequeño resumen de las variables de dicha tabla de datos:
+```{r}
+str(covid19)
+```
+
+## Tabla de datos
+Como vemos, es una tabla de datos con 8 variables:
+
+* `Province.State`: nos indica la provincia o el estado del país en cuestión.
+* `Country.Region`: nos dice el país donde están los datos.
+* `Lat`: nos da la latitud del pais.
+* `Long`: nos da la longitud del pais.
+* `Date`: nos dice la fecha en la que han sido tomados los datos.
+* `Confirmed`: nos da el número de infectados en una determinada región de un país determinado en una fecha determinada.
+* `Death`: lo mismo que la variable anterior pero nos da el número de víctimas.
+* `Recovered`: lo mismo que la variable anterior pero nos da el número de recuperados. 
+
+
+# Estudio para España
+
+## Tabla de datos para España
+Vamos a calcular el valor $R_0$ para los datos que tenemos referidos a España.
+
+Para ello, en primer lugar, creamos la tabla con los datos del coronavirus sólo para España:
+```{r}
+covid19.España = covid19[covid19$Country.Region=="Spain",]
+```
+
+A continuación calculamos los infectados y los recuperados por días:
+```{r}
+infectados.por.dia = aggregate(covid19.España$Confirmed ~ covid19.España$Date,FUN=sum)
+fallecidos.por.dia = aggregate(covid19.España$Deaths ~ covid19.España$Date,FUN=sum)
+recuperados.por.dia = aggregate(covid19.España$Recovered ~ covid19.España$Date,FUN=sum)
+```
+
+## Tabla de datos para España
+
+Por último creamos la tabla `tabla.España` con toda la información:
+```{r}
+tabla.España = data.frame(unique(covid19.España$Date),infectados.por.dia[,2],
+                          fallecidos.por.dia[,2],recuperados.por.dia[,2])
+names(tabla.España) = c("Fecha", "Infectados","Fallecidos", "Recuperados")
+```
+
+
+## Tabla de datos para España
+La información de los 10 primeros días será donde vemos que aún no hay ningún infectado ni recuperado:
+```{r}
+head(tabla.España,10)
+```
+
+
+# Estudio para los infectados
+
+## Cálculo de la serie temporal de infectados
+Vamos a de modelar el número de infectados como una serie temporal:
+```{r}
+infectados = ts(tabla.España$Infectados,frequency = 7,start=c(1,3))
+infectados
+```
+
+
+## Cálculo de la serie temporal de infectados
+Como podemos observar, hemos modelado los infectados como una serie temporal donde la unidad de tiempo es una semana (`frequency=7`) que empieza el día 3 de la primera semana (miércoles 22 de enero) y acaba el dia 7 de la semana 11 (domingo 5 de abril).
+
+El gráfico de la serie temporal de los infectados en España se visualiza con la función `plot.ts`:
+```{r,eval=FALSE}
+plot.ts(infectados)
+```
+
+
+## Cálculo de la serie temporal de infectados
+```{r,echo=FALSE}
+plot.ts(infectados)
+```
+
+
+## Cálculo de las componentes de la serie
+Nuestra serie temporal es estacional con variación semanal.
+
+Calculemos a continuación sus componentes suponiendo que el modelo es **aditivo**:
+```{r}
+components = decompose(infectados,type="additive")
+```
+
+
+## Cálculo de las componentes de la serie
+La componente adicional de la serie de afectados es la siguiente:
+```{r}
+components$seasonal
+```
+
+## Cálculo de las componentes de la serie
+Observamos que los jueves (`160.34558`) es cuando hay un mayor repunte de infectados y los martes (`-250.89728`) es cuando hay menos infectados.
+
+El gráfico de las tres componentes (estacional, tendencia y aleatorio) junto con la serie original de los infectados es el siguiente:
+
+```{r,eval=FALSE}
+plot(components)
+```
+
+
+## Cálculo de las componentes de la serie
+
+
+```{r,echo=FALSE}
+plot(components)
+```
+
+
+## Cálculo de las componentes de la serie
+Observamos que 
+
+* la tendencia de la serie es creciente, 
+* que los días con más repunte de infectados son los jueves, viernes y sábados y los días con menos repunte de infectados serían los domingos y los lunes y 
+* que la componente aleatoria se mantiene más o menos estable hasta la semana 8-9 pero de la semana 9 a la 10 dicha componente se desestabiliza.
+
+
+## Ajuste de la serie temporal
+Para ajustar la serie temporal de los infectados, tenemos que eliminar la componente estacional:
+```{r,eval=FALSE}
+infectados.ajustados = infectados-components$seasonal
+plot(infectados.ajustados)
+```
+
+## Ajuste de la serie temporal
+```{r,echo=FALSE}
+infectados.ajustados = infectados-components$seasonal
+plot(infectados.ajustados)
+```
+
+
+## Ajuste de la serie temporal
+En la serie ajustada se ve una tendencia al crecimiento donde hemos eliminado la componente estacional por días de la semana.
+
+Para hacer **predicciones**, hemos de usar la **serie ajustada** ya los **modelos de predicción** suponen que la serie temporal no tiene **componente estacional.**
+
+## Predicciones usando el suavizado exponencial
+Para realizar predicciones de nuestra serie temporal, podemos usar el suavizado de [**Holt-Winters**](https://en.wikipedia.org/wiki/Exponential_smoothing):
+```{r,eval=FALSE}
+(predicción.infectados=HoltWinters(infectados.ajustados,gamma=FALSE))
+```
+
+## Predicciones usando el suavizado exponencial
+```{r,echo=FALSE}
+(predicción.infectados=HoltWinters(infectados.ajustados,gamma=FALSE))
+```
+
+
+## Predicciones usando el suavizado exponencial
+Hemos usado un **doble suavizado exponencial** ya que el **suavizado exponencial simple** no funciona bien cuando hay una **tendencia** en la serie temporal como es nuestro caso.
+
+
+El valor de $\alpha$ es alto, lo que nos dice que las predicciones usan el nivel actual de la serie de infectados con un peso elevado, es decir, para predecir el valor de un día en particular, usa el valor de los infectados del día actual con un peso de $`r  (predicción.infectados=HoltWinters(infectados.ajustados,gamma=FALSE))$alpha`$.
+
+Como el valor de $\beta$ vale $`r  (predicción.infectados=HoltWinters(infectados.ajustados,gamma=FALSE))$beta`$, tenemos que la pendiente de la tendencia de la predicción en un día en particular vale $`r  (predicción.infectados=HoltWinters(infectados.ajustados,gamma=FALSE))$beta`$.
+
+## Predicciones usando el suavizado exponencial
+El error cometido en las predicciones, es decir, la suma de los cuadrados de las diferencias entre los valores de la serie original ajustada y la serie ajustada, es:
+```{r}
+predicción.infectados$SSE
+sqrt(predicción.infectados$SSE)
+```
+
+
+
+El gráfico de la serie original ajustada y la predicha con el suavizado doble de Holt-Winters es el siguiente:
+```{r,eval=FALSE}
+plot(predicción.infectados)
+```
+
+## Predicciones usando el suavizado exponencial
+```{r,echo=FALSE}
+plot(predicción.infectados)
+```
+
+## Predicciones usando el suavizado exponencial
+Para hacer predicciones más allá del último día de nuestra tabla de datos hemos de usar la función `forecast.HoltWinters` del paquete `forecast` donde el parámetro `h` indica hasta dónde queremos realizar la predicción:
+```{r,message=FALSE}
+library(forecast)
+(predicción.infectados.semana = forecast:::forecast.HoltWinters(predicción.infectados, 
+                                                                h=7))
+```
+
+## Predicciones usando el suavizado exponencial
+Observamos que tenemos una tabla de datos con 6 columna. 
+
+* La primera nos indica los días en que hacemos la predicción en las unidades de una semana ya que es nuestra unidad de tiempo.
+* La segunda es la predicción.
+* La tercera y la cuarta son los extremos del intervalo de confianza del valor predicho al 80%.
+* La quinta y la sexta son los extremos del intervalo de confianza del valor predicho al 95%.
+
+## Predicciones usando el suavizado exponencial
+El gráfico de los valores predichos es el siguiente:
+```{r}
+forecast:::plot.forecast(predicción.infectados.semana)
+```
+
+## Comprobación del modelo
+Vamos a verificar si el modelo que hemos usado es correcto para nuestra serie temporal.
+
+En primer lugar, vamos a usar el test de [**Ljung-Box**](https://es.wikipedia.org/wiki/Prueba_de_Ljung-Box) para ver si las autocorrelaciones los errores de la predicción de nuestra serie son diferentes de cero o no. Para que el modelo sea válido, deben ser cero.
+
+En primer lugar veamos si hay autocorrelaciones en los errores realizando un gráfico de correlograma:
+```{r,eval=FALSE}
+acf(predicción.infectados.semana$residuals[3:75], lag.max=7)
+```
+
+## Comprobación del modelo
+```{r,echo=FALSE}
+acf(predicción.infectados.semana$residuals[3:75], lag.max=7)
+```
+
+## Comprobación del modelo
+Hemos especificado un "lag" máximo de 7 días. Parece que las autocorrelaciones de los errores para 6 días se pueden considerar diferentes de cero.
+Hagamos el test de Ljung-Box:
+```{r}
+Box.test(predicción.infectados.semana$residuals,lag=7,type="Ljung-Box")
+```
+Obtenemos un p-valor en la zona de penumbra, no podemos asegurar que las autocorrelaciones de las autocorrelaciones sean cero.
+
+## Comprobación del modelo
+Por último, comprobemos la normalidad de los residuos con el test de **Shapiro-Wilks**:
+```{r}
+shapiro.test(predicción.infectados.semana$residuals)
+```
+Vemos que el modelo no sería adecuado ya que el test anterior nos dice que los residuos no serían normales.
+
+# Estudio para los fallecidos
+
+## Serie temporal de los fallecidos
+Hagamos lo mismo para la serie temporal de los fallecidos:
+```{r}
+fallecidos = ts(tabla.España$Fallecidos,frequency = 7,start=c(1,3))
+plot.ts(fallecidos)
+```
+
+## Componentes
+```{r}
+components = decompose(fallecidos,type="additive")
+components$seasonal
+```
+
+## Componentes
+```{r}
+plot(components)
+```
+
+## Ajuste de la serie temporal
+```{r}
+fallecidos.ajustados = fallecidos-components$seasonal
+plot(fallecidos.ajustados)
+```
+
+## Predicciones usando el suavizado exponencial
+```{r}
+(predicción.fallecidos=HoltWinters(fallecidos.ajustados,gamma=FALSE))
+```
+
+## Predicciones usando el suavizado exponencial
+```{r}
+predicción.fallecidos$SSE
+sqrt(predicción.fallecidos$SSE)
+```
+
+
+## Predicciones usando el suavizado exponencial
+```{r}
+plot(predicción.fallecidos)
+```
+
+## Predicciones usando el suavizado exponencial
+```{r,message=FALSE}
+(predicción.fallecidos.semana = forecast:::forecast.HoltWinters(predicción.fallecidos, 
+                                                                h=7))
+```
+
+
+## Predicciones usando el suavizado exponencial
+```{r}
+forecast:::plot.forecast(predicción.fallecidos.semana)
+```
+
+
+## Comprobación del modelo
+```{r}
+acf(predicción.fallecidos.semana$residuals[3:75], lag.max=7)
+```
+
+## Comprobación del modelo
+```{r}
+Box.test(predicción.fallecidos.semana$residuals,lag=7,type="Ljung-Box")
+```
+
+
+## Comprobación del modelo
+```{r}
+shapiro.test(predicción.fallecidos.semana$residuals)
+```
