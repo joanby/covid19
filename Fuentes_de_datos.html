@@ -372,7 +372,7 @@ summary {
 <ul>
 <li><a href="#datos-oficiales-del-ministerio-de-sanidad-de-españa"><span class="toc-section-number">1</span> Datos oficiales del Ministerio de Sanidad de España</a><ul>
 <li><a href="#recopilación-de-los-datos-oficiales"><span class="toc-section-number">1.1</span> Recopilación de los datos oficiales</a></li>
-<li><a href="#un-primer-ejemplo-carga-de-datos-de-dos-fuentes"><span class="toc-section-number">1.2</span> Un primer ejemplo: carga de datos de dos fuentes</a><ul>
+<li><a href="#un-primer-ejemplo-carga-de-datos-desde-dos-fuentes"><span class="toc-section-number">1.2</span> Un primer ejemplo: carga de datos desde dos fuentes</a><ul>
 <li><a href="#las-funciones-spread-y-gather"><span class="toc-section-number">1.2.1</span> Las funciones <code>spread</code> y <code>gather</code></a></li>
 <li><a href="#los-datos-de-altas-por-día-y-por-filas-comunidad-autónoma"><span class="toc-section-number">1.2.2</span> Los datos de altas por día y por filas comunidad autónoma</a></li>
 </ul></li>
@@ -398,10 +398,10 @@ summary {
 <p>Podéis clonar todo el repositorio (contiene muchos más datos) o solo los datos del COVID19 desde</p>
 <p><a href="https://github.com/datadista">Datadista github COVID19</a></p>
 </div>
-<div id="un-primer-ejemplo-carga-de-datos-de-dos-fuentes" class="section level2">
-<h2><span class="header-section-number">1.2</span> Un primer ejemplo: carga de datos de dos fuentes</h2>
-<p>Un ejemplo cargamos de Dadista hemos descargado <code>ccaa_camas_uci_2017.csv</code> que contines datos de 2017 de las camas de UCI por COmunidad Autónoma, tanto</p>
-<pre class="r"><code>ccaa_camas=read_csv(&quot;data/COVI_19_Datadista/ccaa_camas_uci_2017.csv&quot;)</code></pre>
+<div id="un-primer-ejemplo-carga-de-datos-desde-dos-fuentes" class="section level2">
+<h2><span class="header-section-number">1.2</span> Un primer ejemplo: carga de datos desde dos fuentes</h2>
+<p>En este primer ejemplo cargamos hemos descargado de Datadista<code>ccaa_camas_uci_2017.csv</code> que contines datos de 2017 de las camas de UCI por Comunidad Autónoma, tanto</p>
+<pre class="r"><code>ccaa_camas=read_csv(&quot;data/COVID_19_Datadista/ccaa_camas_uci_2017.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
 ##   cod_ine = col_character(),
@@ -551,7 +551,7 @@ summary {
 </tr>
 </tbody>
 </table>
-<p>Ahora que remos el porcentaje de camas UIC por población en España y que remos que este añadido sea de producción propia y con adatos oficilales EN este caso acuddiremos al <a href="ine.es">Intinututo Nacional de Estdística de España (INE)</a>.</p>
+<p>Ahora queremos el porcentaje de camas UIC por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al <a href="ine.es">Intinututo Nacional de Estadística de España (INE)</a>.</p>
 <p>Desde aquí buscaremos <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=2853">Población por comunidades y ciudades autónomas y sexo</a>. ynos bajaremos los datos que deseemos ( los gruardamos en DatosINE)</p>
 <pre class="r"><code>poblacion_CCAA=read_tsv(&quot;data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
@@ -11005,10 +11005,10 @@ glimpse(poblacion_CCAA_2)</code></pre>
 <ul>
 <li><code>fecha</code> : La fecha de la observación tomada de la clase <code>date</code></li>
 <li><code>cod_ine</code>: Es el código de comunidad autónoma del <a href="https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm">Instituto Nacional de Estadísitica</a></li>
-<li><code>CCAA</code> :CCAA` es el nombre de la comunidad autónoma.</li>
-<li><code>total</code> : lA obervación pata <code>fecha</code> del númnero de altas de esa <code>CCAA</code>.</li>
+<li><code>CCAA</code> : es el nombre de la comunidad autónoma.</li>
+<li><code>total</code> : La observación para <code>fecha</code> del númnero de altas de esa <code>CCAA</code>.</li>
 </ul>
-<pre class="r"><code>ccaa_altas_long=read_csv(&quot;data/COVI_19_Datadista/ccaa_covid19_altas_long.csv&quot;)</code></pre>
+<pre class="r"><code>ccaa_altas_long=read_csv(&quot;data/COVID_19_Datadista/ccaa_covid19_altas_long.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
 ##   fecha = col_date(format = &quot;&quot;),
@@ -14805,7 +14805,7 @@ knitr::kable(aux1)</code></pre>
 <li>La variable <code>CCAA</code> es el nombre de la comunidad autónoma.</li>
 <li>El resto de columnas de observación en el tiempo de la altas de enfermos por coronavirus.</li>
 </ul>
-<pre class="r"><code>ccaa_altas=read_csv(&quot;data/COVI_19_Datadista/ccaa_covid19_altas.csv&quot;)</code></pre>
+<pre class="r"><code>ccaa_altas=read_csv(&quot;data/COVID_19_Datadista/ccaa_covid19_altas.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
 ##   .default = col_double(),
@@ -15781,7 +15781,7 @@ knitr::kable(aux1)</code></pre>
 </tr>
 </tbody>
 </table>
-<p>Podemos recuperar el fichero largo con un gather</p>
+<p>Podemos recuperar el fichero largo con la función <code>gather</code></p>
 <pre class="r"><code>aux2=ccaa_altas %&gt;% gather(Time,value=Total,-c(cod_ine,CCAA))
 glimpse(aux2)</code></pre>
 <pre><code>## Observations: 520

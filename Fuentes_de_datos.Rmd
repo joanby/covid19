@@ -1,10 +1,12 @@
 ---
-title: "Fuentes: Datos oficiales  COVID19 España"
+title: 'Fuentes: Datos oficiales  COVID19 España'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "10/4/2020"
-output: 
-  html_document: 
+output:
+  html_document:
     number_sections: yes
+    toc: yes
+  pdf_document:
     toc: yes
 ---
 
@@ -46,26 +48,26 @@ Desde esta última  página podemos acceder a:
  
  
  
-## Un primer ejemplo: carga de datos de dos fuentes 
+## Un primer ejemplo: carga de datos desde dos fuentes 
 
 
-Un ejemplo cargamos de Dadista  hemos descargado `ccaa_camas_uci_2017.csv` que contines datos de 2017 de las camas de UCI por COmunidad Autónoma, tanto 
+En este primer ejemplo cargamos hemos descargado  de Datadista`ccaa_camas_uci_2017.csv` que contines datos de 2017 de las camas de UCI por Comunidad Autónoma, tanto 
 
 
 ```{r}
-ccaa_camas=read_csv("data/COVI_19_Datadista/ccaa_camas_uci_2017.csv")
+ccaa_camas=read_csv("data/COVID_19_Datadista/ccaa_camas_uci_2017.csv")
 ```
 
 ```{r}
 glimpse(ccaa_camas)
-
+```
 
 ```{r}
 knitr::kable(ccaa_camas)
 ```
 
 
-Ahora que remos el porcentaje de camas UIC por población en España y que remos que este añadido sea de producción propia y con adatos oficilales EN este caso acuddiremos al [Intinututo Nacional de Estdística de España (INE)](ine.es). 
+Ahora queremos el porcentaje de camas UIC por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al [Intinututo Nacional de Estadística de España (INE)](ine.es). 
 
 Desde aquí buscaremos [Población por comunidades y ciudades autónomas y sexo](https://www.ine.es/jaxiT3/Tabla.htm?t=2853).  ynos bajaremos los datos que deseemos ( los  gruardamos en DatosINE)
 
@@ -99,12 +101,12 @@ Probaremos estas funciones con el los fichero de datos de altas
 Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas 
 
 * `fecha`  :  La fecha de la observación tomada  de la clase `date`
-* `cod_ine`: Es el código de comunidad autónoma del [Instituto  Nacional de Estadísitica](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
-* `CCAA`   :CCAA`  es el nombre de la comunidad autónoma.
-* `total`  :  lA obervación pata `fecha` del númnero  de altas de esa `CCAA`. 
+* `cod_ine`:  Es el código de comunidad autónoma del [Instituto  Nacional de Estadísitica](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
+* `CCAA`   :  es el nombre de la comunidad autónoma.
+* `total`  :  La observación para `fecha` del númnero  de altas de esa `CCAA`. 
 
 ```{r}
-ccaa_altas_long=read_csv("data/COVI_19_Datadista/ccaa_covid19_altas_long.csv")
+ccaa_altas_long=read_csv("data/COVID_19_Datadista/ccaa_covid19_altas_long.csv")
 glimpse(ccaa_altas_long)
 knitr::kable(ccaa_altas_long)
 ```
@@ -126,7 +128,7 @@ knitr::kable(aux1)
 
 
 
-### Los datos de altas por día y por filas comunidad autónoma
+### Los datos de altas por día y por  comunidad autónoma
 
 
 
@@ -139,14 +141,14 @@ Fichero `ccaa_covid19_altas.csv`es un fichero procesado desde el fichero `ccaa_c
 
 
 ```{r}
-ccaa_altas=read_csv("data/COVI_19_Datadista/ccaa_covid19_altas.csv")
+ccaa_altas=read_csv("data/COVID_19_Datadista/ccaa_covid19_altas.csv")
 glimpse(ccaa_altas)
 knitr::kable(ccaa_altas[1:30,])
 ```
 
 
 
-Podemos recuperar el fichero largo con un gather
+Podemos recuperar el fichero largo con la función  `gather`
 
 
 
@@ -164,6 +166,7 @@ knitr::kable(aux3)
 
 
 
+### Los casos declarados de  coronavirus por día y por  comunidad autónoma
 
-
+De la misma forma tenemos los datos  de casos declarados de infección por de coronavirus.
 
