@@ -14,8 +14,9 @@ library(tidyverse) # %>%
 library(magrittr)  # %<>%
 library(lubridate)
 library(rnaturalearth)
+library(car)
 
-use_python("/usr/bin/python")
+use_python("/Users/juangabriel/opt/anaconda3/bin/python3")
 ```
 
 # Carga y limpieza preliminar de los datos
@@ -168,5 +169,128 @@ datos %>%
   theme(legend.position = "bottom")
 ```
 
+```{r}
 
+thr = 1000
+
+datos %>%
+  filter(Fecha == ymd("2020-04-05"),
+         Casos_Confirmados > thr) %>%
+  mutate(Prop_Muertos = Casos_Muertos / Casos_Confirmados, 
+         Ranking = dense_rank(desc(Prop_Muertos))) %>%
+  arrange(Ranking) %>%
+  head(20) %>%
+  kable()
+```
+
+
+```{r}
+datos$lat_class = cut(datos$Latitud, 
+                      breaks = seq(from = -90, to = 90, by = 10))
+datos$long_class = cut(datos$Longitud, 
+                       breaks = seq(from = -180, to = 180, by = 10))
+tt = table(datos$lat_class, datos$long_class)
+tt = tt[nrow(tt):1, ]
+mosaicplot(t(tt), shade = TRUE)
+```
+
+
+## Análisis de datos temporal
+
+```{r}
+datos_por_fecha = aggregate(
+  cbind(Casos_Confirmados, Casos_Muertos, Casos_Recuperados) ~ Fecha,
+  data = datos, 
+  FUN = sum
+)
+datos_por_fecha$Casos_Enfermos = datos_por_fecha$Casos_Confirmados - datos_por_fecha$Casos_Muertos - datos_por_fecha$Casos_Recuperados
+head(datos_por_fecha)
+tail(datos_por_fecha)
+
+barplot(Casos_Confirmados ~ Fecha, data = datos_por_fecha)
+
+plot(Casos_Confirmados ~ Fecha, data = datos_por_fecha, col = "blue", type = "l", main = "Casos documentados por día en todo el mundo", xlab = "Fecha", ylab = "Número de personas", log = "y")
+lines(Casos_Muertos ~ Fecha, data = datos_por_fecha, col = "red")
+lines(Casos_Recuperados ~ Fecha, data = datos_por_fecha, col = "green")
+
+legend("topleft", c("Confirmados", "Muertos", "Recuperados"), 
+       col = c("blue", "red", "green"), pch = 1, lwd = 2)
+```
+
+```{r}
+datos_spain = datos %>% 
+  filter(Pais_Region == "Spain") %>%
+  select(Fecha, starts_with("Casos_"))
+
+plot(x = datos_spain$Fecha, y = datos_spain$Casos_Confirmados,
+     main = "Casos confirmados en España", type = "s", 
+     col = "blue", lwd = 2)
+
+barplot(as.matrix(t(datos_spain[, 3:5])),
+        names = datos_spain$Fecha, 
+        col = c("red", "green", "yellow"),
+        main = "Estudio de casos por tipo en España", 
+        xlab ="Fecha", ylab = "Número de personas")
+legend("topleft", c("Muertos", "Recuperados", "Enfermos"),
+       col = c("red", "green", "yellow"), lwd = 2, pch = 1
+       )
+```
+
+
+```{r}
+datos_spain %<>%
+  mutate(Nuevos_Casos_Confirmados = Casos_Confirmados - lag(Casos_Confirmados, n = 1),
+         Nuevos_Casos_Muertos = Casos_Muertos - lag(Casos_Muertos, n = 1),
+         Nuevos_Casos_Recuperados = Casos_Recuperados - lag(Casos_Recuperados, n = 1)
+         )
+
+plot(Nuevos_Casos_Confirmados ~ Fecha, data = datos_spain,
+     type = "l", col ="blue", 
+     xlab = "Fecha", ylab = "Nuevos casos", 
+     main = "Nuevos registros en España")
+lines(Nuevos_Casos_Muertos ~ Fecha, data = datos_spain,
+      type = "l", col = "red")
+lines(Nuevos_Casos_Recuperados ~ Fecha, data = datos_spain,
+      type = "l", col = "green")
+
+legend("topleft", c("Confirmados", "Muertos", "Recuperados"), 
+       col = c("blue", "red", "green"), 
+       lwd = 2, pch = 1)
+```
+
+
+## Modelos de regresión simple
+
+* $x$: Variable Independiente: número de días desde el origen de la pandemia
+* $y$: Variable Dependiente: número de casos confirmados. 
+
+$$y = f(x)$$
+
+```{r}
+datos_spain$Dias = as.numeric(datos_spain$Fecha - dmy("22/01/2020"))
+```
+
+### Regresión Lineal
+
+$$y = ax+b, a,b\in \mathbb R$$
+
+$$min_{a,b\in\mathbb R} \sum_{i=1}^n (y_i-(ax_i+b))^2$$
+
+```{r}
+mod1 <- lm(Casos_Confirmados ~ Dias, data = datos_spain)
+summary(mod1)
+```
+
+$$Casos\ Confirmados = `r mod1$coefficients[2]` Dias + `r mod1$coefficients[1]`$$
+
+```{r}
+plot(datos_spain$Dias, datos_spain$Casos_Confirmados)
+abline(mod1, col = "red")
+
+plot(mod1$residuals~mod1$fitted.values, xlab = "Valores Ajustados", ylab = "Residuos del modelo")
+
+residuos = mod1$residuals
+
+qqPlot(residuos, distribution = "norm", mean = mean(residuos), sd = sqrt(residuos))
+```
 
