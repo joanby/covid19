@@ -15,6 +15,9 @@ library(magrittr)  # %<>%
 library(lubridate)
 library(rnaturalearth)
 library(car)
+library(plotly)
+library(xts)
+library(dygraphs)
 
 use_python("/Users/juangabriel/opt/anaconda3/bin/python3")
 ```
@@ -154,10 +157,12 @@ world %>%
   filter(Fecha == dmy("30-03-2020")) %>%
   ggplot() +
   geom_sf(color = "black", aes(fill = Casos_Confirmados)) +
-  coord_sf(crs="+proj=laea +lat_0=50 +lon_0=10 +units=m +ellps=GRS80") +
+#  coord_sf(crs="+proj=laea +lat_0=50 +lon_0=10 +units=m +ellps=GRS80") +
   scale_fill_viridis_c(option="plasma", trans = "sqrt") +
   xlab("Longitud") + ylab("Latitud") +
-  ggtitle("Mapa del mundo ", subtitle = "COVID 19")
+  ggtitle("Mapa del mundo ", subtitle = "COVID 19") -> g
+
+ggplotly(g)
 ```
 
 ```{r}
@@ -166,7 +171,9 @@ datos %>%
   ggplot(aes(Longitud, Latitud)) +
   geom_point(aes(size = log(Casos_Confirmados+1), colour = log(Casos_Muertos+1))) +
   coord_fixed() +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom") -> g
+
+ggplotly(g)
 ```
 
 ```{r}
@@ -215,6 +222,19 @@ lines(Casos_Recuperados ~ Fecha, data = datos_por_fecha, col = "green")
 
 legend("topleft", c("Confirmados", "Muertos", "Recuperados"), 
        col = c("blue", "red", "green"), pch = 1, lwd = 2)
+
+datos_por_fecha_ts <- xts(x = datos_por_fecha[, 2:5],
+                          order.by = datos_por_fecha$Fecha)
+dygraph(datos_por_fecha_ts) %>%
+  dyOptions(labelsUTC = TRUE, labelsKMB = TRUE,
+            fillGraph = TRUE, fillAlpha = 0.05, 
+            drawGrid = FALSE, colors = "#D9AE55") %>%
+  dyRangeSelector() %>%
+  dyCrosshair(direction = "vertical") %>%
+  dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2,
+              hideOnMouseOut = FALSE) %>%
+  dyRoller(rollPeriod = 2)
+
 ```
 
 ```{r}
@@ -225,6 +245,18 @@ datos_spain = datos %>%
 plot(x = datos_spain$Fecha, y = datos_spain$Casos_Confirmados,
      main = "Casos confirmados en España", type = "s", 
      col = "blue", lwd = 2)
+
+datos_por_fecha_ts <- xts(x = datos_spain[, 2:5],
+                          order.by = datos_spain$Fecha)
+dygraph(datos_por_fecha_ts) %>%
+  dyOptions(labelsUTC = TRUE, labelsKMB = TRUE,
+            fillGraph = TRUE, fillAlpha = 0.05, 
+            drawGrid = FALSE, colors = "#D9AE55") %>%
+  dyRangeSelector() %>%
+  dyCrosshair(direction = "vertical") %>%
+  dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2,
+              hideOnMouseOut = FALSE) %>%
+  dyRoller(rollPeriod = 2)
 
 barplot(as.matrix(t(datos_spain[, 3:5])),
         names = datos_spain$Fecha, 
@@ -291,6 +323,71 @@ plot(mod1$residuals~mod1$fitted.values, xlab = "Valores Ajustados", ylab = "Resi
 
 residuos = mod1$residuals
 
-qqPlot(residuos, distribution = "norm", mean = mean(residuos), sd = sqrt(residuos))
+qqPlot(residuos, distribution = "norm", 
+       mean = mean(residuos), sd = sd(residuos))
 ```
+
+### Regresión exponencial
+$$log(y) = ax+b, a,b \in \mathbb R$$
+$$y = e^{ax+b} = m e^{ax}$$
+
+
+```{r}
+mod2 <- lm(log(Casos_Confirmados) ~ Dias, data = datos_spain[datos_spain$Casos_Confirmados>0, ])
+summary(mod2)
+```
+
+$$Casos\ Confirmados = `r exp(mod2$coefficients[1])` \cdot e^{`r mod2$coefficients[2]`\cdot x}$$
+
+```{r}
+plot(datos_spain$Dias, datos_spain$Casos_Confirmados)
+lines(exp(mod2$coefficients[1])*exp(mod2$coefficients[2]*datos_spain$Dias), col = "blue")
+
+plot(mod2$residuals ~ mod2$fitted.values, xlab = "Valores Ajustados", ylab = "Residuos del modelo")
+residuos = mod2$residuals
+qqPlot(residuos, distribution = "norm", 
+       mean = mean(residuos), sd = sd(residuos))
+```
+
+### Modelo potencial
+$$log(y) = a\cdot log(x)+b, a,b\in \mathbb R$$
+$$y = e^{a\cdot log(x)+b} = e^b\cdot e^{log(x)^a} = m\cdot x^a$$
+
+```{r}
+mod3 <- lm(log(Casos_Confirmados) ~ log(Dias),
+           data = datos_spain[datos_spain$Casos_Confirmados > 0, ])
+summary(mod3)
+```
+
+$$Casos\ Confirmados = `r exp(mod3$coefficients[1])`\cdot Dias^{`r mod2$coefficients[2]`}$$
+
+```{r}
+plot(datos_spain$Dias, datos_spain$Casos_Confirmados)
+lines(exp(mod3$coefficients[1])*datos_spain$Dias^mod3$coefficients[2], col = "green")
+
+plot(mod3$residuals~mod3$fitted.values, 
+     xlab = "Valores Ajustados", ylab = "Residuos del modelo")
+residuos = mod3$residuals
+qqPlot(residuos, distribution = "norm", mean = mean(residuos), sd = sd(residuos))
+```
+
+
+```{r}
+mi_model <- lm(log(Casos_Confirmados) ~ Dias + log(Dias) + I(Dias^2) + I(Dias^3) + sqrt(Dias),
+               data = datos_spain[datos_spain$Casos_Confirmados> 0, ] )
+summary(mi_model)
+```
+
+```{r}
+start_date = ymd('2020-01-22')
+end_date = ymd('2020-04-30')
+
+dates = seq(start_date+1, end_date, by = "1 day")
+days_since_start = as.numeric(dates - start_date)
+new_data = data.frame(Dias = days_since_start)
+
+pred1 = predict(mod1, newdata = new_data)
+pred2 = predict(mod2, newdata = new_data)
+```
+
 
