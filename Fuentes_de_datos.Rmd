@@ -3,10 +3,10 @@ title: 'Fuentes: Datos oficiales  COVID19 España'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "10/4/2020"
 output:
+  pdf_document:
+    toc: yes
   html_document:
     number_sections: yes
-    toc: yes
-  pdf_document:
     toc: yes
 ---
 
@@ -77,7 +77,6 @@ glimpse(poblacion_CCAA)
 knitr::kable(poblacion_CCAA)
 poblacion_CCAA_2=poblacion_CCAA %>% tidyr::spread(Periodo, Total)
 glimpse(poblacion_CCAA_2)
-
 ```
 
 
@@ -85,7 +84,6 @@ glimpse(poblacion_CCAA_2)
 poblacion_CCAA_2=poblacion_CCAA %>% tidyr::spread(Periodo, Total)
 glimpse(poblacion_CCAA_2)
 knitr::kable(poblacion_CCAA_2)
-
 ```
 
 
@@ -95,7 +93,7 @@ knitr::kable(poblacion_CCAA_2)
 Probaremos estas funciones con el los fichero de datos de altas
 
 
-#### EL fichero  altas  por fecha y comunidad autónoma 
+#### El fichero de altas  por fecha y comunidad autónoma 
 
 
 Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas 
@@ -112,9 +110,6 @@ knitr::kable(ccaa_altas_long)
 ```
 
 
-
-
-
 Estos datos los podemos transformar en una tabla con la función `spread`del la librería `tidyr`
 
 
@@ -124,15 +119,10 @@ knitr::kable(aux1)
 ```
 
 
-
-
-
-
 ### Los datos de altas por día y por  comunidad autónoma
 
 
-
-Fichero `ccaa_covid19_altas.csv`es un fichero procesado desde el fichero `ccaa_covid19_altas_long.csv`
+Fichero `ccaa_covid19_altas.csv` es un fichero  que puede ser procesado desde el fichero `ccaa_covid19_altas_long.csv`
 
 
 * La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm).
@@ -173,15 +163,15 @@ knitr::kable(aux3)
 * La variab
 De la misma forma tenemos los datos  de casos declarados de infección por de coronavirus.
 
-Fichero `ccaa_covid19_casos.csv`es un fichero procesado desde el fichero `ccaa_covid19_altas_long.csv`
+Fichero `ccaa_covid19_casos.csv`es un fichero procesado desde el fichero `ccaa_covid19_casos_long.csv`
 le  `CCAA`  es el nombre de la comunidad autónoma.
 * El resto de columnas de observación en el tiempo de  los casos de infección por coronavirus.
 
 
 ```{r}
-ccaa_altas=read_csv("data/COVID_19_Datadista/ccaa_covid19_casos.csv")
-glimpse(ccaa_altas)
-knitr::kable(ccaa_altas[1:30,])
+ccaa_casos=read_csv("data/COVID_19_Datadista/ccaa_covid19_casos.csv")
+glimpse(ccaa_casos)
+knitr::kable(ccaa_casos[1:30,])
 ```
 
 
@@ -191,7 +181,7 @@ Podemos recuperar el fichero largo con la función  `gather`
 
 
 ```{r}
-aux2=ccaa_altas %>% gather(Time,value=Total,-c(cod_ine,CCAA))
+aux2=ccaa_casos %>% gather(Time,value=Total,-c(cod_ine,CCAA))
 glimpse(aux2)
 knitr::kable(aux2)
 ```
