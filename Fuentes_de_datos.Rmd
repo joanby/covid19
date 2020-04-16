@@ -168,5 +168,37 @@ knitr::kable(aux3)
 
 ### Los casos declarados de  coronavirus por día y por  comunidad autónoma
 
+
+* La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm).
+* La variab
 De la misma forma tenemos los datos  de casos declarados de infección por de coronavirus.
+
+Fichero `ccaa_covid19_casos.csv`es un fichero procesado desde el fichero `ccaa_covid19_altas_long.csv`
+le  `CCAA`  es el nombre de la comunidad autónoma.
+* El resto de columnas de observación en el tiempo de  los casos de infección por coronavirus.
+
+
+```{r}
+ccaa_altas=read_csv("data/COVID_19_Datadista/ccaa_covid19_casos.csv")
+glimpse(ccaa_altas)
+knitr::kable(ccaa_altas[1:30,])
+```
+
+
+
+Podemos recuperar el fichero largo con la función  `gather`
+
+
+
+```{r}
+aux2=ccaa_altas %>% gather(Time,value=Total,-c(cod_ine,CCAA))
+glimpse(aux2)
+knitr::kable(aux2)
+```
+
+
+```{r}
+aux3=aux2 %>% spread(Time,value=Total)
+knitr::kable(aux3)
+```
 
