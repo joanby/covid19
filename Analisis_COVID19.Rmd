@@ -290,6 +290,49 @@ legend("topleft", c("Confirmados", "Muertos", "Recuperados"),
        lwd = 2, pch = 1)
 ```
 
+## Análisis por Cohortes
+
+```{r}
+primer_contagio = datos %>%
+  group_by(Pais_Region) %>%
+  filter(Casos_Confirmados > 0) %>%
+  summarise(Primer_Contagio = min(Fecha)-1)
+
+
+data_first = datos %>%
+  inner_join(primer_contagio, by = "Pais_Region") %>%
+  mutate(Dias_Desde_PC = as.numeric(Fecha - Primer_Contagio)) %>%
+  filter(Dias_Desde_PC >= 0) %>%
+  group_by(Dias_Desde_PC, Pais_Region) %>%
+  summarise(Casos_Confirmados = sum(Casos_Confirmados),
+            Casos_Muertos = sum(Casos_Muertos),
+            Casos_Recuperados = sum(Casos_Recuperados),
+            Casos_Enfermos = sum(Casos_Enfermos))
+
+
+data_first %>%
+  #filter(Pais_Region %in% c("Spain", "Italy", "China", "United States", "Germany")) %>%
+  ggplot(aes(x = Dias_Desde_PC, y = Casos_Confirmados)) +
+  geom_line(aes(col = Pais_Region)) +  
+  xlab("Días desde el primer contagio") +
+  ylab("Número de personas contagiadas") + 
+  ggtitle("Análisis por Cohortes") +
+  theme(legend.position = "none") -> g
+
+ggplotly(g)
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Modelos de regresión simple
 
@@ -387,7 +430,18 @@ days_since_start = as.numeric(dates - start_date)
 new_data = data.frame(Dias = days_since_start)
 
 pred1 = predict(mod1, newdata = new_data)
-pred2 = predict(mod2, newdata = new_data)
-```
+pred2 = exp(predict(mod2, newdata = new_data))
+pred3 = exp(predict(mod3, newdata = new_data))
+pred4 = exp(predict(mi_model, newdata = new_data))
 
+datos_por_fecha_ts = xts(x = data.frame(Real = c(datos_spain$Casos_Confirmados, rep(NA,length(pred1)- length(datos_spain$Casos_Confirmados))),
+                                        Mod_Lin = pred1,
+                                        #Mod_Exp = pred2, 
+                                        Mod_Pot = pred3, 
+                                        Mod_Mixt = pred4),
+                         order.by = dates)
+
+
+dygraph(datos_por_fecha_ts)
+```
 
