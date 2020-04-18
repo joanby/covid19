@@ -3,11 +3,11 @@ title: 'Fuentes: Datos oficiales  COVID19 España'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "17/4/2020"
 output:
-  html_document:
-    df_print: paged
-    toc: yes
   pdf_document:
     number_sections: yes
+    toc: yes
+  html_document:
+    df_print: paged
     toc: yes
   word_document:
     toc: yes
@@ -61,7 +61,7 @@ Desde esta última  página podemos acceder a:
 ## Un primer ejemplo: carga de datos desde dos fuentes 
 
 
-En este primer ejemplo cargamos hemos descargado  de Datadista`ccaa_camas_uci_2017.csv` que contiene datos de 2017 de las camas de UCI por Comunidad Autónoma, tanto 
+En este primer ejemplo  hemos descargado  de Datadista `ccaa_camas_uci_2017.csv` que contiene datos de 2017 de las camas de UCI por Comunidad Autónoma 
 
 
 ```{r}
