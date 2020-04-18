@@ -3,11 +3,11 @@ title: 'Fuentes: Datos oficiales  COVID19 España'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "17/4/2020"
 output:
-  html_document:
-    df_print: paged
-    toc: yes
   pdf_document:
     number_sections: yes
+    toc: yes
+  html_document:
+    df_print: paged
     toc: yes
   word_document:
     toc: yes
@@ -65,15 +65,15 @@ En este primer ejemplo cargamos hemos descargado  de Datadista`ccaa_camas_uci_20
 
 
 ```{r}
-ccaa_camas=read_csv("data/COVID_19_Datadista/COVID19/ccaa_camas_uci_2017.csv")
+CCAA_camas_UCI=read_csv("data/COVID_19_Datadista/COVID19/ccaa_camas_uci_2017.csv")
 ```
 
 ```{r}
-glimpse(ccaa_camas)
+glimpse(CCAA_camas_UCI)
 ```
 
 ```{r}
-knitr::kable(ccaa_camas)
+knitr::kable(CCAA_camas_UCI)
 ```
 
 
@@ -82,22 +82,17 @@ Ahora queremos el porcentaje de camas UIC por población en España y queremos q
 Desde aquí buscaremos [Población por comunidades y ciudades autónomas y sexo](https://www.ine.es/jaxiT3/Tabla.htm?t=2853).  y nos bajaremos los datos que deseemos ( los  guardamos en DatosINE)
 
 ```{r}
-poblacion_CCAA=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv")
-glimpse(poblacion_CCAA)
-knitr::kable(poblacion_CCAA)
-poblacion_CCAA_2=poblacion_CCAA %>% tidyr::spread(Periodo, Total)
-glimpse(poblacion_CCAA_2)
+poblacion_CCAA_long=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv")
+glimpse(poblacion_CCAA_long)
+knitr::kable(poblacion_CCAA_long)
+poblacion_CCAA_wider=poblacion_CCAA_long %>% tidyr::pivot_wider(names_from=Periodo, values_from=Total)
+glimpse(poblacion_CCAA_wider)
 ```
 
 
-```{r}
-poblacion_CCAA_2=poblacion_CCAA %>% tidyr::spread(Periodo, Total)
-glimpse(poblacion_CCAA_2)
-knitr::kable(poblacion_CCAA_2)
-```
 
 
-### Las funciones `spread`  y `gather`
+### Las funciones `pivot_wider`  y `pivot_long`
 
 
 Probaremos estas funciones con el los fichero de datos de altas
@@ -120,11 +115,11 @@ knitr::kable(ccaa_altas_long)
 ```
 
 
-Estos datos los podemos transformar en una tabla con la función `spread`del la librería `tidyr`
+Estos datos los podemos transformar en una tabla con la función `pivot_wider`del la librería `tidyr`
 
 
 ```{r}
-aux1=ccaa_altas_long %>% tidyr::spread(fecha,total)
+aux1=ccaa_altas_long %>% tidyr::pivot_wider(names_from=fecha,values_from=total)
 knitr::kable(aux1)
 ```
 
@@ -141,28 +136,24 @@ Fichero `ccaa_covid19_altas.csv` es un fichero  que puede ser procesado desde el
 
 
 ```{r}
-ccaa_altas=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_altas.csv")
-glimpse(ccaa_altas)
-knitr::kable(ccaa_altas[1:30,])
+ccaa_altas_wider=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_altas.csv")
+glimpse(ccaa_altas_wider)
+knitr::kable(ccaa_altas_wider)
 ```
 
 
 
-Podemos recuperar el fichero largo con la función  `gather`
+Podemos recuperar el fichero largo con la función  `pivot_longer`
 
 
 
 ```{r}
-aux2=ccaa_altas %>% gather(Time,value=Total,-c(cod_ine,CCAA))
+aux2=ccaa_altas_wider %>% pivot_longer(cols=`2020-03-16`:`2020-04-08`)
 glimpse(aux2)
 knitr::kable(aux2)
 ```
 
 
-```{r}
-aux3=aux2 %>% spread(Time,value=Total)
-knitr::kable(aux3)
-```
 
 
 
@@ -181,28 +172,25 @@ Fichero `ccaa_covid19_casos.csv` es un fichero procesado desde el fichero `ccaa_
 * En ingles se les llama  a estos  dos formatos de tablas **wide**  (ancho)  y **long** (largo).
 
 ```{r}
-ccaa_casos=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_casos.csv")
-glimpse(ccaa_casos)
-knitr::kable(ccaa_casos[1:30,])
+ccaa_casos_wider=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_casos.csv")
+glimpse(ccaa_casos_wider)
+knitr::kable(ccaa_casos_wider)
 ```
 
 
 
-Podemos recuperar el fichero largo con la función  `gather`
+Podemos recuperar el fichero largo con la función  `pivot_longer`
 
 
 
 ```{r}
-aux2=ccaa_casos %>% gather(Time,value=Total,-c(cod_ine,CCAA))
-glimpse(aux2)
-knitr::kable(aux2)
+ccaa_casos_longer=   ccaa_casos_wider %>%  select(-c(cod_ine,CCAA)) %>%   pivot_longer(cols=`2020-03-16`:`2020-04-08`)
+
+glimpse(ccaa_casos_longer)
+knitr::kable(ccaa_casos_longer)
 ```
 
 
-```{r}
-aux3=aux2 %>% spread(Time,value=Total)
-knitr::kable(aux3)
-```
 
 
 
@@ -276,7 +264,7 @@ Vamos a añadir las poblaciones de cada comunidad Autónoma y  su número de cam
 
 ```{r}
 camas_uci=read_csv("data/COVID_19_Datadista/COVID19/ccaa_camas_uci_2017.csv")
-camas_uci %>% rename(Públicos_UCI=Públicos,Privaos_UCI=Privados,Total_UCI=Total)
+camas_uci %>% rename(Públicos_UCI=Públicos,Privados_UCI=Privados,Total_UCI=Total)
 knitr::kable(camas_uci)
 ```
 
@@ -301,10 +289,10 @@ Podemos construir una tibble que contega toda la información utilizando funcion
 
 ```{r}
 metadatos_CCAA=  poblacion_CCAA %>% select(-CCAA) %>%
-  inner_join(camas_uci,by="cod_ine") %>% rename(UCIS_Públicos=Públicos,UCIS_Privados=Privados, UCI_Total=Total)
+  inner_join(camas_uci,by="cod_ine") %>%
+  rename(UCIS_Públicos=Públicos,UCIS_Privados=Privados, UCI_Total=Total)
 
 datos_COVID19_con_metadatos_long= datos_COVID19_long %>% inner_join(metadatos_CCAA %>% select(-CCAA))
-
 
 ```
 
@@ -331,4 +319,24 @@ write_csv(datos_COVID19_con_metadatos_long,
           path="data/Modelo_Datos/datos_COVID19_con_metadatos_long.csv")
 
 ```
+
+
+### Uso de los datos
+
+```{r}
+data_long=read_csv("data/Modelo_Datos/datos_COVID19_con_metadatos_long.csv")
+data_long_filtrado= data_long %>% select(fecha,CCAA,total,tipo)
+
+data_wide_filtrado= data_long_filtrado %>%
+  pivot_wider(names_from=CCAA,values_from=total)
+
+knitr::kable(data_wide_filtrado)
+```
+
+
+
+```{r}
+ggplot(data_long_filtrado[-2,],aes(x=fecha,y=total,col=CCAA))+geom_smooth(se = FALSE)
+```
+
 

@@ -35,15 +35,6 @@ aux <- page %>% html_attr("href")
 ```
 
 
-```{python}
-#  
-py_install("Beatifullsoup4")
-import Beatifullsoup
-
-
-
-
-```
 
 
 ```{r}
@@ -52,11 +43,6 @@ tabulizer::extract_tables(pdf)
 ```
 
 
-```
-"/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%2013%20de%20abril_CNE.pdf"
-href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%2012%20de%20abril_CNE.pdf" target="_blank">Informe MoMo. Situación a 12 de abril de 2020.</a></p><p>- <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%207%20de%20abril_CNE.pdf" target="_blank">Informe MoMo. Situación a 7 de abril de 2020.</a></p><p>- <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%206%20de%20abril_CNE.pdf" target="_blank">Informe MoMo. Situación a 6 de abril de 2020.</a></p><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%205%20de%20abril_CNE.pdf" target="_blank"><font color="#0066cc">Informe MoMo. Situación a 5 de abril de 2020.</font></a></p><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%202%20de%20abril_CNE.pdf" target="_blank"><font color="#0066cc">Informe MoMo. Situación a 2 de abril de 2020.</font></a></p><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%201%20de%20abril_CNE.pdf" target="_blank"><font color="#0066cc">Informe MoMo. Situación a 1 de abril de 2020.</font></a></p><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%2031%20de%20marzo_CNE.pdf" target="_blank"><font color="#0066cc">Informe MoMo. Situación a 31 de marzo de 2020.&#160;</font></a></p><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacio%cc%81n%20a%2030%20de%20marzo_CNE.pdf" target="_blank"><font color="#0066cc">Informe MoMo. Situación a 30 de marzo de 2020.</font></a></p><p><strong>- </strong><a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situaci%c3%b3n%20a%2029%20de%20marzo_CNE.pdf" target="_blank"><font color="#0066cc">          </font><font color="#0066cc">Informe MoMo. Situación a 29 de marzo de 2020.</font></a></p><a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situaci%c3%b3n%20a%2026%20de%20marzo_CNE.pdf" target="_blank"><p>- Informe MoMo. Situación a 26 de marzo de 2020.</p></a><font color="#000000"> </font><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situaci%c3%b3n%20a%2025%20de%20marzo_CNE.pdf" target="_blank"><font color="#0066cc">Informe MoMo. Situación a 25 de marzo de 2020.</font></a></p><p><strong></strong><a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situaci%c3%b3n%20a%2023%20de%20marzo_CNE.pdf"><strong><font color="#0066cc">- </font></strong><font color="#0066cc">Informe MoMo. Situación a&#160;23 de marzo de 2020.</font></a></p><p>-     <a href="/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situaci%c3%b3n%20a%2019%20de%20marzo_CNE.pdf"><font color="#0066cc">Informe MoMo. Situación a&#160;19 de marzo de 2020</font></a></p><p>&#160;</p><p>&#160;</p><p>&#160;</p><p>&#160;</p><p>&#160;</p></div>
-		</div>
-```		
 
 ### Referencias
 
