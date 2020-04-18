@@ -265,11 +265,11 @@ aux$tipo=tipo
 return(aux)
 }
 
-modelo_datos=bind_rows(lapply(tipos,FUN=arreglo))
+datos_COVID19_long=bind_rows(lapply(tipos,FUN=arreglo))
 
 ```
 
-## Añadiendo Metadatos a nuestro modelo de datos
+## Añadir metadatos a nuestro modelo de datos
 
 
 Vamos a añadir las poblaciones de cada comunidad Autónoma y  su número de camas  de cuidados intensivos (uci).
@@ -284,22 +284,51 @@ knitr::kable(camas_uci)
 Ahora leeremos la población por CCAA. Construimos la tabla a lo ancho, seleccionamos  el año  y eliminamos los totales
 
 
+```{r}
+poblacion_CCAA=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv",locale = locale(grouping_mark = "."))
+poblacion_CCAA= poblacion_CCAA %>% 
+  filter(`Comunidades y Ciudades Autónomas`!="Total",Sexo=="Total",Periodo==2019) %>%
+  transmute(cod_ine=str_sub(`Comunidades y Ciudades Autónomas`,1,2),
+    Pob_CCAA_2019=Total,CCAA=`Comunidades y Ciudades Autónomas`)
+glimpse(poblacion_CCAA)
+knitr::kable(poblacion_CCAA)
+```
 
+
+### Añadimos los metadatos
+
+Podemos construir una tibble que contega toda la información utilizando funciones  tipo "inner_join
 
 ```{r}
-poblacion_CCAA=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv")
+metadatos_CCAA=  poblacion_CCAA %>% select(-CCAA) %>%
+  inner_join(camas_uci,by="cod_ine") %>% rename(UCIS_Públicos=Públicos,UCIS_Privados=Privados, UCI_Total=Total)
+
+datos_COVID19_con_metadatos_long= datos_COVID19_long %>% inner_join(metadatos_CCAA %>% select(-CCAA))
 
 
-poblacion_CCAA= poblacion_CCAA %>% 
-  filter(`Comunidades y Ciudades Autónomas`!="Total",Periodo==2019) %>%
-  transmute(
-    cod_ine=str_sub(`Comunidades y Ciudades Autónomas`,1,2),
-    Pob_CCAA_2019=Total)
-
-glimpse(poblacion_CCAA)
 ```
 
 
 
+## Guardamos los datos 
 
+Guardaremos los datos como objetos y como cvs
+
+```{r}
+save(datos_COVID19_long,
+     file="data/Modelo_Datos/datos_COVID19_long_long.Robj")
+save(metadatos_CCAA,
+     file="data/Modelo_Datos/metadatos_CCAA.Robj")
+save(datos_COVID19_con_metadatos_long,
+     file="data/Modelo_Datos/datos_COVID19_con_metadatos_long.Robj")
+  
+  
+write_csv(datos_COVID19_long,
+          path="data/Modelo_Datos/datos_COVID19_long_long.csv")
+write_csv(metadatos_CCAA,
+          path="data/Modelo_Datos/metadatos_CCAA.csv")
+write_csv(datos_COVID19_con_metadatos_long,
+          path="data/Modelo_Datos/datos_COVID19_con_metadatos_long.csv")
+
+```
 
