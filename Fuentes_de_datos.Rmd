@@ -324,7 +324,7 @@ save(datos_COVID19_con_metadatos_long,
   
   
 write_csv(datos_COVID19_long,
-          path="data/Modelo_Datos/datos_COVID19_long_long.csv")
+          path="data/Modelo_Datos/datos_COVID19_long.csv")
 write_csv(metadatos_CCAA,
           path="data/Modelo_Datos/metadatos_CCAA.csv")
 write_csv(datos_COVID19_con_metadatos_long,
