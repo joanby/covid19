@@ -205,7 +205,7 @@ Empecemos con algunas variables auxiliares
 
 
 ```{r}
-tipos=c("casos","hospitalizados","fallecidos","uci")
+tipos=c("casos","hospitalizados","fallecidos","uci","altas")
 prefijo="data/COVID_19_Datadista/COVID19/ccaa_covid19_"
 sufijo="_long.csv"
 arreglo<- function(tipo,prefijo="data/COVID_19_Datadista/COVID19/ccaa_covid19_",sufijo="_long.csv"){
