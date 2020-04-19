@@ -3,11 +3,11 @@ title: 'Fuentes: Datos oficiales  COVID19 España'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "17/4/2020"
 output:
-  pdf_document:
-    number_sections: yes
-    toc: yes
   html_document:
     df_print: paged
+    toc: yes
+  pdf_document:
+    number_sections: yes
     toc: yes
   word_document:
     toc: yes
@@ -77,7 +77,7 @@ knitr::kable(CCAA_camas_UCI)
 ```
 
 
-Ahora queremos el porcentaje de camas UIC por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al [Instituto Nacional de Estadística de España (INE)](ine.es). 
+Ahora queremos el porcentaje de camas UCI por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al [Instituto Nacional de Estadística de España (INE)](ine.es). 
 
 Desde aquí buscaremos [Población por comunidades y ciudades autónomas y sexo](https://www.ine.es/jaxiT3/Tabla.htm?t=2853).  y nos bajaremos los datos que deseemos ( los  guardamos en DatosINE)
 
@@ -89,13 +89,13 @@ poblacion_CCAA_wider=poblacion_CCAA_long %>% tidyr::pivot_wider(names_from=Perio
 glimpse(poblacion_CCAA_wider)
 ```
 
-
+Nos queda una cos notad  que las cifras de población han quedado con datos en miles y se han leído no cómo caracter. Tenemos que transforma esa variable. Lo haremos el el fichero long  y luego haremos en  el wider
 
 
 ### Las funciones `pivot_wider`  y `pivot_long`
 
 
-Probaremos estas funciones con el los fichero de datos de altas
+Probaremos estas funciones con los fichero de datos de altas
 
 
 #### El fichero de altas  por fecha y comunidad autónoma 
@@ -104,7 +104,7 @@ Probaremos estas funciones con el los fichero de datos de altas
 Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas 
 
 * `fecha`  :  La fecha de la observación tomada  de la clase `date`
-* `cod_ine`:  Es el código de comunidad autónoma del [Instituto  Nacional de Estadísitica](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
+* `cod_ine`:  Es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
 * `CCAA`   :  es el nombre de la comunidad autónoma.
 * `total`  :  La observación para `fecha` del número  de altas de esa `CCAA`. 
 
@@ -115,11 +115,12 @@ knitr::kable(ccaa_altas_long)
 ```
 
 
-Estos datos los podemos transformar en una tabla con la función `pivot_wider`del la librería `tidyr`
+Estos datos los podemos transformar en una tabla con la función `pivot_wider`de la librería `tidyr`
 
 
 ```{r}
 aux1=ccaa_altas_long %>% tidyr::pivot_wider(names_from=fecha,values_from=total)
+glimpse(aux1)
 knitr::kable(aux1)
 ```
 
@@ -218,7 +219,7 @@ Algunos de los ficheros correspondientes a metadatos  son :
 
 ## Datos sobre la epidemia
 
-Los datos epidemiológicos son los que e contabilidad datos sobre la pandemia en cada unidad de medida. Como ya hemos explicado están en la versión **wide**  la **long**
+Los datos epidemiológicos son los que e contabilidad datos sobre la pandemia en cada unidad de medida. Como ya hemos explicado están en la versión **wider**  la **long**
 
 
 
@@ -234,7 +235,7 @@ Los datos epidemiológicos son los que e contabilidad datos sobre la pandemia en
   + `ccaa_covid19_uci.csv`; `ccaa_covid19_uci_log.csv`
 
 
-## Nuestro modelo de datos 
+## Tabla base de nuestro modelo de datos 
 
 
 Vamos a construir una tabla  de tipo "log" con todos los datos. Para ello apilaremos las tablas long añadiendo la categoría que mide la variable total: casos, ingresos, fallecimientos, uci.
@@ -327,10 +328,10 @@ write_csv(datos_COVID19_con_metadatos_long,
 data_long=read_csv("data/Modelo_Datos/datos_COVID19_con_metadatos_long.csv")
 data_long_filtrado= data_long %>% select(fecha,CCAA,total,tipo)
 
-data_wide_filtrado= data_long_filtrado %>%
+data_wider_filtrado= data_long_filtrado %>%
   pivot_wider(names_from=CCAA,values_from=total)
 
-knitr::kable(data_wide_filtrado)
+knitr::kable(data_wider_filtrado)
 ```
 
 
