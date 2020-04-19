@@ -3,8 +3,8 @@ title: 'Fuentes: Datos oficiales  COVID19 España'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: "17/4/2020"
 output:
-  html_document:
-    df_print: paged
+  html_document: 
+    df_print: kable
     toc: yes
   pdf_document:
     number_sections: yes
@@ -125,52 +125,16 @@ knitr::kable(aux1)
 ```
 
 
-### Los datos de altas por día y por  comunidad autónoma
+### Los datos de casos por día y por  comunidad autónoma
 
 
-Fichero `ccaa_covid19_altas.csv` es un fichero  que puede ser procesado desde el fichero `ccaa_covid19_altas_long.csv`
+Fichero `ccaa_covid19_casos.csv` es un fichero  que puede ser procesado desde el fichero `ccaa_covid19_casos_long.csv`
 
 
 * La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm).
 * La variable  `CCAA`  es el nombre de la comunidad autónoma.
-* El resto de columnas de observación en el tiempo de  la altas de enfermos por coronavirus.
+* El resto de columnas de observación en el tiempo de los casos de enfermos por coronavirus.
 
-
-```{r}
-ccaa_altas_wider=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_altas.csv")
-glimpse(ccaa_altas_wider)
-knitr::kable(ccaa_altas_wider)
-```
-
-
-
-Podemos recuperar el fichero largo con la función  `pivot_longer`
-
-
-
-```{r}
-aux2=ccaa_altas_wider %>% pivot_longer(cols=`2020-03-16`:`2020-04-08`)
-glimpse(aux2)
-knitr::kable(aux2)
-```
-
-
-
-
-
-### Casos declarados de  coronavirus por día y por  comunidad autónoma
-
-
-
-
-De la misma forma tenemos los datos  de casos declarados de infección por de coronavirus.
-
-Fichero `ccaa_covid19_casos.csv` es un fichero procesado desde el fichero `ccaa_covid19_casos_long.csv`
-
-* La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm).
-* La variable `CCAA` contine el nombre de la Comunidad Autónoma. 
-* El resto de columnas de observación en el tiempo de  los casos de infección por coronavirus.
-* En ingles se les llama  a estos  dos formatos de tablas **wide**  (ancho)  y **long** (largo).
 
 ```{r}
 ccaa_casos_wider=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_casos.csv")
@@ -183,14 +147,11 @@ knitr::kable(ccaa_casos_wider)
 Podemos recuperar el fichero largo con la función  `pivot_longer`
 
 
-
 ```{r}
-ccaa_casos_longer=   ccaa_casos_wider %>%  select(-c(cod_ine,CCAA)) %>%   pivot_longer(cols=`2020-03-16`:`2020-04-08`)
-
-glimpse(ccaa_casos_longer)
-knitr::kable(ccaa_casos_longer)
+aux2=ccaa_casos_wider %>% pivot_longer(cols=starts_with("2020"))
+glimpse(aux2)
+knitr::kable(aux2)
 ```
-
 
 
 
@@ -224,24 +185,23 @@ Los datos epidemiológicos son los que e contabilidad datos sobre la pandemia en
 
 
 * Datos de *casos* de pacientes de coronavirus
-  + `ccaa_covid19_casos.csv`; `ccaa_covid19_casos_log.csv`
+  + `ccaa_covid19_casos.csv`; `ccaa_covid19_casos_long.csv`
 * Datos de *altas* de pacientes de coronavirus
-  + `ccaa_covid19_altas.csv`; `ccaa_covid19_altas_log.csv`
+  + `ccaa_covid19_altas.csv`; `ccaa_covid19_altas_long.csv`
 * Datos de *fallecidos* de pacientes de coronavirus
-  + `ccaa_covid19_fallecidos.csv`; `ccaa_covid19_fallecidos_log.csv`
+  + `ccaa_covid19_fallecidos.csv`; `ccaa_covid19_fallecidos_long.csv`
 * Datos de pacientes *hospitalizados*  de pacientes de coronavirus
-  + `ccaa_covid19_hospitalizados.csv`; `ccaa_covid19_hospitalizados_log.csv`
+  + `ccaa_covid19_hospitalizados.csv`; `ccaa_covid19_hospitalizados_long.csv`
 * Datos de pacientes en *UCI*  de pacientes de coronavirus
-  + `ccaa_covid19_uci.csv`; `ccaa_covid19_uci_log.csv`
+  + `ccaa_covid19_uci.csv`; `ccaa_covid19_uci_long.csv`
 
 
 ## Tabla base de nuestro modelo de datos 
 
 
-Vamos a construir una tabla  de tipo "log" con todos los datos. Para ello apilaremos las tablas long añadiendo la categoría que mide la variable total: casos, ingresos, fallecimientos, uci.
+Vamos a construir una tabla  de tipo "long" con todos los datos. Para ello apilaremos las tablas long añadiendo la categoría que mide la variable total: casos, ingresos, fallecimientos, uci.
 
 Empecemos con algunas variables auxiliares
-
 
 
 ```{r}
@@ -255,7 +215,7 @@ return(aux)
 }
 
 datos_COVID19_long=bind_rows(lapply(tipos,FUN=arreglo))
-
+datos_COVID19_long
 ```
 
 ## Añadir metadatos a nuestro modelo de datos
