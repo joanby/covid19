@@ -1,0 +1,3781 @@
+fecha,cod_ine,CCAA,total,tipo
+2020-02-27,01,Andalucía,1,casos
+2020-02-28,01,Andalucía,6,casos
+2020-02-29,01,Andalucía,8,casos
+2020-03-01,01,Andalucía,12,casos
+2020-03-02,01,Andalucía,12,casos
+2020-03-03,01,Andalucía,13,casos
+2020-03-04,01,Andalucía,13,casos
+2020-03-05,01,Andalucía,12,casos
+2020-03-06,01,Andalucía,21,casos
+2020-03-07,01,Andalucía,27,casos
+2020-03-08,01,Andalucía,35,casos
+2020-03-09,01,Andalucía,54,casos
+2020-03-10,01,Andalucía,71,casos
+2020-03-11,01,Andalucía,90,casos
+2020-03-12,01,Andalucía,115,casos
+2020-03-13,01,Andalucía,219,casos
+2020-03-14,01,Andalucía,269,casos
+2020-03-15,01,Andalucía,437,casos
+2020-03-16,01,Andalucía,554,casos
+2020-03-17,01,Andalucía,683,casos
+2020-03-18,01,Andalucía,859,casos
+2020-03-19,01,Andalucía,1008,casos
+2020-03-20,01,Andalucía,1287,casos
+2020-03-21,01,Andalucía,1515,casos
+2020-03-22,01,Andalucía,1725,casos
+2020-03-23,01,Andalucía,1961,casos
+2020-03-24,01,Andalucía,2471,casos
+2020-03-25,01,Andalucía,3010,casos
+2020-03-26,01,Andalucía,3406,casos
+2020-03-27,01,Andalucía,3793,casos
+2020-03-28,01,Andalucía,4277,casos
+2020-03-29,01,Andalucía,4682,casos
+2020-03-30,01,Andalucía,5405,casos
+2020-03-31,01,Andalucía,5818,casos
+2020-04-01,01,Andalucía,6392,casos
+2020-04-02,01,Andalucía,6972,casos
+2020-04-03,01,Andalucía,7374,casos
+2020-04-04,01,Andalucía,7869,casos
+2020-04-05,01,Andalucía,8301,casos
+2020-04-06,01,Andalucía,8581,casos
+2020-04-07,01,Andalucía,8767,casos
+2020-04-08,01,Andalucía,8997,casos
+2020-04-09,01,Andalucía,9261,casos
+2020-04-10,01,Andalucía,9510,casos
+2020-04-11,01,Andalucía,9712,casos
+2020-04-12,01,Andalucía,10006,casos
+2020-04-13,01,Andalucía,10187,casos
+2020-04-14,01,Andalucía,10192,casos
+2020-04-15,01,Andalucía,10595,casos
+2020-02-27,02,Aragón,0,casos
+2020-02-28,02,Aragón,1,casos
+2020-02-29,02,Aragón,1,casos
+2020-03-01,02,Aragón,0,casos
+2020-03-02,02,Aragón,0,casos
+2020-03-03,02,Aragón,0,casos
+2020-03-04,02,Aragón,0,casos
+2020-03-05,02,Aragón,1,casos
+2020-03-06,02,Aragón,6,casos
+2020-03-07,02,Aragón,11,casos
+2020-03-08,02,Aragón,13,casos
+2020-03-09,02,Aragón,13,casos
+2020-03-10,02,Aragón,38,casos
+2020-03-11,02,Aragón,45,casos
+2020-03-12,02,Aragón,64,casos
+2020-03-13,02,Aragón,80,casos
+2020-03-14,02,Aragón,80,casos
+2020-03-15,02,Aragón,147,casos
+2020-03-16,02,Aragón,174,casos
+2020-03-17,02,Aragón,207,casos
+2020-03-18,02,Aragón,226,casos
+2020-03-19,02,Aragón,281,casos
+2020-03-20,02,Aragón,360,casos
+2020-03-21,02,Aragón,424,casos
+2020-03-22,02,Aragón,532,casos
+2020-03-23,02,Aragón,638,casos
+2020-03-24,02,Aragón,758,casos
+2020-03-25,02,Aragón,907,casos
+2020-03-26,02,Aragón,1116,casos
+2020-03-27,02,Aragón,1338,casos
+2020-03-28,02,Aragón,1592,casos
+2020-03-29,02,Aragón,1858,casos
+2020-03-30,02,Aragón,2078,casos
+2020-03-31,02,Aragón,2272,casos
+2020-04-01,02,Aragón,2491,casos
+2020-04-02,02,Aragón,2700,casos
+2020-04-03,02,Aragón,2889,casos
+2020-04-04,02,Aragón,3078,casos
+2020-04-05,02,Aragón,3232,casos
+2020-04-06,02,Aragón,3347,casos
+2020-04-07,02,Aragón,3449,casos
+2020-04-08,02,Aragón,3549,casos
+2020-04-09,02,Aragón,3685,casos
+2020-04-10,02,Aragón,3831,casos
+2020-04-11,02,Aragón,3969,casos
+2020-04-12,02,Aragón,4070,casos
+2020-04-13,02,Aragón,4187,casos
+2020-04-14,02,Aragón,4245,casos
+2020-04-15,02,Aragón,4338,casos
+2020-02-27,03,Asturias,0,casos
+2020-02-28,03,Asturias,0,casos
+2020-02-29,03,Asturias,0,casos
+2020-03-01,03,Asturias,1,casos
+2020-03-02,03,Asturias,1,casos
+2020-03-03,03,Asturias,1,casos
+2020-03-04,03,Asturias,2,casos
+2020-03-05,03,Asturias,5,casos
+2020-03-06,03,Asturias,5,casos
+2020-03-07,03,Asturias,5,casos
+2020-03-08,03,Asturias,7,casos
+2020-03-09,03,Asturias,7,casos
+2020-03-10,03,Asturias,22,casos
+2020-03-11,03,Asturias,32,casos
+2020-03-12,03,Asturias,47,casos
+2020-03-13,03,Asturias,67,casos
+2020-03-14,03,Asturias,92,casos
+2020-03-15,03,Asturias,137,casos
+2020-03-16,03,Asturias,177,casos
+2020-03-17,03,Asturias,193,casos
+2020-03-18,03,Asturias,242,casos
+2020-03-19,03,Asturias,292,casos
+2020-03-20,03,Asturias,344,casos
+2020-03-21,03,Asturias,486,casos
+2020-03-22,03,Asturias,545,casos
+2020-03-23,03,Asturias,594,casos
+2020-03-24,03,Asturias,662,casos
+2020-03-25,03,Asturias,779,casos
+2020-03-26,03,Asturias,841,casos
+2020-03-27,03,Asturias,900,casos
+2020-03-28,03,Asturias,1004,casos
+2020-03-29,03,Asturias,1088,casos
+2020-03-30,03,Asturias,1158,casos
+2020-03-31,03,Asturias,1236,casos
+2020-04-01,03,Asturias,1322,casos
+2020-04-02,03,Asturias,1384,casos
+2020-04-03,03,Asturias,1433,casos
+2020-04-04,03,Asturias,1522,casos
+2020-04-05,03,Asturias,1605,casos
+2020-04-06,03,Asturias,1646,casos
+2020-04-07,03,Asturias,1679,casos
+2020-04-08,03,Asturias,1705,casos
+2020-04-09,03,Asturias,1737,casos
+2020-04-10,03,Asturias,1799,casos
+2020-04-11,03,Asturias,1827,casos
+2020-04-12,03,Asturias,1892,casos
+2020-04-13,03,Asturias,1958,casos
+2020-04-14,03,Asturias,2051,casos
+2020-04-15,03,Asturias,2096,casos
+2020-02-27,04,Baleares,1,casos
+2020-02-28,04,Baleares,1,casos
+2020-02-29,04,Baleares,2,casos
+2020-03-01,04,Baleares,2,casos
+2020-03-02,04,Baleares,2,casos
+2020-03-03,04,Baleares,2,casos
+2020-03-04,04,Baleares,5,casos
+2020-03-05,04,Baleares,6,casos
+2020-03-06,04,Baleares,6,casos
+2020-03-07,04,Baleares,6,casos
+2020-03-08,04,Baleares,8,casos
+2020-03-09,04,Baleares,11,casos
+2020-03-10,04,Baleares,13,casos
+2020-03-11,04,Baleares,16,casos
+2020-03-12,04,Baleares,22,casos
+2020-03-13,04,Baleares,30,casos
+2020-03-14,04,Baleares,28,casos
+2020-03-15,04,Baleares,28,casos
+2020-03-16,04,Baleares,73,casos
+2020-03-17,04,Baleares,92,casos
+2020-03-18,04,Baleares,112,casos
+2020-03-19,04,Baleares,169,casos
+2020-03-20,04,Baleares,203,casos
+2020-03-21,04,Baleares,246,casos
+2020-03-22,04,Baleares,331,casos
+2020-03-23,04,Baleares,400,casos
+2020-03-24,04,Baleares,478,casos
+2020-03-25,04,Baleares,562,casos
+2020-03-26,04,Baleares,660,casos
+2020-03-27,04,Baleares,755,casos
+2020-03-28,04,Baleares,862,casos
+2020-03-29,04,Baleares,958,casos
+2020-03-30,04,Baleares,1000,casos
+2020-03-31,04,Baleares,1069,casos
+2020-04-01,04,Baleares,1131,casos
+2020-04-02,04,Baleares,1204,casos
+2020-04-03,04,Baleares,1257,casos
+2020-04-04,04,Baleares,1271,casos
+2020-04-05,04,Baleares,1293,casos
+2020-04-06,04,Baleares,1320,casos
+2020-04-07,04,Baleares,1369,casos
+2020-04-08,04,Baleares,1412,casos
+2020-04-09,04,Baleares,1448,casos
+2020-04-10,04,Baleares,1488,casos
+2020-04-11,04,Baleares,1507,casos
+2020-04-12,04,Baleares,1534,casos
+2020-04-13,04,Baleares,1550,casos
+2020-04-14,04,Baleares,1571,casos
+2020-04-15,04,Baleares,1606,casos
+2020-02-27,05,Canarias,6,casos
+2020-02-28,05,Canarias,6,casos
+2020-02-29,05,Canarias,6,casos
+2020-03-01,05,Canarias,7,casos
+2020-03-02,05,Canarias,7,casos
+2020-03-03,05,Canarias,7,casos
+2020-03-04,05,Canarias,7,casos
+2020-03-05,05,Canarias,8,casos
+2020-03-06,05,Canarias,11,casos
+2020-03-07,05,Canarias,18,casos
+2020-03-08,05,Canarias,17,casos
+2020-03-09,05,Canarias,22,casos
+2020-03-10,05,Canarias,25,casos
+2020-03-11,05,Canarias,37,casos
+2020-03-12,05,Canarias,51,casos
+2020-03-13,05,Canarias,70,casos
+2020-03-14,05,Canarias,90,casos
+2020-03-15,05,Canarias,109,casos
+2020-03-16,05,Canarias,119,casos
+2020-03-17,05,Canarias,148,casos
+2020-03-18,05,Canarias,181,casos
+2020-03-19,05,Canarias,220,casos
+2020-03-20,05,Canarias,287,casos
+2020-03-21,05,Canarias,348,casos
+2020-03-22,05,Canarias,414,casos
+2020-03-23,05,Canarias,481,casos
+2020-03-24,05,Canarias,557,casos
+2020-03-25,05,Canarias,657,casos
+2020-03-26,05,Canarias,784,casos
+2020-03-27,05,Canarias,878,casos
+2020-03-28,05,Canarias,1025,casos
+2020-03-29,05,Canarias,1125,casos
+2020-03-30,05,Canarias,1204,casos
+2020-03-31,05,Canarias,1262,casos
+2020-04-01,05,Canarias,1380,casos
+2020-04-02,05,Canarias,1444,casos
+2020-04-03,05,Canarias,1490,casos
+2020-04-04,05,Canarias,1564,casos
+2020-04-05,05,Canarias,1622,casos
+2020-04-06,05,Canarias,1649,casos
+2020-04-07,05,Canarias,1725,casos
+2020-04-08,05,Canarias,1762,casos
+2020-04-09,05,Canarias,1834,casos
+2020-04-10,05,Canarias,1858,casos
+2020-04-11,05,Canarias,1887,casos
+2020-04-12,05,Canarias,1918,casos
+2020-04-13,05,Canarias,1944,casos
+2020-04-14,05,Canarias,1958,casos
+2020-04-15,05,Canarias,1975,casos
+2020-02-27,06,Cantabria,0,casos
+2020-02-28,06,Cantabria,0,casos
+2020-02-29,06,Cantabria,0,casos
+2020-03-01,06,Cantabria,1,casos
+2020-03-02,06,Cantabria,10,casos
+2020-03-03,06,Cantabria,10,casos
+2020-03-04,06,Cantabria,10,casos
+2020-03-05,06,Cantabria,10,casos
+2020-03-06,06,Cantabria,10,casos
+2020-03-07,06,Cantabria,10,casos
+2020-03-08,06,Cantabria,12,casos
+2020-03-09,06,Cantabria,12,casos
+2020-03-10,06,Cantabria,12,casos
+2020-03-11,06,Cantabria,12,casos
+2020-03-12,06,Cantabria,16,casos
+2020-03-13,06,Cantabria,29,casos
+2020-03-14,06,Cantabria,31,casos
+2020-03-15,06,Cantabria,51,casos
+2020-03-16,06,Cantabria,58,casos
+2020-03-17,06,Cantabria,58,casos
+2020-03-18,06,Cantabria,68,casos
+2020-03-19,06,Cantabria,83,casos
+2020-03-20,06,Cantabria,144,casos
+2020-03-21,06,Cantabria,215,casos
+2020-03-22,06,Cantabria,282,casos
+2020-03-23,06,Cantabria,347,casos
+2020-03-24,06,Cantabria,425,casos
+2020-03-25,06,Cantabria,510,casos
+2020-03-26,06,Cantabria,671,casos
+2020-03-27,06,Cantabria,810,casos
+2020-03-28,06,Cantabria,937,casos
+2020-03-29,06,Cantabria,1023,casos
+2020-03-30,06,Cantabria,1100,casos
+2020-03-31,06,Cantabria,1171,casos
+2020-04-01,06,Cantabria,1213,casos
+2020-04-02,06,Cantabria,1268,casos
+2020-04-03,06,Cantabria,1321,casos
+2020-04-04,06,Cantabria,1384,casos
+2020-04-05,06,Cantabria,1441,casos
+2020-04-06,06,Cantabria,1483,casos
+2020-04-07,06,Cantabria,1501,casos
+2020-04-08,06,Cantabria,1572,casos
+2020-04-09,06,Cantabria,1619,casos
+2020-04-10,06,Cantabria,1659,casos
+2020-04-11,06,Cantabria,1719,casos
+2020-04-12,06,Cantabria,1752,casos
+2020-04-13,06,Cantabria,1777,casos
+2020-04-14,06,Cantabria,1796,casos
+2020-04-15,06,Cantabria,1823,casos
+2020-02-27,08,Castilla-La Mancha,0,casos
+2020-02-28,08,Castilla-La Mancha,0,casos
+2020-02-29,08,Castilla-La Mancha,0,casos
+2020-03-01,08,Castilla-La Mancha,1,casos
+2020-03-02,08,Castilla-La Mancha,3,casos
+2020-03-03,08,Castilla-La Mancha,7,casos
+2020-03-04,08,Castilla-La Mancha,12,casos
+2020-03-05,08,Castilla-La Mancha,13,casos
+2020-03-06,08,Castilla-La Mancha,15,casos
+2020-03-07,08,Castilla-La Mancha,15,casos
+2020-03-08,08,Castilla-La Mancha,15,casos
+2020-03-09,08,Castilla-La Mancha,26,casos
+2020-03-10,08,Castilla-La Mancha,39,casos
+2020-03-11,08,Castilla-La Mancha,71,casos
+2020-03-12,08,Castilla-La Mancha,115,casos
+2020-03-13,08,Castilla-La Mancha,194,casos
+2020-03-14,08,Castilla-La Mancha,289,casos
+2020-03-15,08,Castilla-La Mancha,401,casos
+2020-03-16,08,Castilla-La Mancha,567,casos
+2020-03-17,08,Castilla-La Mancha,567,casos
+2020-03-18,08,Castilla-La Mancha,675,casos
+2020-03-19,08,Castilla-La Mancha,801,casos
+2020-03-20,08,Castilla-La Mancha,1044,casos
+2020-03-21,08,Castilla-La Mancha,1423,casos
+2020-03-22,08,Castilla-La Mancha,1819,casos
+2020-03-23,08,Castilla-La Mancha,2078,casos
+2020-03-24,08,Castilla-La Mancha,2465,casos
+2020-03-25,08,Castilla-La Mancha,2780,casos
+2020-03-26,08,Castilla-La Mancha,3383,casos
+2020-03-27,08,Castilla-La Mancha,3934,casos
+2020-03-28,08,Castilla-La Mancha,4512,casos
+2020-03-29,08,Castilla-La Mancha,5246,casos
+2020-03-30,08,Castilla-La Mancha,5858,casos
+2020-03-31,08,Castilla-La Mancha,6424,casos
+2020-04-01,08,Castilla-La Mancha,7047,casos
+2020-04-02,08,Castilla-La Mancha,7682,casos
+2020-04-03,08,Castilla-La Mancha,8523,casos
+2020-04-04,08,Castilla-La Mancha,9324,casos
+2020-04-05,08,Castilla-La Mancha,10031,casos
+2020-04-06,08,Castilla-La Mancha,10602,casos
+2020-04-07,08,Castilla-La Mancha,11077,casos
+2020-04-08,08,Castilla-La Mancha,11788,casos
+2020-04-09,08,Castilla-La Mancha,12489,casos
+2020-04-10,08,Castilla-La Mancha,13063,casos
+2020-04-11,08,Castilla-La Mancha,13456,casos
+2020-04-12,08,Castilla-La Mancha,13698,casos
+2020-04-13,08,Castilla-La Mancha,14054,casos
+2020-04-14,08,Castilla-La Mancha,14329,casos
+2020-04-15,08,Castilla-La Mancha,14680,casos
+2020-02-27,07,Castilla y León,0,casos
+2020-02-28,07,Castilla y León,2,casos
+2020-02-29,07,Castilla y León,2,casos
+2020-03-01,07,Castilla y León,3,casos
+2020-03-02,07,Castilla y León,3,casos
+2020-03-03,07,Castilla y León,8,casos
+2020-03-04,07,Castilla y León,11,casos
+2020-03-05,07,Castilla y León,11,casos
+2020-03-06,07,Castilla y León,14,casos
+2020-03-07,07,Castilla y León,14,casos
+2020-03-08,07,Castilla y León,22,casos
+2020-03-09,07,Castilla y León,23,casos
+2020-03-10,07,Castilla y León,56,casos
+2020-03-11,07,Castilla y León,71,casos
+2020-03-12,07,Castilla y León,92,casos
+2020-03-13,07,Castilla y León,169,casos
+2020-03-14,07,Castilla y León,223,casos
+2020-03-15,07,Castilla y León,292,casos
+2020-03-16,07,Castilla y León,334,casos
+2020-03-17,07,Castilla y León,431,casos
+2020-03-18,07,Castilla y León,668,casos
+2020-03-19,07,Castilla y León,868,casos
+2020-03-20,07,Castilla y León,1147,casos
+2020-03-21,07,Castilla y León,1466,casos
+2020-03-22,07,Castilla y León,1744,casos
+2020-03-23,07,Castilla y León,2055,casos
+2020-03-24,07,Castilla y León,2460,casos
+2020-03-25,07,Castilla y León,2940,casos
+2020-03-26,07,Castilla y León,3488,casos
+2020-03-27,07,Castilla y León,4132,casos
+2020-03-28,07,Castilla y León,4791,casos
+2020-03-29,07,Castilla y León,5414,casos
+2020-03-30,07,Castilla y León,5801,casos
+2020-03-31,07,Castilla y León,6211,casos
+2020-04-01,07,Castilla y León,6847,casos
+2020-04-02,07,Castilla y León,7355,casos
+2020-04-03,07,Castilla y León,7875,casos
+2020-04-04,07,Castilla y León,8332,casos
+2020-04-05,07,Castilla y León,8749,casos
+2020-04-06,07,Castilla y León,9116,casos
+2020-04-07,07,Castilla y León,9581,casos
+2020-04-08,07,Castilla y León,10058,casos
+2020-04-09,07,Castilla y León,10518,casos
+2020-04-10,07,Castilla y León,11102,casos
+2020-04-11,07,Castilla y León,11543,casos
+2020-04-12,07,Castilla y León,12118,casos
+2020-04-13,07,Castilla y León,12628,casos
+2020-04-14,07,Castilla y León,13180,casos
+2020-04-15,07,Castilla y León,13697,casos
+2020-02-27,09,Cataluña,2,casos
+2020-02-28,09,Cataluña,3,casos
+2020-02-29,09,Cataluña,5,casos
+2020-03-01,09,Cataluña,6,casos
+2020-03-02,09,Cataluña,15,casos
+2020-03-03,09,Cataluña,15,casos
+2020-03-04,09,Cataluña,15,casos
+2020-03-05,09,Cataluña,24,casos
+2020-03-06,09,Cataluña,24,casos
+2020-03-07,09,Cataluña,24,casos
+2020-03-08,09,Cataluña,49,casos
+2020-03-09,09,Cataluña,75,casos
+2020-03-10,09,Cataluña,124,casos
+2020-03-11,09,Cataluña,156,casos
+2020-03-12,09,Cataluña,260,casos
+2020-03-13,09,Cataluña,316,casos
+2020-03-14,09,Cataluña,509,casos
+2020-03-15,09,Cataluña,715,casos
+2020-03-16,09,Cataluña,903,casos
+2020-03-17,09,Cataluña,1394,casos
+2020-03-18,09,Cataluña,1866,casos
+2020-03-19,09,Cataluña,2702,casos
+2020-03-20,09,Cataluña,3270,casos
+2020-03-21,09,Cataluña,4203,casos
+2020-03-22,09,Cataluña,4704,casos
+2020-03-23,09,Cataluña,5925,casos
+2020-03-24,09,Cataluña,7864,casos
+2020-03-25,09,Cataluña,9937,casos
+2020-03-26,09,Cataluña,11592,casos
+2020-03-27,09,Cataluña,12940,casos
+2020-03-28,09,Cataluña,14263,casos
+2020-03-29,09,Cataluña,15026,casos
+2020-03-30,09,Cataluña,16157,casos
+2020-03-31,09,Cataluña,18773,casos
+2020-04-01,09,Cataluña,19991,casos
+2020-04-02,09,Cataluña,21804,casos
+2020-04-03,09,Cataluña,23460,casos
+2020-04-04,09,Cataluña,24734,casos
+2020-04-05,09,Cataluña,26032,casos
+2020-04-06,09,Cataluña,26824,casos
+2020-04-07,09,Cataluña,28323,casos
+2020-04-08,09,Cataluña,29647,casos
+2020-04-09,09,Cataluña,31043,casos
+2020-04-10,09,Cataluña,31824,casos
+2020-04-11,09,Cataluña,32984,casos
+2020-04-12,09,Cataluña,34027,casos
+2020-04-13,09,Cataluña,34726,casos
+2020-04-14,09,Cataluña,35197,casos
+2020-04-15,09,Cataluña,36505,casos
+2020-02-27,18,Ceuta,0,casos
+2020-02-28,18,Ceuta,0,casos
+2020-02-29,18,Ceuta,0,casos
+2020-03-01,18,Ceuta,0,casos
+2020-03-02,18,Ceuta,0,casos
+2020-03-03,18,Ceuta,0,casos
+2020-03-04,18,Ceuta,0,casos
+2020-03-05,18,Ceuta,0,casos
+2020-03-06,18,Ceuta,0,casos
+2020-03-07,18,Ceuta,0,casos
+2020-03-08,18,Ceuta,0,casos
+2020-03-09,18,Ceuta,0,casos
+2020-03-10,18,Ceuta,0,casos
+2020-03-11,18,Ceuta,0,casos
+2020-03-12,18,Ceuta,0,casos
+2020-03-13,18,Ceuta,0,casos
+2020-03-14,18,Ceuta,0,casos
+2020-03-15,18,Ceuta,1,casos
+2020-03-16,18,Ceuta,1,casos
+2020-03-17,18,Ceuta,1,casos
+2020-03-18,18,Ceuta,1,casos
+2020-03-19,18,Ceuta,1,casos
+2020-03-20,18,Ceuta,5,casos
+2020-03-21,18,Ceuta,5,casos
+2020-03-22,18,Ceuta,5,casos
+2020-03-23,18,Ceuta,6,casos
+2020-03-24,18,Ceuta,6,casos
+2020-03-25,18,Ceuta,9,casos
+2020-03-26,18,Ceuta,10,casos
+2020-03-27,18,Ceuta,17,casos
+2020-03-28,18,Ceuta,17,casos
+2020-03-29,18,Ceuta,21,casos
+2020-03-30,18,Ceuta,25,casos
+2020-03-31,18,Ceuta,34,casos
+2020-04-01,18,Ceuta,51,casos
+2020-04-02,18,Ceuta,55,casos
+2020-04-03,18,Ceuta,62,casos
+2020-04-04,18,Ceuta,73,casos
+2020-04-05,18,Ceuta,83,casos
+2020-04-06,18,Ceuta,83,casos
+2020-04-07,18,Ceuta,83,casos
+2020-04-08,18,Ceuta,84,casos
+2020-04-09,18,Ceuta,84,casos
+2020-04-10,18,Ceuta,91,casos
+2020-04-11,18,Ceuta,93,casos
+2020-04-12,18,Ceuta,93,casos
+2020-04-13,18,Ceuta,95,casos
+2020-04-14,18,Ceuta,96,casos
+2020-04-15,18,Ceuta,98,casos
+2020-02-27,10,C. Valenciana,2,casos
+2020-02-28,10,C. Valenciana,8,casos
+2020-02-29,10,C. Valenciana,10,casos
+2020-03-01,10,C. Valenciana,15,casos
+2020-03-02,10,C. Valenciana,15,casos
+2020-03-03,10,C. Valenciana,15,casos
+2020-03-04,10,C. Valenciana,19,casos
+2020-03-05,10,C. Valenciana,19,casos
+2020-03-06,10,C. Valenciana,30,casos
+2020-03-07,10,C. Valenciana,30,casos
+2020-03-08,10,C. Valenciana,37,casos
+2020-03-09,10,C. Valenciana,37,casos
+2020-03-10,10,C. Valenciana,50,casos
+2020-03-11,10,C. Valenciana,65,casos
+2020-03-12,10,C. Valenciana,76,casos
+2020-03-13,10,C. Valenciana,94,casos
+2020-03-14,10,C. Valenciana,130,casos
+2020-03-15,10,C. Valenciana,409,casos
+2020-03-16,10,C. Valenciana,409,casos
+2020-03-17,10,C. Valenciana,541,casos
+2020-03-18,10,C. Valenciana,726,casos
+2020-03-19,10,C. Valenciana,921,casos
+2020-03-20,10,C. Valenciana,1105,casos
+2020-03-21,10,C. Valenciana,1363,casos
+2020-03-22,10,C. Valenciana,1604,casos
+2020-03-23,10,C. Valenciana,1901,casos
+2020-03-24,10,C. Valenciana,2167,casos
+2020-03-25,10,C. Valenciana,2616,casos
+2020-03-26,10,C. Valenciana,3200,casos
+2020-03-27,10,C. Valenciana,3532,casos
+2020-03-28,10,C. Valenciana,4034,casos
+2020-03-29,10,C. Valenciana,4784,casos
+2020-03-30,10,C. Valenciana,5110,casos
+2020-03-31,10,C. Valenciana,5508,casos
+2020-04-01,10,C. Valenciana,5922,casos
+2020-04-02,10,C. Valenciana,6308,casos
+2020-04-03,10,C. Valenciana,6624,casos
+2020-04-04,10,C. Valenciana,6901,casos
+2020-04-05,10,C. Valenciana,7184,casos
+2020-04-06,10,C. Valenciana,7334,casos
+2020-04-07,10,C. Valenciana,7443,casos
+2020-04-08,10,C. Valenciana,7655,casos
+2020-04-09,10,C. Valenciana,7964,casos
+2020-04-10,10,C. Valenciana,8331,casos
+2020-04-11,10,C. Valenciana,8578,casos
+2020-04-12,10,C. Valenciana,8841,casos
+2020-04-13,10,C. Valenciana,9060,casos
+2020-04-14,10,C. Valenciana,9213,casos
+2020-04-15,10,C. Valenciana,9424,casos
+2020-02-27,11,Extremadura,0,casos
+2020-02-28,11,Extremadura,0,casos
+2020-02-29,11,Extremadura,0,casos
+2020-03-01,11,Extremadura,4,casos
+2020-03-02,11,Extremadura,6,casos
+2020-03-03,11,Extremadura,6,casos
+2020-03-04,11,Extremadura,6,casos
+2020-03-05,11,Extremadura,6,casos
+2020-03-06,11,Extremadura,6,casos
+2020-03-07,11,Extremadura,6,casos
+2020-03-08,11,Extremadura,6,casos
+2020-03-09,11,Extremadura,7,casos
+2020-03-10,11,Extremadura,8,casos
+2020-03-11,11,Extremadura,9,casos
+2020-03-12,11,Extremadura,19,casos
+2020-03-13,11,Extremadura,39,casos
+2020-03-14,11,Extremadura,66,casos
+2020-03-15,11,Extremadura,95,casos
+2020-03-16,11,Extremadura,111,casos
+2020-03-17,11,Extremadura,153,casos
+2020-03-18,11,Extremadura,194,casos
+2020-03-19,11,Extremadura,241,casos
+2020-03-20,11,Extremadura,297,casos
+2020-03-21,11,Extremadura,354,casos
+2020-03-22,11,Extremadura,384,casos
+2020-03-23,11,Extremadura,493,casos
+2020-03-24,11,Extremadura,636,casos
+2020-03-25,11,Extremadura,742,casos
+2020-03-26,11,Extremadura,969,casos
+2020-03-27,11,Extremadura,1231,casos
+2020-03-28,11,Extremadura,1394,casos
+2020-03-29,11,Extremadura,1456,casos
+2020-03-30,11,Extremadura,1560,casos
+2020-03-31,11,Extremadura,1628,casos
+2020-04-01,11,Extremadura,1679,casos
+2020-04-02,11,Extremadura,1837,casos
+2020-04-03,11,Extremadura,1893,casos
+2020-04-04,11,Extremadura,1979,casos
+2020-04-05,11,Extremadura,2047,casos
+2020-04-06,11,Extremadura,2068,casos
+2020-04-07,11,Extremadura,2116,casos
+2020-04-08,11,Extremadura,2184,casos
+2020-04-09,11,Extremadura,2273,casos
+2020-04-10,11,Extremadura,2332,casos
+2020-04-11,11,Extremadura,2486,casos
+2020-04-12,11,Extremadura,2580,casos
+2020-04-13,11,Extremadura,2658,casos
+2020-04-14,11,Extremadura,2684,casos
+2020-04-15,11,Extremadura,2762,casos
+2020-02-27,12,Galicia,0,casos
+2020-02-28,12,Galicia,0,casos
+2020-02-29,12,Galicia,0,casos
+2020-03-01,12,Galicia,0,casos
+2020-03-02,12,Galicia,0,casos
+2020-03-03,12,Galicia,0,casos
+2020-03-04,12,Galicia,1,casos
+2020-03-05,12,Galicia,1,casos
+2020-03-06,12,Galicia,3,casos
+2020-03-07,12,Galicia,3,casos
+2020-03-08,12,Galicia,5,casos
+2020-03-09,12,Galicia,6,casos
+2020-03-10,12,Galicia,22,casos
+2020-03-11,12,Galicia,39,casos
+2020-03-12,12,Galicia,35,casos
+2020-03-13,12,Galicia,85,casos
+2020-03-14,12,Galicia,115,casos
+2020-03-15,12,Galicia,195,casos
+2020-03-16,12,Galicia,245,casos
+2020-03-17,12,Galicia,292,casos
+2020-03-18,12,Galicia,341,casos
+2020-03-19,12,Galicia,453,casos
+2020-03-20,12,Galicia,578,casos
+2020-03-21,12,Galicia,739,casos
+2020-03-22,12,Galicia,915,casos
+2020-03-23,12,Galicia,1208,casos
+2020-03-24,12,Galicia,1415,casos
+2020-03-25,12,Galicia,1653,casos
+2020-03-26,12,Galicia,1915,casos
+2020-03-27,12,Galicia,2322,casos
+2020-03-28,12,Galicia,2772,casos
+2020-03-29,12,Galicia,3139,casos
+2020-03-30,12,Galicia,3723,casos
+2020-03-31,12,Galicia,4039,casos
+2020-04-01,12,Galicia,4432,casos
+2020-04-02,12,Galicia,4842,casos
+2020-04-03,12,Galicia,5219,casos
+2020-04-04,12,Galicia,5625,casos
+2020-04-05,12,Galicia,5944,casos
+2020-04-06,12,Galicia,6151,casos
+2020-04-07,12,Galicia,6331,casos
+2020-04-08,12,Galicia,6538,casos
+2020-04-09,12,Galicia,6758,casos
+2020-04-10,12,Galicia,6946,casos
+2020-04-11,12,Galicia,7176,casos
+2020-04-12,12,Galicia,7336,casos
+2020-04-13,12,Galicia,7494,casos
+2020-04-14,12,Galicia,7597,casos
+2020-04-15,12,Galicia,7708,casos
+2020-02-27,13,Madrid,4,casos
+2020-02-28,13,Madrid,5,casos
+2020-02-29,13,Madrid,8,casos
+2020-03-01,13,Madrid,10,casos
+2020-03-02,13,Madrid,29,casos
+2020-03-03,13,Madrid,49,casos
+2020-03-04,13,Madrid,70,casos
+2020-03-05,13,Madrid,90,casos
+2020-03-06,13,Madrid,137,casos
+2020-03-07,13,Madrid,174,casos
+2020-03-08,13,Madrid,202,casos
+2020-03-09,13,Madrid,469,casos
+2020-03-10,13,Madrid,782,casos
+2020-03-11,13,Madrid,1024,casos
+2020-03-12,13,Madrid,1388,casos
+2020-03-13,13,Madrid,1990,casos
+2020-03-14,13,Madrid,2940,casos
+2020-03-15,13,Madrid,3544,casos
+2020-03-16,13,Madrid,4165,casos
+2020-03-17,13,Madrid,4871,casos
+2020-03-18,13,Madrid,5637,casos
+2020-03-19,13,Madrid,6777,casos
+2020-03-20,13,Madrid,7165,casos
+2020-03-21,13,Madrid,8921,casos
+2020-03-22,13,Madrid,9702,casos
+2020-03-23,13,Madrid,10575,casos
+2020-03-24,13,Madrid,12352,casos
+2020-03-25,13,Madrid,14597,casos
+2020-03-26,13,Madrid,17166,casos
+2020-03-27,13,Madrid,19243,casos
+2020-03-28,13,Madrid,21520,casos
+2020-03-29,13,Madrid,22677,casos
+2020-03-30,13,Madrid,24090,casos
+2020-03-31,13,Madrid,27509,casos
+2020-04-01,13,Madrid,29840,casos
+2020-04-02,13,Madrid,32155,casos
+2020-04-03,13,Madrid,34188,casos
+2020-04-04,13,Madrid,36249,casos
+2020-04-05,13,Madrid,37584,casos
+2020-04-06,13,Madrid,38723,casos
+2020-04-07,13,Madrid,40469,casos
+2020-04-08,13,Madrid,42450,casos
+2020-04-09,13,Madrid,43877,casos
+2020-04-10,13,Madrid,44783,casos
+2020-04-11,13,Madrid,45849,casos
+2020-04-12,13,Madrid,46587,casos
+2020-04-13,13,Madrid,47146,casos
+2020-04-14,13,Madrid,48048,casos
+2020-04-15,13,Madrid,49526,casos
+2020-02-27,19,Melilla,0,casos
+2020-02-28,19,Melilla,0,casos
+2020-02-29,19,Melilla,0,casos
+2020-03-01,19,Melilla,0,casos
+2020-03-02,19,Melilla,0,casos
+2020-03-03,19,Melilla,0,casos
+2020-03-04,19,Melilla,0,casos
+2020-03-05,19,Melilla,0,casos
+2020-03-06,19,Melilla,0,casos
+2020-03-07,19,Melilla,0,casos
+2020-03-08,19,Melilla,0,casos
+2020-03-09,19,Melilla,0,casos
+2020-03-10,19,Melilla,0,casos
+2020-03-11,19,Melilla,0,casos
+2020-03-12,19,Melilla,0,casos
+2020-03-13,19,Melilla,2,casos
+2020-03-14,19,Melilla,3,casos
+2020-03-15,19,Melilla,8,casos
+2020-03-16,19,Melilla,8,casos
+2020-03-17,19,Melilla,17,casos
+2020-03-18,19,Melilla,20,casos
+2020-03-19,19,Melilla,23,casos
+2020-03-20,19,Melilla,24,casos
+2020-03-21,19,Melilla,25,casos
+2020-03-22,19,Melilla,25,casos
+2020-03-23,19,Melilla,28,casos
+2020-03-24,19,Melilla,28,casos
+2020-03-25,19,Melilla,38,casos
+2020-03-26,19,Melilla,39,casos
+2020-03-27,19,Melilla,42,casos
+2020-03-28,19,Melilla,45,casos
+2020-03-29,19,Melilla,48,casos
+2020-03-30,19,Melilla,51,casos
+2020-03-31,19,Melilla,54,casos
+2020-04-01,19,Melilla,62,casos
+2020-04-02,19,Melilla,62,casos
+2020-04-03,19,Melilla,70,casos
+2020-04-04,19,Melilla,79,casos
+2020-04-05,19,Melilla,83,casos
+2020-04-06,19,Melilla,86,casos
+2020-04-07,19,Melilla,92,casos
+2020-04-08,19,Melilla,93,casos
+2020-04-09,19,Melilla,93,casos
+2020-04-10,19,Melilla,95,casos
+2020-04-11,19,Melilla,98,casos
+2020-04-12,19,Melilla,98,casos
+2020-04-13,19,Melilla,101,casos
+2020-04-14,19,Melilla,101,casos
+2020-04-15,19,Melilla,102,casos
+2020-02-27,14,Murcia,0,casos
+2020-02-28,14,Murcia,0,casos
+2020-02-29,14,Murcia,0,casos
+2020-03-01,14,Murcia,0,casos
+2020-03-02,14,Murcia,0,casos
+2020-03-03,14,Murcia,0,casos
+2020-03-04,14,Murcia,0,casos
+2020-03-05,14,Murcia,0,casos
+2020-03-06,14,Murcia,0,casos
+2020-03-07,14,Murcia,0,casos
+2020-03-08,14,Murcia,1,casos
+2020-03-09,14,Murcia,4,casos
+2020-03-10,14,Murcia,9,casos
+2020-03-11,14,Murcia,11,casos
+2020-03-12,14,Murcia,26,casos
+2020-03-13,14,Murcia,35,casos
+2020-03-14,14,Murcia,47,casos
+2020-03-15,14,Murcia,71,casos
+2020-03-16,14,Murcia,77,casos
+2020-03-17,14,Murcia,97,casos
+2020-03-18,14,Murcia,122,casos
+2020-03-19,14,Murcia,167,casos
+2020-03-20,14,Murcia,204,casos
+2020-03-21,14,Murcia,240,casos
+2020-03-22,14,Murcia,296,casos
+2020-03-23,14,Murcia,345,casos
+2020-03-24,14,Murcia,385,casos
+2020-03-25,14,Murcia,477,casos
+2020-03-26,14,Murcia,596,casos
+2020-03-27,14,Murcia,714,casos
+2020-03-28,14,Murcia,802,casos
+2020-03-29,14,Murcia,872,casos
+2020-03-30,14,Murcia,939,casos
+2020-03-31,14,Murcia,974,casos
+2020-04-01,14,Murcia,1041,casos
+2020-04-02,14,Murcia,1084,casos
+2020-04-03,14,Murcia,1145,casos
+2020-04-04,14,Murcia,1188,casos
+2020-04-05,14,Murcia,1235,casos
+2020-04-06,14,Murcia,1259,casos
+2020-04-07,14,Murcia,1283,casos
+2020-04-08,14,Murcia,1326,casos
+2020-04-09,14,Murcia,1356,casos
+2020-04-10,14,Murcia,1383,casos
+2020-04-11,14,Murcia,1413,casos
+2020-04-12,14,Murcia,1449,casos
+2020-04-13,14,Murcia,1463,casos
+2020-04-14,14,Murcia,1487,casos
+2020-04-15,14,Murcia,1520,casos
+2020-02-27,15,Navarra,0,casos
+2020-02-28,15,Navarra,0,casos
+2020-02-29,15,Navarra,0,casos
+2020-03-01,15,Navarra,1,casos
+2020-03-02,15,Navarra,1,casos
+2020-03-03,15,Navarra,1,casos
+2020-03-04,15,Navarra,3,casos
+2020-03-05,15,Navarra,3,casos
+2020-03-06,15,Navarra,3,casos
+2020-03-07,15,Navarra,3,casos
+2020-03-08,15,Navarra,3,casos
+2020-03-09,15,Navarra,3,casos
+2020-03-10,15,Navarra,12,casos
+2020-03-11,15,Navarra,46,casos
+2020-03-12,15,Navarra,73,casos
+2020-03-13,15,Navarra,130,casos
+2020-03-14,15,Navarra,146,casos
+2020-03-15,15,Navarra,183,casos
+2020-03-16,15,Navarra,274,casos
+2020-03-17,15,Navarra,313,casos
+2020-03-18,15,Navarra,386,casos
+2020-03-19,15,Navarra,482,casos
+2020-03-20,15,Navarra,554,casos
+2020-03-21,15,Navarra,664,casos
+2020-03-22,15,Navarra,794,casos
+2020-03-23,15,Navarra,886,casos
+2020-03-24,15,Navarra,1014,casos
+2020-03-25,15,Navarra,1197,casos
+2020-03-26,15,Navarra,1411,casos
+2020-03-27,15,Navarra,1641,casos
+2020-03-28,15,Navarra,1829,casos
+2020-03-29,15,Navarra,2011,casos
+2020-03-30,15,Navarra,2146,casos
+2020-03-31,15,Navarra,2305,casos
+2020-04-01,15,Navarra,2497,casos
+2020-04-02,15,Navarra,2682,casos
+2020-04-03,15,Navarra,2836,casos
+2020-04-04,15,Navarra,2972,casos
+2020-04-05,15,Navarra,3073,casos
+2020-04-06,15,Navarra,3231,casos
+2020-04-07,15,Navarra,3355,casos
+2020-04-08,15,Navarra,3467,casos
+2020-04-09,15,Navarra,3575,casos
+2020-04-10,15,Navarra,3748,casos
+2020-04-11,15,Navarra,3817,casos
+2020-04-12,15,Navarra,3969,casos
+2020-04-13,15,Navarra,4092,casos
+2020-04-14,15,Navarra,4150,casos
+2020-04-15,15,Navarra,4246,casos
+2020-02-27,16,País Vasco,0,casos
+2020-02-28,16,País Vasco,0,casos
+2020-02-29,16,País Vasco,2,casos
+2020-03-01,16,País Vasco,3,casos
+2020-03-02,16,País Vasco,9,casos
+2020-03-03,16,País Vasco,13,casos
+2020-03-04,16,País Vasco,17,casos
+2020-03-05,16,País Vasco,17,casos
+2020-03-06,16,País Vasco,45,casos
+2020-03-07,16,País Vasco,45,casos
+2020-03-08,16,País Vasco,102,casos
+2020-03-09,16,País Vasco,149,casos
+2020-03-10,16,País Vasco,195,casos
+2020-03-11,16,País Vasco,225,casos
+2020-03-12,16,País Vasco,346,casos
+2020-03-13,16,País Vasco,417,casos
+2020-03-14,16,País Vasco,417,casos
+2020-03-15,16,País Vasco,630,casos
+2020-03-16,16,País Vasco,630,casos
+2020-03-17,16,País Vasco,765,casos
+2020-03-18,16,País Vasco,973,casos
+2020-03-19,16,País Vasco,1190,casos
+2020-03-20,16,País Vasco,1465,casos
+2020-03-21,16,País Vasco,1725,casos
+2020-03-22,16,País Vasco,2097,casos
+2020-03-23,16,País Vasco,2421,casos
+2020-03-24,16,País Vasco,2728,casos
+2020-03-25,16,País Vasco,3271,casos
+2020-03-26,16,País Vasco,3946,casos
+2020-03-27,16,País Vasco,4601,casos
+2020-03-28,16,País Vasco,5136,casos
+2020-03-29,16,País Vasco,5740,casos
+2020-03-30,16,País Vasco,6057,casos
+2020-03-31,16,País Vasco,6320,casos
+2020-04-01,16,País Vasco,6838,casos
+2020-04-02,16,País Vasco,7317,casos
+2020-04-03,16,País Vasco,7827,casos
+2020-04-04,16,País Vasco,8187,casos
+2020-04-05,16,País Vasco,8628,casos
+2020-04-06,16,País Vasco,8810,casos
+2020-04-07,16,País Vasco,9021,casos
+2020-04-08,16,País Vasco,9452,casos
+2020-04-09,16,País Vasco,9806,casos
+2020-04-10,16,País Vasco,10103,casos
+2020-04-11,16,País Vasco,10515,casos
+2020-04-12,16,País Vasco,10772,casos
+2020-04-13,16,País Vasco,11018,casos
+2020-04-14,16,País Vasco,11226,casos
+2020-04-15,16,País Vasco,11475,casos
+2020-02-27,17,La Rioja,0,casos
+2020-02-28,17,La Rioja,0,casos
+2020-02-29,17,La Rioja,0,casos
+2020-03-01,17,La Rioja,0,casos
+2020-03-02,17,La Rioja,1,casos
+2020-03-03,17,La Rioja,3,casos
+2020-03-04,17,La Rioja,7,casos
+2020-03-05,17,La Rioja,11,casos
+2020-03-06,17,La Rioja,29,casos
+2020-03-07,17,La Rioja,39,casos
+2020-03-08,17,La Rioja,55,casos
+2020-03-09,17,La Rioja,81,casos
+2020-03-10,17,La Rioja,144,casos
+2020-03-11,17,La Rioja,179,casos
+2020-03-12,17,La Rioja,205,casos
+2020-03-13,17,La Rioja,243,casos
+2020-03-14,17,La Rioja,278,casos
+2020-03-15,17,La Rioja,300,casos
+2020-03-16,17,La Rioja,312,casos
+2020-03-17,17,La Rioja,355,casos
+2020-03-18,17,La Rioja,419,casos
+2020-03-19,17,La Rioja,468,casos
+2020-03-20,17,La Rioja,497,casos
+2020-03-21,17,La Rioja,564,casos
+2020-03-22,17,La Rioja,654,casos
+2020-03-23,17,La Rioja,747,casos
+2020-03-24,17,La Rioja,802,casos
+2020-03-25,17,La Rioja,928,casos
+2020-03-26,17,La Rioja,995,casos
+2020-03-27,17,La Rioja,1236,casos
+2020-03-28,17,La Rioja,1436,casos
+2020-03-29,17,La Rioja,1629,casos
+2020-03-30,17,La Rioja,1733,casos
+2020-03-31,17,La Rioja,1810,casos
+2020-04-01,17,La Rioja,1960,casos
+2020-04-02,17,La Rioja,2083,casos
+2020-04-03,17,La Rioja,2224,casos
+2020-04-04,17,La Rioja,2405,casos
+2020-04-05,17,La Rioja,2592,casos
+2020-04-06,17,La Rioja,2719,casos
+2020-04-07,17,La Rioja,2846,casos
+2020-04-08,17,La Rioja,2951,casos
+2020-04-09,17,La Rioja,3026,casos
+2020-04-10,17,La Rioja,3076,casos
+2020-04-11,17,La Rioja,3223,casos
+2020-04-12,17,La Rioja,3279,casos
+2020-04-13,17,La Rioja,3358,casos
+2020-04-14,17,La Rioja,3420,casos
+2020-04-15,17,La Rioja,3457,casos
+2020-02-27,00,Total,16,casos
+2020-02-28,00,Total,32,casos
+2020-02-29,00,Total,44,casos
+2020-03-01,00,Total,66,casos
+2020-03-02,00,Total,114,casos
+2020-03-03,00,Total,150,casos
+2020-03-04,00,Total,198,casos
+2020-03-05,00,Total,237,casos
+2020-03-06,00,Total,365,casos
+2020-03-07,00,Total,430,casos
+2020-03-08,00,Total,589,casos
+2020-03-09,00,Total,999,casos
+2020-03-10,00,Total,1622,casos
+2020-03-11,00,Total,2128,casos
+2020-03-12,00,Total,2950,casos
+2020-03-13,00,Total,4209,casos
+2020-03-14,00,Total,5753,casos
+2020-03-15,00,Total,7753,casos
+2020-03-16,00,Total,9191,casos
+2020-03-17,00,Total,11178,casos
+2020-03-18,00,Total,13716,casos
+2020-03-19,00,Total,17147,casos
+2020-03-20,00,Total,19980,casos
+2020-03-21,00,Total,24926,casos
+2020-03-22,00,Total,28572,casos
+2020-03-23,00,Total,33089,casos
+2020-03-24,00,Total,39673,casos
+2020-03-25,00,Total,47610,casos
+2020-03-26,00,Total,56188,casos
+2020-03-27,00,Total,64059,casos
+2020-03-28,00,Total,72248,casos
+2020-03-29,00,Total,78797,casos
+2020-03-30,00,Total,85195,casos
+2020-03-31,00,Total,94417,casos
+2020-04-01,00,Total,102136,casos
+2020-04-02,00,Total,110238,casos
+2020-04-03,00,Total,117710,casos
+2020-04-04,00,Total,124736,casos
+2020-04-05,00,Total,130759,casos
+2020-04-06,00,Total,135032,casos
+2020-04-07,00,Total,140510,casos
+2020-04-08,00,Total,146690,casos
+2020-04-09,00,Total,152446,casos
+2020-04-10,00,Total,157022,casos
+2020-04-11,00,Total,161852,casos
+2020-04-12,00,Total,166019,casos
+2020-04-13,00,Total,169496,casos
+2020-04-14,00,Total,172541,casos
+2020-04-15,00,Total,177633,casos
+2020-03-21,01,Andalucía,605,hospitalizados
+2020-03-22,01,Andalucía,724,hospitalizados
+2020-03-23,01,Andalucía,865,hospitalizados
+2020-03-24,01,Andalucía,1132,hospitalizados
+2020-03-25,01,Andalucía,1433,hospitalizados
+2020-03-26,01,Andalucía,1626,hospitalizados
+2020-03-27,01,Andalucía,1843,hospitalizados
+2020-03-28,01,Andalucía,2106,hospitalizados
+2020-03-29,01,Andalucía,2294,hospitalizados
+2020-03-30,01,Andalucía,2671,hospitalizados
+2020-03-31,01,Andalucía,2867,hospitalizados
+2020-04-01,01,Andalucía,3147,hospitalizados
+2020-04-02,01,Andalucía,3444,hospitalizados
+2020-04-03,01,Andalucía,3673,hospitalizados
+2020-04-04,01,Andalucía,3896,hospitalizados
+2020-04-05,01,Andalucía,4107,hospitalizados
+2020-04-06,01,Andalucía,4227,hospitalizados
+2020-04-07,01,Andalucía,4335,hospitalizados
+2020-04-08,01,Andalucía,4463,hospitalizados
+2020-04-09,01,Andalucía,4599,hospitalizados
+2020-04-10,01,Andalucía,4715,hospitalizados
+2020-04-11,01,Andalucía,4808,hospitalizados
+2020-04-12,01,Andalucía,4950,hospitalizados
+2020-04-13,01,Andalucía,4993,hospitalizados
+2020-04-14,01,Andalucía,5054,hospitalizados
+2020-04-15,01,Andalucía,5147,hospitalizados
+2020-03-21,02,Aragón,192,hospitalizados
+2020-03-22,02,Aragón,241,hospitalizados
+2020-03-23,02,Aragón,298,hospitalizados
+2020-03-24,02,Aragón,384,hospitalizados
+2020-03-25,02,Aragón,459,hospitalizados
+2020-03-26,02,Aragón,562,hospitalizados
+2020-03-27,02,Aragón,693,hospitalizados
+2020-03-28,02,Aragón,835,hospitalizados
+2020-03-29,02,Aragón,835,hospitalizados
+2020-03-30,02,Aragón,1094,hospitalizados
+2020-03-31,02,Aragón,1176,hospitalizados
+2020-04-01,02,Aragón,1234,hospitalizados
+2020-04-02,02,Aragón,1320,hospitalizados
+2020-04-03,02,Aragón,1431,hospitalizados
+2020-04-04,02,Aragón,1505,hospitalizados
+2020-04-05,02,Aragón,1588,hospitalizados
+2020-04-06,02,Aragón,1637,hospitalizados
+2020-04-07,02,Aragón,1663,hospitalizados
+2020-04-08,02,Aragón,1716,hospitalizados
+2020-04-09,02,Aragón,1765,hospitalizados
+2020-04-10,02,Aragón,1822,hospitalizados
+2020-04-11,02,Aragón,1860,hospitalizados
+2020-04-12,02,Aragón,1901,hospitalizados
+2020-04-13,02,Aragón,1938,hospitalizados
+2020-04-14,02,Aragón,1966,hospitalizados
+2020-04-15,02,Aragón,2006,hospitalizados
+2020-03-21,03,Asturias,133,hospitalizados
+2020-03-22,03,Asturias,171,hospitalizados
+2020-03-23,03,Asturias,194,hospitalizados
+2020-03-24,03,Asturias,224,hospitalizados
+2020-03-25,03,Asturias,263,hospitalizados
+2020-03-26,03,Asturias,300,hospitalizados
+2020-03-27,03,Asturias,339,hospitalizados
+2020-03-28,03,Asturias,408,hospitalizados
+2020-03-29,03,Asturias,466,hospitalizados
+2020-03-30,03,Asturias,479,hospitalizados
+2020-03-31,03,Asturias,529,hospitalizados
+2020-04-01,03,Asturias,590,hospitalizados
+2020-04-02,03,Asturias,640,hospitalizados
+2020-04-03,03,Asturias,702,hospitalizados
+2020-04-04,03,Asturias,766,hospitalizados
+2020-04-05,03,Asturias,808,hospitalizados
+2020-04-06,03,Asturias,846,hospitalizados
+2020-04-07,03,Asturias,889,hospitalizados
+2020-04-08,03,Asturias,958,hospitalizados
+2020-04-09,03,Asturias,1018,hospitalizados
+2020-04-10,03,Asturias,1083,hospitalizados
+2020-04-11,03,Asturias,1147,hospitalizados
+2020-04-12,03,Asturias,1208,hospitalizados
+2020-04-13,03,Asturias,1265,hospitalizados
+2020-04-14,03,Asturias,1330,hospitalizados
+2020-04-15,03,Asturias,1387,hospitalizados
+2020-03-21,04,Baleares,60,hospitalizados
+2020-03-22,04,Baleares,79,hospitalizados
+2020-03-23,04,Baleares,87,hospitalizados
+2020-03-24,04,Baleares,127,hospitalizados
+2020-03-25,04,Baleares,164,hospitalizados
+2020-03-26,04,Baleares,205,hospitalizados
+2020-03-27,04,Baleares,237,hospitalizados
+2020-03-28,04,Baleares,283,hospitalizados
+2020-03-29,04,Baleares,345,hospitalizados
+2020-03-30,04,Baleares,353,hospitalizados
+2020-03-31,04,Baleares,399,hospitalizados
+2020-04-01,04,Baleares,468,hospitalizados
+2020-04-02,04,Baleares,517,hospitalizados
+2020-04-03,04,Baleares,587,hospitalizados
+2020-04-04,04,Baleares,634,hospitalizados
+2020-04-05,04,Baleares,664,hospitalizados
+2020-04-06,04,Baleares,683,hospitalizados
+2020-04-07,04,Baleares,705,hospitalizados
+2020-04-08,04,Baleares,731,hospitalizados
+2020-04-09,04,Baleares,751,hospitalizados
+2020-04-10,04,Baleares,777,hospitalizados
+2020-04-11,04,Baleares,778,hospitalizados
+2020-04-12,04,Baleares,805,hospitalizados
+2020-04-13,04,Baleares,811,hospitalizados
+2020-04-14,04,Baleares,826,hospitalizados
+2020-04-15,04,Baleares,857,hospitalizados
+2020-03-21,05,Canarias,139,hospitalizados
+2020-03-22,05,Canarias,150,hospitalizados
+2020-03-23,05,Canarias,172,hospitalizados
+2020-03-24,05,Canarias,207,hospitalizados
+2020-03-25,05,Canarias,235,hospitalizados
+2020-03-26,05,Canarias,279,hospitalizados
+2020-03-27,05,Canarias,328,hospitalizados
+2020-03-28,05,Canarias,377,hospitalizados
+2020-03-29,05,Canarias,425,hospitalizados
+2020-03-30,05,Canarias,444,hospitalizados
+2020-03-31,05,Canarias,483,hospitalizados
+2020-04-01,05,Canarias,532,hospitalizados
+2020-04-02,05,Canarias,566,hospitalizados
+2020-04-03,05,Canarias,605,hospitalizados
+2020-04-04,05,Canarias,632,hospitalizados
+2020-04-05,05,Canarias,644,hospitalizados
+2020-04-06,05,Canarias,651,hospitalizados
+2020-04-07,05,Canarias,689,hospitalizados
+2020-04-08,05,Canarias,703,hospitalizados
+2020-04-09,05,Canarias,730,hospitalizados
+2020-04-10,05,Canarias,738,hospitalizados
+2020-04-11,05,Canarias,745,hospitalizados
+2020-04-12,05,Canarias,758,hospitalizados
+2020-04-13,05,Canarias,763,hospitalizados
+2020-04-14,05,Canarias,771,hospitalizados
+2020-04-15,05,Canarias,781,hospitalizados
+2020-03-21,06,Cantabria,92,hospitalizados
+2020-03-22,06,Cantabria,116,hospitalizados
+2020-03-23,06,Cantabria,157,hospitalizados
+2020-03-24,06,Cantabria,200,hospitalizados
+2020-03-25,06,Cantabria,241,hospitalizados
+2020-03-26,06,Cantabria,300,hospitalizados
+2020-03-27,06,Cantabria,355,hospitalizados
+2020-03-28,06,Cantabria,406,hospitalizados
+2020-03-29,06,Cantabria,449,hospitalizados
+2020-03-30,06,Cantabria,481,hospitalizados
+2020-03-31,06,Cantabria,522,hospitalizados
+2020-04-01,06,Cantabria,543,hospitalizados
+2020-04-02,06,Cantabria,567,hospitalizados
+2020-04-03,06,Cantabria,592,hospitalizados
+2020-04-04,06,Cantabria,619,hospitalizados
+2020-04-05,06,Cantabria,639,hospitalizados
+2020-04-06,06,Cantabria,658,hospitalizados
+2020-04-07,06,Cantabria,677,hospitalizados
+2020-04-08,06,Cantabria,700,hospitalizados
+2020-04-09,06,Cantabria,720,hospitalizados
+2020-04-10,06,Cantabria,747,hospitalizados
+2020-04-11,06,Cantabria,773,hospitalizados
+2020-04-12,06,Cantabria,805,hospitalizados
+2020-04-13,06,Cantabria,827,hospitalizados
+2020-04-14,06,Cantabria,853,hospitalizados
+2020-04-15,06,Cantabria,873,hospitalizados
+2020-03-21,08,Castilla-La Mancha,635,hospitalizados
+2020-03-22,08,Castilla-La Mancha,838,hospitalizados
+2020-03-23,08,Castilla-La Mancha,1547,hospitalizados
+2020-03-24,08,Castilla-La Mancha,1826,hospitalizados
+2020-03-25,08,Castilla-La Mancha,2162,hospitalizados
+2020-03-26,08,Castilla-La Mancha,2162,hospitalizados
+2020-03-27,08,Castilla-La Mancha,2707,hospitalizados
+2020-03-28,08,Castilla-La Mancha,2977,hospitalizados
+2020-03-29,08,Castilla-La Mancha,3018,hospitalizados
+2020-03-30,08,Castilla-La Mancha,3134,hospitalizados
+2020-03-31,08,Castilla-La Mancha,3225,hospitalizados
+2020-04-01,08,Castilla-La Mancha,3230,hospitalizados
+2020-04-02,08,Castilla-La Mancha,3230,hospitalizados
+2020-04-03,08,Castilla-La Mancha,3168,hospitalizados
+2020-04-04,08,Castilla-La Mancha,3133,hospitalizados
+2020-04-05,08,Castilla-La Mancha,2950,hospitalizados
+2020-04-06,08,Castilla-La Mancha,2901,hospitalizados
+2020-04-07,08,Castilla-La Mancha,2908,hospitalizados
+2020-04-08,08,Castilla-La Mancha,2731,hospitalizados
+2020-04-09,08,Castilla-La Mancha,2575,hospitalizados
+2020-04-10,08,Castilla-La Mancha,2359,hospitalizados
+2020-04-11,08,Castilla-La Mancha,2198,hospitalizados
+2020-04-12,08,Castilla-La Mancha,6838,hospitalizados
+2020-04-13,08,Castilla-La Mancha,7782,hospitalizados
+2020-04-14,08,Castilla-La Mancha,7830,hospitalizados
+2020-04-15,08,Castilla-La Mancha,7896,hospitalizados
+2020-03-21,07,Castilla y León,575,hospitalizados
+2020-03-22,07,Castilla y León,709,hospitalizados
+2020-03-23,07,Castilla y León,860,hospitalizados
+2020-03-24,07,Castilla y León,1057,hospitalizados
+2020-03-25,07,Castilla y León,1244,hospitalizados
+2020-03-26,07,Castilla y León,1515,hospitalizados
+2020-03-27,07,Castilla y León,1791,hospitalizados
+2020-03-28,07,Castilla y León,2063,hospitalizados
+2020-03-29,07,Castilla y León,2408,hospitalizados
+2020-03-30,07,Castilla y León,2540,hospitalizados
+2020-03-31,07,Castilla y León,2601,hospitalizados
+2020-04-01,07,Castilla y León,2692,hospitalizados
+2020-04-02,07,Castilla y León,2709,hospitalizados
+2020-04-03,07,Castilla y León,2711,hospitalizados
+2020-04-04,07,Castilla y León,2664,hospitalizados
+2020-04-05,07,Castilla y León,2574,hospitalizados
+2020-04-06,07,Castilla y León,2508,hospitalizados
+2020-04-07,07,Castilla y León,5180,hospitalizados
+2020-04-08,07,Castilla y León,5322,hospitalizados
+2020-04-09,07,Castilla y León,5523,hospitalizados
+2020-04-10,07,Castilla y León,5674,hospitalizados
+2020-04-11,07,Castilla y León,5817,hospitalizados
+2020-04-12,07,Castilla y León,5957,hospitalizados
+2020-04-13,07,Castilla y León,6077,hospitalizados
+2020-04-14,07,Castilla y León,6175,hospitalizados
+2020-04-15,07,Castilla y León,6306,hospitalizados
+2020-03-21,09,Cataluña,1681,hospitalizados
+2020-03-22,09,Cataluña,1681,hospitalizados
+2020-03-23,09,Cataluña,1681,hospitalizados
+2020-03-24,09,Cataluña,3599,hospitalizados
+2020-03-25,09,Cataluña,5434,hospitalizados
+2020-03-26,09,Cataluña,7439,hospitalizados
+2020-03-27,09,Cataluña,8545,hospitalizados
+2020-03-28,09,Cataluña,9900,hospitalizados
+2020-03-29,09,Cataluña,10688,hospitalizados
+2020-03-30,09,Cataluña,11769,hospitalizados
+2020-03-31,09,Cataluña,12974,hospitalizados
+2020-04-01,09,Cataluña,13969,hospitalizados
+2020-04-02,09,Cataluña,15489,hospitalizados
+2020-04-03,09,Cataluña,17257,hospitalizados
+2020-04-04,09,Cataluña,17678,hospitalizados
+2020-04-05,09,Cataluña,18656,hospitalizados
+2020-04-06,09,Cataluña,19143,hospitalizados
+2020-04-07,09,Cataluña,19745,hospitalizados
+2020-04-08,09,Cataluña,20250,hospitalizados
+2020-04-09,09,Cataluña,20943,hospitalizados
+2020-04-10,09,Cataluña,21530,hospitalizados
+2020-04-11,09,Cataluña,21921,hospitalizados
+2020-04-12,09,Cataluña,22369,hospitalizados
+2020-04-13,09,Cataluña,22780,hospitalizados
+2020-04-14,09,Cataluña,23126,hospitalizados
+2020-04-15,09,Cataluña,23372,hospitalizados
+2020-03-21,18,Ceuta,0,hospitalizados
+2020-03-22,18,Ceuta,0,hospitalizados
+2020-03-23,18,Ceuta,0,hospitalizados
+2020-03-24,18,Ceuta,0,hospitalizados
+2020-03-25,18,Ceuta,2,hospitalizados
+2020-03-26,18,Ceuta,2,hospitalizados
+2020-03-27,18,Ceuta,2,hospitalizados
+2020-03-28,18,Ceuta,2,hospitalizados
+2020-03-29,18,Ceuta,2,hospitalizados
+2020-03-30,18,Ceuta,2,hospitalizados
+2020-03-31,18,Ceuta,3,hospitalizados
+2020-04-01,18,Ceuta,6,hospitalizados
+2020-04-02,18,Ceuta,7,hospitalizados
+2020-04-03,18,Ceuta,8,hospitalizados
+2020-04-04,18,Ceuta,8,hospitalizados
+2020-04-05,18,Ceuta,9,hospitalizados
+2020-04-06,18,Ceuta,9,hospitalizados
+2020-04-07,18,Ceuta,9,hospitalizados
+2020-04-08,18,Ceuta,9,hospitalizados
+2020-04-09,18,Ceuta,9,hospitalizados
+2020-04-10,18,Ceuta,9,hospitalizados
+2020-04-11,18,Ceuta,9,hospitalizados
+2020-04-12,18,Ceuta,9,hospitalizados
+2020-04-13,18,Ceuta,9,hospitalizados
+2020-04-14,18,Ceuta,9,hospitalizados
+2020-04-15,18,Ceuta,9,hospitalizados
+2020-03-21,10,C. Valenciana,476,hospitalizados
+2020-03-22,10,C. Valenciana,590,hospitalizados
+2020-03-23,10,C. Valenciana,702,hospitalizados
+2020-03-24,10,C. Valenciana,917,hospitalizados
+2020-03-25,10,C. Valenciana,1071,hospitalizados
+2020-03-26,10,C. Valenciana,1278,hospitalizados
+2020-03-27,10,C. Valenciana,1422,hospitalizados
+2020-03-28,10,C. Valenciana,1694,hospitalizados
+2020-03-29,10,C. Valenciana,1874,hospitalizados
+2020-03-30,10,C. Valenciana,2042,hospitalizados
+2020-03-31,10,C. Valenciana,2189,hospitalizados
+2020-04-01,10,C. Valenciana,2189,hospitalizados
+2020-04-02,10,C. Valenciana,2189,hospitalizados
+2020-04-03,10,C. Valenciana,2064,hospitalizados
+2020-04-04,10,C. Valenciana,1977,hospitalizados
+2020-04-05,10,C. Valenciana,1901,hospitalizados
+2020-04-06,10,C. Valenciana,1909,hospitalizados
+2020-04-07,10,C. Valenciana,1887,hospitalizados
+2020-04-08,10,C. Valenciana,1714,hospitalizados
+2020-04-09,10,C. Valenciana,3815,hospitalizados
+2020-04-10,10,C. Valenciana,3987,hospitalizados
+2020-04-11,10,C. Valenciana,4132,hospitalizados
+2020-04-12,10,C. Valenciana,4149,hospitalizados
+2020-04-13,10,C. Valenciana,4269,hospitalizados
+2020-04-14,10,C. Valenciana,4397,hospitalizados
+2020-04-15,10,C. Valenciana,4465,hospitalizados
+2020-03-21,11,Extremadura,65,hospitalizados
+2020-03-22,11,Extremadura,87,hospitalizados
+2020-03-23,11,Extremadura,131,hospitalizados
+2020-03-24,11,Extremadura,161,hospitalizados
+2020-03-25,11,Extremadura,209,hospitalizados
+2020-03-26,11,Extremadura,241,hospitalizados
+2020-03-27,11,Extremadura,277,hospitalizados
+2020-03-28,11,Extremadura,312,hospitalizados
+2020-03-29,11,Extremadura,313,hospitalizados
+2020-03-30,11,Extremadura,353,hospitalizados
+2020-03-31,11,Extremadura,371,hospitalizados
+2020-04-01,11,Extremadura,372,hospitalizados
+2020-04-02,11,Extremadura,412,hospitalizados
+2020-04-03,11,Extremadura,415,hospitalizados
+2020-04-04,11,Extremadura,453,hospitalizados
+2020-04-05,11,Extremadura,417,hospitalizados
+2020-04-06,11,Extremadura,453,hospitalizados
+2020-04-07,11,Extremadura,686,hospitalizados
+2020-04-08,11,Extremadura,898,hospitalizados
+2020-04-09,11,Extremadura,958,hospitalizados
+2020-04-10,11,Extremadura,1003,hospitalizados
+2020-04-11,11,Extremadura,1052,hospitalizados
+2020-04-12,11,Extremadura,1074,hospitalizados
+2020-04-13,11,Extremadura,1096,hospitalizados
+2020-04-14,11,Extremadura,1114,hospitalizados
+2020-04-15,11,Extremadura,1155,hospitalizados
+2020-03-21,12,Galicia,168,hospitalizados
+2020-03-22,12,Galicia,227,hospitalizados
+2020-03-23,12,Galicia,270,hospitalizados
+2020-03-24,12,Galicia,338,hospitalizados
+2020-03-25,12,Galicia,412,hospitalizados
+2020-03-26,12,Galicia,503,hospitalizados
+2020-03-27,12,Galicia,557,hospitalizados
+2020-03-28,12,Galicia,906,hospitalizados
+2020-03-29,12,Galicia,1043,hospitalizados
+2020-03-30,12,Galicia,1147,hospitalizados
+2020-03-31,12,Galicia,1250,hospitalizados
+2020-04-01,12,Galicia,1338,hospitalizados
+2020-04-02,12,Galicia,1447,hospitalizados
+2020-04-03,12,Galicia,1630,hospitalizados
+2020-04-04,12,Galicia,1767,hospitalizados
+2020-04-05,12,Galicia,1831,hospitalizados
+2020-04-06,12,Galicia,1916,hospitalizados
+2020-04-07,12,Galicia,1968,hospitalizados
+2020-04-08,12,Galicia,2014,hospitalizados
+2020-04-09,12,Galicia,2094,hospitalizados
+2020-04-10,12,Galicia,2165,hospitalizados
+2020-04-11,12,Galicia,2215,hospitalizados
+2020-04-12,12,Galicia,2306,hospitalizados
+2020-04-13,12,Galicia,2344,hospitalizados
+2020-04-14,12,Galicia,2403,hospitalizados
+2020-04-15,12,Galicia,2471,hospitalizados
+2020-03-21,13,Madrid,7388,hospitalizados
+2020-03-22,13,Madrid,8441,hospitalizados
+2020-03-23,13,Madrid,9561,hospitalizados
+2020-03-24,13,Madrid,10443,hospitalizados
+2020-03-25,13,Madrid,11153,hospitalizados
+2020-03-26,13,Madrid,12440,hospitalizados
+2020-03-27,13,Madrid,13580,hospitalizados
+2020-03-28,13,Madrid,14211,hospitalizados
+2020-03-29,13,Madrid,14454,hospitalizados
+2020-03-30,13,Madrid,14917,hospitalizados
+2020-03-31,13,Madrid,15140,hospitalizados
+2020-04-01,13,Madrid,15227,hospitalizados
+2020-04-02,13,Madrid,15227,hospitalizados
+2020-04-03,13,Madrid,15050,hospitalizados
+2020-04-04,13,Madrid,14741,hospitalizados
+2020-04-05,13,Madrid,14551,hospitalizados
+2020-04-06,13,Madrid,14501,hospitalizados
+2020-04-07,13,Madrid,13950,hospitalizados
+2020-04-08,13,Madrid,13289,hospitalizados
+2020-04-09,13,Madrid,12853,hospitalizados
+2020-04-10,13,Madrid,12432,hospitalizados
+2020-04-11,13,Madrid,11894,hospitalizados
+2020-04-12,13,Madrid,11424,hospitalizados
+2020-04-13,13,Madrid,11233,hospitalizados
+2020-04-14,13,Madrid,10753,hospitalizados
+2020-04-15,13,Madrid,10116,hospitalizados
+2020-03-21,19,Melilla,8,hospitalizados
+2020-03-22,19,Melilla,12,hospitalizados
+2020-03-23,19,Melilla,12,hospitalizados
+2020-03-24,19,Melilla,12,hospitalizados
+2020-03-25,19,Melilla,14,hospitalizados
+2020-03-26,19,Melilla,16,hospitalizados
+2020-03-27,19,Melilla,18,hospitalizados
+2020-03-28,19,Melilla,22,hospitalizados
+2020-03-29,19,Melilla,24,hospitalizados
+2020-03-30,19,Melilla,27,hospitalizados
+2020-03-31,19,Melilla,27,hospitalizados
+2020-04-01,19,Melilla,32,hospitalizados
+2020-04-02,19,Melilla,32,hospitalizados
+2020-04-03,19,Melilla,34,hospitalizados
+2020-04-04,19,Melilla,37,hospitalizados
+2020-04-05,19,Melilla,38,hospitalizados
+2020-04-06,19,Melilla,38,hospitalizados
+2020-04-07,19,Melilla,40,hospitalizados
+2020-04-08,19,Melilla,40,hospitalizados
+2020-04-09,19,Melilla,40,hospitalizados
+2020-04-10,19,Melilla,41,hospitalizados
+2020-04-11,19,Melilla,43,hospitalizados
+2020-04-12,19,Melilla,43,hospitalizados
+2020-04-13,19,Melilla,43,hospitalizados
+2020-04-14,19,Melilla,43,hospitalizados
+2020-04-15,19,Melilla,43,hospitalizados
+2020-03-21,14,Murcia,61,hospitalizados
+2020-03-22,14,Murcia,78,hospitalizados
+2020-03-23,14,Murcia,80,hospitalizados
+2020-03-24,14,Murcia,99,hospitalizados
+2020-03-25,14,Murcia,127,hospitalizados
+2020-03-26,14,Murcia,172,hospitalizados
+2020-03-27,14,Murcia,209,hospitalizados
+2020-03-28,14,Murcia,231,hospitalizados
+2020-03-29,14,Murcia,260,hospitalizados
+2020-03-30,14,Murcia,265,hospitalizados
+2020-03-31,14,Murcia,283,hospitalizados
+2020-04-01,14,Murcia,304,hospitalizados
+2020-04-02,14,Murcia,389,hospitalizados
+2020-04-03,14,Murcia,405,hospitalizados
+2020-04-04,14,Murcia,434,hospitalizados
+2020-04-05,14,Murcia,447,hospitalizados
+2020-04-06,14,Murcia,468,hospitalizados
+2020-04-07,14,Murcia,500,hospitalizados
+2020-04-08,14,Murcia,515,hospitalizados
+2020-04-09,14,Murcia,533,hospitalizados
+2020-04-10,14,Murcia,533,hospitalizados
+2020-04-11,14,Murcia,533,hospitalizados
+2020-04-12,14,Murcia,537,hospitalizados
+2020-04-13,14,Murcia,543,hospitalizados
+2020-04-14,14,Murcia,566,hospitalizados
+2020-04-15,14,Murcia,574,hospitalizados
+2020-03-21,15,Navarra,222,hospitalizados
+2020-03-22,15,Navarra,288,hospitalizados
+2020-03-23,15,Navarra,339,hospitalizados
+2020-03-24,15,Navarra,405,hospitalizados
+2020-03-25,15,Navarra,506,hospitalizados
+2020-03-26,15,Navarra,649,hospitalizados
+2020-03-27,15,Navarra,732,hospitalizados
+2020-03-28,15,Navarra,827,hospitalizados
+2020-03-29,15,Navarra,896,hospitalizados
+2020-03-30,15,Navarra,955,hospitalizados
+2020-03-31,15,Navarra,1035,hospitalizados
+2020-04-01,15,Navarra,1120,hospitalizados
+2020-04-02,15,Navarra,1181,hospitalizados
+2020-04-03,15,Navarra,1284,hospitalizados
+2020-04-04,15,Navarra,1341,hospitalizados
+2020-04-05,15,Navarra,1399,hospitalizados
+2020-04-06,15,Navarra,1432,hospitalizados
+2020-04-07,15,Navarra,1488,hospitalizados
+2020-04-08,15,Navarra,1526,hospitalizados
+2020-04-09,15,Navarra,1526,hospitalizados
+2020-04-10,15,Navarra,1620,hospitalizados
+2020-04-11,15,Navarra,1641,hospitalizados
+2020-04-12,15,Navarra,1663,hospitalizados
+2020-04-13,15,Navarra,1693,hospitalizados
+2020-04-14,15,Navarra,1705,hospitalizados
+2020-04-15,15,Navarra,1731,hospitalizados
+2020-03-21,16,País Vasco,654,hospitalizados
+2020-03-22,16,País Vasco,988,hospitalizados
+2020-03-23,16,País Vasco,1252,hospitalizados
+2020-03-24,16,País Vasco,1425,hospitalizados
+2020-03-25,16,País Vasco,1577,hospitalizados
+2020-03-26,16,País Vasco,1907,hospitalizados
+2020-03-27,16,País Vasco,2270,hospitalizados
+2020-03-28,16,País Vasco,2612,hospitalizados
+2020-03-29,16,País Vasco,3106,hospitalizados
+2020-03-30,16,País Vasco,3427,hospitalizados
+2020-03-31,16,País Vasco,3594,hospitalizados
+2020-04-01,16,País Vasco,3806,hospitalizados
+2020-04-02,16,País Vasco,4087,hospitalizados
+2020-04-03,16,País Vasco,4283,hospitalizados
+2020-04-04,16,País Vasco,4522,hospitalizados
+2020-04-05,16,País Vasco,4666,hospitalizados
+2020-04-06,16,País Vasco,4794,hospitalizados
+2020-04-07,16,País Vasco,4856,hospitalizados
+2020-04-08,16,País Vasco,4982,hospitalizados
+2020-04-09,16,País Vasco,5130,hospitalizados
+2020-04-10,16,País Vasco,5290,hospitalizados
+2020-04-11,16,País Vasco,5402,hospitalizados
+2020-04-12,16,País Vasco,5547,hospitalizados
+2020-04-13,16,País Vasco,5622,hospitalizados
+2020-04-14,16,País Vasco,5679,hospitalizados
+2020-04-15,16,País Vasco,5750,hospitalizados
+2020-03-21,17,La Rioja,128,hospitalizados
+2020-03-22,17,La Rioja,134,hospitalizados
+2020-03-23,17,La Rioja,166,hospitalizados
+2020-03-24,17,La Rioja,206,hospitalizados
+2020-03-25,17,La Rioja,254,hospitalizados
+2020-03-26,17,La Rioja,316,hospitalizados
+2020-03-27,17,La Rioja,388,hospitalizados
+2020-03-28,17,La Rioja,458,hospitalizados
+2020-03-29,17,La Rioja,497,hospitalizados
+2020-03-30,17,La Rioja,517,hospitalizados
+2020-03-31,17,La Rioja,575,hospitalizados
+2020-04-01,17,La Rioja,619,hospitalizados
+2020-04-02,17,La Rioja,660,hospitalizados
+2020-04-03,17,La Rioja,738,hospitalizados
+2020-04-04,17,La Rioja,805,hospitalizados
+2020-04-05,17,La Rioja,855,hospitalizados
+2020-04-06,17,La Rioja,888,hospitalizados
+2020-04-07,17,La Rioja,918,hospitalizados
+2020-04-08,17,La Rioja,955,hospitalizados
+2020-04-09,17,La Rioja,997,hospitalizados
+2020-04-10,17,La Rioja,1047,hospitalizados
+2020-04-11,17,La Rioja,1082,hospitalizados
+2020-04-12,17,La Rioja,1122,hospitalizados
+2020-04-13,17,La Rioja,1141,hospitalizados
+2020-04-14,17,La Rioja,1152,hospitalizados
+2020-04-15,17,La Rioja,1182,hospitalizados
+2020-03-21,00,Total,13282,hospitalizados
+2020-03-22,00,Total,15554,hospitalizados
+2020-03-23,00,Total,18374,hospitalizados
+2020-03-24,00,Total,22762,hospitalizados
+2020-03-25,00,Total,26960,hospitalizados
+2020-03-26,00,Total,31912,hospitalizados
+2020-03-27,00,Total,36293,hospitalizados
+2020-03-28,00,Total,40630,hospitalizados
+2020-03-29,00,Total,43397,hospitalizados
+2020-03-30,00,Total,46617,hospitalizados
+2020-03-31,00,Total,49243,hospitalizados
+2020-04-01,00,Total,51418,hospitalizados
+2020-04-02,00,Total,54113,hospitalizados
+2020-04-03,00,Total,56637,hospitalizados
+2020-04-04,00,Total,57612,hospitalizados
+2020-04-05,00,Total,58744,hospitalizados
+2020-04-06,00,Total,59662,hospitalizados
+2020-04-07,00,Total,63093,hospitalizados
+2020-04-08,00,Total,NA,hospitalizados
+2020-04-09,00,Total,NA,hospitalizados
+2020-04-10,00,Total,NA,hospitalizados
+2020-04-11,00,Total,NA,hospitalizados
+2020-04-12,00,Total,NA,hospitalizados
+2020-04-13,00,Total,NA,hospitalizados
+2020-04-14,00,Total,NA,hospitalizados
+2020-04-15,00,Total,NA,hospitalizados
+2020-03-03,01,Andalucía,0,fallecidos
+2020-03-04,01,Andalucía,0,fallecidos
+2020-03-05,01,Andalucía,0,fallecidos
+2020-03-06,01,Andalucía,0,fallecidos
+2020-03-07,01,Andalucía,0,fallecidos
+2020-03-08,01,Andalucía,0,fallecidos
+2020-03-09,01,Andalucía,0,fallecidos
+2020-03-10,01,Andalucía,0,fallecidos
+2020-03-11,01,Andalucía,0,fallecidos
+2020-03-12,01,Andalucía,0,fallecidos
+2020-03-13,01,Andalucía,0,fallecidos
+2020-03-14,01,Andalucía,2,fallecidos
+2020-03-15,01,Andalucía,6,fallecidos
+2020-03-16,01,Andalucía,7,fallecidos
+2020-03-17,01,Andalucía,11,fallecidos
+2020-03-18,01,Andalucía,19,fallecidos
+2020-03-19,01,Andalucía,23,fallecidos
+2020-03-20,01,Andalucía,30,fallecidos
+2020-03-21,01,Andalucía,40,fallecidos
+2020-03-22,01,Andalucía,47,fallecidos
+2020-03-23,01,Andalucía,58,fallecidos
+2020-03-24,01,Andalucía,87,fallecidos
+2020-03-25,01,Andalucía,113,fallecidos
+2020-03-26,01,Andalucía,134,fallecidos
+2020-03-27,01,Andalucía,144,fallecidos
+2020-03-28,01,Andalucía,175,fallecidos
+2020-03-29,01,Andalucía,207,fallecidos
+2020-03-30,01,Andalucía,236,fallecidos
+2020-03-31,01,Andalucía,248,fallecidos
+2020-04-01,01,Andalucía,308,fallecidos
+2020-04-02,01,Andalucía,343,fallecidos
+2020-04-03,01,Andalucía,376,fallecidos
+2020-04-04,01,Andalucía,426,fallecidos
+2020-04-05,01,Andalucía,470,fallecidos
+2020-04-06,01,Andalucía,491,fallecidos
+2020-04-07,01,Andalucía,528,fallecidos
+2020-04-08,01,Andalucía,605,fallecidos
+2020-04-09,01,Andalucía,652,fallecidos
+2020-04-10,01,Andalucía,691,fallecidos
+2020-04-11,01,Andalucía,737,fallecidos
+2020-04-12,01,Andalucía,799,fallecidos
+2020-04-13,01,Andalucía,815,fallecidos
+2020-04-14,01,Andalucía,836,fallecidos
+2020-04-15,01,Andalucía,865,fallecidos
+2020-03-03,02,Aragón,0,fallecidos
+2020-03-04,02,Aragón,0,fallecidos
+2020-03-05,02,Aragón,0,fallecidos
+2020-03-06,02,Aragón,1,fallecidos
+2020-03-07,02,Aragón,1,fallecidos
+2020-03-08,02,Aragón,2,fallecidos
+2020-03-09,02,Aragón,2,fallecidos
+2020-03-10,02,Aragón,3,fallecidos
+2020-03-11,02,Aragón,4,fallecidos
+2020-03-12,02,Aragón,6,fallecidos
+2020-03-13,02,Aragón,7,fallecidos
+2020-03-14,02,Aragón,7,fallecidos
+2020-03-15,02,Aragón,7,fallecidos
+2020-03-16,02,Aragón,11,fallecidos
+2020-03-17,02,Aragón,12,fallecidos
+2020-03-18,02,Aragón,13,fallecidos
+2020-03-19,02,Aragón,15,fallecidos
+2020-03-20,02,Aragón,17,fallecidos
+2020-03-21,02,Aragón,22,fallecidos
+2020-03-22,02,Aragón,24,fallecidos
+2020-03-23,02,Aragón,32,fallecidos
+2020-03-24,02,Aragón,37,fallecidos
+2020-03-25,02,Aragón,40,fallecidos
+2020-03-26,02,Aragón,48,fallecidos
+2020-03-27,02,Aragón,58,fallecidos
+2020-03-28,02,Aragón,58,fallecidos
+2020-03-29,02,Aragón,93,fallecidos
+2020-03-30,02,Aragón,106,fallecidos
+2020-03-31,02,Aragón,138,fallecidos
+2020-04-01,02,Aragón,169,fallecidos
+2020-04-02,02,Aragón,200,fallecidos
+2020-04-03,02,Aragón,224,fallecidos
+2020-04-04,02,Aragón,251,fallecidos
+2020-04-05,02,Aragón,270,fallecidos
+2020-04-06,02,Aragón,284,fallecidos
+2020-04-07,02,Aragón,312,fallecidos
+2020-04-08,02,Aragón,349,fallecidos
+2020-04-09,02,Aragón,385,fallecidos
+2020-04-10,02,Aragón,409,fallecidos
+2020-04-11,02,Aragón,425,fallecidos
+2020-04-12,02,Aragón,450,fallecidos
+2020-04-13,02,Aragón,464,fallecidos
+2020-04-14,02,Aragón,492,fallecidos
+2020-04-15,02,Aragón,514,fallecidos
+2020-03-03,03,Asturias,0,fallecidos
+2020-03-04,03,Asturias,0,fallecidos
+2020-03-05,03,Asturias,0,fallecidos
+2020-03-06,03,Asturias,0,fallecidos
+2020-03-07,03,Asturias,0,fallecidos
+2020-03-08,03,Asturias,0,fallecidos
+2020-03-09,03,Asturias,0,fallecidos
+2020-03-10,03,Asturias,0,fallecidos
+2020-03-11,03,Asturias,0,fallecidos
+2020-03-12,03,Asturias,1,fallecidos
+2020-03-13,03,Asturias,1,fallecidos
+2020-03-14,03,Asturias,1,fallecidos
+2020-03-15,03,Asturias,1,fallecidos
+2020-03-16,03,Asturias,1,fallecidos
+2020-03-17,03,Asturias,1,fallecidos
+2020-03-18,03,Asturias,1,fallecidos
+2020-03-19,03,Asturias,1,fallecidos
+2020-03-20,03,Asturias,2,fallecidos
+2020-03-21,03,Asturias,5,fallecidos
+2020-03-22,03,Asturias,8,fallecidos
+2020-03-23,03,Asturias,12,fallecidos
+2020-03-24,03,Asturias,22,fallecidos
+2020-03-25,03,Asturias,25,fallecidos
+2020-03-26,03,Asturias,27,fallecidos
+2020-03-27,03,Asturias,29,fallecidos
+2020-03-28,03,Asturias,33,fallecidos
+2020-03-29,03,Asturias,41,fallecidos
+2020-03-30,03,Asturias,49,fallecidos
+2020-03-31,03,Asturias,55,fallecidos
+2020-04-01,03,Asturias,63,fallecidos
+2020-04-02,03,Asturias,69,fallecidos
+2020-04-03,03,Asturias,70,fallecidos
+2020-04-04,03,Asturias,76,fallecidos
+2020-04-05,03,Asturias,80,fallecidos
+2020-04-06,03,Asturias,86,fallecidos
+2020-04-07,03,Asturias,96,fallecidos
+2020-04-08,03,Asturias,102,fallecidos
+2020-04-09,03,Asturias,110,fallecidos
+2020-04-10,03,Asturias,121,fallecidos
+2020-04-11,03,Asturias,128,fallecidos
+2020-04-12,03,Asturias,140,fallecidos
+2020-04-13,03,Asturias,149,fallecidos
+2020-04-14,03,Asturias,156,fallecidos
+2020-04-15,03,Asturias,166,fallecidos
+2020-03-03,04,Baleares,0,fallecidos
+2020-03-04,04,Baleares,0,fallecidos
+2020-03-05,04,Baleares,0,fallecidos
+2020-03-06,04,Baleares,0,fallecidos
+2020-03-07,04,Baleares,0,fallecidos
+2020-03-08,04,Baleares,0,fallecidos
+2020-03-09,04,Baleares,0,fallecidos
+2020-03-10,04,Baleares,0,fallecidos
+2020-03-11,04,Baleares,0,fallecidos
+2020-03-12,04,Baleares,1,fallecidos
+2020-03-13,04,Baleares,1,fallecidos
+2020-03-14,04,Baleares,1,fallecidos
+2020-03-15,04,Baleares,1,fallecidos
+2020-03-16,04,Baleares,1,fallecidos
+2020-03-17,04,Baleares,1,fallecidos
+2020-03-18,04,Baleares,1,fallecidos
+2020-03-19,04,Baleares,2,fallecidos
+2020-03-20,04,Baleares,2,fallecidos
+2020-03-21,04,Baleares,4,fallecidos
+2020-03-22,04,Baleares,4,fallecidos
+2020-03-23,04,Baleares,10,fallecidos
+2020-03-24,04,Baleares,10,fallecidos
+2020-03-25,04,Baleares,13,fallecidos
+2020-03-26,04,Baleares,17,fallecidos
+2020-03-27,04,Baleares,22,fallecidos
+2020-03-28,04,Baleares,26,fallecidos
+2020-03-29,04,Baleares,29,fallecidos
+2020-03-30,04,Baleares,37,fallecidos
+2020-03-31,04,Baleares,42,fallecidos
+2020-04-01,04,Baleares,46,fallecidos
+2020-04-02,04,Baleares,58,fallecidos
+2020-04-03,04,Baleares,69,fallecidos
+2020-04-04,04,Baleares,71,fallecidos
+2020-04-05,04,Baleares,75,fallecidos
+2020-04-06,04,Baleares,81,fallecidos
+2020-04-07,04,Baleares,84,fallecidos
+2020-04-08,04,Baleares,89,fallecidos
+2020-04-09,04,Baleares,89,fallecidos
+2020-04-10,04,Baleares,97,fallecidos
+2020-04-11,04,Baleares,102,fallecidos
+2020-04-12,04,Baleares,112,fallecidos
+2020-04-13,04,Baleares,117,fallecidos
+2020-04-14,04,Baleares,118,fallecidos
+2020-04-15,04,Baleares,125,fallecidos
+2020-03-03,05,Canarias,0,fallecidos
+2020-03-04,05,Canarias,0,fallecidos
+2020-03-05,05,Canarias,0,fallecidos
+2020-03-06,05,Canarias,0,fallecidos
+2020-03-07,05,Canarias,0,fallecidos
+2020-03-08,05,Canarias,0,fallecidos
+2020-03-09,05,Canarias,0,fallecidos
+2020-03-10,05,Canarias,0,fallecidos
+2020-03-11,05,Canarias,0,fallecidos
+2020-03-12,05,Canarias,0,fallecidos
+2020-03-13,05,Canarias,0,fallecidos
+2020-03-14,05,Canarias,1,fallecidos
+2020-03-15,05,Canarias,1,fallecidos
+2020-03-16,05,Canarias,1,fallecidos
+2020-03-17,05,Canarias,2,fallecidos
+2020-03-18,05,Canarias,3,fallecidos
+2020-03-19,05,Canarias,3,fallecidos
+2020-03-20,05,Canarias,4,fallecidos
+2020-03-21,05,Canarias,7,fallecidos
+2020-03-22,05,Canarias,9,fallecidos
+2020-03-23,05,Canarias,11,fallecidos
+2020-03-24,05,Canarias,16,fallecidos
+2020-03-25,05,Canarias,21,fallecidos
+2020-03-26,05,Canarias,24,fallecidos
+2020-03-27,05,Canarias,27,fallecidos
+2020-03-28,05,Canarias,36,fallecidos
+2020-03-29,05,Canarias,39,fallecidos
+2020-03-30,05,Canarias,40,fallecidos
+2020-03-31,05,Canarias,55,fallecidos
+2020-04-01,05,Canarias,62,fallecidos
+2020-04-02,05,Canarias,68,fallecidos
+2020-04-03,05,Canarias,73,fallecidos
+2020-04-04,05,Canarias,78,fallecidos
+2020-04-05,05,Canarias,80,fallecidos
+2020-04-06,05,Canarias,85,fallecidos
+2020-04-07,05,Canarias,89,fallecidos
+2020-04-08,05,Canarias,91,fallecidos
+2020-04-09,05,Canarias,92,fallecidos
+2020-04-10,05,Canarias,94,fallecidos
+2020-04-11,05,Canarias,95,fallecidos
+2020-04-12,05,Canarias,95,fallecidos
+2020-04-13,05,Canarias,96,fallecidos
+2020-04-14,05,Canarias,102,fallecidos
+2020-04-15,05,Canarias,104,fallecidos
+2020-03-03,06,Cantabria,0,fallecidos
+2020-03-04,06,Cantabria,0,fallecidos
+2020-03-05,06,Cantabria,0,fallecidos
+2020-03-06,06,Cantabria,0,fallecidos
+2020-03-07,06,Cantabria,0,fallecidos
+2020-03-08,06,Cantabria,0,fallecidos
+2020-03-09,06,Cantabria,0,fallecidos
+2020-03-10,06,Cantabria,0,fallecidos
+2020-03-11,06,Cantabria,0,fallecidos
+2020-03-12,06,Cantabria,0,fallecidos
+2020-03-13,06,Cantabria,0,fallecidos
+2020-03-14,06,Cantabria,0,fallecidos
+2020-03-15,06,Cantabria,0,fallecidos
+2020-03-16,06,Cantabria,0,fallecidos
+2020-03-17,06,Cantabria,0,fallecidos
+2020-03-18,06,Cantabria,1,fallecidos
+2020-03-19,06,Cantabria,1,fallecidos
+2020-03-20,06,Cantabria,1,fallecidos
+2020-03-21,06,Cantabria,2,fallecidos
+2020-03-22,06,Cantabria,5,fallecidos
+2020-03-23,06,Cantabria,6,fallecidos
+2020-03-24,06,Cantabria,9,fallecidos
+2020-03-25,06,Cantabria,14,fallecidos
+2020-03-26,06,Cantabria,17,fallecidos
+2020-03-27,06,Cantabria,21,fallecidos
+2020-03-28,06,Cantabria,22,fallecidos
+2020-03-29,06,Cantabria,26,fallecidos
+2020-03-30,06,Cantabria,27,fallecidos
+2020-03-31,06,Cantabria,37,fallecidos
+2020-04-01,06,Cantabria,54,fallecidos
+2020-04-02,06,Cantabria,60,fallecidos
+2020-04-03,06,Cantabria,64,fallecidos
+2020-04-04,06,Cantabria,68,fallecidos
+2020-04-05,06,Cantabria,68,fallecidos
+2020-04-06,06,Cantabria,77,fallecidos
+2020-04-07,06,Cantabria,85,fallecidos
+2020-04-08,06,Cantabria,92,fallecidos
+2020-04-09,06,Cantabria,98,fallecidos
+2020-04-10,06,Cantabria,102,fallecidos
+2020-04-11,06,Cantabria,107,fallecidos
+2020-04-12,06,Cantabria,110,fallecidos
+2020-04-13,06,Cantabria,117,fallecidos
+2020-04-14,06,Cantabria,120,fallecidos
+2020-04-15,06,Cantabria,132,fallecidos
+2020-03-03,08,Castilla-La Mancha,0,fallecidos
+2020-03-04,08,Castilla-La Mancha,0,fallecidos
+2020-03-05,08,Castilla-La Mancha,0,fallecidos
+2020-03-06,08,Castilla-La Mancha,0,fallecidos
+2020-03-07,08,Castilla-La Mancha,0,fallecidos
+2020-03-08,08,Castilla-La Mancha,0,fallecidos
+2020-03-09,08,Castilla-La Mancha,0,fallecidos
+2020-03-10,08,Castilla-La Mancha,0,fallecidos
+2020-03-11,08,Castilla-La Mancha,0,fallecidos
+2020-03-12,08,Castilla-La Mancha,1,fallecidos
+2020-03-13,08,Castilla-La Mancha,5,fallecidos
+2020-03-14,08,Castilla-La Mancha,6,fallecidos
+2020-03-15,08,Castilla-La Mancha,10,fallecidos
+2020-03-16,08,Castilla-La Mancha,17,fallecidos
+2020-03-17,08,Castilla-La Mancha,17,fallecidos
+2020-03-18,08,Castilla-La Mancha,28,fallecidos
+2020-03-19,08,Castilla-La Mancha,42,fallecidos
+2020-03-20,08,Castilla-La Mancha,42,fallecidos
+2020-03-21,08,Castilla-La Mancha,84,fallecidos
+2020-03-22,08,Castilla-La Mancha,112,fallecidos
+2020-03-23,08,Castilla-La Mancha,145,fallecidos
+2020-03-24,08,Castilla-La Mancha,216,fallecidos
+2020-03-25,08,Castilla-La Mancha,263,fallecidos
+2020-03-26,08,Castilla-La Mancha,316,fallecidos
+2020-03-27,08,Castilla-La Mancha,367,fallecidos
+2020-03-28,08,Castilla-La Mancha,448,fallecidos
+2020-03-29,08,Castilla-La Mancha,539,fallecidos
+2020-03-30,08,Castilla-La Mancha,622,fallecidos
+2020-03-31,08,Castilla-La Mancha,708,fallecidos
+2020-04-01,08,Castilla-La Mancha,774,fallecidos
+2020-04-02,08,Castilla-La Mancha,854,fallecidos
+2020-04-03,08,Castilla-La Mancha,916,fallecidos
+2020-04-04,08,Castilla-La Mancha,989,fallecidos
+2020-04-05,08,Castilla-La Mancha,1055,fallecidos
+2020-04-06,08,Castilla-La Mancha,1132,fallecidos
+2020-04-07,08,Castilla-La Mancha,1177,fallecidos
+2020-04-08,08,Castilla-La Mancha,1255,fallecidos
+2020-04-09,08,Castilla-La Mancha,1322,fallecidos
+2020-04-10,08,Castilla-La Mancha,1431,fallecidos
+2020-04-11,08,Castilla-La Mancha,1483,fallecidos
+2020-04-12,08,Castilla-La Mancha,1543,fallecidos
+2020-04-13,08,Castilla-La Mancha,1626,fallecidos
+2020-04-14,08,Castilla-La Mancha,1714,fallecidos
+2020-04-15,08,Castilla-La Mancha,1755,fallecidos
+2020-03-03,07,Castilla y León,0,fallecidos
+2020-03-04,07,Castilla y León,0,fallecidos
+2020-03-05,07,Castilla y León,0,fallecidos
+2020-03-06,07,Castilla y León,0,fallecidos
+2020-03-07,07,Castilla y León,0,fallecidos
+2020-03-08,07,Castilla y León,0,fallecidos
+2020-03-09,07,Castilla y León,0,fallecidos
+2020-03-10,07,Castilla y León,0,fallecidos
+2020-03-11,07,Castilla y León,0,fallecidos
+2020-03-12,07,Castilla y León,0,fallecidos
+2020-03-13,07,Castilla y León,1,fallecidos
+2020-03-14,07,Castilla y León,3,fallecidos
+2020-03-15,07,Castilla y León,6,fallecidos
+2020-03-16,07,Castilla y León,9,fallecidos
+2020-03-17,07,Castilla y León,12,fallecidos
+2020-03-18,07,Castilla y León,22,fallecidos
+2020-03-19,07,Castilla y León,29,fallecidos
+2020-03-20,07,Castilla y León,43,fallecidos
+2020-03-21,07,Castilla y León,55,fallecidos
+2020-03-22,07,Castilla y León,74,fallecidos
+2020-03-23,07,Castilla y León,102,fallecidos
+2020-03-24,07,Castilla y León,124,fallecidos
+2020-03-25,07,Castilla y León,165,fallecidos
+2020-03-26,07,Castilla y León,206,fallecidos
+2020-03-27,07,Castilla y León,252,fallecidos
+2020-03-28,07,Castilla y León,321,fallecidos
+2020-03-29,07,Castilla y León,380,fallecidos
+2020-03-30,07,Castilla y León,442,fallecidos
+2020-03-31,07,Castilla y León,516,fallecidos
+2020-04-01,07,Castilla y León,585,fallecidos
+2020-04-02,07,Castilla y León,641,fallecidos
+2020-04-03,07,Castilla y León,723,fallecidos
+2020-04-04,07,Castilla y León,786,fallecidos
+2020-04-05,07,Castilla y León,847,fallecidos
+2020-04-06,07,Castilla y León,919,fallecidos
+2020-04-07,07,Castilla y León,982,fallecidos
+2020-04-08,07,Castilla y León,1028,fallecidos
+2020-04-09,07,Castilla y León,1082,fallecidos
+2020-04-10,07,Castilla y León,1129,fallecidos
+2020-04-11,07,Castilla y León,1180,fallecidos
+2020-04-12,07,Castilla y León,1221,fallecidos
+2020-04-13,07,Castilla y León,1263,fallecidos
+2020-04-14,07,Castilla y León,1299,fallecidos
+2020-04-15,07,Castilla y León,1337,fallecidos
+2020-03-03,09,Cataluña,0,fallecidos
+2020-03-04,09,Cataluña,0,fallecidos
+2020-03-05,09,Cataluña,0,fallecidos
+2020-03-06,09,Cataluña,0,fallecidos
+2020-03-07,09,Cataluña,1,fallecidos
+2020-03-08,09,Cataluña,1,fallecidos
+2020-03-09,09,Cataluña,1,fallecidos
+2020-03-10,09,Cataluña,3,fallecidos
+2020-03-11,09,Cataluña,3,fallecidos
+2020-03-12,09,Cataluña,4,fallecidos
+2020-03-13,09,Cataluña,4,fallecidos
+2020-03-14,09,Cataluña,6,fallecidos
+2020-03-15,09,Cataluña,8,fallecidos
+2020-03-16,09,Cataluña,12,fallecidos
+2020-03-17,09,Cataluña,18,fallecidos
+2020-03-18,09,Cataluña,41,fallecidos
+2020-03-19,09,Cataluña,55,fallecidos
+2020-03-20,09,Cataluña,82,fallecidos
+2020-03-21,09,Cataluña,122,fallecidos
+2020-03-22,09,Cataluña,191,fallecidos
+2020-03-23,09,Cataluña,245,fallecidos
+2020-03-24,09,Cataluña,282,fallecidos
+2020-03-25,09,Cataluña,516,fallecidos
+2020-03-26,09,Cataluña,672,fallecidos
+2020-03-27,09,Cataluña,880,fallecidos
+2020-03-28,09,Cataluña,1070,fallecidos
+2020-03-29,09,Cataluña,1226,fallecidos
+2020-03-30,09,Cataluña,1410,fallecidos
+2020-03-31,09,Cataluña,1672,fallecidos
+2020-04-01,09,Cataluña,1849,fallecidos
+2020-04-02,09,Cataluña,2093,fallecidos
+2020-04-03,09,Cataluña,2335,fallecidos
+2020-04-04,09,Cataluña,2508,fallecidos
+2020-04-05,09,Cataluña,2637,fallecidos
+2020-04-06,09,Cataluña,2760,fallecidos
+2020-04-07,09,Cataluña,2908,fallecidos
+2020-04-08,09,Cataluña,3041,fallecidos
+2020-04-09,09,Cataluña,3148,fallecidos
+2020-04-10,09,Cataluña,3231,fallecidos
+2020-04-11,09,Cataluña,3331,fallecidos
+2020-04-12,09,Cataluña,3442,fallecidos
+2020-04-13,09,Cataluña,3538,fallecidos
+2020-04-14,09,Cataluña,3666,fallecidos
+2020-04-15,09,Cataluña,3756,fallecidos
+2020-03-03,18,Ceuta,0,fallecidos
+2020-03-04,18,Ceuta,0,fallecidos
+2020-03-05,18,Ceuta,0,fallecidos
+2020-03-06,18,Ceuta,0,fallecidos
+2020-03-07,18,Ceuta,0,fallecidos
+2020-03-08,18,Ceuta,0,fallecidos
+2020-03-09,18,Ceuta,0,fallecidos
+2020-03-10,18,Ceuta,0,fallecidos
+2020-03-11,18,Ceuta,0,fallecidos
+2020-03-12,18,Ceuta,0,fallecidos
+2020-03-13,18,Ceuta,0,fallecidos
+2020-03-14,18,Ceuta,0,fallecidos
+2020-03-15,18,Ceuta,0,fallecidos
+2020-03-16,18,Ceuta,0,fallecidos
+2020-03-17,18,Ceuta,0,fallecidos
+2020-03-18,18,Ceuta,0,fallecidos
+2020-03-19,18,Ceuta,0,fallecidos
+2020-03-20,18,Ceuta,0,fallecidos
+2020-03-21,18,Ceuta,0,fallecidos
+2020-03-22,18,Ceuta,0,fallecidos
+2020-03-23,18,Ceuta,0,fallecidos
+2020-03-24,18,Ceuta,0,fallecidos
+2020-03-25,18,Ceuta,0,fallecidos
+2020-03-26,18,Ceuta,0,fallecidos
+2020-03-27,18,Ceuta,0,fallecidos
+2020-03-28,18,Ceuta,1,fallecidos
+2020-03-29,18,Ceuta,1,fallecidos
+2020-03-30,18,Ceuta,1,fallecidos
+2020-03-31,18,Ceuta,1,fallecidos
+2020-04-01,18,Ceuta,1,fallecidos
+2020-04-02,18,Ceuta,1,fallecidos
+2020-04-03,18,Ceuta,1,fallecidos
+2020-04-04,18,Ceuta,1,fallecidos
+2020-04-05,18,Ceuta,2,fallecidos
+2020-04-06,18,Ceuta,3,fallecidos
+2020-04-07,18,Ceuta,4,fallecidos
+2020-04-08,18,Ceuta,4,fallecidos
+2020-04-09,18,Ceuta,4,fallecidos
+2020-04-10,18,Ceuta,4,fallecidos
+2020-04-11,18,Ceuta,4,fallecidos
+2020-04-12,18,Ceuta,4,fallecidos
+2020-04-13,18,Ceuta,4,fallecidos
+2020-04-14,18,Ceuta,4,fallecidos
+2020-04-15,18,Ceuta,4,fallecidos
+2020-03-03,10,C. Valenciana,0,fallecidos
+2020-03-04,10,C. Valenciana,1,fallecidos
+2020-03-05,10,C. Valenciana,1,fallecidos
+2020-03-06,10,C. Valenciana,1,fallecidos
+2020-03-07,10,C. Valenciana,1,fallecidos
+2020-03-08,10,C. Valenciana,1,fallecidos
+2020-03-09,10,C. Valenciana,1,fallecidos
+2020-03-10,10,C. Valenciana,1,fallecidos
+2020-03-11,10,C. Valenciana,1,fallecidos
+2020-03-12,10,C. Valenciana,1,fallecidos
+2020-03-13,10,C. Valenciana,1,fallecidos
+2020-03-14,10,C. Valenciana,4,fallecidos
+2020-03-15,10,C. Valenciana,5,fallecidos
+2020-03-16,10,C. Valenciana,5,fallecidos
+2020-03-17,10,C. Valenciana,13,fallecidos
+2020-03-18,10,C. Valenciana,22,fallecidos
+2020-03-19,10,C. Valenciana,24,fallecidos
+2020-03-20,10,C. Valenciana,33,fallecidos
+2020-03-21,10,C. Valenciana,50,fallecidos
+2020-03-22,10,C. Valenciana,69,fallecidos
+2020-03-23,10,C. Valenciana,94,fallecidos
+2020-03-24,10,C. Valenciana,115,fallecidos
+2020-03-25,10,C. Valenciana,143,fallecidos
+2020-03-26,10,C. Valenciana,167,fallecidos
+2020-03-27,10,C. Valenciana,198,fallecidos
+2020-03-28,10,C. Valenciana,234,fallecidos
+2020-03-29,10,C. Valenciana,267,fallecidos
+2020-03-30,10,C. Valenciana,310,fallecidos
+2020-03-31,10,C. Valenciana,339,fallecidos
+2020-04-01,10,C. Valenciana,395,fallecidos
+2020-04-02,10,C. Valenciana,443,fallecidos
+2020-04-03,10,C. Valenciana,511,fallecidos
+2020-04-04,10,C. Valenciana,571,fallecidos
+2020-04-05,10,C. Valenciana,613,fallecidos
+2020-04-06,10,C. Valenciana,637,fallecidos
+2020-04-07,10,C. Valenciana,672,fallecidos
+2020-04-08,10,C. Valenciana,724,fallecidos
+2020-04-09,10,C. Valenciana,767,fallecidos
+2020-04-10,10,C. Valenciana,796,fallecidos
+2020-04-11,10,C. Valenciana,818,fallecidos
+2020-04-12,10,C. Valenciana,838,fallecidos
+2020-04-13,10,C. Valenciana,876,fallecidos
+2020-04-14,10,C. Valenciana,907,fallecidos
+2020-04-15,10,C. Valenciana,945,fallecidos
+2020-03-03,11,Extremadura,0,fallecidos
+2020-03-04,11,Extremadura,0,fallecidos
+2020-03-05,11,Extremadura,0,fallecidos
+2020-03-06,11,Extremadura,0,fallecidos
+2020-03-07,11,Extremadura,0,fallecidos
+2020-03-08,11,Extremadura,0,fallecidos
+2020-03-09,11,Extremadura,0,fallecidos
+2020-03-10,11,Extremadura,0,fallecidos
+2020-03-11,11,Extremadura,0,fallecidos
+2020-03-12,11,Extremadura,1,fallecidos
+2020-03-13,11,Extremadura,1,fallecidos
+2020-03-14,11,Extremadura,2,fallecidos
+2020-03-15,11,Extremadura,2,fallecidos
+2020-03-16,11,Extremadura,2,fallecidos
+2020-03-17,11,Extremadura,3,fallecidos
+2020-03-18,11,Extremadura,6,fallecidos
+2020-03-19,11,Extremadura,8,fallecidos
+2020-03-20,11,Extremadura,10,fallecidos
+2020-03-21,11,Extremadura,12,fallecidos
+2020-03-22,11,Extremadura,14,fallecidos
+2020-03-23,11,Extremadura,18,fallecidos
+2020-03-24,11,Extremadura,26,fallecidos
+2020-03-25,11,Extremadura,39,fallecidos
+2020-03-26,11,Extremadura,58,fallecidos
+2020-03-27,11,Extremadura,69,fallecidos
+2020-03-28,11,Extremadura,88,fallecidos
+2020-03-29,11,Extremadura,100,fallecidos
+2020-03-30,11,Extremadura,106,fallecidos
+2020-03-31,11,Extremadura,133,fallecidos
+2020-04-01,11,Extremadura,152,fallecidos
+2020-04-02,11,Extremadura,181,fallecidos
+2020-04-03,11,Extremadura,200,fallecidos
+2020-04-04,11,Extremadura,208,fallecidos
+2020-04-05,11,Extremadura,218,fallecidos
+2020-04-06,11,Extremadura,228,fallecidos
+2020-04-07,11,Extremadura,258,fallecidos
+2020-04-08,11,Extremadura,271,fallecidos
+2020-04-09,11,Extremadura,283,fallecidos
+2020-04-10,11,Extremadura,288,fallecidos
+2020-04-11,11,Extremadura,303,fallecidos
+2020-04-12,11,Extremadura,312,fallecidos
+2020-04-13,11,Extremadura,321,fallecidos
+2020-04-14,11,Extremadura,334,fallecidos
+2020-04-15,11,Extremadura,342,fallecidos
+2020-03-03,12,Galicia,0,fallecidos
+2020-03-04,12,Galicia,0,fallecidos
+2020-03-05,12,Galicia,0,fallecidos
+2020-03-06,12,Galicia,0,fallecidos
+2020-03-07,12,Galicia,0,fallecidos
+2020-03-08,12,Galicia,0,fallecidos
+2020-03-09,12,Galicia,0,fallecidos
+2020-03-10,12,Galicia,0,fallecidos
+2020-03-11,12,Galicia,0,fallecidos
+2020-03-12,12,Galicia,0,fallecidos
+2020-03-13,12,Galicia,0,fallecidos
+2020-03-14,12,Galicia,0,fallecidos
+2020-03-15,12,Galicia,2,fallecidos
+2020-03-16,12,Galicia,2,fallecidos
+2020-03-17,12,Galicia,3,fallecidos
+2020-03-18,12,Galicia,3,fallecidos
+2020-03-19,12,Galicia,4,fallecidos
+2020-03-20,12,Galicia,5,fallecidos
+2020-03-21,12,Galicia,9,fallecidos
+2020-03-22,12,Galicia,12,fallecidos
+2020-03-23,12,Galicia,18,fallecidos
+2020-03-24,12,Galicia,20,fallecidos
+2020-03-25,12,Galicia,27,fallecidos
+2020-03-26,12,Galicia,32,fallecidos
+2020-03-27,12,Galicia,43,fallecidos
+2020-03-28,12,Galicia,47,fallecidos
+2020-03-29,12,Galicia,60,fallecidos
+2020-03-30,12,Galicia,66,fallecidos
+2020-03-31,12,Galicia,84,fallecidos
+2020-04-01,12,Galicia,103,fallecidos
+2020-04-02,12,Galicia,120,fallecidos
+2020-04-03,12,Galicia,138,fallecidos
+2020-04-04,12,Galicia,159,fallecidos
+2020-04-05,12,Galicia,174,fallecidos
+2020-04-06,12,Galicia,190,fallecidos
+2020-04-07,12,Galicia,204,fallecidos
+2020-04-08,12,Galicia,213,fallecidos
+2020-04-09,12,Galicia,231,fallecidos
+2020-04-10,12,Galicia,243,fallecidos
+2020-04-11,12,Galicia,261,fallecidos
+2020-04-12,12,Galicia,274,fallecidos
+2020-04-13,12,Galicia,284,fallecidos
+2020-04-14,12,Galicia,290,fallecidos
+2020-04-15,12,Galicia,299,fallecidos
+2020-03-03,13,Madrid,0,fallecidos
+2020-03-04,13,Madrid,0,fallecidos
+2020-03-05,13,Madrid,1,fallecidos
+2020-03-06,13,Madrid,2,fallecidos
+2020-03-07,13,Madrid,4,fallecidos
+2020-03-08,13,Madrid,8,fallecidos
+2020-03-09,13,Madrid,8,fallecidos
+2020-03-10,13,Madrid,21,fallecidos
+2020-03-11,13,Madrid,31,fallecidos
+2020-03-12,13,Madrid,56,fallecidos
+2020-03-13,13,Madrid,81,fallecidos
+2020-03-14,13,Madrid,86,fallecidos
+2020-03-15,13,Madrid,213,fallecidos
+2020-03-16,13,Madrid,213,fallecidos
+2020-03-17,13,Madrid,355,fallecidos
+2020-03-18,13,Madrid,390,fallecidos
+2020-03-19,13,Madrid,498,fallecidos
+2020-03-20,13,Madrid,628,fallecidos
+2020-03-21,13,Madrid,804,fallecidos
+2020-03-22,13,Madrid,1021,fallecidos
+2020-03-23,13,Madrid,1263,fallecidos
+2020-03-24,13,Madrid,1535,fallecidos
+2020-03-25,13,Madrid,1825,fallecidos
+2020-03-26,13,Madrid,2090,fallecidos
+2020-03-27,13,Madrid,2412,fallecidos
+2020-03-28,13,Madrid,2757,fallecidos
+2020-03-29,13,Madrid,3082,fallecidos
+2020-03-30,13,Madrid,3392,fallecidos
+2020-03-31,13,Madrid,3603,fallecidos
+2020-04-01,13,Madrid,3865,fallecidos
+2020-04-02,13,Madrid,4175,fallecidos
+2020-04-03,13,Madrid,4483,fallecidos
+2020-04-04,13,Madrid,4723,fallecidos
+2020-04-05,13,Madrid,4941,fallecidos
+2020-04-06,13,Madrid,5136,fallecidos
+2020-04-07,13,Madrid,5371,fallecidos
+2020-04-08,13,Madrid,5586,fallecidos
+2020-04-09,13,Madrid,5800,fallecidos
+2020-04-10,13,Madrid,5972,fallecidos
+2020-04-11,13,Madrid,6084,fallecidos
+2020-04-12,13,Madrid,6278,fallecidos
+2020-04-13,13,Madrid,6423,fallecidos
+2020-04-14,13,Madrid,6568,fallecidos
+2020-04-15,13,Madrid,6724,fallecidos
+2020-03-03,19,Melilla,0,fallecidos
+2020-03-04,19,Melilla,0,fallecidos
+2020-03-05,19,Melilla,0,fallecidos
+2020-03-06,19,Melilla,0,fallecidos
+2020-03-07,19,Melilla,0,fallecidos
+2020-03-08,19,Melilla,0,fallecidos
+2020-03-09,19,Melilla,0,fallecidos
+2020-03-10,19,Melilla,0,fallecidos
+2020-03-11,19,Melilla,0,fallecidos
+2020-03-12,19,Melilla,0,fallecidos
+2020-03-13,19,Melilla,0,fallecidos
+2020-03-14,19,Melilla,0,fallecidos
+2020-03-15,19,Melilla,0,fallecidos
+2020-03-16,19,Melilla,0,fallecidos
+2020-03-17,19,Melilla,0,fallecidos
+2020-03-18,19,Melilla,0,fallecidos
+2020-03-19,19,Melilla,0,fallecidos
+2020-03-20,19,Melilla,0,fallecidos
+2020-03-21,19,Melilla,0,fallecidos
+2020-03-22,19,Melilla,0,fallecidos
+2020-03-23,19,Melilla,0,fallecidos
+2020-03-24,19,Melilla,0,fallecidos
+2020-03-25,19,Melilla,0,fallecidos
+2020-03-26,19,Melilla,1,fallecidos
+2020-03-27,19,Melilla,1,fallecidos
+2020-03-28,19,Melilla,1,fallecidos
+2020-03-29,19,Melilla,1,fallecidos
+2020-03-30,19,Melilla,1,fallecidos
+2020-03-31,19,Melilla,1,fallecidos
+2020-04-01,19,Melilla,1,fallecidos
+2020-04-02,19,Melilla,1,fallecidos
+2020-04-03,19,Melilla,2,fallecidos
+2020-04-04,19,Melilla,2,fallecidos
+2020-04-05,19,Melilla,2,fallecidos
+2020-04-06,19,Melilla,2,fallecidos
+2020-04-07,19,Melilla,2,fallecidos
+2020-04-08,19,Melilla,2,fallecidos
+2020-04-09,19,Melilla,2,fallecidos
+2020-04-10,19,Melilla,2,fallecidos
+2020-04-11,19,Melilla,2,fallecidos
+2020-04-12,19,Melilla,2,fallecidos
+2020-04-13,19,Melilla,2,fallecidos
+2020-04-14,19,Melilla,2,fallecidos
+2020-04-15,19,Melilla,2,fallecidos
+2020-03-03,14,Murcia,0,fallecidos
+2020-03-04,14,Murcia,0,fallecidos
+2020-03-05,14,Murcia,0,fallecidos
+2020-03-06,14,Murcia,0,fallecidos
+2020-03-07,14,Murcia,0,fallecidos
+2020-03-08,14,Murcia,0,fallecidos
+2020-03-09,14,Murcia,0,fallecidos
+2020-03-10,14,Murcia,0,fallecidos
+2020-03-11,14,Murcia,0,fallecidos
+2020-03-12,14,Murcia,0,fallecidos
+2020-03-13,14,Murcia,0,fallecidos
+2020-03-14,14,Murcia,0,fallecidos
+2020-03-15,14,Murcia,0,fallecidos
+2020-03-16,14,Murcia,0,fallecidos
+2020-03-17,14,Murcia,0,fallecidos
+2020-03-18,14,Murcia,0,fallecidos
+2020-03-19,14,Murcia,0,fallecidos
+2020-03-20,14,Murcia,0,fallecidos
+2020-03-21,14,Murcia,1,fallecidos
+2020-03-22,14,Murcia,1,fallecidos
+2020-03-23,14,Murcia,2,fallecidos
+2020-03-24,14,Murcia,3,fallecidos
+2020-03-25,14,Murcia,5,fallecidos
+2020-03-26,14,Murcia,8,fallecidos
+2020-03-27,14,Murcia,15,fallecidos
+2020-03-28,14,Murcia,17,fallecidos
+2020-03-29,14,Murcia,20,fallecidos
+2020-03-30,14,Murcia,25,fallecidos
+2020-03-31,14,Murcia,34,fallecidos
+2020-04-01,14,Murcia,37,fallecidos
+2020-04-02,14,Murcia,42,fallecidos
+2020-04-03,14,Murcia,46,fallecidos
+2020-04-04,14,Murcia,51,fallecidos
+2020-04-05,14,Murcia,59,fallecidos
+2020-04-06,14,Murcia,68,fallecidos
+2020-04-07,14,Murcia,78,fallecidos
+2020-04-08,14,Murcia,85,fallecidos
+2020-04-09,14,Murcia,88,fallecidos
+2020-04-10,14,Murcia,90,fallecidos
+2020-04-11,14,Murcia,94,fallecidos
+2020-04-12,14,Murcia,97,fallecidos
+2020-04-13,14,Murcia,101,fallecidos
+2020-04-14,14,Murcia,106,fallecidos
+2020-04-15,14,Murcia,109,fallecidos
+2020-03-03,15,Navarra,0,fallecidos
+2020-03-04,15,Navarra,0,fallecidos
+2020-03-05,15,Navarra,0,fallecidos
+2020-03-06,15,Navarra,0,fallecidos
+2020-03-07,15,Navarra,0,fallecidos
+2020-03-08,15,Navarra,0,fallecidos
+2020-03-09,15,Navarra,0,fallecidos
+2020-03-10,15,Navarra,0,fallecidos
+2020-03-11,15,Navarra,0,fallecidos
+2020-03-12,15,Navarra,0,fallecidos
+2020-03-13,15,Navarra,0,fallecidos
+2020-03-14,15,Navarra,0,fallecidos
+2020-03-15,15,Navarra,0,fallecidos
+2020-03-16,15,Navarra,1,fallecidos
+2020-03-17,15,Navarra,2,fallecidos
+2020-03-18,15,Navarra,3,fallecidos
+2020-03-19,15,Navarra,4,fallecidos
+2020-03-20,15,Navarra,5,fallecidos
+2020-03-21,15,Navarra,9,fallecidos
+2020-03-22,15,Navarra,14,fallecidos
+2020-03-23,15,Navarra,24,fallecidos
+2020-03-24,15,Navarra,31,fallecidos
+2020-03-25,15,Navarra,33,fallecidos
+2020-03-26,15,Navarra,49,fallecidos
+2020-03-27,15,Navarra,58,fallecidos
+2020-03-28,15,Navarra,70,fallecidos
+2020-03-29,15,Navarra,84,fallecidos
+2020-03-30,15,Navarra,102,fallecidos
+2020-03-31,15,Navarra,113,fallecidos
+2020-04-01,15,Navarra,130,fallecidos
+2020-04-02,15,Navarra,141,fallecidos
+2020-04-03,15,Navarra,151,fallecidos
+2020-04-04,15,Navarra,171,fallecidos
+2020-04-05,15,Navarra,178,fallecidos
+2020-04-06,15,Navarra,187,fallecidos
+2020-04-07,15,Navarra,202,fallecidos
+2020-04-08,15,Navarra,206,fallecidos
+2020-04-09,15,Navarra,214,fallecidos
+2020-04-10,15,Navarra,218,fallecidos
+2020-04-11,15,Navarra,227,fallecidos
+2020-04-12,15,Navarra,232,fallecidos
+2020-04-13,15,Navarra,239,fallecidos
+2020-04-14,15,Navarra,249,fallecidos
+2020-04-15,15,Navarra,252,fallecidos
+2020-03-03,16,País Vasco,0,fallecidos
+2020-03-04,16,País Vasco,0,fallecidos
+2020-03-05,16,País Vasco,1,fallecidos
+2020-03-06,16,País Vasco,1,fallecidos
+2020-03-07,16,País Vasco,1,fallecidos
+2020-03-08,16,País Vasco,5,fallecidos
+2020-03-09,16,País Vasco,5,fallecidos
+2020-03-10,16,País Vasco,6,fallecidos
+2020-03-11,16,País Vasco,6,fallecidos
+2020-03-12,16,País Vasco,11,fallecidos
+2020-03-13,16,País Vasco,14,fallecidos
+2020-03-14,16,País Vasco,14,fallecidos
+2020-03-15,16,País Vasco,23,fallecidos
+2020-03-16,16,País Vasco,23,fallecidos
+2020-03-17,16,País Vasco,36,fallecidos
+2020-03-18,16,País Vasco,40,fallecidos
+2020-03-19,16,País Vasco,53,fallecidos
+2020-03-20,16,País Vasco,71,fallecidos
+2020-03-21,16,País Vasco,85,fallecidos
+2020-03-22,16,País Vasco,97,fallecidos
+2020-03-23,16,País Vasco,120,fallecidos
+2020-03-24,16,País Vasco,133,fallecidos
+2020-03-25,16,País Vasco,155,fallecidos
+2020-03-26,16,País Vasco,180,fallecidos
+2020-03-27,16,País Vasco,207,fallecidos
+2020-03-28,16,País Vasco,221,fallecidos
+2020-03-29,16,País Vasco,265,fallecidos
+2020-03-30,16,País Vasco,297,fallecidos
+2020-03-31,16,País Vasco,325,fallecidos
+2020-04-01,16,País Vasco,369,fallecidos
+2020-04-02,16,País Vasco,412,fallecidos
+2020-04-03,16,País Vasco,444,fallecidos
+2020-04-04,16,País Vasco,477,fallecidos
+2020-04-05,16,País Vasco,515,fallecidos
+2020-04-06,16,País Vasco,548,fallecidos
+2020-04-07,16,País Vasco,586,fallecidos
+2020-04-08,16,País Vasco,635,fallecidos
+2020-04-09,16,País Vasco,689,fallecidos
+2020-04-10,16,País Vasco,729,fallecidos
+2020-04-11,16,País Vasco,765,fallecidos
+2020-04-12,16,País Vasco,804,fallecidos
+2020-04-13,16,País Vasco,831,fallecidos
+2020-04-14,16,País Vasco,859,fallecidos
+2020-04-15,16,País Vasco,902,fallecidos
+2020-03-03,17,La Rioja,0,fallecidos
+2020-03-04,17,La Rioja,0,fallecidos
+2020-03-05,17,La Rioja,0,fallecidos
+2020-03-06,17,La Rioja,0,fallecidos
+2020-03-07,17,La Rioja,0,fallecidos
+2020-03-08,17,La Rioja,0,fallecidos
+2020-03-09,17,La Rioja,0,fallecidos
+2020-03-10,17,La Rioja,1,fallecidos
+2020-03-11,17,La Rioja,2,fallecidos
+2020-03-12,17,La Rioja,2,fallecidos
+2020-03-13,17,La Rioja,2,fallecidos
+2020-03-14,17,La Rioja,3,fallecidos
+2020-03-15,17,La Rioja,3,fallecidos
+2020-03-16,17,La Rioja,4,fallecidos
+2020-03-17,17,La Rioja,5,fallecidos
+2020-03-18,17,La Rioja,5,fallecidos
+2020-03-19,17,La Rioja,5,fallecidos
+2020-03-20,17,La Rioja,7,fallecidos
+2020-03-21,17,La Rioja,15,fallecidos
+2020-03-22,17,La Rioja,18,fallecidos
+2020-03-23,17,La Rioja,22,fallecidos
+2020-03-24,17,La Rioja,30,fallecidos
+2020-03-25,17,La Rioja,37,fallecidos
+2020-03-26,17,La Rioja,43,fallecidos
+2020-03-27,17,La Rioja,55,fallecidos
+2020-03-28,17,La Rioja,65,fallecidos
+2020-03-29,17,La Rioja,68,fallecidos
+2020-03-30,17,La Rioja,71,fallecidos
+2020-03-31,17,La Rioja,85,fallecidos
+2020-04-01,17,La Rioja,90,fallecidos
+2020-04-02,17,La Rioja,101,fallecidos
+2020-04-03,17,La Rioja,109,fallecidos
+2020-04-04,17,La Rioja,128,fallecidos
+2020-04-05,17,La Rioja,134,fallecidos
+2020-04-06,17,La Rioja,141,fallecidos
+2020-04-07,17,La Rioja,160,fallecidos
+2020-04-08,17,La Rioja,177,fallecidos
+2020-04-09,17,La Rioja,182,fallecidos
+2020-04-10,17,La Rioja,196,fallecidos
+2020-04-11,17,La Rioja,207,fallecidos
+2020-04-12,17,La Rioja,219,fallecidos
+2020-04-13,17,La Rioja,223,fallecidos
+2020-04-14,17,La Rioja,234,fallecidos
+2020-04-15,17,La Rioja,246,fallecidos
+2020-03-03,00,Total,0,fallecidos
+2020-03-04,00,Total,1,fallecidos
+2020-03-05,00,Total,3,fallecidos
+2020-03-06,00,Total,5,fallecidos
+2020-03-07,00,Total,8,fallecidos
+2020-03-08,00,Total,17,fallecidos
+2020-03-09,00,Total,17,fallecidos
+2020-03-10,00,Total,35,fallecidos
+2020-03-11,00,Total,47,fallecidos
+2020-03-12,00,Total,84,fallecidos
+2020-03-13,00,Total,120,fallecidos
+2020-03-14,00,Total,136,fallecidos
+2020-03-15,00,Total,288,fallecidos
+2020-03-16,00,Total,309,fallecidos
+2020-03-17,00,Total,491,fallecidos
+2020-03-18,00,Total,598,fallecidos
+2020-03-19,00,Total,767,fallecidos
+2020-03-20,00,Total,1002,fallecidos
+2020-03-21,00,Total,1326,fallecidos
+2020-03-22,00,Total,1720,fallecidos
+2020-03-23,00,Total,2182,fallecidos
+2020-03-24,00,Total,2696,fallecidos
+2020-03-25,00,Total,3434,fallecidos
+2020-03-26,00,Total,4089,fallecidos
+2020-03-27,00,Total,4858,fallecidos
+2020-03-28,00,Total,5690,fallecidos
+2020-03-29,00,Total,6528,fallecidos
+2020-03-30,00,Total,7340,fallecidos
+2020-03-31,00,Total,8189,fallecidos
+2020-04-01,00,Total,9053,fallecidos
+2020-04-02,00,Total,10003,fallecidos
+2020-04-03,00,Total,10935,fallecidos
+2020-04-04,00,Total,11744,fallecidos
+2020-04-05,00,Total,12418,fallecidos
+2020-04-06,00,Total,13055,fallecidos
+2020-04-07,00,Total,13798,fallecidos
+2020-04-08,00,Total,14555,fallecidos
+2020-04-09,00,Total,15238,fallecidos
+2020-04-10,00,Total,15843,fallecidos
+2020-04-11,00,Total,16353,fallecidos
+2020-04-12,00,Total,16972,fallecidos
+2020-04-13,00,Total,17489,fallecidos
+2020-04-14,00,Total,18056,fallecidos
+2020-04-15,00,Total,18579,fallecidos
+2020-03-04,01,Andalucía,1,uci
+2020-03-05,01,Andalucía,1,uci
+2020-03-06,01,Andalucía,1,uci
+2020-03-09,01,Andalucía,1,uci
+2020-03-10,01,Andalucía,1,uci
+2020-03-11,01,Andalucía,3,uci
+2020-03-12,01,Andalucía,4,uci
+2020-03-13,01,Andalucía,8,uci
+2020-03-16,01,Andalucía,11,uci
+2020-03-17,01,Andalucía,13,uci
+2020-03-18,01,Andalucía,21,uci
+2020-03-19,01,Andalucía,25,uci
+2020-03-20,01,Andalucía,38,uci
+2020-03-21,01,Andalucía,53,uci
+2020-03-22,01,Andalucía,55,uci
+2020-03-23,01,Andalucía,77,uci
+2020-03-24,01,Andalucía,102,uci
+2020-03-25,01,Andalucía,116,uci
+2020-03-26,01,Andalucía,134,uci
+2020-03-27,01,Andalucía,148,uci
+2020-03-28,01,Andalucía,172,uci
+2020-03-29,01,Andalucía,201,uci
+2020-03-30,01,Andalucía,216,uci
+2020-03-31,01,Andalucía,235,uci
+2020-04-01,01,Andalucía,260,uci
+2020-04-02,01,Andalucía,280,uci
+2020-04-03,01,Andalucía,338,uci
+2020-04-04,01,Andalucía,364,uci
+2020-04-05,01,Andalucía,474,uci
+2020-04-06,01,Andalucía,489,uci
+2020-04-07,01,Andalucía,499,uci
+2020-04-08,01,Andalucía,520,uci
+2020-04-09,01,Andalucía,538,uci
+2020-04-10,01,Andalucía,582,uci
+2020-04-11,01,Andalucía,602,uci
+2020-04-12,01,Andalucía,619,uci
+2020-04-13,01,Andalucía,621,uci
+2020-04-14,01,Andalucía,631,uci
+2020-04-15,01,Andalucía,665,uci
+2020-03-04,02,Aragón,0,uci
+2020-03-05,02,Aragón,1,uci
+2020-03-06,02,Aragón,1,uci
+2020-03-09,02,Aragón,1,uci
+2020-03-10,02,Aragón,3,uci
+2020-03-11,02,Aragón,3,uci
+2020-03-12,02,Aragón,3,uci
+2020-03-13,02,Aragón,3,uci
+2020-03-16,02,Aragón,7,uci
+2020-03-17,02,Aragón,9,uci
+2020-03-18,02,Aragón,9,uci
+2020-03-19,02,Aragón,14,uci
+2020-03-20,02,Aragón,28,uci
+2020-03-21,02,Aragón,33,uci
+2020-03-22,02,Aragón,45,uci
+2020-03-23,02,Aragón,52,uci
+2020-03-24,02,Aragón,66,uci
+2020-03-25,02,Aragón,75,uci
+2020-03-26,02,Aragón,93,uci
+2020-03-27,02,Aragón,114,uci
+2020-03-28,02,Aragón,124,uci
+2020-03-29,02,Aragón,124,uci
+2020-03-30,02,Aragón,156,uci
+2020-03-31,02,Aragón,165,uci
+2020-04-01,02,Aragón,168,uci
+2020-04-02,02,Aragón,178,uci
+2020-04-03,02,Aragón,180,uci
+2020-04-04,02,Aragón,190,uci
+2020-04-05,02,Aragón,233,uci
+2020-04-06,02,Aragón,237,uci
+2020-04-07,02,Aragón,247,uci
+2020-04-08,02,Aragón,255,uci
+2020-04-09,02,Aragón,261,uci
+2020-04-10,02,Aragón,263,uci
+2020-04-11,02,Aragón,266,uci
+2020-04-12,02,Aragón,272,uci
+2020-04-13,02,Aragón,274,uci
+2020-04-14,02,Aragón,280,uci
+2020-04-15,02,Aragón,282,uci
+2020-03-04,03,Asturias,1,uci
+2020-03-05,03,Asturias,2,uci
+2020-03-06,03,Asturias,2,uci
+2020-03-09,03,Asturias,2,uci
+2020-03-10,03,Asturias,2,uci
+2020-03-11,03,Asturias,2,uci
+2020-03-12,03,Asturias,2,uci
+2020-03-13,03,Asturias,2,uci
+2020-03-16,03,Asturias,3,uci
+2020-03-17,03,Asturias,5,uci
+2020-03-18,03,Asturias,5,uci
+2020-03-19,03,Asturias,6,uci
+2020-03-20,03,Asturias,7,uci
+2020-03-21,03,Asturias,12,uci
+2020-03-22,03,Asturias,15,uci
+2020-03-23,03,Asturias,22,uci
+2020-03-24,03,Asturias,23,uci
+2020-03-25,03,Asturias,29,uci
+2020-03-26,03,Asturias,34,uci
+2020-03-27,03,Asturias,47,uci
+2020-03-28,03,Asturias,50,uci
+2020-03-29,03,Asturias,57,uci
+2020-03-30,03,Asturias,60,uci
+2020-03-31,03,Asturias,65,uci
+2020-04-01,03,Asturias,76,uci
+2020-04-02,03,Asturias,79,uci
+2020-04-03,03,Asturias,86,uci
+2020-04-04,03,Asturias,87,uci
+2020-04-05,03,Asturias,90,uci
+2020-04-06,03,Asturias,90,uci
+2020-04-07,03,Asturias,91,uci
+2020-04-08,03,Asturias,91,uci
+2020-04-09,03,Asturias,94,uci
+2020-04-10,03,Asturias,100,uci
+2020-04-11,03,Asturias,105,uci
+2020-04-12,03,Asturias,106,uci
+2020-04-13,03,Asturias,110,uci
+2020-04-14,03,Asturias,111,uci
+2020-04-15,03,Asturias,114,uci
+2020-03-04,04,Baleares,0,uci
+2020-03-05,04,Baleares,0,uci
+2020-03-06,04,Baleares,0,uci
+2020-03-09,04,Baleares,0,uci
+2020-03-10,04,Baleares,1,uci
+2020-03-11,04,Baleares,1,uci
+2020-03-12,04,Baleares,2,uci
+2020-03-13,04,Baleares,2,uci
+2020-03-16,04,Baleares,4,uci
+2020-03-17,04,Baleares,4,uci
+2020-03-18,04,Baleares,4,uci
+2020-03-19,04,Baleares,7,uci
+2020-03-20,04,Baleares,10,uci
+2020-03-21,04,Baleares,14,uci
+2020-03-22,04,Baleares,14,uci
+2020-03-23,04,Baleares,27,uci
+2020-03-24,04,Baleares,35,uci
+2020-03-25,04,Baleares,40,uci
+2020-03-26,04,Baleares,43,uci
+2020-03-27,04,Baleares,46,uci
+2020-03-28,04,Baleares,59,uci
+2020-03-29,04,Baleares,71,uci
+2020-03-30,04,Baleares,80,uci
+2020-03-31,04,Baleares,85,uci
+2020-04-01,04,Baleares,95,uci
+2020-04-02,04,Baleares,105,uci
+2020-04-03,04,Baleares,112,uci
+2020-04-04,04,Baleares,114,uci
+2020-04-05,04,Baleares,120,uci
+2020-04-06,04,Baleares,121,uci
+2020-04-07,04,Baleares,124,uci
+2020-04-08,04,Baleares,129,uci
+2020-04-09,04,Baleares,132,uci
+2020-04-10,04,Baleares,136,uci
+2020-04-11,04,Baleares,137,uci
+2020-04-12,04,Baleares,142,uci
+2020-04-13,04,Baleares,143,uci
+2020-04-14,04,Baleares,145,uci
+2020-04-15,04,Baleares,149,uci
+2020-03-04,05,Canarias,0,uci
+2020-03-05,05,Canarias,0,uci
+2020-03-06,05,Canarias,0,uci
+2020-03-09,05,Canarias,0,uci
+2020-03-10,05,Canarias,1,uci
+2020-03-11,05,Canarias,1,uci
+2020-03-12,05,Canarias,3,uci
+2020-03-13,05,Canarias,2,uci
+2020-03-16,05,Canarias,9,uci
+2020-03-17,05,Canarias,13,uci
+2020-03-18,05,Canarias,17,uci
+2020-03-19,05,Canarias,23,uci
+2020-03-20,05,Canarias,25,uci
+2020-03-21,05,Canarias,29,uci
+2020-03-22,05,Canarias,32,uci
+2020-03-23,05,Canarias,32,uci
+2020-03-24,05,Canarias,36,uci
+2020-03-25,05,Canarias,43,uci
+2020-03-26,05,Canarias,45,uci
+2020-03-27,05,Canarias,61,uci
+2020-03-28,05,Canarias,68,uci
+2020-03-29,05,Canarias,78,uci
+2020-03-30,05,Canarias,84,uci
+2020-03-31,05,Canarias,94,uci
+2020-04-01,05,Canarias,110,uci
+2020-04-02,05,Canarias,113,uci
+2020-04-03,05,Canarias,120,uci
+2020-04-04,05,Canarias,128,uci
+2020-04-05,05,Canarias,129,uci
+2020-04-06,05,Canarias,133,uci
+2020-04-07,05,Canarias,137,uci
+2020-04-08,05,Canarias,138,uci
+2020-04-09,05,Canarias,140,uci
+2020-04-10,05,Canarias,141,uci
+2020-04-11,05,Canarias,144,uci
+2020-04-12,05,Canarias,144,uci
+2020-04-13,05,Canarias,145,uci
+2020-04-14,05,Canarias,147,uci
+2020-04-15,05,Canarias,152,uci
+2020-03-04,06,Cantabria,0,uci
+2020-03-05,06,Cantabria,0,uci
+2020-03-06,06,Cantabria,0,uci
+2020-03-09,06,Cantabria,0,uci
+2020-03-10,06,Cantabria,0,uci
+2020-03-11,06,Cantabria,0,uci
+2020-03-12,06,Cantabria,0,uci
+2020-03-13,06,Cantabria,0,uci
+2020-03-16,06,Cantabria,2,uci
+2020-03-17,06,Cantabria,2,uci
+2020-03-18,06,Cantabria,3,uci
+2020-03-19,06,Cantabria,4,uci
+2020-03-20,06,Cantabria,7,uci
+2020-03-21,06,Cantabria,9,uci
+2020-03-22,06,Cantabria,9,uci
+2020-03-23,06,Cantabria,14,uci
+2020-03-24,06,Cantabria,16,uci
+2020-03-25,06,Cantabria,18,uci
+2020-03-26,06,Cantabria,26,uci
+2020-03-27,06,Cantabria,29,uci
+2020-03-28,06,Cantabria,37,uci
+2020-03-29,06,Cantabria,40,uci
+2020-03-30,06,Cantabria,46,uci
+2020-03-31,06,Cantabria,50,uci
+2020-04-01,06,Cantabria,54,uci
+2020-04-02,06,Cantabria,57,uci
+2020-04-03,06,Cantabria,59,uci
+2020-04-04,06,Cantabria,60,uci
+2020-04-05,06,Cantabria,62,uci
+2020-04-06,06,Cantabria,65,uci
+2020-04-07,06,Cantabria,66,uci
+2020-04-08,06,Cantabria,69,uci
+2020-04-09,06,Cantabria,71,uci
+2020-04-10,06,Cantabria,73,uci
+2020-04-11,06,Cantabria,75,uci
+2020-04-12,06,Cantabria,75,uci
+2020-04-13,06,Cantabria,75,uci
+2020-04-14,06,Cantabria,76,uci
+2020-04-15,06,Cantabria,76,uci
+2020-03-04,08,Castilla-La Mancha,1,uci
+2020-03-05,08,Castilla-La Mancha,1,uci
+2020-03-06,08,Castilla-La Mancha,1,uci
+2020-03-09,08,Castilla-La Mancha,2,uci
+2020-03-10,08,Castilla-La Mancha,2,uci
+2020-03-11,08,Castilla-La Mancha,5,uci
+2020-03-12,08,Castilla-La Mancha,9,uci
+2020-03-13,08,Castilla-La Mancha,10,uci
+2020-03-16,08,Castilla-La Mancha,23,uci
+2020-03-17,08,Castilla-La Mancha,23,uci
+2020-03-18,08,Castilla-La Mancha,29,uci
+2020-03-19,08,Castilla-La Mancha,37,uci
+2020-03-20,08,Castilla-La Mancha,53,uci
+2020-03-21,08,Castilla-La Mancha,65,uci
+2020-03-22,08,Castilla-La Mancha,76,uci
+2020-03-23,08,Castilla-La Mancha,142,uci
+2020-03-24,08,Castilla-La Mancha,182,uci
+2020-03-25,08,Castilla-La Mancha,210,uci
+2020-03-26,08,Castilla-La Mancha,243,uci
+2020-03-27,08,Castilla-La Mancha,273,uci
+2020-03-28,08,Castilla-La Mancha,289,uci
+2020-03-29,08,Castilla-La Mancha,299,uci
+2020-03-30,08,Castilla-La Mancha,302,uci
+2020-03-31,08,Castilla-La Mancha,344,uci
+2020-04-01,08,Castilla-La Mancha,353,uci
+2020-04-02,08,Castilla-La Mancha,355,uci
+2020-04-03,08,Castilla-La Mancha,355,uci
+2020-04-04,08,Castilla-La Mancha,360,uci
+2020-04-05,08,Castilla-La Mancha,357,uci
+2020-04-06,08,Castilla-La Mancha,354,uci
+2020-04-07,08,Castilla-La Mancha,360,uci
+2020-04-08,08,Castilla-La Mancha,354,uci
+2020-04-09,08,Castilla-La Mancha,342,uci
+2020-04-10,08,Castilla-La Mancha,329,uci
+2020-04-11,08,Castilla-La Mancha,316,uci
+2020-04-12,08,Castilla-La Mancha,316,uci
+2020-04-13,08,Castilla-La Mancha,475,uci
+2020-04-14,08,Castilla-La Mancha,486,uci
+2020-04-15,08,Castilla-La Mancha,495,uci
+2020-03-04,07,Castilla y León,1,uci
+2020-03-05,07,Castilla y León,1,uci
+2020-03-06,07,Castilla y León,1,uci
+2020-03-09,07,Castilla y León,1,uci
+2020-03-10,07,Castilla y León,2,uci
+2020-03-11,07,Castilla y León,2,uci
+2020-03-12,07,Castilla y León,4,uci
+2020-03-13,07,Castilla y León,8,uci
+2020-03-16,07,Castilla y León,24,uci
+2020-03-17,07,Castilla y León,24,uci
+2020-03-18,07,Castilla y León,43,uci
+2020-03-19,07,Castilla y León,54,uci
+2020-03-20,07,Castilla y León,69,uci
+2020-03-21,07,Castilla y León,85,uci
+2020-03-22,07,Castilla y León,106,uci
+2020-03-23,07,Castilla y León,120,uci
+2020-03-24,07,Castilla y León,137,uci
+2020-03-25,07,Castilla y León,170,uci
+2020-03-26,07,Castilla y León,202,uci
+2020-03-27,07,Castilla y León,228,uci
+2020-03-28,07,Castilla y León,249,uci
+2020-03-29,07,Castilla y León,278,uci
+2020-03-30,07,Castilla y León,307,uci
+2020-03-31,07,Castilla y León,325,uci
+2020-04-01,07,Castilla y León,345,uci
+2020-04-02,07,Castilla y León,353,uci
+2020-04-03,07,Castilla y León,355,uci
+2020-04-04,07,Castilla y León,348,uci
+2020-04-05,07,Castilla y León,351,uci
+2020-04-06,07,Castilla y León,348,uci
+2020-04-07,07,Castilla y León,346,uci
+2020-04-08,07,Castilla y León,342,uci
+2020-04-09,07,Castilla y León,338,uci
+2020-04-10,07,Castilla y León,332,uci
+2020-04-11,07,Castilla y León,327,uci
+2020-04-12,07,Castilla y León,323,uci
+2020-04-13,07,Castilla y León,312,uci
+2020-04-14,07,Castilla y León,308,uci
+2020-04-15,07,Castilla y León,306,uci
+2020-03-04,09,Cataluña,0,uci
+2020-03-05,09,Cataluña,0,uci
+2020-03-06,09,Cataluña,0,uci
+2020-03-09,09,Cataluña,0,uci
+2020-03-10,09,Cataluña,0,uci
+2020-03-11,09,Cataluña,0,uci
+2020-03-12,09,Cataluña,0,uci
+2020-03-13,09,Cataluña,25,uci
+2020-03-16,09,Cataluña,33,uci
+2020-03-17,09,Cataluña,33,uci
+2020-03-18,09,Cataluña,33,uci
+2020-03-19,09,Cataluña,33,uci
+2020-03-20,09,Cataluña,33,uci
+2020-03-21,09,Cataluña,298,uci
+2020-03-22,09,Cataluña,298,uci
+2020-03-23,09,Cataluña,551,uci
+2020-03-24,09,Cataluña,551,uci
+2020-03-25,09,Cataluña,781,uci
+2020-03-26,09,Cataluña,1021,uci
+2020-03-27,09,Cataluña,1187,uci
+2020-03-28,09,Cataluña,1324,uci
+2020-03-29,09,Cataluña,1391,uci
+2020-03-30,09,Cataluña,1512,uci
+2020-03-31,09,Cataluña,1652,uci
+2020-04-01,09,Cataluña,1769,uci
+2020-04-02,09,Cataluña,1855,uci
+2020-04-03,09,Cataluña,2053,uci
+2020-04-04,09,Cataluña,2108,uci
+2020-04-05,09,Cataluña,2249,uci
+2020-04-06,09,Cataluña,2276,uci
+2020-04-07,09,Cataluña,2391,uci
+2020-04-08,09,Cataluña,2442,uci
+2020-04-09,09,Cataluña,2507,uci
+2020-04-10,09,Cataluña,2582,uci
+2020-04-11,09,Cataluña,2629,uci
+2020-04-12,09,Cataluña,2658,uci
+2020-04-13,09,Cataluña,2713,uci
+2020-04-14,09,Cataluña,2775,uci
+2020-04-15,09,Cataluña,2789,uci
+2020-03-04,18,Ceuta,0,uci
+2020-03-05,18,Ceuta,0,uci
+2020-03-06,18,Ceuta,0,uci
+2020-03-09,18,Ceuta,0,uci
+2020-03-10,18,Ceuta,0,uci
+2020-03-11,18,Ceuta,0,uci
+2020-03-12,18,Ceuta,0,uci
+2020-03-13,18,Ceuta,0,uci
+2020-03-16,18,Ceuta,0,uci
+2020-03-17,18,Ceuta,0,uci
+2020-03-18,18,Ceuta,0,uci
+2020-03-19,18,Ceuta,0,uci
+2020-03-20,18,Ceuta,0,uci
+2020-03-21,18,Ceuta,0,uci
+2020-03-22,18,Ceuta,0,uci
+2020-03-23,18,Ceuta,0,uci
+2020-03-24,18,Ceuta,0,uci
+2020-03-25,18,Ceuta,1,uci
+2020-03-26,18,Ceuta,2,uci
+2020-03-27,18,Ceuta,2,uci
+2020-03-28,18,Ceuta,2,uci
+2020-03-29,18,Ceuta,2,uci
+2020-03-30,18,Ceuta,2,uci
+2020-03-31,18,Ceuta,3,uci
+2020-04-01,18,Ceuta,3,uci
+2020-04-02,18,Ceuta,3,uci
+2020-04-03,18,Ceuta,3,uci
+2020-04-04,18,Ceuta,4,uci
+2020-04-05,18,Ceuta,4,uci
+2020-04-06,18,Ceuta,4,uci
+2020-04-07,18,Ceuta,4,uci
+2020-04-08,18,Ceuta,4,uci
+2020-04-09,18,Ceuta,4,uci
+2020-04-10,18,Ceuta,4,uci
+2020-04-11,18,Ceuta,4,uci
+2020-04-12,18,Ceuta,4,uci
+2020-04-13,18,Ceuta,4,uci
+2020-04-14,18,Ceuta,4,uci
+2020-04-15,18,Ceuta,4,uci
+2020-03-04,10,C. Valenciana,0,uci
+2020-03-05,10,C. Valenciana,0,uci
+2020-03-06,10,C. Valenciana,1,uci
+2020-03-09,10,C. Valenciana,1,uci
+2020-03-10,10,C. Valenciana,1,uci
+2020-03-11,10,C. Valenciana,1,uci
+2020-03-12,10,C. Valenciana,2,uci
+2020-03-13,10,C. Valenciana,2,uci
+2020-03-16,10,C. Valenciana,4,uci
+2020-03-17,10,C. Valenciana,27,uci
+2020-03-18,10,C. Valenciana,40,uci
+2020-03-19,10,C. Valenciana,52,uci
+2020-03-20,10,C. Valenciana,71,uci
+2020-03-21,10,C. Valenciana,84,uci
+2020-03-22,10,C. Valenciana,113,uci
+2020-03-23,10,C. Valenciana,138,uci
+2020-03-24,10,C. Valenciana,161,uci
+2020-03-25,10,C. Valenciana,198,uci
+2020-03-26,10,C. Valenciana,230,uci
+2020-03-27,10,C. Valenciana,252,uci
+2020-03-28,10,C. Valenciana,282,uci
+2020-03-29,10,C. Valenciana,309,uci
+2020-03-30,10,C. Valenciana,336,uci
+2020-03-31,10,C. Valenciana,356,uci
+2020-04-01,10,C. Valenciana,365,uci
+2020-04-02,10,C. Valenciana,379,uci
+2020-04-03,10,C. Valenciana,386,uci
+2020-04-04,10,C. Valenciana,386,uci
+2020-04-05,10,C. Valenciana,381,uci
+2020-04-06,10,C. Valenciana,384,uci
+2020-04-07,10,C. Valenciana,384,uci
+2020-04-08,10,C. Valenciana,371,uci
+2020-04-09,10,C. Valenciana,541,uci
+2020-04-10,10,C. Valenciana,561,uci
+2020-04-11,10,C. Valenciana,565,uci
+2020-04-12,10,C. Valenciana,567,uci
+2020-04-13,10,C. Valenciana,576,uci
+2020-04-14,10,C. Valenciana,581,uci
+2020-04-15,10,C. Valenciana,588,uci
+2020-03-04,11,Extremadura,0,uci
+2020-03-05,11,Extremadura,0,uci
+2020-03-06,11,Extremadura,0,uci
+2020-03-09,11,Extremadura,0,uci
+2020-03-10,11,Extremadura,0,uci
+2020-03-11,11,Extremadura,1,uci
+2020-03-12,11,Extremadura,1,uci
+2020-03-13,11,Extremadura,1,uci
+2020-03-16,11,Extremadura,1,uci
+2020-03-17,11,Extremadura,2,uci
+2020-03-18,11,Extremadura,3,uci
+2020-03-19,11,Extremadura,3,uci
+2020-03-20,11,Extremadura,4,uci
+2020-03-21,11,Extremadura,6,uci
+2020-03-22,11,Extremadura,8,uci
+2020-03-23,11,Extremadura,13,uci
+2020-03-24,11,Extremadura,20,uci
+2020-03-25,11,Extremadura,28,uci
+2020-03-26,11,Extremadura,34,uci
+2020-03-27,11,Extremadura,40,uci
+2020-03-28,11,Extremadura,40,uci
+2020-03-29,11,Extremadura,41,uci
+2020-03-30,11,Extremadura,43,uci
+2020-03-31,11,Extremadura,51,uci
+2020-04-01,11,Extremadura,58,uci
+2020-04-02,11,Extremadura,62,uci
+2020-04-03,11,Extremadura,64,uci
+2020-04-04,11,Extremadura,64,uci
+2020-04-05,11,Extremadura,66,uci
+2020-04-06,11,Extremadura,66,uci
+2020-04-07,11,Extremadura,70,uci
+2020-04-08,11,Extremadura,98,uci
+2020-04-09,11,Extremadura,99,uci
+2020-04-10,11,Extremadura,101,uci
+2020-04-11,11,Extremadura,104,uci
+2020-04-12,11,Extremadura,106,uci
+2020-04-13,11,Extremadura,108,uci
+2020-04-14,11,Extremadura,108,uci
+2020-04-15,11,Extremadura,109,uci
+2020-03-04,12,Galicia,0,uci
+2020-03-05,12,Galicia,0,uci
+2020-03-06,12,Galicia,0,uci
+2020-03-09,12,Galicia,0,uci
+2020-03-10,12,Galicia,2,uci
+2020-03-11,12,Galicia,2,uci
+2020-03-12,12,Galicia,2,uci
+2020-03-13,12,Galicia,2,uci
+2020-03-16,12,Galicia,9,uci
+2020-03-17,12,Galicia,9,uci
+2020-03-18,12,Galicia,12,uci
+2020-03-19,12,Galicia,15,uci
+2020-03-20,12,Galicia,19,uci
+2020-03-21,12,Galicia,29,uci
+2020-03-22,12,Galicia,35,uci
+2020-03-23,12,Galicia,47,uci
+2020-03-24,12,Galicia,55,uci
+2020-03-25,12,Galicia,69,uci
+2020-03-26,12,Galicia,86,uci
+2020-03-27,12,Galicia,98,uci
+2020-03-28,12,Galicia,112,uci
+2020-03-29,12,Galicia,123,uci
+2020-03-30,12,Galicia,134,uci
+2020-03-31,12,Galicia,149,uci
+2020-04-01,12,Galicia,158,uci
+2020-04-02,12,Galicia,165,uci
+2020-04-03,12,Galicia,178,uci
+2020-04-04,12,Galicia,178,uci
+2020-04-05,12,Galicia,170,uci
+2020-04-06,12,Galicia,170,uci
+2020-04-07,12,Galicia,162,uci
+2020-04-08,12,Galicia,158,uci
+2020-04-09,12,Galicia,155,uci
+2020-04-10,12,Galicia,151,uci
+2020-04-11,12,Galicia,144,uci
+2020-04-12,12,Galicia,140,uci
+2020-04-13,12,Galicia,136,uci
+2020-04-14,12,Galicia,133,uci
+2020-04-15,12,Galicia,128,uci
+2020-03-04,13,Madrid,2,uci
+2020-03-05,13,Madrid,2,uci
+2020-03-06,13,Madrid,2,uci
+2020-03-09,13,Madrid,53,uci
+2020-03-10,13,Madrid,77,uci
+2020-03-11,13,Madrid,102,uci
+2020-03-12,13,Madrid,135,uci
+2020-03-13,13,Madrid,180,uci
+2020-03-16,13,Madrid,253,uci
+2020-03-17,13,Madrid,340,uci
+2020-03-18,13,Madrid,491,uci
+2020-03-19,13,Madrid,590,uci
+2020-03-20,13,Madrid,678,uci
+2020-03-21,13,Madrid,767,uci
+2020-03-22,13,Madrid,834,uci
+2020-03-23,13,Madrid,942,uci
+2020-03-24,13,Madrid,1050,uci
+2020-03-25,13,Madrid,1150,uci
+2020-03-26,13,Madrid,1221,uci
+2020-03-27,13,Madrid,1312,uci
+2020-03-28,13,Madrid,1404,uci
+2020-03-29,13,Madrid,1429,uci
+2020-03-30,13,Madrid,1460,uci
+2020-03-31,13,Madrid,1514,uci
+2020-04-01,13,Madrid,1514,uci
+2020-04-02,13,Madrid,1528,uci
+2020-04-03,13,Madrid,1506,uci
+2020-04-04,13,Madrid,1498,uci
+2020-04-05,13,Madrid,1499,uci
+2020-04-06,13,Madrid,1510,uci
+2020-04-07,13,Madrid,1494,uci
+2020-04-08,13,Madrid,1450,uci
+2020-04-09,13,Madrid,1433,uci
+2020-04-10,13,Madrid,1399,uci
+2020-04-11,13,Madrid,1376,uci
+2020-04-12,13,Madrid,1332,uci
+2020-04-13,13,Madrid,1327,uci
+2020-04-14,13,Madrid,1299,uci
+2020-04-15,13,Madrid,1244,uci
+2020-03-04,19,Melilla,0,uci
+2020-03-05,19,Melilla,0,uci
+2020-03-06,19,Melilla,0,uci
+2020-03-09,19,Melilla,0,uci
+2020-03-10,19,Melilla,0,uci
+2020-03-11,19,Melilla,0,uci
+2020-03-12,19,Melilla,0,uci
+2020-03-13,19,Melilla,0,uci
+2020-03-16,19,Melilla,0,uci
+2020-03-17,19,Melilla,0,uci
+2020-03-18,19,Melilla,0,uci
+2020-03-19,19,Melilla,0,uci
+2020-03-20,19,Melilla,1,uci
+2020-03-21,19,Melilla,1,uci
+2020-03-22,19,Melilla,1,uci
+2020-03-23,19,Melilla,1,uci
+2020-03-24,19,Melilla,1,uci
+2020-03-25,19,Melilla,2,uci
+2020-03-26,19,Melilla,2,uci
+2020-03-27,19,Melilla,2,uci
+2020-03-28,19,Melilla,2,uci
+2020-03-29,19,Melilla,2,uci
+2020-03-30,19,Melilla,3,uci
+2020-03-31,19,Melilla,3,uci
+2020-04-01,19,Melilla,3,uci
+2020-04-02,19,Melilla,3,uci
+2020-04-03,19,Melilla,3,uci
+2020-04-04,19,Melilla,3,uci
+2020-04-05,19,Melilla,3,uci
+2020-04-06,19,Melilla,3,uci
+2020-04-07,19,Melilla,3,uci
+2020-04-08,19,Melilla,3,uci
+2020-04-09,19,Melilla,3,uci
+2020-04-10,19,Melilla,3,uci
+2020-04-11,19,Melilla,3,uci
+2020-04-12,19,Melilla,3,uci
+2020-04-13,19,Melilla,3,uci
+2020-04-14,19,Melilla,3,uci
+2020-04-15,19,Melilla,3,uci
+2020-03-04,14,Murcia,0,uci
+2020-03-05,14,Murcia,0,uci
+2020-03-06,14,Murcia,0,uci
+2020-03-09,14,Murcia,0,uci
+2020-03-10,14,Murcia,0,uci
+2020-03-11,14,Murcia,0,uci
+2020-03-12,14,Murcia,1,uci
+2020-03-13,14,Murcia,1,uci
+2020-03-16,14,Murcia,2,uci
+2020-03-17,14,Murcia,3,uci
+2020-03-18,14,Murcia,4,uci
+2020-03-19,14,Murcia,6,uci
+2020-03-20,14,Murcia,11,uci
+2020-03-21,14,Murcia,14,uci
+2020-03-22,14,Murcia,16,uci
+2020-03-23,14,Murcia,23,uci
+2020-03-24,14,Murcia,26,uci
+2020-03-25,14,Murcia,33,uci
+2020-03-26,14,Murcia,36,uci
+2020-03-27,14,Murcia,53,uci
+2020-03-28,14,Murcia,58,uci
+2020-03-29,14,Murcia,58,uci
+2020-03-30,14,Murcia,58,uci
+2020-03-31,14,Murcia,59,uci
+2020-04-01,14,Murcia,59,uci
+2020-04-02,14,Murcia,68,uci
+2020-04-03,14,Murcia,72,uci
+2020-04-04,14,Murcia,79,uci
+2020-04-05,14,Murcia,80,uci
+2020-04-06,14,Murcia,81,uci
+2020-04-07,14,Murcia,84,uci
+2020-04-08,14,Murcia,86,uci
+2020-04-09,14,Murcia,87,uci
+2020-04-10,14,Murcia,88,uci
+2020-04-11,14,Murcia,88,uci
+2020-04-12,14,Murcia,91,uci
+2020-04-13,14,Murcia,94,uci
+2020-04-14,14,Murcia,96,uci
+2020-04-15,14,Murcia,97,uci
+2020-03-04,15,Navarra,1,uci
+2020-03-05,15,Navarra,1,uci
+2020-03-06,15,Navarra,1,uci
+2020-03-09,15,Navarra,1,uci
+2020-03-10,15,Navarra,2,uci
+2020-03-11,15,Navarra,3,uci
+2020-03-12,15,Navarra,3,uci
+2020-03-13,15,Navarra,4,uci
+2020-03-16,15,Navarra,5,uci
+2020-03-17,15,Navarra,10,uci
+2020-03-18,15,Navarra,10,uci
+2020-03-19,15,Navarra,11,uci
+2020-03-20,15,Navarra,19,uci
+2020-03-21,15,Navarra,25,uci
+2020-03-22,15,Navarra,30,uci
+2020-03-23,15,Navarra,40,uci
+2020-03-24,15,Navarra,45,uci
+2020-03-25,15,Navarra,51,uci
+2020-03-26,15,Navarra,54,uci
+2020-03-27,15,Navarra,75,uci
+2020-03-28,15,Navarra,84,uci
+2020-03-29,15,Navarra,90,uci
+2020-03-30,15,Navarra,96,uci
+2020-03-31,15,Navarra,99,uci
+2020-04-01,15,Navarra,104,uci
+2020-04-02,15,Navarra,108,uci
+2020-04-03,15,Navarra,119,uci
+2020-04-04,15,Navarra,120,uci
+2020-04-05,15,Navarra,123,uci
+2020-04-06,15,Navarra,124,uci
+2020-04-07,15,Navarra,124,uci
+2020-04-08,15,Navarra,124,uci
+2020-04-09,15,Navarra,124,uci
+2020-04-10,15,Navarra,124,uci
+2020-04-11,15,Navarra,124,uci
+2020-04-12,15,Navarra,124,uci
+2020-04-13,15,Navarra,124,uci
+2020-04-14,15,Navarra,124,uci
+2020-04-15,15,Navarra,124,uci
+2020-03-04,16,País Vasco,0,uci
+2020-03-05,16,País Vasco,0,uci
+2020-03-06,16,País Vasco,1,uci
+2020-03-09,16,País Vasco,5,uci
+2020-03-10,16,País Vasco,5,uci
+2020-03-11,16,País Vasco,15,uci
+2020-03-12,16,País Vasco,18,uci
+2020-03-13,16,País Vasco,20,uci
+2020-03-16,16,País Vasco,29,uci
+2020-03-17,16,País Vasco,33,uci
+2020-03-18,16,País Vasco,37,uci
+2020-03-19,16,País Vasco,44,uci
+2020-03-20,16,País Vasco,53,uci
+2020-03-21,16,País Vasco,71,uci
+2020-03-22,16,País Vasco,81,uci
+2020-03-23,16,País Vasco,92,uci
+2020-03-24,16,País Vasco,106,uci
+2020-03-25,16,País Vasco,119,uci
+2020-03-26,16,País Vasco,137,uci
+2020-03-27,16,País Vasco,154,uci
+2020-03-28,16,País Vasco,176,uci
+2020-03-29,16,País Vasco,271,uci
+2020-03-30,16,País Vasco,293,uci
+2020-03-31,16,País Vasco,307,uci
+2020-04-01,16,País Vasco,324,uci
+2020-04-02,16,País Vasco,344,uci
+2020-04-03,16,País Vasco,363,uci
+2020-04-04,16,País Vasco,377,uci
+2020-04-05,16,País Vasco,404,uci
+2020-04-06,16,País Vasco,410,uci
+2020-04-07,16,País Vasco,417,uci
+2020-04-08,16,País Vasco,430,uci
+2020-04-09,16,País Vasco,433,uci
+2020-04-10,16,País Vasco,442,uci
+2020-04-11,16,País Vasco,453,uci
+2020-04-12,16,País Vasco,459,uci
+2020-04-13,16,País Vasco,464,uci
+2020-04-14,16,País Vasco,470,uci
+2020-04-15,16,País Vasco,471,uci
+2020-03-04,17,La Rioja,0,uci
+2020-03-05,17,La Rioja,0,uci
+2020-03-06,17,La Rioja,0,uci
+2020-03-09,17,La Rioja,1,uci
+2020-03-10,17,La Rioja,1,uci
+2020-03-11,17,La Rioja,1,uci
+2020-03-12,17,La Rioja,1,uci
+2020-03-13,17,La Rioja,2,uci
+2020-03-16,17,La Rioja,13,uci
+2020-03-17,17,La Rioja,13,uci
+2020-03-18,17,La Rioja,13,uci
+2020-03-19,17,La Rioja,15,uci
+2020-03-20,17,La Rioja,15,uci
+2020-03-21,17,La Rioja,17,uci
+2020-03-22,17,La Rioja,17,uci
+2020-03-23,17,La Rioja,22,uci
+2020-03-24,17,La Rioja,24,uci
+2020-03-25,17,La Rioja,33,uci
+2020-03-26,17,La Rioja,36,uci
+2020-03-27,17,La Rioja,43,uci
+2020-03-28,17,La Rioja,43,uci
+2020-03-29,17,La Rioja,43,uci
+2020-03-30,17,La Rioja,43,uci
+2020-03-31,17,La Rioja,51,uci
+2020-04-01,17,La Rioja,54,uci
+2020-04-02,17,La Rioja,57,uci
+2020-04-03,17,La Rioja,64,uci
+2020-04-04,17,La Rioja,64,uci
+2020-04-05,17,La Rioja,66,uci
+2020-04-06,17,La Rioja,66,uci
+2020-04-07,17,La Rioja,66,uci
+2020-04-08,17,La Rioja,68,uci
+2020-04-09,17,La Rioja,69,uci
+2020-04-10,17,La Rioja,71,uci
+2020-04-11,17,La Rioja,73,uci
+2020-04-12,17,La Rioja,73,uci
+2020-04-13,17,La Rioja,73,uci
+2020-04-14,17,La Rioja,74,uci
+2020-04-15,17,La Rioja,75,uci
+2020-03-04,00,Total,7,uci
+2020-03-05,00,Total,9,uci
+2020-03-06,00,Total,11,uci
+2020-03-09,00,Total,68,uci
+2020-03-10,00,Total,100,uci
+2020-03-11,00,Total,142,uci
+2020-03-12,00,Total,190,uci
+2020-03-13,00,Total,272,uci
+2020-03-16,00,Total,432,uci
+2020-03-17,00,Total,563,uci
+2020-03-18,00,Total,774,uci
+2020-03-19,00,Total,939,uci
+2020-03-20,00,Total,1141,uci
+2020-03-21,00,Total,1612,uci
+2020-03-22,00,Total,1785,uci
+2020-03-23,00,Total,2355,uci
+2020-03-24,00,Total,2636,uci
+2020-03-25,00,Total,3166,uci
+2020-03-26,00,Total,3679,uci
+2020-03-27,00,Total,4165,uci
+2020-03-28,00,Total,4575,uci
+2020-03-29,00,Total,4907,uci
+2020-03-30,00,Total,5231,uci
+2020-03-31,00,Total,5607,uci
+2020-04-01,00,Total,5872,uci
+2020-04-02,00,Total,6092,uci
+2020-04-03,00,Total,6416,uci
+2020-04-04,00,Total,6532,uci
+2020-04-05,00,Total,6861,uci
+2020-04-06,00,Total,6931,uci
+2020-04-07,00,Total,7069,uci
+2020-04-08,00,Total,NA,uci
+2020-04-09,00,Total,NA,uci
+2020-04-10,00,Total,NA,uci
+2020-04-11,00,Total,NA,uci
+2020-04-12,00,Total,NA,uci
+2020-04-13,00,Total,NA,uci
+2020-04-14,00,Total,NA,uci
+2020-04-15,00,Total,NA,uci
+2020-03-16,01,Andalucía,0,altas
+2020-03-17,01,Andalucía,0,altas
+2020-03-18,01,Andalucía,38,altas
+2020-03-19,01,Andalucía,33,altas
+2020-03-20,01,Andalucía,72,altas
+2020-03-21,01,Andalucía,72,altas
+2020-03-22,01,Andalucía,38,altas
+2020-03-23,01,Andalucía,50,altas
+2020-03-24,01,Andalucía,66,altas
+2020-03-25,01,Andalucía,71,altas
+2020-03-26,01,Andalucía,77,altas
+2020-03-27,01,Andalucía,92,altas
+2020-03-28,01,Andalucía,139,altas
+2020-03-29,01,Andalucía,148,altas
+2020-03-30,01,Andalucía,155,altas
+2020-03-31,01,Andalucía,160,altas
+2020-04-01,01,Andalucía,182,altas
+2020-04-02,01,Andalucía,228,altas
+2020-04-03,01,Andalucía,258,altas
+2020-04-04,01,Andalucía,463,altas
+2020-04-05,01,Andalucía,665,altas
+2020-04-06,01,Andalucía,798,altas
+2020-04-07,01,Andalucía,900,altas
+2020-04-08,01,Andalucía,1041,altas
+2020-04-09,01,Andalucía,1193,altas
+2020-04-10,01,Andalucía,1437,altas
+2020-04-11,01,Andalucía,1630,altas
+2020-04-12,01,Andalucía,1838,altas
+2020-04-13,01,Andalucía,1967,altas
+2020-04-14,01,Andalucía,2032,altas
+2020-04-15,01,Andalucía,2224,altas
+2020-03-16,02,Aragón,0,altas
+2020-03-17,02,Aragón,0,altas
+2020-03-18,02,Aragón,0,altas
+2020-03-19,02,Aragón,0,altas
+2020-03-20,02,Aragón,0,altas
+2020-03-21,02,Aragón,0,altas
+2020-03-22,02,Aragón,3,altas
+2020-03-23,02,Aragón,3,altas
+2020-03-24,02,Aragón,3,altas
+2020-03-25,02,Aragón,4,altas
+2020-03-26,02,Aragón,4,altas
+2020-03-27,02,Aragón,8,altas
+2020-03-28,02,Aragón,8,altas
+2020-03-29,02,Aragón,8,altas
+2020-03-30,02,Aragón,174,altas
+2020-03-31,02,Aragón,204,altas
+2020-04-01,02,Aragón,257,altas
+2020-04-02,02,Aragón,320,altas
+2020-04-03,02,Aragón,378,altas
+2020-04-04,02,Aragón,440,altas
+2020-04-05,02,Aragón,537,altas
+2020-04-06,02,Aragón,565,altas
+2020-04-07,02,Aragón,578,altas
+2020-04-08,02,Aragón,659,altas
+2020-04-09,02,Aragón,718,altas
+2020-04-10,02,Aragón,797,altas
+2020-04-11,02,Aragón,888,altas
+2020-04-12,02,Aragón,934,altas
+2020-04-13,02,Aragón,946,altas
+2020-04-14,02,Aragón,963,altas
+2020-04-15,02,Aragón,1012,altas
+2020-03-16,03,Asturias,3,altas
+2020-03-17,03,Asturias,3,altas
+2020-03-18,03,Asturias,4,altas
+2020-03-19,03,Asturias,4,altas
+2020-03-20,03,Asturias,12,altas
+2020-03-21,03,Asturias,16,altas
+2020-03-22,03,Asturias,20,altas
+2020-03-23,03,Asturias,21,altas
+2020-03-24,03,Asturias,30,altas
+2020-03-25,03,Asturias,35,altas
+2020-03-26,03,Asturias,40,altas
+2020-03-27,03,Asturias,52,altas
+2020-03-28,03,Asturias,65,altas
+2020-03-29,03,Asturias,76,altas
+2020-03-30,03,Asturias,78,altas
+2020-03-31,03,Asturias,90,altas
+2020-04-01,03,Asturias,109,altas
+2020-04-02,03,Asturias,135,altas
+2020-04-03,03,Asturias,154,altas
+2020-04-04,03,Asturias,190,altas
+2020-04-05,03,Asturias,216,altas
+2020-04-06,03,Asturias,222,altas
+2020-04-07,03,Asturias,244,altas
+2020-04-08,03,Asturias,294,altas
+2020-04-09,03,Asturias,340,altas
+2020-04-10,03,Asturias,372,altas
+2020-04-11,03,Asturias,414,altas
+2020-04-12,03,Asturias,430,altas
+2020-04-13,03,Asturias,434,altas
+2020-04-14,03,Asturias,458,altas
+2020-04-15,03,Asturias,487,altas
+2020-03-16,04,Baleares,1,altas
+2020-03-17,04,Baleares,1,altas
+2020-03-18,04,Baleares,4,altas
+2020-03-19,04,Baleares,6,altas
+2020-03-20,04,Baleares,10,altas
+2020-03-21,04,Baleares,11,altas
+2020-03-22,04,Baleares,17,altas
+2020-03-23,04,Baleares,18,altas
+2020-03-24,04,Baleares,19,altas
+2020-03-25,04,Baleares,28,altas
+2020-03-26,04,Baleares,39,altas
+2020-03-27,04,Baleares,67,altas
+2020-03-28,04,Baleares,80,altas
+2020-03-29,04,Baleares,82,altas
+2020-03-30,04,Baleares,100,altas
+2020-03-31,04,Baleares,111,altas
+2020-04-01,04,Baleares,170,altas
+2020-04-02,04,Baleares,239,altas
+2020-04-03,04,Baleares,375,altas
+2020-04-04,04,Baleares,422,altas
+2020-04-05,04,Baleares,461,altas
+2020-04-06,04,Baleares,531,altas
+2020-04-07,04,Baleares,537,altas
+2020-04-08,04,Baleares,616,altas
+2020-04-09,04,Baleares,696,altas
+2020-04-10,04,Baleares,737,altas
+2020-04-11,04,Baleares,757,altas
+2020-04-12,04,Baleares,848,altas
+2020-04-13,04,Baleares,862,altas
+2020-04-14,04,Baleares,871,altas
+2020-04-15,04,Baleares,881,altas
+2020-03-16,05,Canarias,7,altas
+2020-03-17,05,Canarias,8,altas
+2020-03-18,05,Canarias,8,altas
+2020-03-19,05,Canarias,9,altas
+2020-03-20,05,Canarias,6,altas
+2020-03-21,05,Canarias,7,altas
+2020-03-22,05,Canarias,7,altas
+2020-03-23,05,Canarias,7,altas
+2020-03-24,05,Canarias,8,altas
+2020-03-25,05,Canarias,15,altas
+2020-03-26,05,Canarias,18,altas
+2020-03-27,05,Canarias,20,altas
+2020-03-28,05,Canarias,25,altas
+2020-03-29,05,Canarias,30,altas
+2020-03-30,05,Canarias,32,altas
+2020-03-31,05,Canarias,57,altas
+2020-04-01,05,Canarias,77,altas
+2020-04-02,05,Canarias,94,altas
+2020-04-03,05,Canarias,102,altas
+2020-04-04,05,Canarias,123,altas
+2020-04-05,05,Canarias,137,altas
+2020-04-06,05,Canarias,157,altas
+2020-04-07,05,Canarias,186,altas
+2020-04-08,05,Canarias,249,altas
+2020-04-09,05,Canarias,359,altas
+2020-04-10,05,Canarias,386,altas
+2020-04-11,05,Canarias,432,altas
+2020-04-12,05,Canarias,447,altas
+2020-04-13,05,Canarias,458,altas
+2020-04-14,05,Canarias,589,altas
+2020-04-15,05,Canarias,622,altas
+2020-03-16,06,Cantabria,10,altas
+2020-03-17,06,Cantabria,10,altas
+2020-03-18,06,Cantabria,10,altas
+2020-03-19,06,Cantabria,10,altas
+2020-03-20,06,Cantabria,10,altas
+2020-03-21,06,Cantabria,11,altas
+2020-03-22,06,Cantabria,11,altas
+2020-03-23,06,Cantabria,11,altas
+2020-03-24,06,Cantabria,12,altas
+2020-03-25,06,Cantabria,12,altas
+2020-03-26,06,Cantabria,14,altas
+2020-03-27,06,Cantabria,19,altas
+2020-03-28,06,Cantabria,21,altas
+2020-03-29,06,Cantabria,25,altas
+2020-03-30,06,Cantabria,24,altas
+2020-03-31,06,Cantabria,35,altas
+2020-04-01,06,Cantabria,43,altas
+2020-04-02,06,Cantabria,60,altas
+2020-04-03,06,Cantabria,74,altas
+2020-04-04,06,Cantabria,99,altas
+2020-04-05,06,Cantabria,113,altas
+2020-04-06,06,Cantabria,118,altas
+2020-04-07,06,Cantabria,129,altas
+2020-04-08,06,Cantabria,175,altas
+2020-04-09,06,Cantabria,214,altas
+2020-04-10,06,Cantabria,265,altas
+2020-04-11,06,Cantabria,281,altas
+2020-04-12,06,Cantabria,297,altas
+2020-04-13,06,Cantabria,317,altas
+2020-04-14,06,Cantabria,323,altas
+2020-04-15,06,Cantabria,363,altas
+2020-03-16,08,Castilla-La Mancha,12,altas
+2020-03-17,08,Castilla-La Mancha,12,altas
+2020-03-18,08,Castilla-La Mancha,15,altas
+2020-03-19,08,Castilla-La Mancha,27,altas
+2020-03-20,08,Castilla-La Mancha,34,altas
+2020-03-21,08,Castilla-La Mancha,38,altas
+2020-03-22,08,Castilla-La Mancha,48,altas
+2020-03-23,08,Castilla-La Mancha,51,altas
+2020-03-24,08,Castilla-La Mancha,53,altas
+2020-03-25,08,Castilla-La Mancha,71,altas
+2020-03-26,08,Castilla-La Mancha,95,altas
+2020-03-27,08,Castilla-La Mancha,153,altas
+2020-03-28,08,Castilla-La Mancha,197,altas
+2020-03-29,08,Castilla-La Mancha,236,altas
+2020-03-30,08,Castilla-La Mancha,252,altas
+2020-03-31,08,Castilla-La Mancha,296,altas
+2020-04-01,08,Castilla-La Mancha,397,altas
+2020-04-02,08,Castilla-La Mancha,494,altas
+2020-04-03,08,Castilla-La Mancha,579,altas
+2020-04-04,08,Castilla-La Mancha,657,altas
+2020-04-05,08,Castilla-La Mancha,1149,altas
+2020-04-06,08,Castilla-La Mancha,1259,altas
+2020-04-07,08,Castilla-La Mancha,1353,altas
+2020-04-08,08,Castilla-La Mancha,1557,altas
+2020-04-09,08,Castilla-La Mancha,1766,altas
+2020-04-10,08,Castilla-La Mancha,1982,altas
+2020-04-11,08,Castilla-La Mancha,2205,altas
+2020-04-12,08,Castilla-La Mancha,2365,altas
+2020-04-13,08,Castilla-La Mancha,2532,altas
+2020-04-14,08,Castilla-La Mancha,2943,altas
+2020-04-15,08,Castilla-La Mancha,2998,altas
+2020-03-16,07,Castilla y León,5,altas
+2020-03-17,07,Castilla y León,5,altas
+2020-03-18,07,Castilla y León,5,altas
+2020-03-19,07,Castilla y León,27,altas
+2020-03-20,07,Castilla y León,37,altas
+2020-03-21,07,Castilla y León,54,altas
+2020-03-22,07,Castilla y León,89,altas
+2020-03-23,07,Castilla y León,117,altas
+2020-03-24,07,Castilla y León,140,altas
+2020-03-25,07,Castilla y León,213,altas
+2020-03-26,07,Castilla y León,308,altas
+2020-03-27,07,Castilla y León,423,altas
+2020-03-28,07,Castilla y León,585,altas
+2020-03-29,07,Castilla y León,752,altas
+2020-03-30,07,Castilla y León,871,altas
+2020-03-31,07,Castilla y León,1028,altas
+2020-04-01,07,Castilla y León,1259,altas
+2020-04-02,07,Castilla y León,1498,altas
+2020-04-03,07,Castilla y León,1759,altas
+2020-04-04,07,Castilla y León,2021,altas
+2020-04-05,07,Castilla y León,2331,altas
+2020-04-06,07,Castilla y León,2533,altas
+2020-04-07,07,Castilla y León,2711,altas
+2020-04-08,07,Castilla y León,2988,altas
+2020-04-09,07,Castilla y León,3242,altas
+2020-04-10,07,Castilla y León,3506,altas
+2020-04-11,07,Castilla y León,3757,altas
+2020-04-12,07,Castilla y León,4010,altas
+2020-04-13,07,Castilla y León,4154,altas
+2020-04-14,07,Castilla y León,4266,altas
+2020-04-15,07,Castilla y León,4521,altas
+2020-03-16,09,Cataluña,0,altas
+2020-03-17,09,Cataluña,0,altas
+2020-03-18,09,Cataluña,0,altas
+2020-03-19,09,Cataluña,0,altas
+2020-03-20,09,Cataluña,150,altas
+2020-03-21,09,Cataluña,150,altas
+2020-03-22,09,Cataluña,150,altas
+2020-03-23,09,Cataluña,644,altas
+2020-03-24,09,Cataluña,728,altas
+2020-03-25,09,Cataluña,1274,altas
+2020-03-26,09,Cataluña,1697,altas
+2020-03-27,09,Cataluña,2348,altas
+2020-03-28,09,Cataluña,3106,altas
+2020-03-29,09,Cataluña,3455,altas
+2020-03-30,09,Cataluña,4125,altas
+2020-03-31,09,Cataluña,4966,altas
+2020-04-01,09,Cataluña,5701,altas
+2020-04-02,09,Cataluña,6917,altas
+2020-04-03,09,Cataluña,7849,altas
+2020-04-04,09,Cataluña,8635,altas
+2020-04-05,09,Cataluña,9528,altas
+2020-04-06,09,Cataluña,10088,altas
+2020-04-07,09,Cataluña,10738,altas
+2020-04-08,09,Cataluña,12250,altas
+2020-04-09,09,Cataluña,13063,altas
+2020-04-10,09,Cataluña,13513,altas
+2020-04-11,09,Cataluña,14258,altas
+2020-04-12,09,Cataluña,14975,altas
+2020-04-13,09,Cataluña,15602,altas
+2020-04-14,09,Cataluña,15967,altas
+2020-04-15,09,Cataluña,16651,altas
+2020-03-16,18,Ceuta,0,altas
+2020-03-17,18,Ceuta,0,altas
+2020-03-18,18,Ceuta,0,altas
+2020-03-19,18,Ceuta,0,altas
+2020-03-20,18,Ceuta,0,altas
+2020-03-21,18,Ceuta,0,altas
+2020-03-22,18,Ceuta,0,altas
+2020-03-23,18,Ceuta,0,altas
+2020-03-24,18,Ceuta,0,altas
+2020-03-25,18,Ceuta,0,altas
+2020-03-26,18,Ceuta,0,altas
+2020-03-27,18,Ceuta,0,altas
+2020-03-28,18,Ceuta,0,altas
+2020-03-29,18,Ceuta,0,altas
+2020-03-30,18,Ceuta,0,altas
+2020-03-31,18,Ceuta,0,altas
+2020-04-01,18,Ceuta,0,altas
+2020-04-02,18,Ceuta,0,altas
+2020-04-03,18,Ceuta,2,altas
+2020-04-04,18,Ceuta,2,altas
+2020-04-05,18,Ceuta,2,altas
+2020-04-06,18,Ceuta,2,altas
+2020-04-07,18,Ceuta,2,altas
+2020-04-08,18,Ceuta,7,altas
+2020-04-09,18,Ceuta,7,altas
+2020-04-10,18,Ceuta,12,altas
+2020-04-11,18,Ceuta,17,altas
+2020-04-12,18,Ceuta,17,altas
+2020-04-13,18,Ceuta,20,altas
+2020-04-14,18,Ceuta,22,altas
+2020-04-15,18,Ceuta,30,altas
+2020-03-16,10,C. Valenciana,2,altas
+2020-03-17,10,C. Valenciana,12,altas
+2020-03-18,10,C. Valenciana,16,altas
+2020-03-19,10,C. Valenciana,19,altas
+2020-03-20,10,C. Valenciana,20,altas
+2020-03-21,10,C. Valenciana,25,altas
+2020-03-22,10,C. Valenciana,30,altas
+2020-03-23,10,C. Valenciana,36,altas
+2020-03-24,10,C. Valenciana,37,altas
+2020-03-25,10,C. Valenciana,44,altas
+2020-03-26,10,C. Valenciana,57,altas
+2020-03-27,10,C. Valenciana,73,altas
+2020-03-28,10,C. Valenciana,92,altas
+2020-03-29,10,C. Valenciana,161,altas
+2020-03-30,10,C. Valenciana,185,altas
+2020-03-31,10,C. Valenciana,200,altas
+2020-04-01,10,C. Valenciana,240,altas
+2020-04-02,10,C. Valenciana,432,altas
+2020-04-03,10,C. Valenciana,592,altas
+2020-04-04,10,C. Valenciana,695,altas
+2020-04-05,10,C. Valenciana,812,altas
+2020-04-06,10,C. Valenciana,930,altas
+2020-04-07,10,C. Valenciana,1103,altas
+2020-04-08,10,C. Valenciana,1344,altas
+2020-04-09,10,C. Valenciana,1772,altas
+2020-04-10,10,C. Valenciana,2085,altas
+2020-04-11,10,C. Valenciana,2289,altas
+2020-04-12,10,C. Valenciana,2624,altas
+2020-04-13,10,C. Valenciana,2803,altas
+2020-04-14,10,C. Valenciana,3069,altas
+2020-04-15,10,C. Valenciana,3360,altas
+2020-03-16,11,Extremadura,4,altas
+2020-03-17,11,Extremadura,5,altas
+2020-03-18,11,Extremadura,6,altas
+2020-03-19,11,Extremadura,6,altas
+2020-03-20,11,Extremadura,7,altas
+2020-03-21,11,Extremadura,8,altas
+2020-03-22,11,Extremadura,8,altas
+2020-03-23,11,Extremadura,6,altas
+2020-03-24,11,Extremadura,8,altas
+2020-03-25,11,Extremadura,8,altas
+2020-03-26,11,Extremadura,24,altas
+2020-03-27,11,Extremadura,33,altas
+2020-03-28,11,Extremadura,49,altas
+2020-03-29,11,Extremadura,51,altas
+2020-03-30,11,Extremadura,60,altas
+2020-03-31,11,Extremadura,91,altas
+2020-04-01,11,Extremadura,113,altas
+2020-04-02,11,Extremadura,139,altas
+2020-04-03,11,Extremadura,164,altas
+2020-04-04,11,Extremadura,205,altas
+2020-04-05,11,Extremadura,215,altas
+2020-04-06,11,Extremadura,223,altas
+2020-04-07,11,Extremadura,282,altas
+2020-04-08,11,Extremadura,328,altas
+2020-04-09,11,Extremadura,381,altas
+2020-04-10,11,Extremadura,397,altas
+2020-04-11,11,Extremadura,462,altas
+2020-04-12,11,Extremadura,481,altas
+2020-04-13,11,Extremadura,511,altas
+2020-04-14,11,Extremadura,578,altas
+2020-04-15,11,Extremadura,615,altas
+2020-03-16,12,Galicia,4,altas
+2020-03-17,12,Galicia,7,altas
+2020-03-18,12,Galicia,7,altas
+2020-03-19,12,Galicia,4,altas
+2020-03-20,12,Galicia,5,altas
+2020-03-21,12,Galicia,6,altas
+2020-03-22,12,Galicia,16,altas
+2020-03-23,12,Galicia,19,altas
+2020-03-24,12,Galicia,19,altas
+2020-03-25,12,Galicia,25,altas
+2020-03-26,12,Galicia,47,altas
+2020-03-27,12,Galicia,67,altas
+2020-03-28,12,Galicia,95,altas
+2020-03-29,12,Galicia,153,altas
+2020-03-30,12,Galicia,168,altas
+2020-03-31,12,Galicia,187,altas
+2020-04-01,12,Galicia,259,altas
+2020-04-02,12,Galicia,333,altas
+2020-04-03,12,Galicia,435,altas
+2020-04-04,12,Galicia,531,altas
+2020-04-05,12,Galicia,587,altas
+2020-04-06,12,Galicia,610,altas
+2020-04-07,12,Galicia,688,altas
+2020-04-08,12,Galicia,800,altas
+2020-04-09,12,Galicia,910,altas
+2020-04-10,12,Galicia,997,altas
+2020-04-11,12,Galicia,1082,altas
+2020-04-12,12,Galicia,1143,altas
+2020-04-13,12,Galicia,1186,altas
+2020-04-14,12,Galicia,1240,altas
+2020-04-15,12,Galicia,1298,altas
+2020-03-16,13,Madrid,474,altas
+2020-03-17,13,Madrid,951,altas
+2020-03-18,13,Madrid,951,altas
+2020-03-19,13,Madrid,941,altas
+2020-03-20,13,Madrid,1186,altas
+2020-03-21,13,Madrid,1542,altas
+2020-03-22,13,Madrid,1899,altas
+2020-03-23,13,Madrid,2063,altas
+2020-03-24,13,Madrid,2291,altas
+2020-03-25,13,Madrid,3031,altas
+2020-03-26,13,Madrid,3882,altas
+2020-03-27,13,Madrid,5044,altas
+2020-03-28,13,Madrid,6326,altas
+2020-03-29,13,Madrid,7491,altas
+2020-03-30,13,Madrid,8301,altas
+2020-03-31,13,Madrid,9330,altas
+2020-04-01,13,Madrid,10827,altas
+2020-04-02,13,Madrid,12400,altas
+2020-04-03,13,Madrid,13850,altas
+2020-04-04,13,Madrid,15362,altas
+2020-04-05,13,Madrid,16543,altas
+2020-04-06,13,Madrid,17322,altas
+2020-04-07,13,Madrid,18410,altas
+2020-04-08,13,Madrid,19836,altas
+2020-04-09,13,Madrid,21121,altas
+2020-04-10,13,Madrid,22414,altas
+2020-04-11,13,Madrid,23663,altas
+2020-04-12,13,Madrid,24683,altas
+2020-04-13,13,Madrid,25385,altas
+2020-04-14,13,Madrid,26247,altas
+2020-04-15,13,Madrid,27433,altas
+2020-03-16,19,Melilla,0,altas
+2020-03-17,19,Melilla,0,altas
+2020-03-18,19,Melilla,0,altas
+2020-03-19,19,Melilla,0,altas
+2020-03-20,19,Melilla,0,altas
+2020-03-21,19,Melilla,0,altas
+2020-03-22,19,Melilla,0,altas
+2020-03-23,19,Melilla,0,altas
+2020-03-24,19,Melilla,0,altas
+2020-03-25,19,Melilla,0,altas
+2020-03-26,19,Melilla,0,altas
+2020-03-27,19,Melilla,0,altas
+2020-03-28,19,Melilla,0,altas
+2020-03-29,19,Melilla,0,altas
+2020-03-30,19,Melilla,0,altas
+2020-03-31,19,Melilla,0,altas
+2020-04-01,19,Melilla,0,altas
+2020-04-02,19,Melilla,0,altas
+2020-04-03,19,Melilla,4,altas
+2020-04-04,19,Melilla,9,altas
+2020-04-05,19,Melilla,11,altas
+2020-04-06,19,Melilla,11,altas
+2020-04-07,19,Melilla,11,altas
+2020-04-08,19,Melilla,12,altas
+2020-04-09,19,Melilla,16,altas
+2020-04-10,19,Melilla,17,altas
+2020-04-11,19,Melilla,18,altas
+2020-04-12,19,Melilla,18,altas
+2020-04-13,19,Melilla,18,altas
+2020-04-14,19,Melilla,18,altas
+2020-04-15,19,Melilla,24,altas
+2020-03-16,14,Murcia,1,altas
+2020-03-17,14,Murcia,1,altas
+2020-03-18,14,Murcia,1,altas
+2020-03-19,14,Murcia,1,altas
+2020-03-20,14,Murcia,1,altas
+2020-03-21,14,Murcia,1,altas
+2020-03-22,14,Murcia,1,altas
+2020-03-23,14,Murcia,1,altas
+2020-03-24,14,Murcia,1,altas
+2020-03-25,14,Murcia,4,altas
+2020-03-26,14,Murcia,9,altas
+2020-03-27,14,Murcia,12,altas
+2020-03-28,14,Murcia,12,altas
+2020-03-29,14,Murcia,16,altas
+2020-03-30,14,Murcia,17,altas
+2020-03-31,14,Murcia,20,altas
+2020-04-01,14,Murcia,43,altas
+2020-04-02,14,Murcia,45,altas
+2020-04-03,14,Murcia,90,altas
+2020-04-04,14,Murcia,113,altas
+2020-04-05,14,Murcia,130,altas
+2020-04-06,14,Murcia,156,altas
+2020-04-07,14,Murcia,193,altas
+2020-04-08,14,Murcia,203,altas
+2020-04-09,14,Murcia,219,altas
+2020-04-10,14,Murcia,255,altas
+2020-04-11,14,Murcia,275,altas
+2020-04-12,14,Murcia,344,altas
+2020-04-13,14,Murcia,353,altas
+2020-04-14,14,Murcia,476,altas
+2020-04-15,14,Murcia,513,altas
+2020-03-16,15,Navarra,0,altas
+2020-03-17,15,Navarra,0,altas
+2020-03-18,15,Navarra,0,altas
+2020-03-19,15,Navarra,0,altas
+2020-03-20,15,Navarra,1,altas
+2020-03-21,15,Navarra,1,altas
+2020-03-22,15,Navarra,4,altas
+2020-03-23,15,Navarra,7,altas
+2020-03-24,15,Navarra,11,altas
+2020-03-25,15,Navarra,23,altas
+2020-03-26,15,Navarra,35,altas
+2020-03-27,15,Navarra,70,altas
+2020-03-28,15,Navarra,98,altas
+2020-03-29,15,Navarra,125,altas
+2020-03-30,15,Navarra,161,altas
+2020-03-31,15,Navarra,192,altas
+2020-04-01,15,Navarra,236,altas
+2020-04-02,15,Navarra,278,altas
+2020-04-03,15,Navarra,294,altas
+2020-04-04,15,Navarra,311,altas
+2020-04-05,15,Navarra,334,altas
+2020-04-06,15,Navarra,380,altas
+2020-04-07,15,Navarra,421,altas
+2020-04-08,15,Navarra,450,altas
+2020-04-09,15,Navarra,462,altas
+2020-04-10,15,Navarra,560,altas
+2020-04-11,15,Navarra,603,altas
+2020-04-12,15,Navarra,650,altas
+2020-04-13,15,Navarra,695,altas
+2020-04-14,15,Navarra,730,altas
+2020-04-15,15,Navarra,808,altas
+2020-03-16,16,País Vasco,5,altas
+2020-03-17,16,País Vasco,11,altas
+2020-03-18,16,País Vasco,14,altas
+2020-03-19,16,País Vasco,18,altas
+2020-03-20,16,País Vasco,21,altas
+2020-03-21,16,País Vasco,165,altas
+2020-03-22,16,País Vasco,216,altas
+2020-03-23,16,País Vasco,283,altas
+2020-03-24,16,País Vasco,344,altas
+2020-03-25,16,País Vasco,466,altas
+2020-03-26,16,País Vasco,621,altas
+2020-03-27,16,País Vasco,814,altas
+2020-03-28,16,País Vasco,1023,altas
+2020-03-29,16,País Vasco,1503,altas
+2020-03-30,16,País Vasco,1646,altas
+2020-03-31,16,País Vasco,1796,altas
+2020-04-01,16,País Vasco,2165,altas
+2020-04-02,16,País Vasco,2490,altas
+2020-04-03,16,País Vasco,2809,altas
+2020-04-04,16,País Vasco,3098,altas
+2020-04-05,16,País Vasco,3405,altas
+2020-04-06,16,País Vasco,3568,altas
+2020-04-07,16,País Vasco,3728,altas
+2020-04-08,16,País Vasco,4151,altas
+2020-04-09,16,País Vasco,4514,altas
+2020-04-10,16,País Vasco,4680,altas
+2020-04-11,16,País Vasco,4741,altas
+2020-04-12,16,País Vasco,4867,altas
+2020-04-13,16,País Vasco,5026,altas
+2020-04-14,16,País Vasco,5193,altas
+2020-04-15,16,País Vasco,5428,altas
+2020-03-16,17,La Rioja,2,altas
+2020-03-17,17,La Rioja,2,altas
+2020-03-18,17,La Rioja,2,altas
+2020-03-19,17,La Rioja,2,altas
+2020-03-20,17,La Rioja,13,altas
+2020-03-21,17,La Rioja,18,altas
+2020-03-22,17,La Rioja,18,altas
+2020-03-23,17,La Rioja,18,altas
+2020-03-24,17,La Rioja,24,altas
+2020-03-25,17,La Rioja,43,altas
+2020-03-26,17,La Rioja,48,altas
+2020-03-27,17,La Rioja,62,altas
+2020-03-28,17,La Rioja,364,altas
+2020-03-29,17,La Rioja,397,altas
+2020-03-30,17,La Rioja,431,altas
+2020-03-31,17,La Rioja,496,altas
+2020-04-01,17,La Rioja,569,altas
+2020-04-02,17,La Rioja,641,altas
+2020-04-03,17,La Rioja,745,altas
+2020-04-04,17,La Rioja,843,altas
+2020-04-05,17,La Rioja,904,altas
+2020-04-06,17,La Rioja,964,altas
+2020-04-07,17,La Rioja,994,altas
+2020-04-08,17,La Rioja,1061,altas
+2020-04-09,17,La Rioja,1172,altas
+2020-04-10,17,La Rioja,1256,altas
+2020-04-11,17,La Rioja,1337,altas
+2020-04-12,17,La Rioja,1420,altas
+2020-04-13,17,La Rioja,1458,altas
+2020-04-14,17,La Rioja,1519,altas
+2020-04-15,17,La Rioja,1585,altas
+2020-03-16,00,Total,530,altas
+2020-03-17,00,Total,1028,altas
+2020-03-18,00,Total,1081,altas
+2020-03-19,00,Total,1107,altas
+2020-03-20,00,Total,1585,altas
+2020-03-21,00,Total,2125,altas
+2020-03-22,00,Total,2575,altas
+2020-03-23,00,Total,3355,altas
+2020-03-24,00,Total,3794,altas
+2020-03-25,00,Total,5367,altas
+2020-03-26,00,Total,7015,altas
+2020-03-27,00,Total,9357,altas
+2020-03-28,00,Total,12285,altas
+2020-03-29,00,Total,14709,altas
+2020-03-30,00,Total,16780,altas
+2020-03-31,00,Total,19259,altas
+2020-04-01,00,Total,22647,altas
+2020-04-02,00,Total,26743,altas
+2020-04-03,00,Total,30513,altas
+2020-04-04,00,Total,34219,altas
+2020-04-05,00,Total,38080,altas
+2020-04-06,00,Total,40437,altas
+2020-04-07,00,Total,43208,altas
+2020-04-08,00,Total,48021,altas
+2020-04-09,00,Total,52165,altas
+2020-04-10,00,Total,55668,altas
+2020-04-11,00,Total,59109,altas
+2020-04-12,00,Total,62391,altas
+2020-04-13,00,Total,64727,altas
+2020-04-14,00,Total,67504,altas
+2020-04-15,00,Total,70853,altas
