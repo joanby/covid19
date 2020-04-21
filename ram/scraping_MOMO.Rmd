@@ -1,0 +1,39 @@
+---
+title: "Extrancción (scraping)  de Tablas de un pdf"
+author: "Ricardo Alberich"
+date: "16/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre1.8.0_251') # for 64-bit version
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Extración de tablas de un pdf
+
+Podemos bajar el pdf  del que queramos extraer la tabla.
+
+
+```{r}
+library(tabulizer)
+pdf="https://www.isciii.es/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%2014%20de%20abril_CNE.pdf"
+tabulizer::extract_tables(pdf,encoding = "utf8")
+```
+
+## Tratar los datos de las tablas
+
+```{r}
+tablas=extract_tables(pdf)
+```
+
+
+
+
+### Referencias
+
+* [tabulizer] https://www.r-bloggers.com/pdf-scraping-in-r-with-tabulizer/)
+* [Manual de tabulizer](https://cran.r-project.org/web/packages/tabulizer/vignettes/tabulizer.html)
+* Herramienta de scraping de R [rvest](https://cran.r-project.org/web/packages/rvest/rvest.pdf)
