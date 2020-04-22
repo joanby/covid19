@@ -1,5 +1,5 @@
 ---
-title: "Extrancción (scraping)  de Tablas de un pdf"
+title: "Extracción (scraping)  de tablas de un pdf"
 author: "Ricardo Alberich"
 date: "16/4/2020"
 output: html_document

@@ -1,0 +1,72 @@
+---
+title: "Ejemplo extracción (scraping)  de tablas de un pdf"
+author: "Ricardo Alberich"
+date: "16/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre1.8.0_251') # for 64-bit version
+knitr::opts_chunk$set(echo = TRUE,cache=TRUE)
+```
+
+
+
+## Extración de tablas de un pdf
+
+Podemos bajar el pdf  del que queramos extraer la tabla.
+
+
+```{r}
+library(tabulizer)
+#"https://www.isciii.es/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%2014%20de%20abril_CNE.pdf"
+
+tabulizer::extract_tables("data/Datos_MOMO/MoMo_Situacion a 14 de abril_CNE.pdf",encoding = "UTF-8")
+```
+
+## La primera de las tablas de MOMO
+
+```{r}
+tablas=extract_tables(pdf)
+mi_tabla=tablas[[1]]
+mi_tabla
+```tabla_data[1]
+
+
+```{r}
+library(stringr)
+tabla1_names=mi_tabla[4]
+tabla1_names
+tabla_data=mi_tabla[5:10]
+tabla_data
+
+arreglar= function(fila){
+#fila=tabla_data[6]
+aux1= unlist(str_split(fila, pattern=" "))
+aux1  
+n=length(aux1)  
+fila=c(paste0(aux1[1:(n-4)],collapse="_"),aux1[(n-3):n])
+fila
+}
+
+lista_filas_tabla=lapply(tabla_data,FUN=arreglar)
+names(lista_filas_tabla)
+do.call(dplyr::bind_rows,lista_filas_tabla)
+bind_rows(lista_filas_tabla.id="id")
+
+```
+
+Así que se complica veamos otra solución
+
+
+```{r}
+
+```
+
+
+
+### Referencias
+
+* [tabulizer] https://www.r-bloggers.com/pdf-scraping-in-r-with-tabulizer/)
+* [Manual de tabulizer](https://cran.r-project.org/web/packages/tabulizer/vignettes/tabulizer.html)
+* Herramienta de scraping de R [rvest](https://cran.r-project.org/web/packages/rvest/rvest.pdf)
