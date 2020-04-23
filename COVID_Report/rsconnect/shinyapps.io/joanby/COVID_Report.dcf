@@ -1,0 +1,12 @@
+name: COVID_Report
+title: COVID_Report
+username:
+account: joanby
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2170524
+bundleId: 3054142
+url: https://joanby.shinyapps.io/COVID_Report/
+when: 1587636110.19615
+asMultiple: FALSE
+asStatic: FALSE
