@@ -1,12 +1,11 @@
 ---
 title: "Ejemplo extracción (scraping)  de tablas de un pdf"
 author: "Ricardo Alberich"
-date: "16/4/2020"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre1.8.0_251') # for 64-bit version
 knitr::opts_chunk$set(echo = TRUE,cache=TRUE)
 ```
 
@@ -18,19 +17,58 @@ Podemos bajar el pdf  del que queramos extraer la tabla.
 
 
 ```{r}
+library(stringr)
 library(tabulizer)
 #"https://www.isciii.es/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Documents/informesMoMo2020/MoMo_Situacion%20a%2014%20de%20abril_CNE.pdf"
 
-tabulizer::extract_tables("data/Datos_MOMO/MoMo_Situacion a 14 de abril_CNE.pdf",encoding = "UTF-8")
+tablas=tabulizer::extract_tables("data/Datos_MOMO/MoMo_Situacion a 14 de abril_CNE.pdf",encoding = "UTF-8")
 ```
 
 ## La primera de las tablas de MOMO
 
+Tratemos la primera tabla
+
 ```{r}
 tablas=extract_tables(pdf)
 mi_tabla=tablas[[1]]
+class(mi_tabla)
+str(mi_tabla)
+dim(mi_tabla)
 mi_tabla
-```tabla_data[1]
+```
+
+Es una matriz de una columna con las 10 filas de datos:
+
+* Las tres primeras son los metadatos de la tebala que se  no se han cargado totalmente.
+* La fila 4  son los nombres de la tabla
+* De la fila 6 a la 10 son los datos y los nombres de las filas de la tabla.
+
+
+Leamos la primera fila de datos 
+
+
+```{r}
+datos_fila5=mi_tabla[5,]
+datos_fila5
+extrac_data=function(x) {
+  x=unlist(str_split(x,pattern=" "))
+  data=x[(length(x)-3):length(x)]
+  name=paste(x[1:(length(x)-4)],collapse=" ")
+c(name,data)
+  }
+
+extrac_data(mi_tabla[5,])
+extrac_data(mi_tabla[6,])
+extrac_data(mi_tabla[7,])
+extrac_data(mi_tabla[8,])
+extrac_data(mi_tabla[9,])
+extrac_data(mi_tabla[10,])
+
+```
+
+
+
+
 
 
 ```{r}
