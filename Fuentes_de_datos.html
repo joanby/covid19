@@ -421,8 +421,8 @@ summary {
 ##   Total = col_double()
 ## )</code></pre>
 <pre class="r"><code>glimpse(CCAA_camas_UCI)</code></pre>
-<pre><code>## Observations: 17
-## Variables: 5
+<pre><code>## Rows: 17
+## Columns: 5
 ## $ cod_ine  &lt;chr&gt; &quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;15&quot;, &quot;05&quot;, &quot;06&quot;, &quot;07&quot;, &quot;08&quot;, &quot;09&quot;, &quot;10&quot;...
 ## $ CCAA     &lt;chr&gt; &quot;ANDALUCÍA&quot;, &quot;ARAGÓN&quot;, &quot;ASTURIAS&quot;, &quot;C. FORAL DE NAVARRA&quot;, ...
 ## $ Públicos &lt;dbl&gt; 572, 113, 86, 46, 187, 40, 180, 155, 511, 450, 97, 215, 78...
@@ -572,8 +572,8 @@ summary {
 ##   Total = col_character()
 ## )</code></pre>
 <pre class="r"><code>glimpse(poblacion_CCAA_long)</code></pre>
-<pre><code>## Observations: 1,440
-## Variables: 4
+<pre><code>## Rows: 1,440
+## Columns: 4
 ## $ `Comunidades y Ciudades Autónomas` &lt;chr&gt; &quot;Total&quot;, &quot;Total&quot;, &quot;Total&quot;, &quot;Tota...
 ## $ Sexo                               &lt;chr&gt; &quot;Total&quot;, &quot;Total&quot;, &quot;Total&quot;, &quot;Tota...
 ## $ Periodo                            &lt;dbl&gt; 2019, 2018, 2017, 2016, 2015, 20...
@@ -9233,8 +9233,8 @@ summary {
 </table>
 <pre class="r"><code>poblacion_CCAA_wider=poblacion_CCAA_long %&gt;% tidyr::pivot_wider(names_from=Periodo, values_from=Total)
 glimpse(poblacion_CCAA_wider)</code></pre>
-<pre><code>## Observations: 60
-## Variables: 26
+<pre><code>## Rows: 60
+## Columns: 26
 ## $ `Comunidades y Ciudades Autónomas` &lt;chr&gt; &quot;Total&quot;, &quot;Total&quot;, &quot;Total&quot;, &quot;01 A...
 ## $ Sexo                               &lt;chr&gt; &quot;Total&quot;, &quot;Hombres&quot;, &quot;Mujeres&quot;, &quot;...
 ## $ `2019`                             &lt;chr&gt; &quot;47.026.208&quot;, &quot;23.042.428&quot;, &quot;23....
@@ -9283,8 +9283,8 @@ glimpse(poblacion_CCAA_wider)</code></pre>
 ##   total = col_double()
 ## )</code></pre>
 <pre class="r"><code>glimpse(ccaa_altas_long)</code></pre>
-<pre><code>## Observations: 620
-## Variables: 4
+<pre><code>## Rows: 620
+## Columns: 4
 ## $ fecha   &lt;date&gt; 2020-03-16, 2020-03-17, 2020-03-18, 2020-03-19, 2020-03-20...
 ## $ cod_ine &lt;chr&gt; &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;,...
 ## $ CCAA    &lt;chr&gt; &quot;Andalucía&quot;, &quot;Andalucía&quot;, &quot;Andalucía&quot;, &quot;Andalucía&quot;, &quot;Andalu...
@@ -13025,8 +13025,8 @@ glimpse(poblacion_CCAA_wider)</code></pre>
 <p>Estos datos los podemos transformar en una tabla con la función <code>pivot_wider</code>de la librería <code>tidyr</code></p>
 <pre class="r"><code>aux1=ccaa_altas_long %&gt;% tidyr::pivot_wider(names_from=fecha,values_from=total)
 glimpse(aux1)</code></pre>
-<pre><code>## Observations: 20
-## Variables: 33
+<pre><code>## Rows: 20
+## Columns: 33
 ## $ cod_ine      &lt;chr&gt; &quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;04&quot;, &quot;05&quot;, &quot;06&quot;, &quot;08&quot;, &quot;07&quot;, &quot;09&quot;, ...
 ## $ CCAA         &lt;chr&gt; &quot;Andalucía&quot;, &quot;Aragón&quot;, &quot;Asturias&quot;, &quot;Baleares&quot;, &quot;Canari...
 ## $ `2020-03-16` &lt;dbl&gt; 0, 0, 3, 1, 7, 10, 12, 5, 0, 0, 2, 4, 4, 474, 0, 1, 0,...
@@ -13821,8 +13821,8 @@ glimpse(aux1)</code></pre>
 ## )</code></pre>
 <pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre class="r"><code>glimpse(ccaa_casos_wider)</code></pre>
-<pre><code>## Observations: 20
-## Variables: 51
+<pre><code>## Rows: 20
+## Columns: 51
 ## $ cod_ine      &lt;chr&gt; &quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;04&quot;, &quot;05&quot;, &quot;06&quot;, &quot;08&quot;, &quot;07&quot;, &quot;09&quot;, ...
 ## $ CCAA         &lt;chr&gt; &quot;Andalucía&quot;, &quot;Aragón&quot;, &quot;Asturias&quot;, &quot;Baleares&quot;, &quot;Canari...
 ## $ `2020-02-27` &lt;dbl&gt; 1, 0, 0, 1, 6, 0, 0, 0, 2, 0, 2, 0, 0, 4, 0, 0, 0, 0, ...
@@ -14997,8 +14997,8 @@ glimpse(aux1)</code></pre>
 <p>Podemos recuperar el fichero largo con la función <code>pivot_longer</code></p>
 <pre class="r"><code>aux2=ccaa_casos_wider %&gt;% pivot_longer(cols=starts_with(&quot;2020&quot;))
 glimpse(aux2)</code></pre>
-<pre><code>## Observations: 980
-## Variables: 4
+<pre><code>## Rows: 980
+## Columns: 4
 ## $ cod_ine &lt;chr&gt; &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;, &quot;01&quot;,...
 ## $ CCAA    &lt;chr&gt; &quot;Andalucía&quot;, &quot;Andalucía&quot;, &quot;Andalucía&quot;, &quot;Andalucía&quot;, &quot;Andalu...
 ## $ name    &lt;chr&gt; &quot;2020-02-27&quot;, &quot;2020-02-28&quot;, &quot;2020-02-29&quot;, &quot;2020-03-01&quot;, &quot;20...
@@ -47761,8 +47761,8 @@ datos_COVID19_long=bind_rows(lapply(tipos,FUN=arreglo))</code></pre>
   transmute(cod_ine=str_sub(`Comunidades y Ciudades Autónomas`,1,2),
     Pob_CCAA_2019=Total,CCAA=`Comunidades y Ciudades Autónomas`)
 glimpse(poblacion_CCAA)</code></pre>
-<pre><code>## Observations: 19
-## Variables: 3
+<pre><code>## Rows: 19
+## Columns: 3
 ## $ cod_ine       &lt;chr&gt; &quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;04&quot;, &quot;05&quot;, &quot;06&quot;, &quot;07&quot;, &quot;08&quot;, &quot;09&quot;,...
 ## $ Pob_CCAA_2019 &lt;dbl&gt; 8414240, 1319291, 1022800, 1149460, 2153389, 581078, ...
 ## $ CCAA          &lt;chr&gt; &quot;01 Andalucía&quot;, &quot;02 Aragón&quot;, &quot;03 Asturias, Principado...</code></pre>
