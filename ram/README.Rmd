@@ -1,0 +1,11 @@
+# Contenido de esta carpeta
+
+
+Esta carpeta contiene algunos  enlaces y accesos a datosque se han utilizado o mostrado  en el Tema Fuentes de datos.
+
+
+No se han incluído en data pues no se han utilizado en el tema  Funtes de datos.
+
+Hay enlaces a datos de México del World Data Banc.... , y una lista de webs  mostrando los datos con shiny.
+
+Simplemente se muestran los enlaces.
