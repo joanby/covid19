@@ -1,0 +1,303 @@
+---
+title: 'Fuentes: Datos oficiales  COVID19 España a 17 11 2020'
+author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
+date: "17/4/2020"
+output:
+  html_document: 
+    df_print: kable
+    toc: yes
+  pdf_document:
+    number_sections: yes
+    toc: yes
+  word_document:
+    toc: yes
+linkcolor: red
+header-includes: \renewcommand{\contentsname}{Contenidos}
+citecolor: blue
+toccolor: blue
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
+
+library(tidyverse)
+```
+
+
+
+
+
+# Datos oficiales del Ministerio de Sanidad de España
+
+
+Ponemos aquí distintos enlaces a los dartos  y estadísticas  oficiales de Ministerio de Sanidad de España
+
+* [ALERTAS EN SALUD PÚBLICA DE ACTUALIDAD](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/alertActu.htm)
+
+* [Situación Actual](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/home.htm)
+
+Desde esta última  página podemos acceder a:
+
+* [Informe de situación actual](https://covid19.isciii.es/)
+
+* [Datos causas de muerte MoMo](https://www.isciii.es/QueHacemos/Servicios/VigilanciaSaludPublicaRENAVE/EnfermedadesTransmisibles/MoMo/Paginas/Informes-MoMo-2020.aspx)
+
+
+
+
+
+##  Recopilación de los datos oficiales
+
+
+ La web [Datadista](https://datadista.com/) ha creado  un github con los datos oficiales recopilados y con muchos datos más.
+ 
+ Podéis clonar todo  el repositorio (contiene muchos más datos)  o  solo los datos del COVID19 desde
+ 
+ [Datadista github COVID19](https://github.com/datadista)
+ 
+ 
+ 
+## Un primer ejemplo: carga de datos desde dos fuentes 
+
+
+En este primer ejemplo  hemos descargado  de Datadista `ccaa_camas_uci_2017.csv` que contiene datos de 2017 de las camas de UCI por Comunidad Autónoma 
+
+
+```{r}
+CCAA_camas_UCI=read_csv("data/COVID_19_Datadista/COVID19/ccaa_camas_uci_2017.csv")
+```
+
+```{r}
+glimpse(CCAA_camas_UCI)
+```
+
+```{r}
+knitr::kable(head(CCAA_camas_UCI),padding=0)
+```
+
+
+Ahora queremos el porcentaje de camas UCI por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al [Instituto Nacional de Estadística de España (INE)](ine.es). 
+
+Desde aquí buscaremos [Población por comunidades y ciudades autónomas y sexo](https://www.ine.es/jaxiT3/Tabla.htm?t=2853).  y nos bajaremos los datos que deseemos ( los  guardamos en DatosINE)
+
+```{r}
+poblacion_CCAA_long=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv")
+glimpse(poblacion_CCAA_long)
+knitr::kable(poblacion_CCAA_long)
+poblacion_CCAA_wider=poblacion_CCAA_long %>% tidyr::pivot_wider(names_from=Periodo, values_from=Total)
+glimpse(poblacion_CCAA_wider)
+```
+
+Nos queda una cos notad  que las cifras de población han quedado con datos en miles y se han leído no cómo caracter. Tenemos que transforma esa variable. Lo haremos el el fichero long  y luego haremos en  el wider
+
+
+### Las funciones `pivot_wider`  y `pivot_long`
+
+
+Probaremos estas funciones con los fichero de datos de altas
+
+
+#### El fichero de altas  por fecha y comunidad autónoma 
+
+
+Fichero largo `ccaa_covid19_altas_long.csv` es una tabla de   4  columnas 
+
+* `fecha`  :  La fecha de la observación tomada  de la clase `date`
+* `cod_ine`:  Es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm)
+* `CCAA`   :  es el nombre de la comunidad autónoma.
+* `total`  :  La observación para `fecha` del número  de altas de esa `CCAA`. 
+
+```{r}
+ccaa_altas_long=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_altas_long.csv")
+glimpse(ccaa_altas_long)
+knitr::kable(ccaa_altas_long)
+```
+
+
+Estos datos los podemos transformar en una tabla con la función `pivot_wider`de la librería `tidyr`
+
+
+```{r}
+aux1=ccaa_altas_long %>% tidyr::pivot_wider(names_from=fecha,values_from=total)
+glimpse(aux1)
+knitr::kable(aux1)
+```
+
+
+### Los datos de casos por día y por  comunidad autónoma
+
+
+Fichero `ccaa_covid19_casos.csv` es un fichero  que puede ser procesado desde el fichero `ccaa_covid19_casos_long.csv`
+
+
+* La variable  `cod_ine` es el código de comunidad autónoma del [Instituto  Nacional de Estadística](https://www.ine.es/daco/daco42/codmun/cod_ccaa.htm).
+* La variable  `CCAA`  es el nombre de la comunidad autónoma.
+* El resto de columnas de observación en el tiempo de los casos de enfermos por coronavirus.
+
+
+```{r}
+ccaa_casos_wider=read_csv("data/COVID_19_Datadista/COVID19/ccaa_covid19_casos.csv")
+glimpse(ccaa_casos_wider)
+knitr::kable(ccaa_casos_wider)
+```
+
+
+
+Podemos recuperar el fichero largo con la función  `pivot_longer`
+
+
+```{r}
+aux2=ccaa_casos_wider %>% pivot_longer(cols=starts_with("2020"))
+glimpse(aux2)
+knitr::kable(aux2)
+```
+
+
+
+
+## Nuestro modelo de datos
+
+
+Definamos  nuestro modelo de datos Para ello separemos los ficheros de datos en  dos grupos
+
+
+##  Metadatos
+
+
+Son datos relativos a las unidades en las que se miden las variables. Las unidades pueden ser: continentes, países, regiones. Las regiones reciben distintas denominaciones según la organización de cada país: departamentos, estados, comunidades autónomas, **landers** , provincias, etc.
+
+
+Algunos de los ficheros correspondientes a metadatos  son :
+
+* `alojamientos_turisticos_boe_2020_4194.csv`
+* `ccaa_camas_uci_2017.csv`
+* `ccaa_covid19_mascarillas.csv`
+* `municipios_distritos_madrid_casos.csv`
+* `nacional_covid19_rango_edad.csv`
+* `puntos_restauracion_comida_para_llevar.csv`
+
+
+## Datos sobre la epidemia
+
+Los datos epidemiológicos son los que e contabilidad datos sobre la pandemia en cada unidad de medida. Como ya hemos explicado están en la versión **wider**  la **long**
+
+
+
+* Datos de *casos* de pacientes de coronavirus
+  + `ccaa_covid19_casos.csv`; `ccaa_covid19_casos_long.csv`
+* Datos de *altas* de pacientes de coronavirus
+  + `ccaa_covid19_altas.csv`; `ccaa_covid19_altas_long.csv`
+* Datos de *fallecidos* de pacientes de coronavirus
+  + `ccaa_covid19_fallecidos.csv`; `ccaa_covid19_fallecidos_long.csv`
+* Datos de pacientes *hospitalizados*  de pacientes de coronavirus
+  + `ccaa_covid19_hospitalizados.csv`; `ccaa_covid19_hospitalizados_long.csv`
+* Datos de pacientes en *UCI*  de pacientes de coronavirus
+  + `ccaa_covid19_uci.csv`; `ccaa_covid19_uci_long.csv`
+
+
+## Tabla base de nuestro modelo de datos 
+
+
+Vamos a construir una tabla  de tipo "long" con todos los datos. Para ello apilaremos las tablas long añadiendo la categoría que mide la variable total: casos, ingresos, fallecimientos, uci.
+
+Empecemos con algunas variables auxiliares
+
+
+```{r}
+tipos=c("casos","hospitalizados","fallecidos","uci","altas")
+prefijo="data/COVID_19_Datadista/COVID19/ccaa_covid19_"
+sufijo="_long.csv"
+arreglo<- function(tipo,prefijo="data/COVID_19_Datadista/COVID19/ccaa_covid19_",sufijo="_long.csv"){
+aux=read_csv(paste0(prefijo,tipo,sufijo))
+aux$tipo=tipo
+return(aux)
+}
+
+datos_COVID19_long=bind_rows(lapply(tipos,FUN=arreglo))
+datos_COVID19_long
+```
+
+## Añadir metadatos a nuestro modelo de datos
+
+
+Vamos a añadir las poblaciones de cada Comunidad Autónoma y  su número de camas  de cuidados intensivos (uci).
+
+```{r}
+camas_uci=read_csv("data/COVID_19_Datadista/COVID19/ccaa_camas_uci_2017.csv")
+camas_uci %>% rename(Públicos_UCI=Públicos,Privados_UCI=Privados,Total_UCI=Total)
+knitr::kable(camas_uci)
+```
+
+
+Ahora leeremos la población por CCAA. Construimos la tabla a lo ancho, seleccionamos  el año  y eliminamos los totales
+
+
+```{r}
+poblacion_CCAA=read_tsv("data/DataINE_España/Poblacion_CCAA_2017_2019_2853.csv",locale = locale(grouping_mark = "."))
+poblacion_CCAA= poblacion_CCAA %>% 
+  filter(`Comunidades y Ciudades Autónomas`!="Total",Sexo=="Total",Periodo==2019) %>%
+  transmute(cod_ine=str_sub(`Comunidades y Ciudades Autónomas`,1,2),
+    Pob_CCAA_2019=Total,CCAA=`Comunidades y Ciudades Autónomas`)
+glimpse(poblacion_CCAA)
+knitr::kable(poblacion_CCAA)
+```
+
+
+### Añadimos los metadatos
+
+Podemos construir una tibble que contega toda la información utilizando funciones  tipo "inner_join
+
+```{r}
+metadatos_CCAA=  poblacion_CCAA %>% select(-CCAA) %>%
+  inner_join(camas_uci,by="cod_ine") %>%
+  rename(UCIS_Públicos=Públicos,UCIS_Privados=Privados, UCI_Total=Total)
+
+datos_COVID19_con_metadatos_long= datos_COVID19_long %>% inner_join(metadatos_CCAA %>% select(-CCAA))
+
+```
+
+
+
+## Guardamos los datos 
+
+Guardaremos los datos como objetos y como cvs
+
+```{r}
+save(datos_COVID19_long,
+     file="data/Modelo_Datos/datos_COVID19_long_long.Robj")
+save(metadatos_CCAA,
+     file="data/Modelo_Datos/metadatos_CCAA.Robj")
+save(datos_COVID19_con_metadatos_long,
+     file="data/Modelo_Datos/datos_COVID19_con_metadatos_long.Robj")
+  
+  
+write_csv(datos_COVID19_long,
+          path="data/Modelo_Datos/datos_COVID19_long.csv")
+write_csv(metadatos_CCAA,
+          path="data/Modelo_Datos/metadatos_CCAA.csv")
+write_csv(datos_COVID19_con_metadatos_long,
+          path="data/Modelo_Datos/datos_COVID19_con_metadatos_long.csv")
+
+```
+
+
+### Uso de los datos
+
+```{r}
+data_long=read_csv("data/Modelo_Datos/datos_COVID19_con_metadatos_long.csv")
+data_long_filtrado= data_long %>% select(fecha,CCAA,total,tipo)
+
+data_wider_filtrado= data_long_filtrado %>%
+  pivot_wider(names_from=CCAA,values_from=total)
+
+knitr::kable(data_wider_filtrado)
+```
+
+
+
+```{r}
+ggplot(data_long_filtrado[-2,],aes(x=fecha,y=total,col=CCAA))+geom_smooth(se = FALSE)
+```
+
+

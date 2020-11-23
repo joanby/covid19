@@ -19,8 +19,7 @@ urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
-
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE,cache=TRUE)
 library(tidyverse)
 ```
 
@@ -77,7 +76,7 @@ knitr::kable(CCAA_camas_UCI)
 ```
 
 
-Ahora queremos el porcentaje de camas UCI por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al [Instituto Nacional de Estadística de España (INE)](ine.es). 
+Ahora queremos el porcentaje de camas UCI por población en España y queremos que este añadido sea de producción propia y con datos oficiales en este caso acudiremos al [Instituto Nacional de Estadística de España (INE)](https://www.ine.es). 
 
 Desde aquí buscaremos [Población por comunidades y ciudades autónomas y sexo](https://www.ine.es/jaxiT3/Tabla.htm?t=2853).  y nos bajaremos los datos que deseemos ( los  guardamos en DatosINE)
 
