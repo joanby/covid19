@@ -12,3 +12,41 @@ output:
 knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 library(tidyverse)
 ```
+
+
+# Ejemplos
+
+## Instalación y carga
+
+
+```{r}
+# descomentar para ejecutar en cosola instalar
+# install.packages("COVID19")
+
+# carga del paquete
+library("COVID19")
+
+# decomentar para ejecutar el consola
+# help(package="COVID19")
+x<- covid19("Mexico")
+covid19cite(x, verbose = TRUE)-> cite
+str(cite)
+names(cite)
+knitr::kable(cbind(cite$data_type,cite$title,cite$author))
+```
+
+
+```{r}
+
+cite<- covid19cite(x)
+cite
+
+## el dato de la linea  de la rowname "1759"
+cite["1759",]
+## la iso_aplha_3
+cite["1759","iso_alpha_3"]
+##  title
+cite["1759","title"]
+
+```
+

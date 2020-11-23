@@ -2,11 +2,12 @@
 title: 'Fuentes: Actualización fuentes de datos noviembre 2020'
 author: "Ricardo Alberich, Juan Gabriel Gomila y Arnau Mir"
 date: ''
-output: 
+output:
   ioslides_presentation:
-    widescreen: true
+    widescreen: yes
     css: Mery_style.css
     fig_caption: yes
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -59,7 +60,7 @@ Veremos  3 tipos  y trataremos más a fondo último caso
   * [Panel de control COVID-19](https://cnecovid.isciii.es/covid19/) del [ISCIII](https://www.isciii.es/Paginas/Inicio.aspx). Desarrollado en [Shiny](https://shiny.rstudio.com/)
   
 * Datos iniciativa privadas empresas
-   * Como  ejemplo la empresa [Esri](https://www.esri.com/en-us/home)  ha desarrollado [COVID-19 GIS Hub España](https://covid19esrispain-sitesesrispain.hub.arcgis.co). Software [ArGIS](https://es.wikipedia.org/wiki/ArcGIS)
+   * Como  ejemplo la empresa [Esri](https://www.esri.com/en-us/home)  ha desarrollado [COVID-19 GIS Hub España](https://covid19esrispain-sitesesrispain.hub.arcgis.com). Software [ArGIS](https://es.wikipedia.org/wiki/ArcGIS)
 
 ## Fuentes de datos iniciativas libres.
   
