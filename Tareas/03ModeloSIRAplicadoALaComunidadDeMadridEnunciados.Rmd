@@ -1,0 +1,56 @@
+---
+title: "Modelo SIR aplicado a la comunidad de Madrid."
+author: ""
+date: ""
+output:
+  pdf_document: default
+              
+  html_document: default
+---
+
+
+<!-- Después de la lectura 45 Modelo SIR -->
+
+## Instrucciones
+En esta tarea aplicaremos el modelo SIR a los datos de la comunidad de Madrid.
+Concretamente calcularemos el número básico de reproducción R0 y estudiaremos si la epidemia continuará expandiéndose.
+
+
+## Descripción de la tarea
+
+En el recurso descargable `ficheros.zip` tenéis dos ficheros:
+
+- El archivo `datosCCAA.csv` donde estan los datos del número de infectados, hospitalizados, fallecidos, pacientes en las UCI y recuperados (altas) (ver la variable o columna tipo) de las 17 comunidades autónomas (faltan Ceuta y Melilla) de España.
+
+- El archivo `Fichero_poblaciónCCAA.csv` donde están los datos de la población o del número de habitantes de las 17 comunidades autónomas.
+
+### Pregunta 1
+Cargar los datos del número deinfectados, fallecidos, hospitalizados, enfermos en las UCI y recuperados de las comunidades autónomas.
+
+Llamarle datos a la variable de `R` donde habéis almacenado la información.
+
+Usando la función `select` del paquete `tidyverse` seleccionar las variables que nos da la fecha, la comunidad autónoma, la variable total y tipo de la variable datos.
+
+
+
+### Pregunta 2
+
+A partir de la variable filtrada de la pregunta anterior y usando la función filter, calcular tres tablas de datos:
+
+- `casos.Madrid` que tenga las columnas o variables fecha y número de infectados de la comunidad de Madrid.
+
+- `fallecidos.Madrid` que tenga las columnas o variables fecha y número de fallecidos de la comunidad de Madrid.
+
+- `recuperados.Madrid` que tenga las columnas o variables fecha y número de altas o recuperados de la comunidad de Madrid.
+
+Veréis que las variables número de infectados, fallecidos y recuperados de las tres tablas de datos anteriores no tienen la misma longitud.
+
+A partir de las tablas anteriores,  crear tres vectores más que nos den los infectados, fallecidos y recuperados de la comunidad de Madrid asegurándose que tienen la misma longitud añadiendo ceros al principio de los vectores que tengan longitud menor.
+
+### Pregunta 3
+
+A partir de la población de la comunidad de Madrid, hallar la estimación del número básico de reproducción $R_0$ y compararlo con el valor adecuado para estudiar si la epidemia se seguirá expandiendo o no.
+
+### Pregunta 4
+
+Realizar el estudio de las tres preguntas anteriores para los datos de la Comunidad de Cataluña.

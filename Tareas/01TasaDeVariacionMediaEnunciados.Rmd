@@ -1,0 +1,31 @@
+---
+title: "Tasa de variación media"
+author: ""
+date: ""
+output:
+  pdf_document: default
+              
+  html_document: default
+---
+
+
+<!-- Después de la lectura 27 Lead, Lag y el estudio de nuevos casos -->
+
+## Instrucciones
+Se define la tasa de variación media como el incremento de nuevos casos de contagio con respecto al día anterior. Con esta definición en mente vamos a hacer los siguientes ejercicios.
+
+### Pregunta 1
+
+Teniendo en cuenta que la $TVM$ del número de contagios para un día $t$ se podría definir como:
+$$
+TVM(t) = \frac{(\mbox{Casos en el día }t - \mbox{Casos en el día }t-1)}{\mbox{Casos en el día }t},
+$$
+utiliza las funciones lead o lag para definir la $TVM$ del número de nuevos casos de contagio en España (o en tu propio país).
+
+### Pregunta 2
+
+Representa utilizando el gráfico adecuado la $TVM$ y discute cómo ha ido evolucionando a lo largo del tiempo. 
+
+### Pregunta 3
+
+¿Se observa algún cambio en la tendencia que parezca indicar que el contagio se está frenando y que las medidas de contención son efectivas? Justifica la respuesta.
