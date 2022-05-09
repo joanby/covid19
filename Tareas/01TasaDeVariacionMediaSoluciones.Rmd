@@ -23,18 +23,30 @@ $$
 utiliza las funciones lead o lag para definir la $TVM$ del número de nuevos casos de contagio en España (o en tu propio país).
 
 ### Solución
-Piensa que solo tienes que restar al día actual, el anterior y dividir por este!
+```{r}
+library(tidyverse)
+datos = read.csv("../covid_19_clean_complete.csv",header=TRUE)
+datos%>%filter(Country.Region=="Spain") -> spain
+spain$TVM = (spain$Confirmed-lag(spain$Confirmed))/spain$Confirmed
+```
+
 
 ### Pregunta 2
 
 Representa utilizando el gráfico adecuado la $TVM$ y discute cómo ha ido evolucionando a lo largo del tiempo. 
 
 ### Solución
-Un diagrama con líneas como los que he usado en los vídeos es el más adecuado
+```{r}
+library(ggplot2)
+ggplot(data=spain, aes(x=Date, y=TVM, group=1)) +
+   geom_line()+
+   geom_point()
+```
+
 
 ### Pregunta 3
 
 ¿Se observa algún cambio en la tendencia que parezca indicar que el contagio se está frenando y que las medidas de contención son efectivas? Justifica la respuesta.
 
 ### Solución
-Si no fuera así, nos preguntaríamos qué hacemos confinados todavía en casa, ¿verdad?
+La TVM está tendiendo a cero, de ahí que podamos decir que el índice de contagios se está frenando en los últimos meses de la pandemia. 
