@@ -1,6 +1,6 @@
 ## ----setup, include=FALSE------------------------------------------------
 knitr::opts_chunk$set(echo = TRUE)
-reticulate::use_python("/Users/juangabriel/anaconda3/bin/python")
+reticulate::use_python("/Users/juangabriel/anaconda3/bin/python", required = FALSE)
 #reticulate::py_install("sympy")
 
 

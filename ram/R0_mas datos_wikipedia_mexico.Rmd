@@ -13,7 +13,7 @@ library(knitr)
 library(tidyverse) # %>%
 library(magrittr)  # %<>%
 library(lubridate)
-use_python("/usr/bin/python")
+use_python("/usr/bin/python", required = FALSE)
 ```
 
 # Referencias

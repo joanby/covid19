@@ -19,7 +19,7 @@ library(plotly)
 library(xts)
 library(dygraphs)
 
-use_python("/Users/juangabriel/opt/anaconda3/bin/python3")
+use_python("/Users/juangabriel/opt/anaconda3/bin/python3", required = FALSE)
 ```
 
 # Carga y limpieza preliminar de los datos
